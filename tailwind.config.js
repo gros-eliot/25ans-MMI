@@ -11,7 +11,7 @@ module.exports = {
         "rouge": "#ff3636",
         "vert": "#6dd678",
         "jaunve": "#ffd600",
-        "fond": "#fffef6",
+        "beige": "#fffef6",
         "noir": "#000000"
  },
       fontFamily: {
