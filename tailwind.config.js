@@ -6,6 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "bleu": "#bba7e7",
+        "rouge": "#ff3636",
+        "vert": "#6dd678",
+        "jaunve": "#ffd600",
+        "fond": "#fffef6",
+        "noir": "#000000"
+ },
       fontFamily: {
         'neuemontreal': ['PPNeueMontreal'],
         'inter': ['Inter', 'sans-serif'],
