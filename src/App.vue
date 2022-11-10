@@ -3,10 +3,15 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <h1 class="text-7xl font-bold text-red-500 font-neuemontreal">
-    Hello world!
-  </h1>
+  <div class="bg-beige ">
+  <Header/>
+  <Footer/>
+  </div>
   <router-view></router-view>
+  
 </template>
 
-<style scoped></style>
+<script>
+import Header from "../src/assets/components/Header.vue"
+import Footer from "../src/assets/components/Footer.vue"
+</script>
