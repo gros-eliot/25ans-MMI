@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'neuemontreal': ['PPNeueMontreal', 'sans-serif'],
+        'neuemontreal': ['PPNeueMontreal'],
+        'inter': ['Inter', 'sans-serif'],
       }
     },
   },
