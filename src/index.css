@@ -4,5 +4,14 @@
 
 @font-face {
     font-family: "PPNeueMontreal";
+<<<<<<< HEAD
     src: url("/fonts/PPNeueMontreal-Book.otf");
+=======
+    src: url("../public/fonts/PPNeueMontreal-Book.otf");
+}
+
+@layer components {
+
+
+>>>>>>> ff6aa5e (Intégration Header)
 }
