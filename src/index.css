@@ -12,5 +12,9 @@
     .footer {
         @apply font-bold text-white text-[30px] md:text-[35px] lg:text-[40px]
     }
+
+    .titre {
+        @apply font-inter font-black text-8xl w-full flex justify-center mt-28
+    }
             
 }
