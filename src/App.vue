@@ -3,12 +3,17 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
+  <header>
+    <Header />
+  </header>
   <div class="bg-beige ">
-  <Header/>
-  <Footer/>
+
+
   </div>
   <router-view></router-view>
-  
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 <script>
