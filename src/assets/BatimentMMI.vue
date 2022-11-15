@@ -1,174 +1,51 @@
 <template>
 <svg
-  width="315"
-  height="121"
-  viewBox="0 0 315 121"
+  width="625"
+  height="272"
+  viewBox="0 0 625 272"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
+  class="w-[624.16px] h-[271.23px]"
   preserveAspectRatio="none"
 >
   <path
-    d="M0.825195 36.285L3.20088 120.038H314.125L311.749 0.634521H100.806V59.1471H73.4182V36.7786L0.825195 36.285Z"
-    fill="white"
-  ></path></svg
-><svg
-  width="227"
-  height="117"
-  viewBox="0 0 227 117"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
+    d="M10.8252 60.285L13.2009 144.038H324.125L321.749 24.6345H110.806V83.1471H83.4182V60.7786L10.8252 60.285Z"
+    fill="black"
+  ></path>
   <path
-    d="M7.88878 70.413H0.291016V116.451H193.775V83.3136H226.027V0.233887H7.88878V70.413Z"
-    fill="white"
-  ></path></svg
-><svg
-  width="128"
-  height="101"
-  viewBox="0 0 128 101"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
+    d="M395.889 99.413H388.291V145.451H581.775V112.314H614.027V29.2339H395.889V99.413Z"
+    fill="black"
+  ></path>
   <path
-    d="M40.0041 60.2586H0.603516V0.175537H127.793V100.598H39.1076L40.0041 60.2586Z"
-    fill="white"
-  ></path></svg
-><svg
-  width="35"
-  height="117"
-  viewBox="0 0 35 117"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
+    d="M420.004 223.259H380.604V163.176H507.793V263.598H419.108L420.004 223.259Z"
+    fill="black"
+  ></path>
+  <path d="M624.157 29.2339V122.881H591.211V145.451" stroke="black" stroke-miterlimit="10"></path>
   <path
-    d="M34.1569 0.233887V93.8809H1.21094V116.451"
-    stroke="white"
+    d="M0 60.8008H88.8419V84.2462H106.077V25.7786H110.806"
+    stroke="black"
     stroke-miterlimit="10"
-  ></path></svg
-><svg
-  width="111"
-  height="60"
-  viewBox="0 0 111 60"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
+  ></path>
+  <path d="M13.0439 153.932H324.125" stroke="black" stroke-miterlimit="10"></path>
+  <path d="M420.004 271.226H507.792" stroke="black" stroke-miterlimit="10"></path>
+  <path d="M506.582 190.839V153.932" stroke="black" stroke-miterlimit="10"></path>
+  <path d="M264.688 19.4294H327.217V37.0415" stroke="black" stroke-miterlimit="10"></path>
+  <path d="M396.001 0V99.413H380.604" stroke="black" stroke-miterlimit="10"></path>
+  <path d="M357.272 144.307H388.291V99.4128" stroke="black" stroke-miterlimit="10"></path>
   <path
-    d="M0 35.8008H88.8419V59.2462H106.077V0.778564H110.806"
-    stroke="white"
+    d="M369.599 144.307H368.344V153.932H369.599V144.307Z"
+    fill="black"
+    stroke="black"
     stroke-miterlimit="10"
-  ></path></svg
-><svg
-  width="312"
-  height="2"
-  viewBox="0 0 312 2"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M0.0439453 0.931885H311.125" stroke="white" stroke-miterlimit="10"></path></svg
-><svg
-  width="88"
-  height="2"
-  viewBox="0 0 88 2"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M0.00390625 1.22632H87.7924" stroke="white" stroke-miterlimit="10"></path></svg
-><svg
-  width="2"
-  height="38"
-  viewBox="0 0 2 38"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M0.582031 37.8387V0.931885" stroke="white" stroke-miterlimit="10"></path></svg
-><svg
-  width="64"
-  height="20"
-  viewBox="0 0 64 20"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M0.6875 1.42944H63.2175V19.0415" stroke="white" stroke-miterlimit="10"></path></svg
-><svg
-  width="17"
-  height="100"
-  viewBox="0 0 17 100"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M16.0007 0V99.413H0.603516" stroke="white" stroke-miterlimit="10"></path></svg
-><svg
-  width="32"
-  height="46"
-  viewBox="0 0 32 46"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M0.272461 45.3069H31.2909V0.412842" stroke="white" stroke-miterlimit="10"></path></svg
-><svg
-  width="4"
-  height="12"
-  viewBox="0 0 4 12"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
+  ></path>
+  <path d="M389.031 118.618H380.604" stroke="black" stroke-miterlimit="10"></path>
   <path
-    d="M2.59931 1.30688H1.34424V10.9318H2.59931V1.30688Z"
-    fill="white"
-    stroke="white"
+    d="M373.365 25.689H348.397V50.6824H373.365V25.689Z"
+    fill="black"
+    stroke="black"
     stroke-miterlimit="10"
-  ></path></svg
-><svg
-  width="10"
-  height="2"
-  viewBox="0 0 10 2"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M9.03052 0.61792H0.603516" stroke="white" stroke-miterlimit="10"></path></svg
-><svg
-  width="27"
-  height="27"
-  viewBox="0 0 27 27"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path
-    d="M26.3646 0.688965H1.39746V25.6824H26.3646V0.688965Z"
-    fill="white"
-    stroke="white"
-    stroke-miterlimit="10"
-  ></path></svg
-><svg
-  width="16"
-  height="2"
-  viewBox="0 0 16 2"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M0.941406 0.688965H15.3973" stroke="white" stroke-miterlimit="10"></path></svg
-><svg
-  width="2"
-  height="19"
-  viewBox="0 0 2 19"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
->
-  <path d="M1.38672 0.682373V18.6086" stroke="white" stroke-miterlimit="10"></path>
+  ></path>
+  <path d="M333.941 25.689H348.397" stroke="black" stroke-miterlimit="10"></path>
+  <path d="M373.387 50.6824V68.6086" stroke="black" stroke-miterlimit="10"></path>
 </svg>
 </template>
