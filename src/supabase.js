@@ -1,12 +1,15 @@
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
-import { ref } from "vue";
+import { ref } from "@vue/reactivity";
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabaseUrl = 'https://bmbbntzjmklxagqeogkv.supabase.co';
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJtYmJudHpqbWtseGFncWVvZ2t2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjU2MTMzMjIsImV4cCI6MTk4MTE4OTMyMn0.qTXOj1jDqK3_glsmY5HfOI86LSvfErjohHJjO974Ej8';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 
 globalThis.supabase = supabase;
 
-
+export const user = ref(supabase.auth.user());
+supabase.auth.onAuthStateChange(() => {
+  user.value = supabase.auth.user();
+});

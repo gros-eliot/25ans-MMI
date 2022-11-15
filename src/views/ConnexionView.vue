@@ -1,6 +1,6 @@
 <script setup>
-import BatimentMMI from "@/assets/BatimentMMI.vue";
-import LoginLogout from "../assets/components/LoginLogout.vue";
+import BatimentMMI from "@/components/BatimentMMI.vue";
+import LoginLogout from "@/components/LoginLogout.vue";
 </script>
 
 <template>

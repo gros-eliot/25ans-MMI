@@ -71,6 +71,6 @@ window.addEventListener("scroll", FunctionLine3);
 </template>
 
 <script>
-import HeaderView from "../src/assets/components/Header.vue";
-import FooterView from "../src/assets/components/Footer.vue";
+import HeaderView from "@/components/Header.vue";
+import FooterView from "@/components/Footer.vue";
 </script>

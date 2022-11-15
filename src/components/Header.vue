@@ -102,9 +102,9 @@
 </template>
 
 <script setup>
-import Menu from "./icons/menu.vue";
-import logo from "./icons/logo.vue";
-import Croix from "../components/icons/croix.vue";
+import Menu from "@/components/icons/menu.vue";
+import logo from "@/components/icons/logo.vue";
+import Croix from "@/components/icons/croix.vue";
 
 import { ref } from "@vue/reactivity";
 
