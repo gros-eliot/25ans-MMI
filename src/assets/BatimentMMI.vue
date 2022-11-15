@@ -1,170 +1,174 @@
 <template>
-  <!--?xml version="1.0" encoding="UTF-8"?--><svg
-    id="Calque_3"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 618.86 295.51"
-  >
-    <path
-      class="cls-1 PDNxaNoX_0"
-      d="M265.01,116.29L265.01,116.29L266.07,153.62L404.8,153.62L403.74,100.4L309.62,100.4L309.62,126.48L297.4,126.48L297.4,116.51L265.01,116.29Z"
-    ></path>
-    <path
-      class="cls-1 PDNxaNoX_1"
-      d="M436.82,133.73L433.43,133.73L433.43,154.25L519.76,154.25L519.76,139.48L534.15,139.48L534.15,102.45L436.82,102.45L436.82,133.73Z"
-    ></path>
-    <path
-      class="cls-1 PDNxaNoX_2"
-      d="M447.58,188.93L430,188.93L430,162.15L486.75,162.15L486.75,206.91L447.18,206.91L447.58,188.93Z"
-    ></path>
-    <path
-      class="cls-3 PDNxaNoX_3"
-      d="M538.67,102.45L538.67,144.19L523.97,144.19L523.97,154.25"
-    ></path>
-    <path
-      class="cls-3 PDNxaNoX_4"
-      d="M260.18,116.52L299.82,116.52L299.82,126.97L307.51,126.97L307.51,100.91L309.62,100.91"
-    ></path>
-    <path class="cls-3 PDNxaNoX_5" d="M266,158.03L404.8,158.03"></path>
-    <path class="cls-3 PDNxaNoX_6" d="M447.58,210.31L486.75,210.31"></path>
-    <path class="cls-3 PDNxaNoX_7" d="M486.21,174.48L486.21,158.03"></path>
-    <path
-      class="cls-3 PDNxaNoX_8"
-      d="M378.28,98.08L406.18,98.08L406.18,105.93"
-    ></path>
-    <path
-      class="cls-3 PDNxaNoX_9"
-      d="M436.87,89.42L436.87,133.73L430,133.73"
-    ></path>
-    <path
-      class="cls-3 PDNxaNoX_10"
-      d="M419.59,153.74L433.43,153.74L433.43,133.73"
-    ></path>
-    <path
-      class="cls-2 PDNxaNoX_11"
-      width=".56"
-      height="4.29"
-      d="M424.53 153.74 L425.09 153.74 L425.09 158.03 L424.53 158.03 Z"
-    ></path>
-    <path class="cls-3 PDNxaNoX_12" d="M433.76,142.29L430,142.29"></path>
-    <path
-      class="cls-2 PDNxaNoX_13"
-      width="11.14"
-      height="11.14"
-      d="M415.63 100.87 L426.77 100.87 L426.77 112.01 L415.63 112.01 Z"
-    ></path>
-    <path class="cls-3 PDNxaNoX_14" d="M409.18,100.87L415.63,100.87"></path>
-    <path class="cls-3 PDNxaNoX_15" d="M426.78,112.01L426.78,120"></path>
-  </svg>
+<svg
+  width="315"
+  height="121"
+  viewBox="0 0 315 121"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path
+    d="M0.825195 36.285L3.20088 120.038H314.125L311.749 0.634521H100.806V59.1471H73.4182V36.7786L0.825195 36.285Z"
+    fill="white"
+  ></path></svg
+><svg
+  width="227"
+  height="117"
+  viewBox="0 0 227 117"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path
+    d="M7.88878 70.413H0.291016V116.451H193.775V83.3136H226.027V0.233887H7.88878V70.413Z"
+    fill="white"
+  ></path></svg
+><svg
+  width="128"
+  height="101"
+  viewBox="0 0 128 101"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path
+    d="M40.0041 60.2586H0.603516V0.175537H127.793V100.598H39.1076L40.0041 60.2586Z"
+    fill="white"
+  ></path></svg
+><svg
+  width="35"
+  height="117"
+  viewBox="0 0 35 117"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path
+    d="M34.1569 0.233887V93.8809H1.21094V116.451"
+    stroke="white"
+    stroke-miterlimit="10"
+  ></path></svg
+><svg
+  width="111"
+  height="60"
+  viewBox="0 0 111 60"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path
+    d="M0 35.8008H88.8419V59.2462H106.077V0.778564H110.806"
+    stroke="white"
+    stroke-miterlimit="10"
+  ></path></svg
+><svg
+  width="312"
+  height="2"
+  viewBox="0 0 312 2"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M0.0439453 0.931885H311.125" stroke="white" stroke-miterlimit="10"></path></svg
+><svg
+  width="88"
+  height="2"
+  viewBox="0 0 88 2"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M0.00390625 1.22632H87.7924" stroke="white" stroke-miterlimit="10"></path></svg
+><svg
+  width="2"
+  height="38"
+  viewBox="0 0 2 38"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M0.582031 37.8387V0.931885" stroke="white" stroke-miterlimit="10"></path></svg
+><svg
+  width="64"
+  height="20"
+  viewBox="0 0 64 20"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M0.6875 1.42944H63.2175V19.0415" stroke="white" stroke-miterlimit="10"></path></svg
+><svg
+  width="17"
+  height="100"
+  viewBox="0 0 17 100"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M16.0007 0V99.413H0.603516" stroke="white" stroke-miterlimit="10"></path></svg
+><svg
+  width="32"
+  height="46"
+  viewBox="0 0 32 46"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M0.272461 45.3069H31.2909V0.412842" stroke="white" stroke-miterlimit="10"></path></svg
+><svg
+  width="4"
+  height="12"
+  viewBox="0 0 4 12"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path
+    d="M2.59931 1.30688H1.34424V10.9318H2.59931V1.30688Z"
+    fill="white"
+    stroke="white"
+    stroke-miterlimit="10"
+  ></path></svg
+><svg
+  width="10"
+  height="2"
+  viewBox="0 0 10 2"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M9.03052 0.61792H0.603516" stroke="white" stroke-miterlimit="10"></path></svg
+><svg
+  width="27"
+  height="27"
+  viewBox="0 0 27 27"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path
+    d="M26.3646 0.688965H1.39746V25.6824H26.3646V0.688965Z"
+    fill="white"
+    stroke="white"
+    stroke-miterlimit="10"
+  ></path></svg
+><svg
+  width="16"
+  height="2"
+  viewBox="0 0 16 2"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M0.941406 0.688965H15.3973" stroke="white" stroke-miterlimit="10"></path></svg
+><svg
+  width="2"
+  height="19"
+  viewBox="0 0 2 19"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <path d="M1.38672 0.682373V18.6086" stroke="white" stroke-miterlimit="10"></path>
+</svg>
 </template>
-
-<style data-made-with="vivus-instant">
-.cls-1,
-.cls-2 {
-  fill: #fff;
-}
-.cls-2,
-.cls-3 {
-  stroke: #fff;
-  stroke-miterlimit: 10;
-}
-.cls-3 {
-  fill: none;
-}
-
-.PDNxaNoX_0 {
-  stroke-dasharray: 405 407;
-  stroke-dashoffset: 406;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_1 {
-  stroke-dasharray: 306 308;
-  stroke-dashoffset: 307;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_2 {
-  stroke-dasharray: 204 206;
-  stroke-dashoffset: 205;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_3 {
-  stroke-dasharray: 67 69;
-  stroke-dashoffset: 68;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_4 {
-  stroke-dasharray: 86 88;
-  stroke-dashoffset: 87;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_5 {
-  stroke-dasharray: 139 141;
-  stroke-dashoffset: 140;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_6 {
-  stroke-dasharray: 40 42;
-  stroke-dashoffset: 41;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_7 {
-  stroke-dasharray: 17 19;
-  stroke-dashoffset: 18;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_8 {
-  stroke-dasharray: 36 38;
-  stroke-dashoffset: 37;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_9 {
-  stroke-dasharray: 52 54;
-  stroke-dashoffset: 53;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_10 {
-  stroke-dasharray: 34 36;
-  stroke-dashoffset: 35;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_11 {
-  stroke-dasharray: 10 12;
-  stroke-dashoffset: 11;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_12 {
-  stroke-dasharray: 4 6;
-  stroke-dashoffset: 5;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_13 {
-  stroke-dasharray: 45 47;
-  stroke-dashoffset: 46;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_14 {
-  stroke-dasharray: 7 9;
-  stroke-dashoffset: 8;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-.PDNxaNoX_15 {
-  stroke-dasharray: 8 10;
-  stroke-dashoffset: 9;
-  animation: PDNxaNoX_draw 1000ms ease-out 0ms forwards;
-}
-@keyframes PDNxaNoX_draw {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes PDNxaNoX_fade {
-  0% {
-    stroke-opacity: 1;
-  }
-  92.3076923076923% {
-    stroke-opacity: 1;
-  }
-  100% {
-    stroke-opacity: 0;
-  }
-}
-</style>
