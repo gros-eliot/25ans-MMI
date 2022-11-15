@@ -16,13 +16,16 @@ const router = createRouter({
   routes: [
     { path: '/',  name: 'cadeau', component: CadeauView },
     { path: '/home',  name: 'home', component: HomeView },
-    { path: '/com',  name: 'com', component: ComView },
     { path: '/connexion',  name: 'connexion', component: ConnexionView },
     { path: '/contact',  name: 'contact', component: ContactView },
+    
+    { path: '/com',  name: 'com', component: ComView },
     { path: '/crea',  name: 'crea', component: CreaView },
     { path: '/dev',  name: 'dev', component: DevView },
     { path: '/event',  name: 'event', component: EventView },
+    
     { path: '/mentionslegales',  name: 'mentionslegales', component: MentionsLegalesView },
+    
     { path: '/secret',  name: 'secret', component: SecretView },
   ]
 })

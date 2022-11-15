@@ -10,6 +10,6 @@
 
 @layer components {
     .footer {
-            @apply font-bold text-white font-inter text-[30px] md:text-[35px] lg:text-[40px]
-}
+        @apply font-bold text-white font-inter text-[30px] md:text-[35px] lg:text-[40px]
+    }
 }

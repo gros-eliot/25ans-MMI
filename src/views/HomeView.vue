@@ -1,27 +1,16 @@
 <script setup>
-function movingLine() {
-  var movingLines = document.querySelectorAll(".line1");
-
-  for (var i = 0; i < movingLines.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = movingLines[i].getBoundingClientRect().top;
-    var elementVisible = 0;
-
-    if (elementTop < windowHeight - elementVisible) {
-      movingLines[i].classList.add("active");
-    } else {
-      movingLines[i].classList.remove("active");
-    }
-  }
+function FunctionLine() {
+  let movingLine = document.querySelector(".line");
+  let valueScroll = window.pageYOffset;
+  movingLine.style.width = `${valueScroll}px`;
 }
 
-window.addEventListener("scroll", movingLine);
+window.addEventListener("scroll", FunctionLine);
 </script>
 
 <template>
-  <div class="w-full">
-    <div class="w-[120%] h-[1px] bg-black -z-50 line1 fixed"></div>
-  </div>
+  <div class="h-[1px] bg-black z-50 line fixed rotate-45 origin-[0]"></div>
+
   <div class="p-4">
     <p class="max-w-4xl">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis
@@ -143,24 +132,4 @@ window.addEventListener("scroll", movingLine);
   </div>
 </template>
 
-<style scoped>
-.line1 {
-  transform: rotate(45deg);
-}
-
-.line1.active {
-  transform: rotate(45deg);
-  animation: lineH 4s infinite linear;
-}
-
-@keyframes lineH {
-  0% {
-    transform: translate(-100%, -100%);
-    transform: translate(-100%, -100%);
-  }
-  100% {
-    transform: translate(100%, 100%);
-    transform: translate(100%, 100%);
-  }
-}
-</style>
+<style scoped></style>
