@@ -32,7 +32,7 @@
       @click="menuOuvert = !menuOuvert"
       :class="[menuOuvert ? '' : 'hidden']"
     >
-      <Croix class="" />
+      <Croix class="w-8 h-8" />
       <span class="sr-only">Menu</span>
     </button>
 

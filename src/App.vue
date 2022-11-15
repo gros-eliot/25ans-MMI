@@ -28,7 +28,7 @@ window.addEventListener("scroll", FunctionLine3);
   <!--LINES DU FOND-->
   <section>
     <div
-      class="h-[1px] -z-50 line fixed rotate-45 origin-[0] inset-y-10"
+      class="h-[2px] -z-50 line fixed rotate-45 origin-[0] inset-y-10"
       :class="{
         'bg-rouge': $route.name === 'com',
         'bg-vert': $route.name === 'dev',
@@ -37,7 +37,7 @@ window.addEventListener("scroll", FunctionLine3);
       }"
     ></div>
     <div
-      class="h-[1px] -z-50 line2 fixed rotate-[145deg] origin-[0] inset-y-0 inset-x-1/2"
+      class="h-[2px] -z-50 line2 fixed rotate-[145deg] origin-[0] inset-y-0 inset-x-1/2"
       :class="{
         'bg-rouge': $route.name === 'com',
         'bg-vert': $route.name === 'dev',
@@ -46,7 +46,7 @@ window.addEventListener("scroll", FunctionLine3);
       }"
     ></div>
     <div
-      class="h-[1px] -z-50 line3 fixed rotate-[145deg] origin-[0] inset-y-1/2 inset-x-full"
+      class="h-[2px] -z-50 line3 fixed rotate-[145deg] origin-[0] inset-y-1/2 inset-x-full"
       :class="{
         'bg-rouge': $route.name === 'com',
         'bg-vert': $route.name === 'dev',
