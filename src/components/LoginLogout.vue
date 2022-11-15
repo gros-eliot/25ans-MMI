@@ -2,13 +2,8 @@
 import { ref } from "@vue/reactivity";
 import { supabase } from "@/supabase";
 
-const user = ref(supabase.auth.user());
-supabase.auth.onAuthStateChange(() => {
-  user.value = supabase.auth.user();
-});
-
 async function signIn(data, node) {
-  const { user, error } = await (nvlUtilisateur.value
+  const { error } = await (nvlUtilisateur.value
     ? supabase.auth.signUp(data)
     : supabase.auth.signIn(data));
   if (error) {
@@ -61,12 +56,5 @@ const nvlUtilisateur = ref(false);
         v-model="nvlUtilisateur"
       />
     </FormKit>
-
-    <button
-      class="flex mt-5 justify-center font-inter font-bold text-[20px] p-2 bg-black text-white rounded"
-      @pointerdown="supabase.auth.signIn({ provider: 'github' })"
-    >
-      Se connecter avec Github
-    </button>
   </div>
 </template>

@@ -1,4 +1,4 @@
-import { createClient, SupabaseClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
 import { ref } from "@vue/reactivity";
 
 const supabaseUrl = 'https://bmbbntzjmklxagqeogkv.supabase.co';
@@ -9,7 +9,4 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 globalThis.supabase = supabase;
 
-export const user = ref(supabase.auth.user());
-supabase.auth.onAuthStateChange(() => {
-  user.value = supabase.auth.user();
-});
+
