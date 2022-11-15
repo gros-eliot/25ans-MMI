@@ -50,7 +50,7 @@
         </div>
 
 
-          <div class="flex flex-col  gap-10 lg:gap-20">
+          <div class="flex flex-col mt-10 md:mt-0 gap-10 lg:gap-20">
           <li class="mt-5 text-white font-neuemontreal text-[30px] md:text-[35px] lg:text-[40px]">
             <router-link class="" to="/dev">
                 PÔLE DEV
