@@ -4,12 +4,21 @@ function FunctionLine() {
   let valueScroll = window.pageYOffset;
   movingLine.style.width = `${valueScroll}px`;
 }
+function FunctionLine2() {
+  let movingLine = document.querySelector(".line2");
+  let valueScroll = window.pageYOffset;
+  movingLine.style.width = valueScroll / 10 + "%";
+}
 
 window.addEventListener("scroll", FunctionLine);
+window.addEventListener("scroll", FunctionLine2);
 </script>
 
 <template>
-  <div class="h-[1px] bg-black z-50 line fixed rotate-45 origin-[0]"></div>
+  <div class="h-[1px] bg-black -z-50 line fixed rotate-45 origin-[0]"></div>
+  <div
+    class="h-[1px] bg-black -z-50 line2 fixed rotate-[160deg] origin-[0] inset-y-0 inset-x-full"
+  ></div>
 
   <div class="p-4">
     <p class="max-w-4xl">
