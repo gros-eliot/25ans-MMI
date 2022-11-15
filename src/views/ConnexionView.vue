@@ -1,5 +1,5 @@
 <template>
     <h1 class="titre">
-            
-        </h1>
+            Connexion
+    </h1>
 </template>
