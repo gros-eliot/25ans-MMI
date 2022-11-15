@@ -1,6 +1,8 @@
-<script setup lang="ts">
+<!--<script setup lang="ts"> 
+/*
 import { ref } from "@vue/reactivity";
 import { supabase, user } from "../supabase";
+
     async function signIn(data, node) {
       const { user, error } = await (nvlUtilisateur.value
         ? supabase.auth.signUp(data)
@@ -45,4 +47,5 @@ import { supabase, user } from "../supabase";
         Se connecter avec Github
     </button>
 </div>
-</template>    
+</template>    */
+-->

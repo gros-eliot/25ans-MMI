@@ -2,17 +2,20 @@
 function FunctionLine() {
   let movingLine = document.querySelector(".line");
   let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 3 + "%";
+  movingLine.style.width = valueScroll / 6 + "%";
+  movingLine.style.opacity = valueScroll / 6 + "%";
 }
 function FunctionLine2() {
   let movingLine = document.querySelector(".line2");
   let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 3 + "%";
+  movingLine.style.width = valueScroll / 6 + "%";
+  movingLine.style.opacity = valueScroll / 6 + "%";
 }
 function FunctionLine3() {
   let movingLine = document.querySelector(".line3");
   let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 3 + "%";
+  movingLine.style.width = valueScroll / 6 + "%";
+  movingLine.style.opacity = valueScroll / 6 + "%";
 }
 
 window.addEventListener("scroll", FunctionLine);
