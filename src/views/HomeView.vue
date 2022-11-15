@@ -21,13 +21,23 @@ window.addEventListener("scroll", FunctionLine3);
 </script>
 
 <template>
-  <div class="h-[1px] bg-black -z-50 line fixed rotate-45 origin-[0]"></div>
-  <div
-    class="h-[1px] bg-black -z-50 line2 fixed rotate-[145deg] origin-[0] inset-y-0 inset-x-full"
-  ></div>
-  <div
-    class="h-[1px] bg-black -z-50 line3 fixed rotate-[145deg] origin-[0] inset-y-0 inset-x-full"
-  ></div>
+  <!--LINES DU FOND-->
+  <!--LINES DU FOND-->
+  <!--LINES DU FOND-->
+  <section>
+    <div
+      class="h-[1px] bg-black -z-50 line fixed rotate-45 origin-[0] inset-y-10"
+    ></div>
+    <div
+      class="h-[1px] bg-black -z-50 line2 fixed rotate-[145deg] origin-[0] inset-y-0 inset-x-1/2"
+    ></div>
+    <div
+      class="h-[1px] bg-black -z-50 line3 fixed rotate-[145deg] origin-[0] inset-y-1/2 inset-x-full"
+    ></div>
+  </section>
+  <!--LINES DU FOND-->
+  <!--LINES DU FOND-->
+  <!--LINES DU FOND-->
 
   <div class="p-4">
     <p class="max-w-4xl">
