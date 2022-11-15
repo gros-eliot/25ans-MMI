@@ -1,5 +1,5 @@
 <template> 
-    <div class="flex justify-between mx-5">
+    <div class="flex  justify-between mx-5">
         <div class="flex items-center">
         <logo/>
         <p class="header hidden md:block font-neuemontreal text-[40px] lg:text-[45px] xl:text-[50px] text-black">/ MMI 25 ANS</p></div>
@@ -8,7 +8,7 @@
             <Menu class="" />
             <span class="sr-only">Menu</span>
         </button>
-    
+
         <button class="relative z-50 mt-5 mx-5" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert " 
 :class="[menuOuvert ? '' : 'hidden',]">
   <Croix class="" />
@@ -17,38 +17,58 @@
     
 
     <div class="fixed inset-0 translate-x-full motion-safe:transition-transform motion-safe:duration-1000"
-    :class="['bg-Rose_foncé  text-white', menuOuvert ? 'translate-x-0' : '',]">
-    <div class="flex justify-center items-center">
-      <ul class="sm:flex "  @click="menuOuvert = !menuOuvert ">
-        <div class="flex items-center flex-col mt-10">
-            
+    :class="[' bg-black  text-white', menuOuvert ? 'translate-x-0' : '',]">
+     <div class="m-5 flex items-center">
           <router-link to="/">
-          <h2 class="font-bold text-2xl mb-5">Sup'analyse</h2>
+            <logoBlanc/>
         </router-link>
+        <p class=" font-bold hidden md:block font-neuemontreal text-[40px] lg:text-[45px] xl:text-[50px] text-white">/ MMI 25 ANS</p>
+        </div>
+    <div class="flex mt-20 justify-center items-center">
+      <ul class="sm:flex gap-24 "  @click="menuOuvert = !menuOuvert ">
         
-          <li class="mt-5" >
-            <router-link class="" to="/etuaca">
-                Répartition des étudiants par académie
+        <div class="flex items-between flex-col gap-10 lg:gap-20">
+        
+          <li class="mt-5 text-white font-neuemontreal text-[30px] md:text-[35px] lg:text-[40px]" >
+            <router-link class="" to="/histoire">
+               HISTOIRE
             </router-link>
-            <span class="sr-only">Répartition des étudiants par académie</span>
+            <span class="sr-only">Page communication</span>
           </li>
-          <li class="mt-5">
-            <router-link class="" to="/genres">
-                L’enseignement supérieur et les genres
+          <li class="mt-5 text-white font-neuemontreal text-[30px] md:text-[35px] lg:text-[40px]">
+            <router-link class="" to="/design">
+                PÔLE CRÉA
             </router-link>
-            <span class="sr-only">L’enseignement supérieur et les genres</span>
+            <span class="sr-only">Page créa</span>
           </li>
-          <li class="mt-5">
-            <router-link class="" to="/typeseta">
-                Les types d’établissement dans l’enseignement supérieur
+          <li class="mt-5 text-white font-neuemontreal text-[30px] md:text-[35px] lg:text-[40px]">
+            <router-link class="" to="/event">
+                EVENT
             </router-link>
-            <span class="sr-only">Les types d’établissement dans l’enseignement supérieur</span>
+            <span class="sr-only">Page event</span>
           </li>
-          <li class="mt-5">
-            <router-link class="" to="/temps">
-                L’enseignement supérieur dans le temps
+        </div>
+
+
+          <div class="flex flex-col  gap-10 lg:gap-20">
+          <li class="mt-5 text-white font-neuemontreal text-[30px] md:text-[35px] lg:text-[40px]">
+            <router-link class="" to="/dev">
+                PÔLE DEV
             </router-link>
-            <span class="sr-only">L’enseignement supérieur dans le temps</span>
+            <span class="sr-only">Page dev</span>
+          </li>
+          <li class="mt-5 text-white font-neuemontreal text-[30px] md:text-[35px] lg:text-[40px]" >
+            <router-link class="" to="/com">
+               PÔLE COM
+            </router-link>
+            <span class="sr-only">Page communication</span>
+          </li>
+          
+          <li class="mt-5 text-white font-neuemontreal text-[30px] md:text-[35px] lg:text-[40px]">
+            <router-link class="" to="/connexion">
+                CONNEXION
+            </router-link>
+            <span class="sr-only">Page connexion</span>
           </li>
                </div>
       </ul>
@@ -62,6 +82,8 @@
 <script setup>
 import Menu from "./icons/menu.vue"
 import logo from "./icons/logo.vue"
+import logoBlanc from "./icons/logo_blanc.vue"
+import Croix from "../components/icons/croix.vue"
 
   import { ref } from "@vue/reactivity";
 
