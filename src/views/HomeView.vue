@@ -9,14 +9,15 @@ function FunctionLine2() {
   let valueScroll = window.pageYOffset;
   movingLine.style.width = valueScroll / 3 + "%";
 }
-function FunctionLine2() {
-  let movingLine = document.querySelector(".line2");
+function FunctionLine3() {
+  let movingLine = document.querySelector(".line3");
   let valueScroll = window.pageYOffset;
   movingLine.style.width = valueScroll / 3 + "%";
 }
 
 window.addEventListener("scroll", FunctionLine);
 window.addEventListener("scroll", FunctionLine2);
+window.addEventListener("scroll", FunctionLine3);
 </script>
 
 <template>
