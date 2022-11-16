@@ -12,12 +12,20 @@ import { RouterLink, RouterView } from "vue-router";
     class="w-[624.16px] h-[271.23px]"
     preserveAspectRatio="none"
   >
-    <RouterLink to="/com" class="stroke-black hover:stroke-rouge">
+    <RouterLink
+      to="/com"
+      class="stroke-black hover:stroke-rouge"
+      :class="{
+        'stroker-rouge': $router.name === 'com',
+      }"
+    >
       <!--PATH com-->
       <path
         d="M10.8252 60.285L13.2009 144.038H324.125L321.749 24.6345H110.806V83.1471H83.4182V60.7786L10.8252 60.285Z"
-        fill="black"
-        class="hover:fill-red-500 partiecom"
+        class="hover:fill-rouge fill-black partiecom"
+        :class="{
+          'fill-rouge': $router.name === 'com',
+        }"
       ></path>
       <!--PATH com-->
       <path
@@ -39,15 +47,23 @@ import { RouterLink, RouterView } from "vue-router";
       ></path>
     </RouterLink>
 
-    <RouterLink to="/design" class="stroke-black hover:stroke-bleu">
+    <RouterLink
+      to="/crea"
+      class="stroke-black hover:stroke-bleu"
+      :class="{
+        'stroke-bleu': $router.name === 'crea',
+      }"
+    >
       <path
         d="M624.157 29.2339V122.881H591.211V145.451"
         stroke-miterlimit="10"
       ></path>
       <path
         d="M395.889 99.413H388.291V145.451H581.775V112.314H614.027V29.2339H395.889V99.413Z"
-        fill="black"
-        class="hover:fill-bleu"
+        class="hover:fill-bleu fill-black"
+        :class="{
+          'fill-bleu': $router.name === 'crea',
+        }"
       ></path>
       <path d="M396.001 0V99.413H380.604" stroke-miterlimit="10"></path>
       <path d="M357.272 144.307H388.291V99.4128" stroke-miterlimit="10"></path>
@@ -59,21 +75,37 @@ import { RouterLink, RouterView } from "vue-router";
       <path d="M389.031 118.618H380.604" stroke-miterlimit="10"></path>
     </RouterLink>
 
-    <RouterLink to="/dev" class="stroke-black hover:stroke-vert">
+    <RouterLink
+      to="/dev"
+      class="stroke-black hover:stroke-vert"
+      :class="{
+        'stroke-vert': $router.name === 'dev',
+      }"
+    >
       <path
         d="M420.004 223.259H380.604V163.176H507.793V263.598H419.108L420.004 223.259Z"
-        fill="black"
-        class="hover:fill-vert"
+        class="hover:fill-vert fill-black"
+        :class="{
+          'fill-vert': $router.name === 'dev',
+        }"
       ></path>
       <path d="M420.004 271.226H507.792" stroke-miterlimit="10"></path>
       <path d="M506.582 190.839V153.932" stroke-miterlimit="10"></path>
     </RouterLink>
 
-    <RouterLink to="/secret" class="stroke-black hover:stroke-jaune">
+    <RouterLink
+      to="/secret"
+      class="stroke-black hover:stroke-jaune"
+      :class="{
+        'stroke-jaune': $router.name === 'secret',
+      }"
+    >
       <path
         d="M373.365 25.689H348.397V50.6824H373.365V25.689Z"
-        fill="black"
-        class="hover:fill-jaune"
+        class="hover:fill-jaune fill-black"
+        :class="{
+          'fill-jaune': $router.name === 'secret',
+        }"
         stroke-miterlimit="10"
       ></path>
       <path d="M333.941 25.689H348.397" stroke-miterlimit="10"></path>
