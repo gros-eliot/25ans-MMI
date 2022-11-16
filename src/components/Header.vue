@@ -63,7 +63,7 @@
             <li
               class="mt-5 text-white text-[30px] md:text-[35px] lg:text-[40px]"
             >
-              <router-link class="" to="/design"> PÔLE CRÉA </router-link>
+              <router-link class="" to="/crea"> PÔLE CRÉA </router-link>
               <span class="sr-only">Page créa</span>
             </li>
             <li
