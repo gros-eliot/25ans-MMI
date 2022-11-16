@@ -6,11 +6,8 @@
             LA SALLE CREA
         </h1>
     </div>
-    <div>
-        <!-- Composents plan -->
-    </div>
-    <div>
-        <!--Ligne et 25-->
+    <div class="my-10">
+        <img class="m-auto" src="/oeuvres.jpg">
     </div>
 
     <div class="max-w-3xl ml-28">
@@ -28,8 +25,8 @@
     <div>
         <!--ligne rouge-->
     </div>
-    <div class="flex justify-center gap-24">
-        <img src="../../public/images/X-SENENTE.jpg" alt="Photo de David Malsot" class="max-w-lg" />
+    <div class="flex justify-center items-center gap-24">
+        <img src="../../public/images/X-SENENTE.jpg" alt="Photo de Xavier Senente" class="max-w-lg" />
 
         <div class="max-w-xl">
             <h3 class="font-inter font-black text-5xl">M.SENENTE</h3>
@@ -54,12 +51,12 @@
             <h3 class="font-inter font-black text-5xl">AUTRES PROFESSEURS DE COM’</h3>
             <div class="flex gap-9">
                 <div class="flex flex-col gap-7 items-center">
-                    <img src="../../public/images/A-Lamboud_Durand.jpg" alt="photo Monsieur Domenget" />
-                    <p class="font-neuemontreal text-2xl">Sebastien AUGIER</p>
+                    <img src="../../public/images/A-Lamboud_Durand.jpg" alt="photo Monsieur Lamboud Durant" />
+                    <p class="font-neuemontreal text-2xl">Alain LAMBOUX-DURAND</p>
                 </div>
                 <div class="flex flex-col gap-7 items-center">
-                    <img src="../../public/images/S-Augier.jpg" alt="Photo Monsieur Laurent" />
-                    <p class="font-neuemontreal text-2xl">Alain LAMBOUX-DURAND</p>
+                    <img src="../../public/images/S-Augier.jpg" alt="Photo Monsieur Augier" />
+                    <p class="font-neuemontreal text-2xl">Sebastien AUGIER</p>
                 </div>
             </div>
         </div>
