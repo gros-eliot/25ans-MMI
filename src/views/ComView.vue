@@ -6,11 +6,8 @@
             LA SALLE COM
         </h1>
     </div>
-    <div>
-        <!-- Composents plan -->
-    </div>
-    <div>
-        <!--Ligne et 25-->
+    <div class="my-10">
+        <img class="m-auto" src="/oeuvres.jpg">
     </div>
 
     <div class="max-w-3xl ml-28">
@@ -29,7 +26,7 @@
     <div>
         <!--ligne rouge-->
     </div>
-    <div class="flex justify-center gap-24">
+    <div class="flex justify-center items-center gap-24">
         <img src="../../public/images/D-Malsot 1.png" alt="Photo de David Malsot" class="max-w-lg" />
 
         <div class="max-w-xl">
