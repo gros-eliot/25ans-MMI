@@ -10,15 +10,24 @@
         <img class="m-auto" src="/oeuvres.jpg">
     </div>
 
-    <div class="max-w-3xl ml-28">
-        <div class="">
-            <h2 class="font-inter font-black text-7xl">La création au MMI...</h2>
-            <p class="text-4xl">
-                Le pôle Création est celui qui contient les matières artistiques. Design, Graphisme, Motion Design,
-                Audiovisuel, Narration, toutes ces matières font partie de ce pôle. Le design est tout aussi important
-                que la communication et le développement. Par définition c’est la façade du web et souvent c’est ce que
-                l’on retient en premier d’un site internet. Mis à part ça, le design est une partie importante de notre
-                vie, les visuels sont importants pour communiquer avec les sociétés modernes.
+    <div class="flex items-center justify-between pr-16 my-36">
+        <div class="max-w-3xl ml-28">
+            <div class="">
+                <h2 class="font-inter font-black text-7xl">La création au MMI...</h2>
+                <p class="text-4xl">
+                    Le pôle Création est celui qui contient les matières artistiques. Design, Graphisme, Motion Design,
+                    Audiovisuel, Narration, toutes ces matières font partie de ce pôle. Le design est tout aussi important
+                    que la communication et le développement. Par définition c’est la façade du web et souvent c’est ce que
+                    l’on retient en premier d’un site internet. Mis à part ça, le design est une partie importante de notre
+                    vie, les visuels sont importants pour communiquer avec les sociétés modernes.
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="text-8xl font-thin">
+                2525252525 <br />
+                2525252525 <br />
+                2525252525
             </p>
         </div>
     </div>

@@ -10,20 +10,29 @@
         <img class="m-auto" src="/oeuvres.jpg">
     </div>
 
-    <div class="max-w-3xl ml-28">
-        <div class="">
-            <h2 class="font-inter font-black text-7xl">Communication au MMI...</h2>
-            <p class="text-4xl">
-                Le pôle communication de MMI fait partie des trois grandes thématiques
-                qu’aborde MMI dans son cursus. La communication est très importante dans
-                le milieu du web car elle permet aux différents projets de vivre et de
-                se faire une place dans les esprits. De plus, la communication régie
-                toutes les parties qui précèdent le lancement d’un projet, des analyses
-                concurrentielles et la gestion du budget.
-            </p>
+    <div class="flex items-center justify-between pr-16 my-36">
+        <div class="max-w-3xl ml-28">
+            <div class="">
+                <h2 class="font-inter font-black text-7xl">Communication au MMI...</h2>
+                <p class="text-4xl">
+                    Le pôle communication de MMI fait partie des trois grandes thématiques
+                    qu’aborde MMI dans son cursus. La communication est très importante dans
+                    le milieu du web car elle permet aux différents projets de vivre et de
+                    se faire une place dans les esprits. De plus, la communication régie
+                    toutes les parties qui précèdent le lancement d’un projet, des analyses
+                    concurrentielles et la gestion du budget.
+                </p>
+            </div>
         </div>
+        <div>
+                <p class="text-8xl font-thin">
+                    2525252525 <br />
+                    2525252525 <br />
+                    2525252525
+                </p>
+            </div>
     </div>
-    <div>
+        <div>
         <!--ligne rouge-->
     </div>
     <div class="flex justify-center items-center gap-24">

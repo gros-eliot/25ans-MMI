@@ -10,11 +10,20 @@
         <img class="m-auto" src="/oeuvres.jpg">
     </div>
 
-    <div class="max-w-3xl ml-28">
-        <div class="">
-            <h2 class="font-inter font-black text-7xl">Le développement au MMI...</h2>
-            <p class="text-4xl">
-                Le pôle développement est aussi important dans le cursus MMI. Au cours des trois années de BUT les élèves apprennent à développer le web. Ceci grâce à l’apprentissage de différents langages de programmation et d’intégration comme l’HTML, le CSS, le Javascript, et d’autres. L’apprentissage de librairie comme Tailwind CSS fait aussi partie du cursus de MMI. Le développement est la base de tout ce qui est présent sur le web, il est donc important de s’y pencher pour mieux comprendre ce milieu et être capable d’y évoluer.
+    <div class="flex items-center justify-between pr-16 my-36">
+        <div class="max-w-3xl ml-28">
+            <div class="">
+                <h2 class="font-inter font-black text-7xl">Le développement au MMI...</h2>
+                <p class="text-4xl">
+                    Le pôle développement est aussi important dans le cursus MMI. Au cours des trois années de BUT les élèves apprennent à développer le web. Ceci grâce à l’apprentissage de différents langages de programmation et d’intégration comme l’HTML, le CSS, le Javascript, et d’autres. L’apprentissage de librairie comme Tailwind CSS fait aussi partie du cursus de MMI. Le développement est la base de tout ce qui est présent sur le web, il est donc important de s’y pencher pour mieux comprendre ce milieu et être capable d’y évoluer.
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="text-8xl font-thin">
+                2525252525 <br />
+                2525252525 <br />
+                2525252525
             </p>
         </div>
     </div>
