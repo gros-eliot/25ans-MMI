@@ -1,125 +1,38 @@
 <script setup></script>
 
 <template>
-  <div class="p-4">
-    <p class="max-w-4xl">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis
-      leo ut massa laoreet, a interdum velit cursus. Vestibulum malesuada dui
-      tincidunt turpis mollis, sit amet varius metus dignissim. Mauris congue,
-      augue at malesuada lacinia, ipsum lorem gravida elit, ac convallis lacus
-      sem at ex. Phasellus dictum nisl ut risus aliquam placerat sed a purus.
-      Aliquam vehicula purus ullamcorper, facilisis est non, viverra justo.
-      Curabitur molestie dui lorem, vel tristique ex scelerisque eu. Nunc
-      suscipit quis urna vel aliquet. Maecenas eros mauris, viverra sit amet
-      dolor id, ultricies tempor mauris. Pellentesque et commodo dui. Aliquam
-      erat volutpat. Donec dignissim magna a neque consequat bibendum. In hac
-      habitasse platea dictumst. Vivamus sagittis feugiat nulla, vitae fringilla
-      nunc venenatis in. Phasellus auctor elit ac tortor tempor, et cursus dui
-      pharetra. Mauris ultrices justo id nulla facilisis, finibus fermentum enim
-      malesuada. Quisque nec consectetur ante. Sed odio elit, efficitur sit amet
-      gravida non, fermentum sit amet libero. Curabitur luctus pretium cursus.
-      Aenean hendrerit ornare ipsum, sit amet semper purus pellentesque sit
-      amet. Nam hendrerit malesuada vulputate. Nam gravida mi risus, sit amet
-      molestie risus sollicitudin a. Aliquam laoreet ac leo ut porttitor. Sed
-      condimentum, magna eget placerat tristique, lorem metus maximus enim, et
-      hendrerit nunc lacus vel arcu. Nullam sed mi bibendum, ultricies odio eu,
-      viverra mi. Ut id lacus id purus imperdiet pharetra sit amet ac urna. Nunc
-      laoreet quam nec rhoncus tincidunt. Nam commodo dui ante, et convallis
-      erat tempor eu. Etiam ac ligula felis. Ut tristique risus non tempus
-      iaculis. Morbi faucibus ipsum a risus ullamcorper pretium. Suspendisse
-      potenti. Nam fringilla metus consequat tellus faucibus, nec mollis dui
-      lobortis. Sed cursus luctus venenatis. Phasellus a aliquam mauris,
-      suscipit posuere lectus. Nullam lacus metus, malesuada eget diam ac,
-      sollicitudin venenatis magna. Aenean a velit nec elit gravida faucibus in
-      sit amet tortor. Proin commodo velit eget ornare ornare. Pellentesque
-      accumsan ultricies hendrerit. Suspendisse lobortis velit ac fermentum
-      iaculis. Vivamus ornare quam at rhoncus sagittis. Vestibulum eu
-      sollicitudin leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      In interdum pharetra ornare. Nam consectetur quam non dolor aliquam
-      molestie ac vel ipsum. Maecenas sagittis rhoncus turpis quis pellentesque.
-      Integer a tellus elit. Nam sed porta velit. Sed diam enim, lobortis vel
-      nibh vitae, semper placerat est. Proin imperdiet erat odio, nec sagittis
-      nisl porttitor commodo.
-    </p>
-    <p class="max-w-4xl">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis
-      leo ut massa laoreet, a interdum velit cursus. Vestibulum malesuada dui
-      tincidunt turpis mollis, sit amet varius metus dignissim. Mauris congue,
-      augue at malesuada lacinia, ipsum lorem gravida elit, ac convallis lacus
-      sem at ex. Phasellus dictum nisl ut risus aliquam placerat sed a purus.
-      Aliquam vehicula purus ullamcorper, facilisis est non, viverra justo.
-      Curabitur molestie dui lorem, vel tristique ex scelerisque eu. Nunc
-      suscipit quis urna vel aliquet. Maecenas eros mauris, viverra sit amet
-      dolor id, ultricies tempor mauris. Pellentesque et commodo dui. Aliquam
-      erat volutpat. Donec dignissim magna a neque consequat bibendum. In hac
-      habitasse platea dictumst. Vivamus sagittis feugiat nulla, vitae fringilla
-      nunc venenatis in. Phasellus auctor elit ac tortor tempor, et cursus dui
-      pharetra. Mauris ultrices justo id nulla facilisis, finibus fermentum enim
-      malesuada. Quisque nec consectetur ante. Sed odio elit, efficitur sit amet
-      gravida non, fermentum sit amet libero. Curabitur luctus pretium cursus.
-      Aenean hendrerit ornare ipsum, sit amet semper purus pellentesque sit
-      amet. Nam hendrerit malesuada vulputate. Nam gravida mi risus, sit amet
-      molestie risus sollicitudin a. Aliquam laoreet ac leo ut porttitor. Sed
-      condimentum, magna eget placerat tristique, lorem metus maximus enim, et
-      hendrerit nunc lacus vel arcu. Nullam sed mi bibendum, ultricies odio eu,
-      viverra mi. Ut id lacus id purus imperdiet pharetra sit amet ac urna. Nunc
-      laoreet quam nec rhoncus tincidunt. Nam commodo dui ante, et convallis
-      erat tempor eu. Etiam ac ligula felis. Ut tristique risus non tempus
-      iaculis. Morbi faucibus ipsum a risus ullamcorper pretium. Suspendisse
-      potenti. Nam fringilla metus consequat tellus faucibus, nec mollis dui
-      lobortis. Sed cursus luctus venenatis. Phasellus a aliquam mauris,
-      suscipit posuere lectus. Nullam lacus metus, malesuada eget diam ac,
-      sollicitudin venenatis magna. Aenean a velit nec elit gravida faucibus in
-      sit amet tortor. Proin commodo velit eget ornare ornare. Pellentesque
-      accumsan ultricies hendrerit. Suspendisse lobortis velit ac fermentum
-      iaculis. Vivamus ornare quam at rhoncus sagittis. Vestibulum eu
-      sollicitudin leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      In interdum pharetra ornare. Nam consectetur quam non dolor aliquam
-      molestie ac vel ipsum. Maecenas sagittis rhoncus turpis quis pellentesque.
-      Integer a tellus elit. Nam sed porta velit. Sed diam enim, lobortis vel
-      nibh vitae, semper placerat est. Proin imperdiet erat odio, nec sagittis
-      nisl porttitor commodo.
-    </p>
-    <p class="max-w-4xl">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis
-      leo ut massa laoreet, a interdum velit cursus. Vestibulum malesuada dui
-      tincidunt turpis mollis, sit amet varius metus dignissim. Mauris congue,
-      augue at malesuada lacinia, ipsum lorem gravida elit, ac convallis lacus
-      sem at ex. Phasellus dictum nisl ut risus aliquam placerat sed a purus.
-      Aliquam vehicula purus ullamcorper, facilisis est non, viverra justo.
-      Curabitur molestie dui lorem, vel tristique ex scelerisque eu. Nunc
-      suscipit quis urna vel aliquet. Maecenas eros mauris, viverra sit amet
-      dolor id, ultricies tempor mauris. Pellentesque et commodo dui. Aliquam
-      erat volutpat. Donec dignissim magna a neque consequat bibendum. In hac
-      habitasse platea dictumst. Vivamus sagittis feugiat nulla, vitae fringilla
-      nunc venenatis in. Phasellus auctor elit ac tortor tempor, et cursus dui
-      pharetra. Mauris ultrices justo id nulla facilisis, finibus fermentum enim
-      malesuada. Quisque nec consectetur ante. Sed odio elit, efficitur sit amet
-      gravida non, fermentum sit amet libero. Curabitur luctus pretium cursus.
-      Aenean hendrerit ornare ipsum, sit amet semper purus pellentesque sit
-      amet. Nam hendrerit malesuada vulputate. Nam gravida mi risus, sit amet
-      molestie risus sollicitudin a. Aliquam laoreet ac leo ut porttitor. Sed
-      condimentum, magna eget placerat tristique, lorem metus maximus enim, et
-      hendrerit nunc lacus vel arcu. Nullam sed mi bibendum, ultricies odio eu,
-      viverra mi. Ut id lacus id purus imperdiet pharetra sit amet ac urna. Nunc
-      laoreet quam nec rhoncus tincidunt. Nam commodo dui ante, et convallis
-      erat tempor eu. Etiam ac ligula felis. Ut tristique risus non tempus
-      iaculis. Morbi faucibus ipsum a risus ullamcorper pretium. Suspendisse
-      potenti. Nam fringilla metus consequat tellus faucibus, nec mollis dui
-      lobortis. Sed cursus luctus venenatis. Phasellus a aliquam mauris,
-      suscipit posuere lectus. Nullam lacus metus, malesuada eget diam ac,
-      sollicitudin venenatis magna. Aenean a velit nec elit gravida faucibus in
-      sit amet tortor. Proin commodo velit eget ornare ornare. Pellentesque
-      accumsan ultricies hendrerit. Suspendisse lobortis velit ac fermentum
-      iaculis. Vivamus ornare quam at rhoncus sagittis. Vestibulum eu
-      sollicitudin leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      In interdum pharetra ornare. Nam consectetur quam non dolor aliquam
-      molestie ac vel ipsum. Maecenas sagittis rhoncus turpis quis pellentesque.
-      Integer a tellus elit. Nam sed porta velit. Sed diam enim, lobortis vel
-      nibh vitae, semper placerat est. Proin imperdiet erat odio, nec sagittis
-      nisl porttitor commodo.
-    </p>
-  </div>
+  <div>
+        <h1 class="font-inter font-black text-8xl w-full flex justify-center mt-28">
+            LE PLAN
+        </h1>
+    </div>
+    <div class="flex items-center justify-end pr-16 my-36">
+      <div>
+                <p class="text-8xl font-thin">
+                    2525252525 <br />
+                    2525252525 <br />
+                    2525252525
+                </p>
+            </div>
+    </div>
+    <div class="max-w-5xl ml-28">
+            <div class="">
+                <h2 class="font-inter font-black text-7xl">25 ANS</h2>
+                <p class="text-4xl">
+                    25 ans ça se fête ! Pour son quart de siècle MMI Montbéliard organise un concours d’oeuvre numérique ! Le but ? Laissez une trace, car oui l’oeuvre gagnante sera transformer en NFT pour rester à jamais dans la Blockchain ! Alors ? Partant ?
+                </p><br/>
+                <p class="text-4xl font-semibold">Vous pouvez commencer par voter pour votre oeuvre préféré à travers les différentes salles de ce musée digital ! </p>
+            </div>
+    </div>
+
+    <div class="max-w-5xl ml-28 my-10">
+            <div class="">
+                <h2 class="font-inter font-black text-7xl">MMI</h2>
+                <p class="text-4xl">
+                    Le BUT MMI ou Bachelor Universitaire technique Métiers du Multimédia et de l’Internet est un curcus universitaire. MMI c’est plus que des années d’apprentissage, c’est une expérience personnelle comme sociale. Un état d’esprit qui réuni tout les élèves et qui fait vivre le département. Du design en passant par la communication et le développement web, MMI apprends à tous les prérequis pour travailler dans le WEB. 
+                </p>
+            </div>
+        </div>
 </template>
 
 <style scoped></style>
