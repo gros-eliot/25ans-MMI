@@ -45,17 +45,24 @@
         </div>
     </div>
 
-    <div>
+    <div class="flex items-center justify-between pr-16 my-36">
         <div>
+            <p class="text-8xl font-thin">
+                2525252525 <br />
+                2525252525 <br />
+                2525252525
+            </p>
+        </div>
+        <div class="flex flex-col items-center gap-6">
             <h3 class="font-inter font-black text-5xl">AUTRES PROFESSEURS DE COM’</h3>
-            <div class="flex">
-                <div>
+            <div class="flex gap-9">
+                <div class="flex flex-col gap-7 items-center">
                     <img src="../../public/images/JC-Domenget 1.png" alt="photo Monsieur Domenget" />
-                    <p>Jean-Claude Domenget</p>
+                    <p class="font-neuemontreal text-2xl">Jean-Claude Domenget</p>
                 </div>
-                <div>
+                <div class="flex flex-col gap-7 items-center">
                     <img src="../../public/images/S-Laurent 1.png" alt="Photo Monsieur Laurent" />
-                    <p>Stephane Laurent</p>
+                    <p class="font-neuemontreal text-2xl">Stephane Laurent</p>
                 </div>
             </div>
         </div>
