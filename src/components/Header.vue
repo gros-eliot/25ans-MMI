@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between px-5 items-start">
+  <div class="flex justify-between px-5 items-start w-full">
     <!--Logo du header-->
     <RouterLink to="/home">
       <div class="flex items-center py-4 font-bold">
