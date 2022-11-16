@@ -17,7 +17,10 @@ module.exports = {
       fontFamily: {
         'neuemontreal': ['PPNeueMontreal'],
         'inter': ['Inter', 'sans-serif'],
-      }
+      },
+      gridTemplateColumns: {
+        'galerie-profs': "repeat(auto-fit,minmax(250px,1fr))",
+      },
     },
   },
   plugins: [],
