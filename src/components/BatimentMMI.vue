@@ -14,7 +14,7 @@ import { RouterLink, RouterView } from "vue-router";
   >
     <RouterLink
       to="/com"
-      class="stroke-black hover:stroke-rouge"
+      class="stroke-black transition ease hover:stroke-rouge"
       :class="{
         'stroke-rouge': $route.name === 'com',
       }"
@@ -22,7 +22,7 @@ import { RouterLink, RouterView } from "vue-router";
       <!--PATH com-->
       <path
         d="M10.8252 60.285L13.2009 144.038H324.125L321.749 24.6345H110.806V83.1471H83.4182V60.7786L10.8252 60.285Z"
-        class="hover:fill-rouge fill-black partiecom"
+        class="transition ease hover:fill-rouge fill-black partiecom"
         :class="{
           'fill-rouge': $route.name === 'com',
         }"
@@ -49,7 +49,7 @@ import { RouterLink, RouterView } from "vue-router";
 
     <RouterLink
       to="/crea"
-      class="stroke-black hover:stroke-bleu"
+      class="stroke-black transition ease hover:stroke-bleu"
       :class="{
         'stroke-bleu': $route.name === 'crea',
       }"
@@ -60,7 +60,7 @@ import { RouterLink, RouterView } from "vue-router";
       ></path>
       <path
         d="M395.889 99.413H388.291V145.451H581.775V112.314H614.027V29.2339H395.889V99.413Z"
-        class="hover:fill-bleu fill-black"
+        class="transition ease hover:fill-bleu fill-black"
         :class="{
           'fill-bleu': $route.name === 'crea',
         }"
@@ -77,14 +77,14 @@ import { RouterLink, RouterView } from "vue-router";
 
     <RouterLink
       to="/dev"
-      class="stroke-black hover:stroke-vert"
+      class="stroke-black transition ease hover:stroke-vert"
       :class="{
         'stroke-vert': $route.name === 'dev',
       }"
     >
       <path
         d="M420.004 223.259H380.604V163.176H507.793V263.598H419.108L420.004 223.259Z"
-        class="hover:fill-vert fill-black"
+        class="transition ease hover:fill-vert fill-black"
         :class="{
           'fill-vert': $route.name === 'dev',
         }"
@@ -95,14 +95,14 @@ import { RouterLink, RouterView } from "vue-router";
 
     <RouterLink
       to="/secret"
-      class="stroke-black hover:stroke-jaune"
+      class="stroke-black transition ease hover:stroke-jaune"
       :class="{
         'stroke-jaune': $route.name === 'secret',
       }"
     >
       <path
         d="M373.365 25.689H348.397V50.6824H373.365V25.689Z"
-        class="hover:fill-jaune fill-black"
+        class="transition ease hover:fill-jaune fill-black"
         :class="{
           'fill-jaune': $route.name === 'secret',
         }"

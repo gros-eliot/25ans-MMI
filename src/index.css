@@ -14,7 +14,7 @@
     }
 
     .mmi-h1 {
-        @apply font-inter font-black text-7xl lg:text-8xl w-full flex justify-center mt-28
+        @apply font-inter font-black text-7xl lg:text-8xl w-full flex justify-center
     }
            
     .mmi-texte {

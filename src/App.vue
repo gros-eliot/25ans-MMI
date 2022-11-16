@@ -36,18 +36,18 @@ window.addEventListener("scroll", FunctionLine3);
         'bg-bleu': $route.name === 'crea',
         'bg-black': $route.name === 'home',
         'opacity-10': $route.name === 'home',
-        'opacity-40': $route.name != 'home',
+        'opacity-30': $route.name != 'home',
       }"
     ></div>
     <div
-      class="h-[2px] -z-50 line2 fixed rotate-[145deg] origin-[0] inset-y-0 inset-x-1/2"
+      class="h-[2px] -z-50 line2 fixed rotate-[145deg] origin-[0] inset-y-0 inset-x-1/4"
       :class="{
         'bg-rouge': $route.name === 'com',
         'bg-vert': $route.name === 'dev',
         'bg-bleu': $route.name === 'crea',
         'bg-black': $route.name === 'home',
         'opacity-10': $route.name === 'home',
-        'opacity-40': $route.name != 'home',
+        'opacity-30': $route.name != 'home',
       }"
     ></div>
     <div
@@ -58,7 +58,7 @@ window.addEventListener("scroll", FunctionLine3);
         'bg-bleu': $route.name === 'crea',
         'bg-black': $route.name === 'home',
         'opacity-10': $route.name === 'home',
-        'opacity-40': $route.name != 'home',
+        'opacity-30': $route.name != 'home',
       }"
     ></div>
   </section>
@@ -70,96 +70,101 @@ window.addEventListener("scroll", FunctionLine3);
     <HeaderView />
   </header>
 
-  <h1
-    class="uppercase ml-auto py-2 flex mmi-h1"
-    :class="{
-      hidden:
-        ($route.name === 'com')
-        | ($route.name === 'dev')
-        | ($route.name === 'crea')
-        | ($route.name === 'histoire')
-        | ($route.name === 'secret')
-        | ($route.name === 'contact')
-        | ($route.name === 'connexion')
-        | ($route.name === 'event')
-        | ($route.name === '')
-        | ($route.name === 'mentionslegales'),
-    }"
-  >
-    Le plan
-  </h1>
-  <h1
-    class="uppercase ml-auto py-2 flex mmi-h1"
-    :class="{
-      hidden:
-        ($route.name === 'home')
-        | ($route.name === 'dev')
-        | ($route.name === 'crea')
-        | ($route.name === 'histoire')
-        | ($route.name === 'secret')
-        | ($route.name === 'contact')
-        | ($route.name === 'connexion')
-        | ($route.name === 'event')
-        | ($route.name === '')
-        | ($route.name === 'mentionslegales'),
-    }"
-  >
-    La salle com'
-  </h1>
-  <h1
-    class="uppercase ml-auto py-2 flex mmi-h1"
-    :class="{
-      hidden:
-        ($route.name === 'home')
-        | ($route.name === 'com')
-        | ($route.name === 'crea')
-        | ($route.name === 'histoire')
-        | ($route.name === 'secret')
-        | ($route.name === 'contact')
-        | ($route.name === 'connexion')
-        | ($route.name === 'event')
-        | ($route.name === '')
-        | ($route.name === 'mentionslegales'),
-    }"
-  >
-    La salle dev'
-  </h1>
-  <h1
-    class="uppercase ml-auto py-2 flex mmi-h1"
-    :class="{
-      hidden:
-        ($route.name === 'com')
-        | ($route.name === 'home')
-        | ($route.name === 'dev')
-        | ($route.name === 'histoire')
-        | ($route.name === 'secret')
-        | ($route.name === 'contact')
-        | ($route.name === 'connexion')
-        | ($route.name === 'event')
-        | ($route.name === '')
-        | ($route.name === 'mentionslegales'),
-    }"
-  >
-    La salle créa'
-  </h1>
-  <h1
-    class="uppercase ml-auto py-2 flex mmi-h1"
-    :class="{
-      hidden:
-        ($route.name === 'com')
-        | ($route.name === 'crea')
-        | ($route.name === 'dev')
-        | ($route.name === 'histoire')
-        | ($route.name === 'home')
-        | ($route.name === 'contact')
-        | ($route.name === 'connexion')
-        | ($route.name === 'event')
-        | ($route.name === '')
-        | ($route.name === 'mentionslegales'),
-    }"
-  >
-    La salle secrète
-  </h1>
+  <p>{{ $router.name }}</p>
+  <!--TITRES AU DESSUS DU BATIMENT-->
+  <p v-if="$router.name == 'cadeau'"></p>
+  <div class="mmi-h1" v-else>
+    <h1
+      class="uppercase ml-auto py-2 flex mmi-h1"
+      :class="{
+        hidden:
+          ($route.name === 'com')
+          | ($route.name === 'dev')
+          | ($route.name === 'crea')
+          | ($route.name === 'histoire')
+          | ($route.name === 'secret')
+          | ($route.name === 'contact')
+          | ($route.name === 'connexion')
+          | ($route.name === 'event')
+          | ($route.name === '')
+          | ($route.name === 'mentionslegales'),
+      }"
+    >
+      Le plan
+    </h1>
+    <h1
+      class="uppercase ml-auto py-2 flex mmi-h1"
+      :class="{
+        hidden:
+          ($route.name === 'home')
+          | ($route.name === 'dev')
+          | ($route.name === 'crea')
+          | ($route.name === 'histoire')
+          | ($route.name === 'secret')
+          | ($route.name === 'contact')
+          | ($route.name === 'connexion')
+          | ($route.name === 'event')
+          | ($route.name === '')
+          | ($route.name === 'mentionslegales'),
+      }"
+    >
+      La salle com'
+    </h1>
+    <h1
+      class="uppercase ml-auto py-2 flex mmi-h1"
+      :class="{
+        hidden:
+          ($route.name === 'home')
+          | ($route.name === 'com')
+          | ($route.name === 'crea')
+          | ($route.name === 'histoire')
+          | ($route.name === 'secret')
+          | ($route.name === 'contact')
+          | ($route.name === 'connexion')
+          | ($route.name === 'event')
+          | ($route.name === '')
+          | ($route.name === 'mentionslegales'),
+      }"
+    >
+      La salle dev'
+    </h1>
+    <h1
+      class="uppercase ml-auto py-2 flex mmi-h1"
+      :class="{
+        hidden:
+          ($route.name === 'com')
+          | ($route.name === 'home')
+          | ($route.name === 'dev')
+          | ($route.name === 'histoire')
+          | ($route.name === 'secret')
+          | ($route.name === 'contact')
+          | ($route.name === 'connexion')
+          | ($route.name === 'event')
+          | ($route.name === '')
+          | ($route.name === 'mentionslegales'),
+      }"
+    >
+      La salle créa'
+    </h1>
+    <h1
+      class="uppercase ml-auto py-2 flex mmi-h1"
+      :class="{
+        hidden:
+          ($route.name === 'com')
+          | ($route.name === 'crea')
+          | ($route.name === 'dev')
+          | ($route.name === 'histoire')
+          | ($route.name === 'home')
+          | ($route.name === 'contact')
+          | ($route.name === 'connexion')
+          | ($route.name === 'event')
+          | ($route.name === '')
+          | ($route.name === 'mentionslegales'),
+      }"
+    >
+      La salle secrète
+    </h1>
+  </div>
 
   <BatimentMMI class="m-auto" />
 
