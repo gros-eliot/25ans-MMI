@@ -3,7 +3,7 @@
     <!--Logo du header-->
     <RouterLink to="/home">
       <div class="flex items-center py-4 font-bold">
-        <logo class="stroke-black w-6 h-6 stroke-[3]" />
+        <logo class="stroke-black w-8 h-8 stroke-[3]" />
         <p
           class="header hidden md:block text-2xl lg:text-3xl xl:text-4xl text-black"
         >

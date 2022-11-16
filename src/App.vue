@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import BatimentMMI from "@/components/BatimentMMI.vue";
 
 function FunctionLine() {
   let movingLine = document.querySelector(".line");
@@ -59,15 +60,16 @@ window.addEventListener("scroll", FunctionLine3);
   <!--LINES DU FOND-->
   <!--LINES DU FOND-->
 
-  <div>
-    <header>
-      <HeaderView />
-    </header>
-    <router-view></router-view>
-    <footer>
-      <FooterView />
-    </footer>
-  </div>
+  <header>
+    <HeaderView />
+  </header>
+
+  <BatimentMMI class="m-auto" />
+
+  <router-view></router-view>
+  <footer>
+    <FooterView />
+  </footer>
 </template>
 
 <script>
