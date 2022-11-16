@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from "vue-router";
       to="/com"
       class="stroke-black hover:stroke-rouge"
       :class="{
-        'stroker-rouge': $router.name === 'com',
+        'stroke-rouge': $route.name === 'com',
       }"
     >
       <!--PATH com-->
@@ -24,7 +24,7 @@ import { RouterLink, RouterView } from "vue-router";
         d="M10.8252 60.285L13.2009 144.038H324.125L321.749 24.6345H110.806V83.1471H83.4182V60.7786L10.8252 60.285Z"
         class="hover:fill-rouge fill-black partiecom"
         :class="{
-          'fill-rouge': $router.name === 'com',
+          'fill-rouge': $route.name === 'com',
         }"
       ></path>
       <!--PATH com-->
@@ -51,7 +51,7 @@ import { RouterLink, RouterView } from "vue-router";
       to="/crea"
       class="stroke-black hover:stroke-bleu"
       :class="{
-        'stroke-bleu': $router.name === 'crea',
+        'stroke-bleu': $route.name === 'crea',
       }"
     >
       <path
@@ -62,7 +62,7 @@ import { RouterLink, RouterView } from "vue-router";
         d="M395.889 99.413H388.291V145.451H581.775V112.314H614.027V29.2339H395.889V99.413Z"
         class="hover:fill-bleu fill-black"
         :class="{
-          'fill-bleu': $router.name === 'crea',
+          'fill-bleu': $route.name === 'crea',
         }"
       ></path>
       <path d="M396.001 0V99.413H380.604" stroke-miterlimit="10"></path>
@@ -79,14 +79,14 @@ import { RouterLink, RouterView } from "vue-router";
       to="/dev"
       class="stroke-black hover:stroke-vert"
       :class="{
-        'stroke-vert': $router.name === 'dev',
+        'stroke-vert': $route.name === 'dev',
       }"
     >
       <path
         d="M420.004 223.259H380.604V163.176H507.793V263.598H419.108L420.004 223.259Z"
         class="hover:fill-vert fill-black"
         :class="{
-          'fill-vert': $router.name === 'dev',
+          'fill-vert': $route.name === 'dev',
         }"
       ></path>
       <path d="M420.004 271.226H507.792" stroke-miterlimit="10"></path>
@@ -97,14 +97,14 @@ import { RouterLink, RouterView } from "vue-router";
       to="/secret"
       class="stroke-black hover:stroke-jaune"
       :class="{
-        'stroke-jaune': $router.name === 'secret',
+        'stroke-jaune': $route.name === 'secret',
       }"
     >
       <path
         d="M373.365 25.689H348.397V50.6824H373.365V25.689Z"
         class="hover:fill-jaune fill-black"
         :class="{
-          'fill-jaune': $router.name === 'secret',
+          'fill-jaune': $route.name === 'secret',
         }"
         stroke-miterlimit="10"
       ></path>
@@ -113,8 +113,4 @@ import { RouterLink, RouterView } from "vue-router";
     </RouterLink>
   </svg>
 </template>
-<style scoped>
-.partiecom:hover {
-  width: 0%;
-}
-</style>
+<style scoped></style>
