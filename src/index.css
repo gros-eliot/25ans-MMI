@@ -13,8 +13,11 @@
         @apply font-bold text-white text-[30px] md:text-[35px] lg:text-[40px]
     }
 
-    .titre {
-        @apply font-inter font-black text-8xl w-full flex justify-center mt-28
+    .mmi-h1 {
+        @apply font-inter font-black text-7xl lg:text-8xl w-full flex justify-center mt-28
     }
-            
+           
+    .mmi-texte {
+        @apply lg:text-3xl text-2xl xl:text-4xl
+    }
 }
