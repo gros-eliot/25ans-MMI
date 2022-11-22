@@ -1,28 +1,15 @@
 <script setup>
 import { ref } from "@vue/reactivity";
-import { supabase } from "@/supabase";
 
-async function signIn(data, node) {
-  const { error } = await (nvlUtilisateur.value
-    ? supabase.auth.signUp(data)
-    : supabase.auth.signIn(data));
-  if (error) {
-    console.error(error);
-    node.setErrors([error.message]);
-  }
-}
 const nvlUtilisateur = ref(false);
 </script>
 <template>
   <div>
-    <button v-if="user" @pointerdown="supabase.auth.signOut()">
-      Se déconnecter ({{ user.email }})
-    </button>
+    <button v-if="user">Se déconnecter ({{ user.email }})</button>
     <FormKit
       v-else
       type="form"
       :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
-      @submit="signIn"
       :submit-attrs="{
         classes: {
           input:
