@@ -9,5 +9,3 @@ const app = createApp(App)
 app.use(router)
 app.mount('#app')
 
-import { supabase } from "./supabase";
-console.log(supabase);

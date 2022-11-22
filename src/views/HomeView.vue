@@ -4,9 +4,10 @@
   <div class="flex items-center justify-end pr-16 my-36">
     <div>
       <p class="text-8xl font-thin">
-        25<strong class="font-bold">25</strong>252525 <br />
-        2525252525 <br />
-        2525252525
+        25<strong class="font-bold">25</strong>252525 252525<strong
+          class="font-bold"
+          >25</strong
+        >25 2525252525
       </p>
     </div>
   </div>
@@ -19,7 +20,7 @@
         l’oeuvre gagnante sera transformer en NFT pour rester à jamais dans la
         Blockchain ! Alors ? Partant ?
       </p>
-      <br />
+
       <p class="text-4xl font-semibold">
         Vous pouvez commencer par voter pour votre oeuvre préféré à travers les
         différentes salles de ce musée digital !
