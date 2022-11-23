@@ -1,6 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import BatimentMMI from "@/components/BatimentMMI.vue";
+import HeaderView from "@/components/Header.vue";
+import FooterView from "@/components/Footer.vue";
 
 function FunctionLine() {
   let movingLine = document.querySelector(".line");
@@ -29,35 +31,59 @@ window.addEventListener("scroll", FunctionLine3);
   <!--LINES DU FOND-->
   <section>
     <div
-      class="h-[2px] -z-50 line fixed rotate-45 origin-[0] inset-y-10"
+      class="h-[2px] -z-50 line fixed rotate-45 origin-[0] inset-y-10 w-0"
       :class="{
         'bg-rouge': $route.name === 'com',
         'bg-vert': $route.name === 'dev',
         'bg-bleu': $route.name === 'crea',
-        'bg-black': $route.name === 'home',
-        'opacity-10': $route.name === 'home',
+        'bg-black':
+          ($route.name === 'home')
+          | ($route.name === 'connexion')
+          | ($route.name === 'contact')
+          | ($route.name === 'mentionslegales'),
+        'opacity-10':
+          ($route.name === 'home')
+          | ($route.name === 'connexion')
+          | ($route.name === 'contact')
+          | ($route.name === 'mentionslegales'),
         'opacity-30': $route.name != 'home',
       }"
     ></div>
     <div
-      class="h-[2px] -z-50 line2 fixed rotate-[145deg] origin-[0] inset-y-0 inset-x-1/4"
+      class="h-[2px] -z-50 line2 fixed rotate-[145deg] origin-[0] w-0 inset-y-0 inset-x-1/4"
       :class="{
         'bg-rouge': $route.name === 'com',
         'bg-vert': $route.name === 'dev',
         'bg-bleu': $route.name === 'crea',
-        'bg-black': $route.name === 'home',
-        'opacity-10': $route.name === 'home',
+        'bg-black':
+          ($route.name === 'home')
+          | ($route.name === 'connexion')
+          | ($route.name === 'contact')
+          | ($route.name === 'mentionslegales'),
+        'opacity-10':
+          ($route.name === 'home')
+          | ($route.name === 'connexion')
+          | ($route.name === 'contact')
+          | ($route.name === 'mentionslegales'),
         'opacity-30': $route.name != 'home',
       }"
     ></div>
     <div
-      class="h-[2px] -z-50 line3 fixed rotate-[145deg] origin-[0] inset-y-1/2 inset-x-full"
+      class="h-[2px] -z-50 line3 fixed rotate-[145deg] origin-[0] w-0 inset-y-1/2 inset-x-full"
       :class="{
         'bg-rouge': $route.name === 'com',
         'bg-vert': $route.name === 'dev',
         'bg-bleu': $route.name === 'crea',
-        'bg-black': $route.name === 'home',
-        'opacity-10': $route.name === 'home',
+        'bg-black':
+          ($route.name === 'home')
+          | ($route.name === 'connexion')
+          | ($route.name === 'contact')
+          | ($route.name === 'mentionslegales'),
+        'opacity-10':
+          ($route.name === 'home')
+          | ($route.name === 'connexion')
+          | ($route.name === 'contact')
+          | ($route.name === 'mentionslegales'),
         'opacity-30': $route.name != 'home',
       }"
     ></div>
@@ -173,8 +199,3 @@ window.addEventListener("scroll", FunctionLine3);
     <FooterView />
   </footer>
 </template>
-
-<script>
-import HeaderView from "@/components/Header.vue";
-import FooterView from "@/components/Footer.vue";
-</script>
