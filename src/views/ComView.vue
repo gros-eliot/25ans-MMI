@@ -36,11 +36,20 @@
       <!--ligne rouge-->
     </div>
     <div class="lg:flex justify-center items-center">
-      <img
+      <!--<div class="bgmalsot1 max-w-lg mx-auto hover:bgmalsot2">-->
+     <img
         src="../../public/images/D-Malsot 1.png"
         alt="Photo de David Malsot"
-        class="max-w-lg m-auto"
+        class="max-w-lg m-auto hover:invisible "
       />
+      
+      <img
+        src="../../public/images/DavidMalsotDrole.jpeg"
+        alt="Photo de David Malsot"
+        class="max-w-lg m-auto hover:visible invisible"
+      />
+      
+      <!--</div>-->
 
       <div class="m-auto p-5">
         <h3 class="font-inter text-center font-black text-5xl">M.MALSOT</h3>
@@ -87,3 +96,18 @@
     </div>
   </div>
 </template>
+
+<!--<style>
+.bgmalsot1 {
+  background-image: url("../../public/images/D-Malsot\ 1.png");
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+.hover\ :bgmaslot2:hover {
+  background-image: url("../../public/images/DavidMalsotDrole.jpeg");
+  background-repeat: no-repeat;
+  height: 550px;
+}
+</style>
+-->
