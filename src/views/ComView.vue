@@ -81,6 +81,7 @@
             <img
               src="../../public/images/JC-Domenget 1.png"
               alt="photo Monsieur Domenget"
+              class="image-prof"
             />
             <p class="font-neuemontreal text-2xl">Jean-Claude Domenget</p>
           </div>
@@ -88,6 +89,7 @@
             <img
               src="../../public/images/S-Laurent 1.png"
               alt="Photo Monsieur Laurent"
+              class="image-prof"
             />
             <p class="font-neuemontreal text-2xl">Stephane Laurent</p>
           </div>

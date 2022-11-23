@@ -15,14 +15,14 @@
             Le développement au&nbsp;MMI...
           </h2>
           <p class="mmi-texte">
-            Le pôle développement est aussi important dans le cursus MMI. Au cours
-          des trois années de BUT les élèves apprennent à développer le web.
-          Ceci grâce à l’apprentissage de différents langages de programmation
-          et d’intégration comme l’HTML, le CSS, le Javascript, et d’autres.
-          L’apprentissage de librairie comme Tailwind CSS fait aussi partie du
-          cursus de MMI. Le développement est la base de tout ce qui est présent
-          sur le web, il est donc important de s’y pencher pour mieux comprendre
-          ce milieu et être capable d’y évoluer.
+            Le pôle développement est aussi important dans le cursus MMI. Au
+            cours des trois années de BUT les élèves apprennent à développer le
+            web. Ceci grâce à l’apprentissage de différents langages de
+            programmation et d’intégration comme l’HTML, le CSS, le Javascript,
+            et d’autres. L’apprentissage de librairie comme Tailwind CSS fait
+            aussi partie du cursus de MMI. Le développement est la base de tout
+            ce qui est présent sur le web, il est donc important de s’y pencher
+            pour mieux comprendre ce milieu et être capable d’y évoluer.
           </p>
         </div>
       </div>
@@ -39,19 +39,19 @@
     </div>
     <div class="lg:flex justify-center items-center">
       <img
-      src="/images/JM-Fino.jpg"
-      alt="Photo de Jean Marie Fino"
-      class="max-w-lg m-auto"
-    />
+        src="/images/JM-Fino.jpg"
+        alt="Photo de Jean Marie Fino"
+        class="max-w-lg m-auto"
+      />
 
       <div class="m-auto p-5">
         <h3 class="font-inter text-center font-black text-5xl">M.FINO</h3>
         <p class="mmi-texte">
-          Monsieur Jean-Marie Fino est un membre important de MMI car il est l’un
-        des fondateurs du département, à l’époque MMI s’appelait SRC. Il est un
-        bon représentant du pôle développement car il est lui-même développeur
-        full stack. Il est chargé de l’apprentissage des langages d’intégration
-        et de développement web.
+          Monsieur Jean-Marie Fino est un membre important de MMI car il est
+          l’un des fondateurs du département, à l’époque MMI s’appelait SRC. Il
+          est un bon représentant du pôle développement car il est lui-même
+          développeur full stack. Il est chargé de l’apprentissage des langages
+          d’intégration et de développement web.
         </p>
       </div>
     </div>
@@ -70,19 +70,35 @@
         </h3>
         <div class="grid grid-cols-galerie-profs gap-9 w-full">
           <div class="flex flex-col gap-7 items-center">
-            <img src="/images/P-Chatonnay.jpg" alt="photo Monsieur Chatonnay" />
+            <img
+              src="/images/P-Chatonnay.jpg"
+              alt="photo Monsieur Chatonnay"
+              class="image-prof"
+            />
             <p class="font-neuemontreal text-2xl">Pascal Chatonnay</p>
           </div>
           <div class="flex flex-col gap-7 items-center">
-            <img src="/images/PASDEPHOTO.png" alt="photo inconnue" />
+            <img
+              src="/images/PASDEPHOTO.png"
+              alt="photo inconnue"
+              class="image-prof"
+            />
             <p class="font-neuemontreal text-2xl">Pierre Pracht</p>
           </div>
           <div class="flex flex-col gap-7 items-center">
-            <img src="/images/H-Mabed.jpg" alt="Photo Monsieur Mabed" />
+            <img
+              src="/images/H-Mabed.jpg"
+              alt="Photo Monsieur Mabed"
+              class="image-prof"
+            />
             <p class="font-neuemontreal text-2xl">Hakim Mabed</p>
           </div>
           <div class="flex flex-col gap-7 items-center">
-            <img src="/images/PASDEPHOTO.png" alt="photo inconnue" />
+            <img
+              src="/images/PASDEPHOTO.png"
+              alt="photo inconnue"
+              class="image-prof"
+            />
             <p class="font-neuemontreal text-2xl">Abdallah Makoul</p>
           </div>
         </div>

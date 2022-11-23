@@ -29,7 +29,7 @@ window.addEventListener("scroll", FunctionLine3);
   <!--LINES DU FOND-->
   <!--LINES DU FOND-->
   <!--LINES DU FOND-->
-  <section>
+  <section v-if="$route.name != 'cadeau'">
     <div
       class="h-[2px] -z-50 line fixed rotate-45 origin-[0] inset-y-10 w-0"
       :class="{
@@ -92,14 +92,12 @@ window.addEventListener("scroll", FunctionLine3);
   <!--LINES DU FOND-->
   <!--LINES DU FOND-->
 
-  <header>
+  <header v-if="$route.name != 'cadeau'">
     <HeaderView />
   </header>
 
-  <p>{{ $router.name }}</p>
   <!--TITRES AU DESSUS DU BATIMENT-->
-  <p v-if="$router.name == 'cadeau'"></p>
-  <div class="mmi-h1" v-else>
+  <div class="mmi-h1">
     <h1
       class="uppercase ml-auto py-2 flex mmi-h1"
       :class="{
@@ -112,7 +110,7 @@ window.addEventListener("scroll", FunctionLine3);
           | ($route.name === 'contact')
           | ($route.name === 'connexion')
           | ($route.name === 'event')
-          | ($route.name === '')
+          | ($route.name === 'cadeau')
           | ($route.name === 'mentionslegales'),
       }"
     >
@@ -130,7 +128,7 @@ window.addEventListener("scroll", FunctionLine3);
           | ($route.name === 'contact')
           | ($route.name === 'connexion')
           | ($route.name === 'event')
-          | ($route.name === '')
+          | ($route.name === 'cadeau')
           | ($route.name === 'mentionslegales'),
       }"
     >
@@ -148,7 +146,7 @@ window.addEventListener("scroll", FunctionLine3);
           | ($route.name === 'contact')
           | ($route.name === 'connexion')
           | ($route.name === 'event')
-          | ($route.name === '')
+          | ($route.name === 'cadeau')
           | ($route.name === 'mentionslegales'),
       }"
     >
@@ -166,7 +164,7 @@ window.addEventListener("scroll", FunctionLine3);
           | ($route.name === 'contact')
           | ($route.name === 'connexion')
           | ($route.name === 'event')
-          | ($route.name === '')
+          | ($route.name === 'cadeau')
           | ($route.name === 'mentionslegales'),
       }"
     >
@@ -184,7 +182,7 @@ window.addEventListener("scroll", FunctionLine3);
           | ($route.name === 'contact')
           | ($route.name === 'connexion')
           | ($route.name === 'event')
-          | ($route.name === '')
+          | ($route.name === 'cadeau')
           | ($route.name === 'mentionslegales'),
       }"
     >
@@ -192,10 +190,10 @@ window.addEventListener("scroll", FunctionLine3);
     </h1>
   </div>
 
-  <BatimentMMI class="m-auto" />
+  <BatimentMMI class="m-auto" v-if="$route.name != 'cadeau'" />
 
   <router-view></router-view>
-  <footer>
+  <footer v-if="$route.name != 'cadeau'">
     <FooterView />
   </footer>
 </template>

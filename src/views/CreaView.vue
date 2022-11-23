@@ -16,13 +16,13 @@
           </h2>
           <p class="mmi-texte">
             Le pôle Création est celui qui contient les matières artistiques.
-          Design, Graphisme, Motion Design, Audiovisuel, Narration, toutes ces
-          matières font partie de ce pôle. Le design est tout aussi important
-          que la communication et le développement. Par définition c’est la
-          façade du web et souvent c’est ce que l’on retient en premier d’un
-          site internet. Mis à part ça, le design est une partie importante de
-          notre vie, les visuels sont importants pour communiquer avec les
-          sociétés modernes.
+            Design, Graphisme, Motion Design, Audiovisuel, Narration, toutes ces
+            matières font partie de ce pôle. Le design est tout aussi important
+            que la communication et le développement. Par définition c’est la
+            façade du web et souvent c’est ce que l’on retient en premier d’un
+            site internet. Mis à part ça, le design est une partie importante de
+            notre vie, les visuels sont importants pour communiquer avec les
+            sociétés modernes.
           </p>
         </div>
       </div>
@@ -39,20 +39,20 @@
     </div>
     <div class="lg:flex justify-center items-center">
       <img
-      src="../../public/images/X-SENENTE.jpg"
-      alt="Photo de Xavier Senente"
-      class="max-w-lg m-auto"
-    />
+        src="../../public/images/X-SENENTE.jpg"
+        alt="Photo de Xavier Senente"
+        class="max-w-lg m-auto"
+      />
 
       <div class="m-auto p-5">
         <h3 class="font-inter text-center font-black text-5xl">M.SENENTE</h3>
         <p class="mmi-texte">
           Monsieur Xavier Senente est le professeur principal du pôle créatif de
-        MMI. Il est chargé de l’apprentissage des logiciels de design et de
-        graphisme, mais aussi des logiciels de prototypages pour la composition
-        des maquettes de site internet. Il enseigne aussi l’art du branding
-        (créer un logo, une identité graphique... ) tout en apportant une
-        culture artistique aux élèves.
+          MMI. Il est chargé de l’apprentissage des logiciels de design et de
+          graphisme, mais aussi des logiciels de prototypages pour la
+          composition des maquettes de site internet. Il enseigne aussi l’art du
+          branding (créer un logo, une identité graphique... ) tout en apportant
+          une culture artistique aux élèves.
         </p>
       </div>
     </div>
@@ -72,16 +72,18 @@
         <div class="grid grid-cols-galerie-profs gap-9 w-full">
           <div class="flex flex-col gap-7 items-center">
             <img
-            src="../../public/images/A-Lamboud_Durand.jpg"
-            alt="photo Monsieur Lamboud Durant"
-          />
+              src="../../public/images/A-Lamboud_Durand.jpg"
+              alt="photo Monsieur Lamboud Durant"
+              class="image-prof"
+            />
             <p class="font-neuemontreal text-2xl">Alain LAMBOUX-DURAND</p>
           </div>
           <div class="flex flex-col gap-7 items-center">
             <img
-            src="../../public/images/S-Augier.jpg"
-            alt="Photo Monsieur Augier"
-          />
+              src="../../public/images/S-Augier.jpg"
+              alt="Photo Monsieur Augier"
+              class="image-prof"
+            />
             <p class="font-neuemontreal text-2xl">Sebastien AUGIER</p>
           </div>
         </div>

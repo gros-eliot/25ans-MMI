@@ -20,4 +20,8 @@
     .mmi-texte {
         @apply lg:text-3xl text-2xl xl:text-4xl
     }
+
+    .image-prof {
+        @apply w-[270px] h-[350px]
+    }
 }
