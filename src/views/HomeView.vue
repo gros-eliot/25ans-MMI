@@ -1,17 +1,12 @@
 <script setup></script>
 
 <template>
-  <div class="flex items-center justify-end pr-16 my-36">
-    <div>
-      <p class="text-8xl font-thin">
-        25<strong class="font-bold">25</strong>252525 252525<strong
-          class="font-bold"
-          >25</strong
-        >25 2525252525
-      </p>
-    </div>
+  <div class="flex-col p-4 ml-auto w-full text-8xl">
+    <p class="font-thin">25<strong class="font-bold">25</strong>252525</p>
+    <p class="font-thin">252525<strong class="font-bold">25</strong>25</p>
+    <p class="font-thin">25252525<strong class="font-bold">25</strong></p>
   </div>
-  <div class="max-w-5xl ml-28">
+  <div class="max-w-5xl mx-2 md:ml-28">
     <div class="">
       <h2 class="font-inter font-black text-7xl">25 ANS</h2>
       <p class="text-4xl">
@@ -28,7 +23,7 @@
     </div>
   </div>
 
-  <div class="max-w-5xl ml-28 my-10">
+  <div class="max-w-5xl mx-2 md:ml-28 my-10">
     <div class="">
       <h2 class="font-inter font-black text-7xl">MMI</h2>
       <p class="text-4xl">

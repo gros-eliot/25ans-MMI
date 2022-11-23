@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 import BatimentMMI from "@/components/BatimentMMI.vue";
 import HeaderView from "@/components/Header.vue";
 import FooterView from "@/components/Footer.vue";
+import MiniBatimentMMI from "./components/MiniBatimentMMI.vue";
 
 function FunctionLine() {
   let movingLine = document.querySelector(".line");
@@ -92,6 +93,7 @@ window.addEventListener("scroll", FunctionLine3);
   <!--LINES DU FOND-->
   <!--LINES DU FOND-->
 
+  <!--Header-->
   <header v-if="$route.name != 'cadeau'">
     <HeaderView />
   </header>
@@ -99,7 +101,7 @@ window.addEventListener("scroll", FunctionLine3);
   <!--TITRES AU DESSUS DU BATIMENT-->
   <div class="mmi-h1">
     <h1
-      class="uppercase ml-auto py-2 flex mmi-h1"
+      class="uppercase text-center py-2 flex mmi-h1"
       :class="{
         hidden:
           ($route.name === 'com')
@@ -117,7 +119,7 @@ window.addEventListener("scroll", FunctionLine3);
       Le plan
     </h1>
     <h1
-      class="uppercase ml-auto py-2 flex mmi-h1"
+      class="uppercase text-center py-2 flex mmi-h1"
       :class="{
         hidden:
           ($route.name === 'home')
@@ -135,7 +137,7 @@ window.addEventListener("scroll", FunctionLine3);
       La salle com'
     </h1>
     <h1
-      class="uppercase ml-auto py-2 flex mmi-h1"
+      class="uppercase text-center py-2 flex mmi-h1"
       :class="{
         hidden:
           ($route.name === 'home')
@@ -153,7 +155,7 @@ window.addEventListener("scroll", FunctionLine3);
       La salle dev'
     </h1>
     <h1
-      class="uppercase ml-auto py-2 flex mmi-h1"
+      class="uppercase text-center py-2 flex mmi-h1"
       :class="{
         hidden:
           ($route.name === 'com')
@@ -171,7 +173,7 @@ window.addEventListener("scroll", FunctionLine3);
       La salle créa'
     </h1>
     <h1
-      class="uppercase ml-auto py-2 flex mmi-h1"
+      class="uppercase text-center py-2 flex mmi-h1"
       :class="{
         hidden:
           ($route.name === 'com')
@@ -190,7 +192,16 @@ window.addEventListener("scroll", FunctionLine3);
     </h1>
   </div>
 
-  <BatimentMMI class="m-auto" v-if="$route.name != 'cadeau'" />
+  <!--Batiment MMI : ordi-->
+  <BatimentMMI
+    class="m-auto w-fit md:block hidden"
+    v-if="$route.name != 'cadeau'"
+  />
+
+  <MiniBatimentMMI
+    class="m-auto w-fit block md:hidden"
+    v-if="$route.name != 'cadeau'"
+  />
 
   <router-view></router-view>
   <footer v-if="$route.name != 'cadeau'">
