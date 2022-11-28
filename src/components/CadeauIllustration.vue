@@ -11,8 +11,8 @@ function MovingTopCadeau() {
   cadeauTop.style.translateX = -1;
   cadeauTop.style.translateY = -1;
 }
-let cadeauTopVue = document.querySelector("#top");
-cadeauTopVue.addEventListener("mouseover", MovingTopCadeau);
+// let cadeauTopVue = document.querySelector("#top");
+//cadeauTopVue.addEventListener("mouseover", MovingTopCadeau);
 </script>
 
 <template>

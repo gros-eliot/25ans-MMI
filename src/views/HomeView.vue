@@ -1,10 +1,19 @@
 <script setup></script>
 
 <template>
-  <div class="flex-col p-4 ml-auto w-full text-8xl">
-    <p class="font-thin">25<strong class="font-bold">25</strong>252525</p>
-    <p class="font-thin">252525<strong class="font-bold">25</strong>25</p>
-    <p class="font-thin">25252525<strong class="font-bold">25</strong></p>
+  <div class="flex-col flex text-8xl w-full boxDefilementText my-10">
+    <p class="font-thin object1">
+      252525252525252525252525252525252525252525252525252525252525252525252525
+    </p>
+
+    <p class="font-thin object2">
+      2525252525252525252525252525<strong class="font-bold">25</strong
+      >25252525252525252525252525252525252525252525
+    </p>
+
+    <p class="font-thin object3">
+      252525252525252525252525252525252525252525252525252525252525252525252525
+    </p>
   </div>
   <div class="max-w-5xl mx-2 md:ml-28">
     <div class="">
@@ -38,4 +47,62 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.boxDefilementText {
+  overflow: hidden;
+}
+
+.boxDefilementText > .object1 {
+  display: inline-block; /* modèle de boîte en ligne */
+  padding-left: 50%;
+  white-space: nowrap; /* pas de passage à la ligne */
+  animation: defilement-rtl 20s infinite ease-in-out;
+}
+
+/** */
+/** */
+/** */
+/*ELEMENT REVERSE*/
+.boxDefilementText > .object2 {
+  display: inline-block; /* modèle de boîte en ligne */
+  margin-left: -50%;
+  white-space: nowrap; /* pas de passage à la ligne */
+
+  animation: defilement-rtl-reverse 40s infinite ease-in-out;
+}
+/*ELEMENT REVERSE*/
+/** */
+/** */
+/** */
+
+.boxDefilementText > .object3 {
+  display: inline-block; /* modèle de boîte en ligne */
+  padding-left: 50%;
+  white-space: nowrap; /* pas de passage à la ligne */
+  animation: defilement-rtl 30s infinite ease-in-out;
+}
+
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(-50%, 0, 0); /* position initiale à droite */
+  }
+  50% {
+    transform: translate3d(-200%, 0, 0); /* position finale à gauche */
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0); /* position finale à gauche */
+  }
+}
+
+@keyframes defilement-rtl-reverse {
+  0% {
+    transform: translate3d(-15%, 0, 0); /* position initiale à droite */
+  }
+  50% {
+    transform: translate3d(30%, 0, 0); /* position finale à gauche */
+  }
+  100% {
+    transform: translate3d(-15%, 0, 0); /* position finale à gauche */
+  }
+}
+</style>
