@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+function Function252525() {
+  let box25 = document.querySelector(".boxDefilementText");
+  let valueScroll = window.pageYOffset;
+  box25.style.letterSpacing = valueScroll + "px";
+  box25.style.opacity = 100 - valueScroll / 6 + "%";
+}
+window.addEventListener("scroll", Function252525);
+</script>
 
 <template>
   <div class="flex-col flex text-8xl w-full boxDefilementText my-10">
@@ -81,6 +89,31 @@
   white-space: nowrap; /* pas de passage à la ligne */
   animation: defilement-rtl 30s infinite ease-in-out;
 }
+
+/* animation avec couleurs (hover)
+/*
+.boxDefilementText:hover {
+  animation: defilement-colors 2s infinite linear;
+}
+
+@keyframes defilement-colors {
+  0% {
+    @apply text-vert;
+  }
+  25% {
+    @apply text-bleu;
+  }
+  50% {
+    @apply text-rouge;
+  }
+  75% {
+    @apply text-bleu;
+  }
+  100% {
+    @apply text-vert;
+  }
+}
+*/
 
 @keyframes defilement-rtl {
   0% {
