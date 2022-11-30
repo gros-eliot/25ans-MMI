@@ -99,93 +99,43 @@ window.addEventListener("scroll", FunctionLine3);
   </header>
 
   <!--TITRES AU DESSUS DU BATIMENT-->
-  <div class="mmi-h1">
+  <div class="mmi-h1 flex justify-center text-center">
     <h1
-      class="uppercase text-center py-2 flex mmi-h1"
+      class="uppercase text-center py-2 mmi-h1"
       :class="{
-        hidden:
-          ($route.name === 'com')
-          | ($route.name === 'dev')
-          | ($route.name === 'crea')
-          | ($route.name === 'histoire')
-          | ($route.name === 'secret')
-          | ($route.name === 'contact')
-          | ($route.name === 'connexion')
-          | ($route.name === 'event')
-          | ($route.name === 'cadeau')
-          | ($route.name === 'mentionslegales'),
+        hidden: $route.name != 'home',
       }"
     >
       Le plan
     </h1>
     <h1
-      class="uppercase text-center py-2 flex mmi-h1"
+      class="uppercase text-center py-2 mmi-h1"
       :class="{
-        hidden:
-          ($route.name === 'home')
-          | ($route.name === 'dev')
-          | ($route.name === 'crea')
-          | ($route.name === 'histoire')
-          | ($route.name === 'secret')
-          | ($route.name === 'contact')
-          | ($route.name === 'connexion')
-          | ($route.name === 'event')
-          | ($route.name === 'cadeau')
-          | ($route.name === 'mentionslegales'),
+        hidden: $route.name != 'com',
       }"
     >
       La salle com'
     </h1>
     <h1
-      class="uppercase text-center py-2 flex mmi-h1"
+      class="uppercase text-center py-2 mmi-h1"
       :class="{
-        hidden:
-          ($route.name === 'home')
-          | ($route.name === 'com')
-          | ($route.name === 'crea')
-          | ($route.name === 'histoire')
-          | ($route.name === 'secret')
-          | ($route.name === 'contact')
-          | ($route.name === 'connexion')
-          | ($route.name === 'event')
-          | ($route.name === 'cadeau')
-          | ($route.name === 'mentionslegales'),
+        hidden: $route.name != 'dev',
       }"
     >
       La salle dev'
     </h1>
     <h1
-      class="uppercase text-center py-2 flex mmi-h1"
+      class="uppercase text-center py-2 mmi-h1"
       :class="{
-        hidden:
-          ($route.name === 'com')
-          | ($route.name === 'home')
-          | ($route.name === 'dev')
-          | ($route.name === 'histoire')
-          | ($route.name === 'secret')
-          | ($route.name === 'contact')
-          | ($route.name === 'connexion')
-          | ($route.name === 'event')
-          | ($route.name === 'cadeau')
-          | ($route.name === 'mentionslegales'),
+        hidden: $route.name != 'crea',
       }"
     >
       La salle créa'
     </h1>
     <h1
-      class="uppercase text-center py-2 flex mmi-h1"
+      class="uppercase text-center py-2 mmi-h1"
       :class="{
-        hidden:
-          ($route.name === 'com')
-          | ($route.name === 'crea')
-          | ($route.name === 'dev')
-          | ($route.name === 'histoire')
-          | ($route.name === 'home')
-          | ($route.name === 'contact')
-          | ($route.name === 'connexion')
-          | ($route.name === 'event')
-          | ($route.name === 'cadeau')
-          | ($route.name === 'mentionslegales'),
+        hidden: $route.name != 'secret',
       }"
     >
       La salle secrète
@@ -194,17 +144,31 @@ window.addEventListener("scroll", FunctionLine3);
 
   <!--Batiment MMI : ordi-->
   <BatimentMMI
-    class="m-auto w-fit md:block hidden"
-    v-if="$route.name != 'cadeau'"
+    class="my-10 m-auto w-fit md:block hidden"
+    v-if="
+      ($route.name === 'home') |
+        ($route.name === 'event') |
+        ($route.name === 'com') |
+        ($route.name === 'dev') |
+        ($route.name === 'crea') |
+        ($route.name === 'secret')
+    "
   />
 
   <MiniBatimentMMI
-    class="m-auto w-fit block md:hidden"
-    v-if="$route.name != 'cadeau'"
+    class="my-10 m-auto w-fit block md:hidden"
+    v-if="
+      ($route.name === 'home') |
+        ($route.name === 'event') |
+        ($route.name === 'com') |
+        ($route.name === 'dev') |
+        ($route.name === 'crea') |
+        ($route.name === 'secret')
+    "
   />
 
   <router-view></router-view>
-  <footer v-if="$route.name != 'cadeau'">
+  <footer v-if="$route.name != 'cadeau' && $route.name != 'histoire'">
     <FooterView />
   </footer>
 </template>

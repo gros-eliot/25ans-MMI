@@ -25,11 +25,25 @@
         </div>
       </div>
       <div class="m-auto hidden lg:block w-fit mt-96">
-        <p class="text-7xl xl:text-8xl my-10 font-normal">
-          2525252525 <br />
-          2525252525 <br />
-          2525252525
-        </p>
+        <div>
+          <div
+            class="flex-col flex text-8xl max-w-xl w-full boxDefilementText my-10"
+          >
+            <p class="font-thin object1">
+              252525252525252525252525252525252525252525252525252525252525252525252525
+              252525252525252525252525252525252525252525252525252525252525252525252525
+            </p>
+
+            <p class="font-thin object2">
+              252525252525<strong class="font-bold">25</strong
+              >25252525252525252525252525252525252525252525252525252525252525
+            </p>
+
+            <p class="font-thin object3">
+              252525252525252525252525252525252525252525252525252525252525252525252525
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div>
@@ -37,18 +51,18 @@
     </div>
     <div class="lg:flex justify-center items-center">
       <!--<div class="bgmalsot1 max-w-lg mx-auto hover:bgmalsot2">-->
-     <img
+      <img
         src="../../public/images/D-Malsot 1.png"
         alt="Photo de David Malsot"
-        class="max-w-lg m-auto hover:invisible "
+        class="max-w-lg m-auto hover:invisible"
       />
-      
+
       <img
         src="../../public/images/DavidMalsotDrole.jpeg"
         alt="Photo de David Malsot"
         class="max-w-lg m-auto hover:visible invisible"
       />
-      
+
       <!--</div>-->
 
       <div class="m-auto p-5">
@@ -66,11 +80,23 @@
 
     <div class="flex items-center w-full p-5 gap-10">
       <div>
-        <p class="text-7xl hidden lg:block xl:text-8xl my-10 font-normal">
-          2525252525 <br />
-          2525252525 <br />
-          2525252525
-        </p>
+        <div
+          class="flex-col flex text-8xl max-w-3xl w-full boxDefilementText my-10"
+        >
+          <p class="font-thin object1">
+            252525252525252525252525252525252525252525252525252525252525252525252525
+            252525252525252525252525252525252525252525252525252525252525252525252525
+          </p>
+
+          <p class="font-thin object2">
+            252525252525<strong class="font-bold">25</strong
+            >2525252525252525252525252525252525252525252525252525252525252525
+          </p>
+
+          <p class="font-thin object3">
+            252525252525252525252525252525252525252525252525252525252525252525252525
+          </p>
+        </div>
       </div>
       <div class="flex flex-col m-auto items-center gap-6">
         <h3 class="font-inter font-black text-4xl xl:text-5xl">
@@ -99,17 +125,87 @@
   </div>
 </template>
 
-<!--<style>
-.bgmalsot1 {
-  background-image: url("../../public/images/D-Malsot\ 1.png");
-  background-repeat: no-repeat;
-  height: 550px;
+<style>
+.boxDefilementText {
+  overflow: hidden;
 }
 
-.hover\ :bgmaslot2:hover {
-  background-image: url("../../public/images/DavidMalsotDrole.jpeg");
-  background-repeat: no-repeat;
-  height: 550px;
+.boxDefilementText > .object1 {
+  display: inline-block; /* modèle de boîte en ligne */
+  padding-left: 50%;
+  white-space: nowrap; /* pas de passage à la ligne */
+  animation: defilement-rtl 20s infinite ease-in-out;
+}
+
+/** */
+/** */
+/** */
+/*ELEMENT REVERSE*/
+.boxDefilementText > .object2 {
+  display: inline-block; /* modèle de boîte en ligne */
+  margin-left: -50%;
+  white-space: nowrap; /* pas de passage à la ligne */
+
+  animation: defilement-rtl-reverse 40s infinite ease-in-out;
+}
+/*ELEMENT REVERSE*/
+/** */
+/** */
+/** */
+
+.boxDefilementText > .object3 {
+  display: inline-block; /* modèle de boîte en ligne */
+  padding-left: 50%;
+  white-space: nowrap; /* pas de passage à la ligne */
+  animation: defilement-rtl 30s infinite ease-in-out;
+}
+
+/* animation avec couleurs (hover)
+/*
+.boxDefilementText:hover {
+  animation: defilement-colors 2s infinite linear;
+}
+
+@keyframes defilement-colors {
+  0% {
+    @apply text-vert;
+  }
+  25% {
+    @apply text-bleu;
+  }
+  50% {
+    @apply text-rouge;
+  }
+  75% {
+    @apply text-bleu;
+  }
+  100% {
+    @apply text-vert;
+  }
+}
+*/
+
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(-50%, 0, 0); /* position initiale à droite */
+  }
+  50% {
+    transform: translate3d(-200%, 0, 0); /* position finale à gauche */
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0); /* position finale à gauche */
+  }
+}
+
+@keyframes defilement-rtl-reverse {
+  0% {
+    transform: translate3d(-15%, 0, 0); /* position initiale à droite */
+  }
+  50% {
+    transform: translate3d(30%, 0, 0); /* position finale à gauche */
+  }
+  100% {
+    transform: translate3d(-15%, 0, 0); /* position finale à gauche */
+  }
 }
 </style>
--->

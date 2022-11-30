@@ -1,56 +1,359 @@
 <script setup>
+import Logo from "@/components/icons/logo.vue";
+
 function Function252525() {
-  let box25 = document.querySelector(".boxDefilementText");
+  let box25 = document.querySelector(".animationHome");
   let valueScroll = window.pageYOffset;
-  box25.style.letterSpacing = valueScroll + "px";
+  box25.style.letterSpacing = valueScroll / 20 + "px";
   box25.style.opacity = 100 - valueScroll / 6 + "%";
 }
 window.addEventListener("scroll", Function252525);
 </script>
 
 <template>
-  <div class="flex-col flex text-8xl w-full boxDefilementText my-10">
-    <p class="font-thin object1">
+  <!--2525252525-->
+  <div
+    class="flex-col flex text-8xl max-w-3xl w-full boxDefilementText animationHome my-10 font-thin"
+  >
+    <p class="object1">
+      252525252525252525252525252525252525252525252525252525252525252525252525
       252525252525252525252525252525252525252525252525252525252525252525252525
     </p>
 
-    <p class="font-thin object2">
-      2525252525252525252525252525<strong class="font-bold">25</strong
-      >25252525252525252525252525252525252525252525
+    <p class="object2">
+      2525252525252525<strong class="font-bold">25</strong
+      >25252525252525252525252525252525252525252525252525252525
     </p>
 
-    <p class="font-thin object3">
+    <p class="object3">
       252525252525252525252525252525252525252525252525252525252525252525252525
     </p>
   </div>
-  <div class="max-w-5xl mx-2 md:ml-28">
-    <div class="">
-      <h2 class="font-inter font-black text-7xl">25 ANS</h2>
-      <p class="text-4xl">
-        25 ans ça se fête ! Pour son quart de siècle MMI Montbéliard organise un
-        concours d’oeuvre numérique ! Le but ? Laissez une trace, car oui
-        l’oeuvre gagnante sera transformer en NFT pour rester à jamais dans la
-        Blockchain ! Alors ? Partant ?
-      </p>
+  <!--2525252525-->
 
-      <p class="text-4xl font-semibold">
-        Vous pouvez commencer par voter pour votre oeuvre préféré à travers les
-        différentes salles de ce musée digital !
-      </p>
-    </div>
+  <div class="flex flex-col gap-10 p-6 md:p-10">
+    <section
+      class="flex flex-row justify-between items-center md:gap-20 lg:gap-32"
+    >
+      <div>
+        <div>
+          <h2 class="mmi-h2">25 ANS</h2>
+          <p>
+            25 ans ça se fête ! Pour son quart de siècle MMI Montbéliard
+            organise un concours d’oeuvre numérique ! Le but ? Laissez une
+            trace, car oui l’oeuvre gagnante sera transformer en NFT pour rester
+            à jamais dans la Blockchain ! Alors ? Partant ?
+          </p>
+          <p class="font-semibold">
+            Vous pouvez commencer par voter pour votre oeuvre préféré à travers
+            les différentes salles de ce musée digital !
+          </p>
+        </div>
+        <div>
+          <h2 class="mmi-h2">MMI</h2>
+          <p>
+            Le BUT MMI ou Bachelor Universitaire technique Métiers du Multimédia
+            et de l’Internet est un curcus universitaire. MMI c’est plus que des
+            années d’apprentissage, c’est une expérience personnelle comme
+            sociale. Un état d’esprit qui réuni tout les élèves et qui fait
+            vivre le département. Du design en passant par la communication et
+            le développement web, MMI apprends à tous les prérequis pour
+            travailler dans le WEB.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <Logo class="p-4 w-72 h-72 stroke-black hidden md:block movingLogo" />
+      </div>
+    </section>
   </div>
+  <!--SECTION PROFS-->
+  <div class="flex flex-col gap-8 p-6 md:p-10">
+    <h2 class="mmi-h2">Les professeurs & co</h2>
+    <p>MMI ne serait rien sans les personnes présentés ci-dessous !</p>
+    <div
+      class="grid grid-cols-galerie-profs gap-10 justify-items-center place-items-start"
+    >
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/A-Lamboux_Durand.jpg"
+          alt="Alain Lamboux-Durand"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Alain LAMBOUX-DURAND</p>
+          <p>Communication - Audiovisuel</p>
+          <p class="font-black">Chef du département</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/P-Chatonnay.jpg"
+          alt="David MALSOT"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Pascal CHATONNAY</p>
+          <p>Informatique - Référent Défense et Sécurité Nationale</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/E-Chartogne.jpg"
+          alt="Élodie CHARTOGNE"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Élodie CHARTOGNE</p>
+          <p>Secrétariat</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/D-Malsot.jpg"
+          alt="David MALSOT"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>David MALSOT</p>
+          <p>Communication</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/X-Senente.jpg"
+          alt="Xavier SENENTE"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Xavier SENENTE</p>
+          <p>Graphisme & Design</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/L-Dubois.jpg"
+          alt="Lydia DUBOIS"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Lydia DUBOIS</p>
+          <p>Communication - Anglais - Stages</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/JM-Fino.jpg"
+          alt="Jean-Marie FINO"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Jean-Marie FINO</p>
+          <p>Informatique - Développement web</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/S-Augier.jpg"
+          alt="Sébastien AUGIER"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Sébastien AUGIER</p>
+          <p>Graphisme & Design - Audiovisuel</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/S-Laurent.jpg"
+          alt="Stéphane LAURENT"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Stéphane LAURENT</p>
+          <p>Communication - Marketing</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/Q-Gianella.jpg"
+          alt="Quentin GIANELLA"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Quentin GIANELLA</p>
+          <p>Graphisme & Design - Audiovisuel</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/JC-Domenget.jpg"
+          alt="Jean-Claude DOMENGET"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Jean-Claude DOMENGET</p>
+          <p>Communication - Marketing</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/H-Mabed.jpg"
+          alt="Hakim MABED"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Hakim MABED</p>
+          <p>Informatique - Réseau</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/W-Yvart.jpg"
+          alt="Willy YVART"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Willy YVART</p>
+          <p>Informatique</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/T-Hulin.jpg"
+          alt="Thibaud HULIN"
+          class="image-prof object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Thibaud HULIN</p>
+          <p>Design - Communication</p>
+        </div>
+      </div>
+      <!--fin cadre-->
 
-  <div class="max-w-5xl mx-2 md:ml-28 my-10">
-    <div class="">
-      <h2 class="font-inter font-black text-7xl">MMI</h2>
-      <p class="text-4xl">
-        Le BUT MMI ou Bachelor Universitaire technique Métiers du Multimédia et
-        de l’Internet est un curcus universitaire. MMI c’est plus que des années
-        d’apprentissage, c’est une expérience personnelle comme sociale. Un état
-        d’esprit qui réuni tout les élèves et qui fait vivre le département. Du
-        design en passant par la communication et le développement web, MMI
-        apprends à tous les prérequis pour travailler dans le WEB.
-      </p>
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Christelle BLOCH"
+          class="image-prof object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Christelle BLOCH</p>
+          <p>Informatique - Stages</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Abdallah MAKHOUL"
+          class="image-prof object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Abdallah MAKHOUL</p>
+          <p>Informatique - Développement web</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Robin HECKENAUER"
+          class="image-prof object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Robin HECKENAUER</p>
+          <p>Informatique</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Myriam NICOLLE"
+          class="image-prof object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Myriam NICOLLE</p>
+          <p>Graphisme & Design</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Didier FLORENTZ"
+          class="image-prof object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Didier FLORENTZ</p>
+          <p>Graphisme & Design</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Thierry HUFSCHMIDT"
+          class="image-prof object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Thierry HUFSCHMIDT</p>
+          <p>Service Technique</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Annie STEMPHELET"
+          class="image-prof object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p>Annie STEMPHELET</p>
+          <p>Entretien</p>
+        </div>
+      </div>
+      <!--fin cadre-->
     </div>
   </div>
 </template>
@@ -90,31 +393,6 @@ window.addEventListener("scroll", Function252525);
   animation: defilement-rtl 30s infinite ease-in-out;
 }
 
-/* animation avec couleurs (hover)
-/*
-.boxDefilementText:hover {
-  animation: defilement-colors 2s infinite linear;
-}
-
-@keyframes defilement-colors {
-  0% {
-    @apply text-vert;
-  }
-  25% {
-    @apply text-bleu;
-  }
-  50% {
-    @apply text-rouge;
-  }
-  75% {
-    @apply text-bleu;
-  }
-  100% {
-    @apply text-vert;
-  }
-}
-*/
-
 @keyframes defilement-rtl {
   0% {
     transform: translate3d(-50%, 0, 0); /* position initiale à droite */
@@ -136,6 +414,22 @@ window.addEventListener("scroll", Function252525);
   }
   100% {
     transform: translate3d(-15%, 0, 0); /* position finale à gauche */
+  }
+}
+
+.movingLogo {
+  animation: animation-logo-mmi 2s infinite ease-in-out;
+}
+
+@keyframes animation-logo-mmi {
+  0% {
+    transform: translate3d(0, 0, 0); /* position initiale à droite */
+  }
+  50% {
+    transform: translate3d(0, 10%, 0); /* position finale à gauche */
+  }
+  100% {
+    transform: translate3d(0, 0, 0); /* position finale à gauche */
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between px-5 items-start w-full">
+  <div class="flex justify-between px-5 items-start w-full z-[80]">
     <!--Logo du header-->
     <RouterLink to="/home">
       <div class="flex items-center py-4 font-bold">
@@ -14,7 +14,7 @@
 
     <!--Bouton pour afficher menu-->
     <button
-      class="relative z-50 p-1 w-fit bg-black"
+      class="relative p-1 w-fit bg-black"
       aria-controls="menu"
       :aria-expanded="menuOuvert"
       @click="menuOuvert = !menuOuvert"
@@ -26,7 +26,7 @@
 
     <!--Bouton pour cacher menu-->
     <button
-      class="relative z-50 m-5"
+      class="relative m-5 z-[99]"
       aria-controls="menu"
       :aria-expanded="menuOuvert"
       @click="menuOuvert = !menuOuvert"
@@ -38,7 +38,7 @@
 
     <!--Menu hamburger déroulé-->
     <div
-      class="fixed inset-0 translate-x-full motion-safe:transition-transform motion-safe:duration-1000"
+      class="fixed inset-0 translate-x-full motion-safe:transition-transform motion-safe:duration-1000 z-[90]"
       :class="[' bg-black  text-white', menuOuvert ? 'translate-x-0' : '']"
     >
       <div class="m-5 flex items-center">

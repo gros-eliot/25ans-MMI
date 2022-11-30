@@ -19,7 +19,7 @@ module.exports = {
         'inter': ['Inter', 'sans-serif'],
       },
       gridTemplateColumns: {
-        'galerie-profs': "repeat(auto-fit,minmax(250px,1fr))",
+        'galerie-profs': "repeat(auto-fit,minmax(270px,1fr))",
       },
     },
   },
