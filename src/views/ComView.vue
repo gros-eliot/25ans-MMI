@@ -1,12 +1,74 @@
 <script setup>
 import { ref } from "vue";
+import OeuvreComponent from "@/components/OeuvreComponent.vue";
 let clickedImage = ref(false);
 </script>
 
 <template>
   <article class="m-5 md:m-10">
     <!--OEUVRES-->
-    <section></section>
+    <section class="w-11/12 m-auto my-10">
+      <div class="flex flex-col gap-0 h-screen">
+        <div class="grid grid-cols-[60%_40%] h-2/3">
+          <div class="grid grid-rows-[60%_40%]">
+            <div class="grid grid-cols-2">
+              <OeuvreComponent
+                :sourceImage="'oeuvre-test.jpg'"
+                :auteur="'Moi'"
+                :nom="'Testeur'"
+              />
+              <OeuvreComponent
+                :sourceImage="'oeuvre-test.jpg'"
+                :auteur="'Moi'"
+                :nom="'Testeur'"
+              />
+            </div>
+            <OeuvreComponent
+              :sourceImage="'oeuvre-test.jpg'"
+              :auteur="'Moi'"
+              :nom="'Testeur'"
+            />
+          </div>
+          <div class="grid grid-rows-2">
+            <OeuvreComponent
+              :sourceImage="'oeuvre-test.jpg'"
+              :auteur="'Moi'"
+              :nom="'Testeur'"
+            />
+            <OeuvreComponent
+              :sourceImage="'oeuvre-test.jpg'"
+              :auteur="'Moi'"
+              :nom="'Testeur'"
+            />
+            <!--
+              SI UNE NEUVIEME OEUVRE EST A AFFICHER !!
+            <OeuvreComponent
+              :sourceImage="'oeuvre-test.jpg'"
+              :auteur="'Moi'"
+              :nom="'Testeur'"
+            />
+            -->
+          </div>
+        </div>
+        <div class="grid grid-cols-3 h-1/3">
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+          />
+        </div>
+      </div>
+    </section>
     <!--Partie textuelle-->
     <!--Partie textuelle-->
     <!--Partie textuelle-->
