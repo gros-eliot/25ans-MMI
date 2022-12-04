@@ -14,11 +14,11 @@
     }
 
     .mmi-h1 {
-        @apply font-inter font-black text-7xl lg:text-8xl w-full  tracking-tighter
+        @apply font-inter font-black text-7xl lg:text-8xl tracking-tighter
     }
     
     .mmi-h2 {
-        @apply font-inter font-black text-5xl lg:text-7xl w-full  tracking-tighter
+        @apply font-inter font-black text-5xl lg:text-7xl tracking-tighter
     }
 
     .mmi-texte {
@@ -26,6 +26,9 @@
     }
 
     .image-prof {
+        @apply min-w-[270px] min-h-[350px]
+    }
+    .image-prof-2 {
         @apply w-[270px] h-[350px]
     }
 

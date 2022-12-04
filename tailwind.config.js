@@ -20,7 +20,13 @@ module.exports = {
       },
       gridTemplateColumns: {
         'galerie-profs': "repeat(auto-fit,minmax(270px,1fr))",
+        'galerie-profs-2': "repeat(auto-fit,minmax(300px,1fr))",
       },
+      backgroundImage: {
+        'malsot1' : "url('/images/D-Malsot.jpg')",
+        'malsot2' : "url('/images/funny-version/Malsot.jpeg')",
+        
+      }
     },
   },
   plugins: [],

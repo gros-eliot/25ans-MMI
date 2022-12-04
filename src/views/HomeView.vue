@@ -35,9 +35,9 @@ window.addEventListener("scroll", Function252525);
     <section
       class="flex flex-row justify-between items-center md:gap-20 lg:gap-32"
     >
-      <div>
+      <div class="flex flex-col gap-20">
         <div>
-          <h2 class="mmi-h2">25 ANS</h2>
+          <h2 class="mmi-h2">25 ANS !</h2>
           <p>
             25 ans ça se fête ! Pour son quart de siècle MMI Montbéliard
             organise un concours d’oeuvre numérique ! Le but ? Laissez une
@@ -50,7 +50,7 @@ window.addEventListener("scroll", Function252525);
           </p>
         </div>
         <div>
-          <h2 class="mmi-h2">MMI</h2>
+          <h2 class="mmi-h2">Qu'est-ce que MMI ?</h2>
           <p>
             Le BUT MMI ou Bachelor Universitaire technique Métiers du Multimédia
             et de l’Internet est un curcus universitaire. MMI c’est plus que des
@@ -64,7 +64,9 @@ window.addEventListener("scroll", Function252525);
       </div>
 
       <div>
-        <Logo class="p-4 w-72 h-72 stroke-black hidden md:block movingLogo" />
+        <Logo
+          class="p-4 w-72 h-72 stroke-black stroke-2 hidden md:block movingLogo"
+        />
       </div>
     </section>
   </div>
@@ -80,12 +82,12 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/A-Lamboux_Durand.jpg"
           alt="Alain Lamboux-Durand"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Alain LAMBOUX-DURAND</p>
+          <p class="font-black">Alain LAMBOUX-DURAND</p>
           <p>Communication - Audiovisuel</p>
-          <p class="font-black">Chef du département</p>
+          <p class="text-rouge">Chef du département</p>
         </div>
       </div>
       <!--fin cadre-->
@@ -94,10 +96,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/P-Chatonnay.jpg"
           alt="David MALSOT"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Pascal CHATONNAY</p>
+          <p class="font-black">Pascal CHATONNAY</p>
           <p>Informatique - Référent Défense et Sécurité Nationale</p>
         </div>
       </div>
@@ -107,10 +109,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/E-Chartogne.jpg"
           alt="Élodie CHARTOGNE"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Élodie CHARTOGNE</p>
+          <p class="font-black">Élodie CHARTOGNE</p>
           <p>Secrétariat</p>
         </div>
       </div>
@@ -120,10 +122,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/D-Malsot.jpg"
           alt="David MALSOT"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>David MALSOT</p>
+          <p class="font-black">David MALSOT</p>
           <p>Communication</p>
         </div>
       </div>
@@ -133,10 +135,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/X-Senente.jpg"
           alt="Xavier SENENTE"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Xavier SENENTE</p>
+          <p class="font-black">Xavier SENENTE</p>
           <p>Graphisme & Design</p>
         </div>
       </div>
@@ -146,10 +148,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/L-Dubois.jpg"
           alt="Lydia DUBOIS"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Lydia DUBOIS</p>
+          <p class="font-black">Lydia DUBOIS</p>
           <p>Communication - Anglais - Stages</p>
         </div>
       </div>
@@ -159,10 +161,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/JM-Fino.jpg"
           alt="Jean-Marie FINO"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Jean-Marie FINO</p>
+          <p class="font-black">Jean-Marie FINO</p>
           <p>Informatique - Développement web</p>
         </div>
       </div>
@@ -172,10 +174,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/S-Augier.jpg"
           alt="Sébastien AUGIER"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Sébastien AUGIER</p>
+          <p class="font-black">Sébastien AUGIER</p>
           <p>Graphisme & Design - Audiovisuel</p>
         </div>
       </div>
@@ -185,10 +187,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/S-Laurent.jpg"
           alt="Stéphane LAURENT"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Stéphane LAURENT</p>
+          <p class="font-black">Stéphane LAURENT</p>
           <p>Communication - Marketing</p>
         </div>
       </div>
@@ -198,10 +200,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/Q-Gianella.jpg"
           alt="Quentin GIANELLA"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Quentin GIANELLA</p>
+          <p class="font-black">Quentin GIANELLA</p>
           <p>Graphisme & Design - Audiovisuel</p>
         </div>
       </div>
@@ -211,10 +213,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/JC-Domenget.jpg"
           alt="Jean-Claude DOMENGET"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Jean-Claude DOMENGET</p>
+          <p class="font-black">Jean-Claude DOMENGET</p>
           <p>Communication - Marketing</p>
         </div>
       </div>
@@ -224,10 +226,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/H-Mabed.jpg"
           alt="Hakim MABED"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Hakim MABED</p>
+          <p class="font-black">Hakim MABED</p>
           <p>Informatique - Réseau</p>
         </div>
       </div>
@@ -237,10 +239,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/W-Yvart.jpg"
           alt="Willy YVART"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Willy YVART</p>
+          <p class="font-black">Willy YVART</p>
           <p>Informatique</p>
         </div>
       </div>
@@ -250,10 +252,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/T-Hulin.jpg"
           alt="Thibaud HULIN"
-          class="image-prof object-cover"
+          class="image-prof-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Thibaud HULIN</p>
+          <p class="font-black">Thibaud HULIN</p>
           <p>Design - Communication</p>
         </div>
       </div>
@@ -264,10 +266,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Christelle BLOCH"
-          class="image-prof object-cover border-4 border-black"
+          class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Christelle BLOCH</p>
+          <p class="font-black">Christelle BLOCH</p>
           <p>Informatique - Stages</p>
         </div>
       </div>
@@ -277,11 +279,25 @@ window.addEventListener("scroll", Function252525);
       <div class="prof-homepage">
         <img
           src="/images/PASDEPHOTO.png"
-          alt="Abdallah MAKHOUL"
-          class="image-prof object-cover border-4 border-black"
+          alt="Christelle BLOCH"
+          class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Abdallah MAKHOUL</p>
+          <p class="font-black">Pierre PRACHT</p>
+          <p>Informatique - Développement web</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Abdallah MAKHOUL"
+          class="image-prof-2 object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p class="font-black">Abdallah MAKHOUL</p>
           <p>Informatique - Développement web</p>
         </div>
       </div>
@@ -291,10 +307,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Robin HECKENAUER"
-          class="image-prof object-cover border-4 border-black"
+          class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Robin HECKENAUER</p>
+          <p class="font-black">Robin HECKENAUER</p>
           <p>Informatique</p>
         </div>
       </div>
@@ -305,11 +321,24 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Myriam NICOLLE"
-          class="image-prof object-cover border-4 border-black"
+          class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Myriam NICOLLE</p>
+          <p class="font-black">Myriam NICOLLE</p>
           <p>Graphisme & Design</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Camille BATAILLE-BARBIER"
+          class="image-prof-2 object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p class="font-black">Camille BATAILLE-BARBIER</p>
+          <p>Communication</p>
         </div>
       </div>
       <!--fin cadre-->
@@ -319,10 +348,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Didier FLORENTZ"
-          class="image-prof object-cover border-4 border-black"
+          class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Didier FLORENTZ</p>
+          <p class="font-black">Didier FLORENTZ</p>
           <p>Graphisme & Design</p>
         </div>
       </div>
@@ -333,10 +362,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Thierry HUFSCHMIDT"
-          class="image-prof object-cover border-4 border-black"
+          class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Thierry HUFSCHMIDT</p>
+          <p class="font-black">Thierry HUFSCHMIDT</p>
           <p>Service Technique</p>
         </div>
       </div>
@@ -346,10 +375,10 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Annie STEMPHELET"
-          class="image-prof object-cover border-4 border-black"
+          class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p>Annie STEMPHELET</p>
+          <p class="font-black">Annie STEMPHELET</p>
           <p>Entretien</p>
         </div>
       </div>
@@ -418,18 +447,29 @@ window.addEventListener("scroll", Function252525);
 }
 
 .movingLogo {
-  animation: animation-logo-mmi 2s infinite ease-in-out;
+  animation: animation-logo-mmi 4s infinite ease-in-out;
 }
 
 @keyframes animation-logo-mmi {
   0% {
     transform: translate3d(0, 0, 0); /* position initiale à droite */
+    stroke: rgb(109 214 120);
+  }
+  25% {
+    transform: translate3d(0, 10%, 0); /* position finale à gauche */
+    stroke: rgb(187 167 231);
   }
   50% {
+    transform: translate3d(0, 0, 0); /* position finale à gauche */
+    stroke: rgb(255 54 54);
+  }
+  75% {
     transform: translate3d(0, 10%, 0); /* position finale à gauche */
+    stroke: rgb(187 167 231);
   }
   100% {
     transform: translate3d(0, 0, 0); /* position finale à gauche */
+    stroke: rgb(109 214 120);
   }
 }
 </style>
