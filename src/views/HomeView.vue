@@ -37,7 +37,7 @@ window.addEventListener("scroll", Function252525);
     >
       <div class="flex flex-col gap-20">
         <div>
-          <h2 class="mmi-h2">25 ANS !</h2>
+          <h2 class="mmi-h2">25 ANS&nbsp;!</h2>
           <p>
             25 ans ça se fête ! Pour son quart de siècle MMI Montbéliard
             organise un concours d’oeuvre numérique ! Le but ? Laissez une
@@ -50,7 +50,7 @@ window.addEventListener("scroll", Function252525);
           </p>
         </div>
         <div>
-          <h2 class="mmi-h2">Qu'est-ce que MMI ?</h2>
+          <h2 class="mmi-h2">Qu'est-ce que MMI&nbsp;?</h2>
           <p>
             Le BUT MMI ou Bachelor Universitaire technique Métiers du Multimédia
             et de l’Internet est un curcus universitaire. MMI c’est plus que des
@@ -143,19 +143,7 @@ window.addEventListener("scroll", Function252525);
         </div>
       </div>
       <!--fin cadre-->
-      <!--cadre-->
-      <div class="prof-homepage">
-        <img
-          src="/images/L-Dubois.jpg"
-          alt="Lydia DUBOIS"
-          class="image-prof-2 object-cover"
-        />
-        <div class="flex flex-col gap-0 items-center">
-          <p class="font-black">Lydia DUBOIS</p>
-          <p>Communication - Anglais - Stages</p>
-        </div>
-      </div>
-      <!--fin cadre-->
+
       <!--cadre-->
       <div class="prof-homepage">
         <img
@@ -169,6 +157,21 @@ window.addEventListener("scroll", Function252525);
         </div>
       </div>
       <!--fin cadre-->
+
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/L-Dubois.jpg"
+          alt="Lydia DUBOIS"
+          class="image-prof-2 object-cover"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p class="font-black">Lydia DUBOIS</p>
+          <p>Communication - Anglais - Stages</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+
       <!--cadre-->
       <div class="prof-homepage">
         <img

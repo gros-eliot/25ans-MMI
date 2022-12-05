@@ -2,31 +2,90 @@
 import { ref } from "vue";
 import OeuvreComponent from "@/components/OeuvreComponent.vue";
 let clickedImage = ref(false);
+let removeScroll = ref(false);
 </script>
 
 <template>
   <article class="m-5 md:m-10">
-    <!--OEUVRES-->
-    <section class="w-11/12 m-auto my-10">
+    <!--OEUVRES MOBILE-->
+    <section class="w-11/12 m-auto my-10 md:hidden">
+      <div class="h-screen">
+        <div class="grid grid-cols-2 grid-rows-4 h-full">
+          <OeuvreComponent />
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+          <!--
+                SI UNE NEUVIEME OEUVRE EST A AFFICHER !!
+              <OeuvreComponent
+                :sourceImage="'oeuvre-test.jpg'"
+                :auteur="'Moi'"
+                :nom="'Testeur'"
+                :description="'Cette oeuvre a été réalisée par Y.'"
+              />
+              -->
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre-test.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--OEUVRES TAB,ORDI,+-->
+    <section class="w-11/12 m-auto my-10 hidden md:block">
       <div class="flex flex-col gap-0 h-screen">
         <div class="grid grid-cols-[60%_40%] h-2/3">
           <div class="grid grid-rows-[60%_40%]">
             <div class="grid grid-cols-2">
+              <OeuvreComponent />
               <OeuvreComponent
                 :sourceImage="'oeuvre-test.jpg'"
                 :auteur="'Moi'"
                 :nom="'Testeur'"
-              />
-              <OeuvreComponent
-                :sourceImage="'oeuvre-test.jpg'"
-                :auteur="'Moi'"
-                :nom="'Testeur'"
+                :description="'Cette oeuvre a été réalisée par Y.'"
               />
             </div>
             <OeuvreComponent
               :sourceImage="'oeuvre-test.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
+              :description="'Cette oeuvre a été réalisée par Y.'"
             />
           </div>
           <div class="grid grid-rows-2">
@@ -34,11 +93,13 @@ let clickedImage = ref(false);
               :sourceImage="'oeuvre-test.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
+              :description="'Cette oeuvre a été réalisée par Y.'"
             />
             <OeuvreComponent
               :sourceImage="'oeuvre-test.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
+              :description="'Cette oeuvre a été réalisée par Y.'"
             />
             <!--
               SI UNE NEUVIEME OEUVRE EST A AFFICHER !!
@@ -46,6 +107,7 @@ let clickedImage = ref(false);
               :sourceImage="'oeuvre-test.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
+              :description="'Cette oeuvre a été réalisée par Y.'"
             />
             -->
           </div>
@@ -55,16 +117,19 @@ let clickedImage = ref(false);
             :sourceImage="'oeuvre-test.jpg'"
             :auteur="'Moi'"
             :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
             :sourceImage="'oeuvre-test.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
             :sourceImage="'oeuvre-test.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
           />
         </div>
       </div>
@@ -73,34 +138,37 @@ let clickedImage = ref(false);
     <!--Partie textuelle-->
     <!--Partie textuelle-->
     <!--Partie textuelle-->
-    <section class="max-w-5xl">
-      <h2 class="mmi-h2 text-center lg:text-left">La com' au MMI</h2>
-      <p>
-        Le pôle communication de MMI fait partie des trois grandes thématiques
-        qu’aborde MMI dans son cursus. La communication est très importante dans
-        le milieu du web car elle permet aux différents projets de vivre et de
-        se faire une place dans les esprits. De plus, la communication régie
-        toutes les parties qui précèdent le lancement d’un projet comme des
-        analyses concurrentielles ou la gestion du budget.
-      </p>
-    </section>
-
-    <!--2525252525-->
-    <div class="ml-auto w-full md:w-fit text-5xl md:text-8xl my-10">
-      <div class="flex-col flex max-w-xl w-full boxDefilementText">
-        <p class="font-thin object1">
-          252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525
-        </p>
-        <p class="font-thin object2">
-          252525252525<strong class="font-bold">25</strong
-          >25252525252525252525252525252525252525252525252525252525252525
-        </p>
-        <p class="font-thin object3">
-          252525252525252525252525252525252525252525252525252525252525252525252525
+    <section
+      class="flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-20"
+    >
+      <div class="max-w-5xl">
+        <h2 class="mmi-h2 text-center lg:text-left">La com' au MMI</h2>
+        <p>
+          Le pôle communication de MMI fait partie des trois grandes thématiques
+          qu’aborde MMI dans son cursus. La communication est très importante
+          dans le milieu du web car elle permet aux différents projets de vivre
+          et de se faire une place dans les esprits. De plus, la communication
+          régie toutes les parties qui précèdent le lancement d’un projet comme
+          des analyses concurrentielles ou la gestion du budget.
         </p>
       </div>
-    </div>
-    <!--2525252525-->
+      <!--2525252525-->
+      <div class="ml-auto w-full md:w-fit text-5xl md:text-8xl my-10">
+        <div class="flex-col flex max-w-xl w-full boxDefilementText">
+          <p class="font-thin object1">
+            252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525
+          </p>
+          <p class="font-thin object2">
+            252525252525<strong class="font-bold">25</strong
+            >25252525252525252525252525252525252525252525252525252525252525
+          </p>
+          <p class="font-thin object3">
+            252525252525252525252525252525252525252525252525252525252525252525252525
+          </p>
+        </div>
+      </div>
+      <!--2525252525-->
+    </section>
   </article>
   <!--Prof principal : M. MALSOT-->
   <div
@@ -117,7 +185,7 @@ let clickedImage = ref(false);
     ></div>
     <!--IMAGE MONSIEUR MALSOT-->
 
-    <div class="max-w-3xl flex flex-col gap-4">
+    <div class="max-w-xl flex flex-col gap-4">
       <h3 class="mmi-h2 text-5xl">David Malsot</h3>
       <p>
         Monsieur David Malsot est l’un des professeurs principaux de MMI mais
@@ -133,7 +201,7 @@ let clickedImage = ref(false);
 
   <article class="m-5 md:m-10">
     <section
-      class="flex flex-col lg:flex-row justify-between items-start md:items-center w-full my-10 md:mt-20"
+      class="flex flex-col-reverse lg:flex-row justify-between items-start md:items-center w-full my-10 md:mt-20"
     >
       <!---25252525 des autres profs-->
       <div class="w-full lg:max-w-sm text-5xl md:text-8xl">

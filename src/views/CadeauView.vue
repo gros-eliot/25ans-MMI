@@ -99,7 +99,7 @@ window.addEventListener("click", GiftFunction);
           confetti5: openedGift === true,
         }"
       ></div>
-      <p :class="{ hidden: openedGift === true }">- Cliquer -</p>
+      <p :class="{ hidden: openedGift === true }">- Click -</p>
     </div>
   </section>
 </template>
