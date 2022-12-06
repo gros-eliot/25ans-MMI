@@ -2,6 +2,8 @@
   <div class="flex justify-between px-5 items-start w-full z-[80]">
     <!--Logo du header-->
     <RouterLink to="/home">
+      <!--      :class="{ invert: $route.name === 'histoire' }"
+-->
       <div class="flex items-center py-4 font-bold">
         <logo class="stroke-black w-8 h-8 stroke-[3]" />
         <p
@@ -25,16 +27,20 @@
     </button>
 
     <!--Bouton pour cacher menu-->
-    <button
-      class="relative m-5 z-[99]"
-      aria-controls="menu"
-      :aria-expanded="menuOuvert"
+    <div
       @click="menuOuvert = !menuOuvert"
       :class="[menuOuvert ? '' : 'hidden']"
+      class="m-5"
     >
-      <Croix class="w-8 h-8" />
-      <span class="sr-only">Menu</span>
-    </button>
+      <button
+        class="fixed z-[99]"
+        aria-controls="menu"
+        :aria-expanded="menuOuvert"
+      >
+        <Croix class="w-8 h-8" />
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
 
     <!--Menu hamburger déroulé-->
     <div
