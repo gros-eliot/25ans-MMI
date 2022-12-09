@@ -36,7 +36,7 @@ window.addEventListener("scroll", Function252525);
       class="flex flex-row justify-between items-center md:gap-20 lg:gap-32"
     >
       <div class="flex flex-col gap-20">
-        <div>
+        <div class="flex flex-col gap-3">
           <h2 class="mmi-h2">25 ANS&nbsp;!</h2>
           <p>
             25 ans ça se fête ! Pour son quart de siècle MMI Montbéliard
@@ -49,7 +49,7 @@ window.addEventListener("scroll", Function252525);
             les différentes salles de ce musée digital !
           </p>
         </div>
-        <div>
+        <div class="flex flex-col gap-3">
           <h2 class="mmi-h2">Qu'est-ce que MMI&nbsp;?</h2>
           <p>
             Le BUT MMI ou Bachelor Universitaire technique Métiers du Multimédia
@@ -73,7 +73,7 @@ window.addEventListener("scroll", Function252525);
   <!--SECTION PROFS-->
   <div class="flex flex-col gap-8 p-6 md:p-10">
     <h2 class="mmi-h2">Les professeurs & co</h2>
-    <p>MMI ne serait rien sans les personnes présentés ci-dessous !</p>
+    <p>MMI ne serait rien sans les personnes présentées ci-dessous !</p>
     <div
       class="grid grid-cols-galerie-profs gap-10 justify-items-center place-items-start"
     >
@@ -305,16 +305,17 @@ window.addEventListener("scroll", Function252525);
         </div>
       </div>
       <!--fin cadre-->
+
       <!--cadre-->
       <div class="prof-homepage">
         <img
           src="/images/PASDEPHOTO.png"
-          alt="Robin HECKENAUER"
+          alt="Bruno VIEZZI"
           class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
-          <p class="font-black">Robin HECKENAUER</p>
-          <p>Informatique</p>
+          <p class="font-black">Bruno VIEZZI</p>
+          <p>Communication</p>
         </div>
       </div>
       <!--fin cadre-->
@@ -336,12 +337,39 @@ window.addEventListener("scroll", Function252525);
       <div class="prof-homepage">
         <img
           src="/images/PASDEPHOTO.png"
+          alt="Julie BODET"
+          class="image-prof-2 object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p class="font-black">Julie BODET</p>
+          <p>Communication</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
           alt="Camille BATAILLE-BARBIER"
           class="image-prof-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Camille BATAILLE-BARBIER</p>
           <p>Communication</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Robin HECKENAUER"
+          class="image-prof-2 object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p class="font-black">Robin HECKENAUER</p>
+          <p>Informatique</p>
         </div>
       </div>
       <!--fin cadre-->
