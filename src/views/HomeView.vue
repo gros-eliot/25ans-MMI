@@ -30,6 +30,44 @@ window.addEventListener("scroll", Function252525);
     </p>
   </div>
   <!--2525252525-->
+  <div
+    class="text-center flex flex-col gap-10 bg-black w-full text-beige py-5 my-20 overflow-x-hidden"
+  >
+    <section>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-white h-1 opacity-20 lines1"
+      ></div>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-white h-1 opacity-20 lines2"
+      ></div>
+    </section>
+
+    <h2 class="mmi-h2">L'histoire du MMI</h2>
+    <p>
+      Découvrez l'histoire du MMI depuis sa fondation grâce à une frise
+      interactive.
+    </p>
+    <RouterLink to="/histoire">
+      <button
+        class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-beige text-beige"
+      >
+        Découvrir
+      </button>
+    </RouterLink>
+
+    <section>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-white h-1 opacity-20 lines3"
+      ></div>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-white h-1 opacity-20 lines4"
+      ></div>
+    </section>
+  </div>
 
   <div class="flex flex-col gap-10 p-6 md:p-10">
     <section
@@ -419,6 +457,36 @@ window.addEventListener("scroll", Function252525);
 </template>
 
 <style scoped>
+.lines1 {
+  overflow: hidden;
+  animation: movinglines1 3s linear infinite;
+}
+.lines2 {
+  overflow: hidden;
+  animation: movinglines1 1s linear infinite;
+}
+.lines3 {
+  overflow: hidden;
+  animation: movinglines1 2s linear infinite;
+}
+.lines4 {
+  overflow: hidden;
+  animation: movinglines1 4s linear infinite;
+}
+
+@keyframes movinglines1 {
+  0% {
+    overflow: hidden;
+    translate: -100% 0%;
+  }
+
+  100% {
+    overflow: hidden;
+    overflow-x: hidden;
+    translate: 200% 0%;
+  }
+}
+
 .boxDefilementText {
   overflow: hidden;
 }

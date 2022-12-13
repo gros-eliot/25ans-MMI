@@ -18,7 +18,7 @@ function GiftFunction() {
   let Clicked = document.querySelector(".testeurRouteName");
   if ((Clicked.style.width = 1)) {
     openedGift.value = true;
-    setTimeout(RouterPush, 1000);
+    setTimeout(RouterPush, 1800);
   } else {
     console.log("");
   }
@@ -108,53 +108,53 @@ window.addEventListener("click", GiftFunction);
   rotate: 145deg;
   transform: translate(-80%, -140%);
   transform-origin: center;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .closedGiftClass {
   rotate: 0deg;
   transform: translate(0, 0);
   transform-origin: center;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .confetti1 {
   rotate: 60deg;
   transform: translate(-220px, 0);
   opacity: 100%;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .confetti2 {
   rotate: 45deg;
   transform: translate(-180px, 0);
   opacity: 100%;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .confetti3 {
   rotate: 130deg;
   transform: translate(-180px, 0);
   opacity: 100%;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .confetti4 {
   rotate: 100deg;
   transform: translate(-220px, 0);
   opacity: 100%;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .confetti5 {
   rotate: 80deg;
   transform: translate(-220px, 0);
   opacity: 100%;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .transitionFinale {
   z-index: 50;
   opacity: 100%;
-  transition: 1s ease;
+  transition: 2s ease;
 }
 </style>

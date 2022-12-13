@@ -10,9 +10,11 @@ function ScreenBlack() {
     255 - valueScroll / 10
   );
 }
+
+window.addEventListener("scroll", ScreenBlack);
 </script>
 
-<template onscroll="ScreenBlack()">
+<template>
   <!--BALISE "article" == balise ultime de la frise (qui controle l'affichage, parametres de la fenetre)-->
   <article
     class="maskscrollbar backgroundChange inset-0 absolute w-full h-screen flex justify-start items-center overflow-y-hidden overflow-x-scroll overflow-visible -z-10"
@@ -20,7 +22,7 @@ function ScreenBlack() {
     <!--SECTION D'INTRO-->
 
     <div
-      class="z-50 flex flex-col text-white md:flex-row gap-5 md:gap-20 justify-center items-center p-2 md:p-8 md:mr-20"
+      class="z-50 flex flex-col text-white md:flex-row gap-5 md:gap-20 text-center md:text-start justify-center items-center p-2 md:p-8 md:mr-20"
     >
       <div class="flex flex-col uppercase invert">
         <h1 class="mmi-h1">L'histoire</h1>

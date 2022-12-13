@@ -8,17 +8,17 @@ import MiniBatimentMMI from "./components/MiniBatimentMMI.vue";
 function FunctionLine() {
   let movingLine = document.querySelector(".line");
   let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 6 + "%";
+  movingLine.style.width = valueScroll / 20 + "%";
 }
 function FunctionLine2() {
   let movingLine = document.querySelector(".line2");
   let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 6 + "%";
+  movingLine.style.width = valueScroll / 20 + "%";
 }
 function FunctionLine3() {
   let movingLine = document.querySelector(".line3");
   let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 6 + "%";
+  movingLine.style.width = valueScroll / 20 + "%";
 }
 
 window.addEventListener("scroll", FunctionLine);
