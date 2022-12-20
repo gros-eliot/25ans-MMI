@@ -1,23 +1,75 @@
 <script setup>
+import an1997View from "@/components/histoire/an1997.vue";
 import VagueAnimation from "@/components/visuel/VagueAnimation.vue";
 
-function ScreenBlack() {
-  let backgroundChange = document.querySelector(".backgroundChange");
-  let valueScroll = window.pageXOffset;
-  backgroundChange.style.backgroundColor = rgb(
-    255 - valueScroll / 10,
-    255 - valueScroll / 10,
-    255 - valueScroll / 10
-  );
+function defilementArticle() {
+  let valueScroll = window.pageYOffset;
+
+  // ARTICLE SUIT LE SCROLL
+  let defilerArticle = document.querySelector(".histoire-defilement");
+  defilerArticle.style.transform = `translate(-${valueScroll * 2}px,0)`;
+
+  // Background modifiers
+  let backgroundHistoire = document.querySelector(".histoire-background");
+
+  // Black screen
+  let blackScreen = document.querySelector(".histoire-blackscreen");
+
+  // VUES POUR CHAQUE ANNEE
+  let an1997View = document.querySelector(".an1997view");
+
+  // SCROLL 100
+  if (valueScroll >= 100) {
+    blackScreen.style.opacity = valueScroll / 5 + "%";
+  } else {
+    blackScreen.style.opacity = 0;
+  }
+
+  // SCROLL 450
+
+  if (valueScroll >= 450) {
+    backgroundHistoire.style.backgroundImage =
+      "url('/images/histoire/space.jpg')";
+  } else {
+    backgroundHistoire.style.backgroundImage = "url('/')";
+  }
+
+  // SCROLL 900
+
+  if (valueScroll >= 900) {
+    blackScreen.style.opacity = 100 - valueScroll / 30 + "%";
+  } else {
+    backgroundHistoire.style.backgroundImage = "url('/')";
+  }
+
+  // scroll 1000
+  if (valueScroll > 1500 && valueScroll < 10000) {
+    an1997View.style.opacity = valueScroll / 30 + "%";
+  } else {
+    an1997View.style.opacity = 0;
+  }
 }
 
-window.addEventListener("scroll", ScreenBlack);
+window.addEventListener("scroll", defilementArticle);
 </script>
 
 <template>
+  <!--ELEMENT QUI PERMET LE SCROLL Y-->
+  <div class="histoire-scrolling -z-50 bg-transparent h-[10000px] w-1"></div>
+
+  <!--BACKGROUND OF PAGE-->
+  <div
+    class="histoire-background fixed h-screen w-full -z-[11] inset-0 bg-beige bg-contain bg-repeat"
+  ></div>
+
+  <!--ECRAN NOIR POUR EFFETS-->
+  <div
+    class="histoire-blackscreen fixed h-screen w-full bg-black z-[11] inset-0 opacity-0"
+  ></div>
+
   <!--BALISE "article" == balise ultime de la frise (qui controle l'affichage, parametres de la fenetre)-->
   <article
-    class="maskscrollbar backgroundChange inset-0 absolute w-full h-screen flex justify-start items-center overflow-y-hidden overflow-x-scroll overflow-visible -z-10"
+    class="histoire-defilement inset-0 fixed w-fit h-screen flex justify-start items-center -z-10"
   >
     <!--SECTION D'INTRO-->
 
@@ -41,22 +93,11 @@ window.addEventListener("scroll", ScreenBlack);
         <p class="invert">scroll&nbsp;➤ to&nbsp;begin...</p>
       </div>
     </div>
-    <div class="m-0">
-      <VagueAnimation class="h-screen min-w-full" />
-    </div>
-    <div class="m-0 bg-black min-w-full w-[1000%] h-screen"></div>
-
     <!--SECTION D'INTRO-->
-    <div class="h-2 w-full fixed bg-beige z-10"></div>
-
-    <!--SECTION 1997-->
-    <div>Salut</div>
-    <!--SECTION 1997-->
   </article>
-
-  <!--ECRAN NOIR POUR EFFETS-->
-  <div class="fixed h-screen w-full bg-black -z-[11] inset-0 opacity-0"></div>
-  <!--ECRAN NOIR POUR EFFETS-->
+  <an1997View
+    class="an1997view fixed inset-x-1/2 inset-y-0 opacity-0 z-20 w-full"
+  ></an1997View>
 </template>
 
 <style scoped>

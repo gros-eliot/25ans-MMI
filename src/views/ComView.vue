@@ -71,7 +71,7 @@ let removeScroll = ref(false);
     <section class="w-11/12 m-auto my-10 hidden md:block">
       <div class="flex flex-col gap-0 h-screen">
         <div class="grid grid-cols-[60%_40%] h-2/3">
-          <div class="grid grid-rows-[60%_40%]">
+          <div class="grid grid-rows-[55%_45%]">
             <div class="grid grid-cols-2">
               <OeuvreComponent />
               <OeuvreComponent

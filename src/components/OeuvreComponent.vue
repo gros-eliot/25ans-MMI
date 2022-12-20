@@ -44,6 +44,11 @@
         class="ml-auto w-12 h-12 m-4"
       />
       <div class="flex flex-col gap-5">
+        <button
+          class="w-fit m-auto bg-white text-black font-bold px-4 py-2 rounded-lg"
+        >
+          Voter pour cette œuvre ♥
+        </button>
         <img :src="`public/images/oeuvres/${sourceImage}`" class="w-full" />
         <h3 class="mmi-h2">
           {{ nom }}

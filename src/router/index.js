@@ -10,7 +10,9 @@ import DevView from "../views/DevView.vue"
 import EventView from "../views/EventView.vue"
 import MentionsLegalesView from "../views/MentionsLegalesView.vue"
 import SecretView from "../views/SecretView.vue"
+
 import HistoireView from "../views/HistoireView.vue"
+import HistoireViewB from "../views/HistoireViewB.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +31,7 @@ const router = createRouter({
     
     { path: '/secret',  name: 'secret', component: SecretView },
     { path: '/histoire',  name: 'histoire', component: HistoireView },
+    { path: '/histoire-b',  name: 'histoire-b', component: HistoireViewB },
   ]
 })
 

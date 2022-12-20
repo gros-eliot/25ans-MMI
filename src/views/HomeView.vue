@@ -425,6 +425,33 @@ window.addEventListener("scroll", Function252525);
         </div>
       </div>
       <!--fin cadre-->
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Isabelle LAFORGUE"
+          class="image-prof-2 object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p class="font-black">Isabelle LAFORGUE</p>
+          <p>Informatique</p>
+        </div>
+      </div>
+      <!--fin cadre-->
+
+      <!--cadre-->
+      <div class="prof-homepage">
+        <img
+          src="/images/PASDEPHOTO.png"
+          alt="Annie STEMPHELET"
+          class="image-prof-2 object-cover border-4 border-black"
+        />
+        <div class="flex flex-col gap-0 items-center">
+          <p class="font-black">Annie STEMPHELET</p>
+          <p>Entretien</p>
+        </div>
+      </div>
+      <!--fin cadre-->
 
       <!--cadre-->
       <div class="prof-homepage">
@@ -436,19 +463,6 @@ window.addEventListener("scroll", Function252525);
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Thierry HUFSCHMIDT</p>
           <p>Service Technique</p>
-        </div>
-      </div>
-      <!--fin cadre-->
-      <!--cadre-->
-      <div class="prof-homepage">
-        <img
-          src="/images/PASDEPHOTO.png"
-          alt="Annie STEMPHELET"
-          class="image-prof-2 object-cover border-4 border-black"
-        />
-        <div class="flex flex-col gap-0 items-center">
-          <p class="font-black">Annie STEMPHELET</p>
-          <p>Entretien</p>
         </div>
       </div>
       <!--fin cadre-->

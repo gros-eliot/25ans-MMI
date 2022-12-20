@@ -1,9 +1,10 @@
 <template>
-  <div class="flex justify-between px-5 items-start w-full z-[80]">
+  <div
+    class="flex justify-between px-5 items-start w-full z-[80]"
+    :class="{ fixed: $route.name === 'histoire' }"
+  >
     <!--Logo du header-->
     <RouterLink to="/home">
-      <!--      :class="{ invert: $route.name === 'histoire' }"
--->
       <div class="flex items-center py-4 font-bold">
         <logo class="stroke-black w-8 h-8 stroke-[3]" />
         <p
