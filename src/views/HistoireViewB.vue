@@ -12,18 +12,32 @@ function BlackScreen() {
   //
   // BLACKSCREEN
   //
-
-  // SCROLL 100
-  if (valueScroll >= 100) {
-    blackScreen.style.opacity = valueScroll / 5 + "%";
-  } else {
+  // SCROLL 0
+  if (valueScroll >= 0) {
     blackScreen.style.opacity = 0;
   }
 
-  // scroll 600
+  // SCROLL 100 - FONDU IN
+  if (valueScroll >= 100) {
+    blackScreen.style.opacity = valueScroll / 5 + "%";
+  }
+
+  // scroll 600 - FONDU OUT
 
   if (valueScroll >= 600) {
     blackScreen.style.opacity = 100 - valueScroll / 10 + "%";
+  }
+
+  // scroll 1800 - FONDU IN
+
+  if (valueScroll >= 1600) {
+    blackScreen.style.opacity = 10 + valueScroll / 25 + "%";
+  }
+
+  // scroll 1800 - FONDU OUT
+
+  if (valueScroll >= 2300) {
+    blackScreen.style.opacity = 100 - valueScroll / 25 + "%";
   }
 
   //
