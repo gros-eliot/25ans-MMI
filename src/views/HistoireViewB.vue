@@ -19,15 +19,15 @@ function BlackScreen() {
 
   if (valueScroll >= 450) {
     backgroundHistoire.style.backgroundImage =
-      "url('/images/histoire/space.jpg')";
+      "linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%),url('/images/histoire/space.jpg')";
   } else {
     backgroundHistoire.style.backgroundImage = "url('/')";
   }
 
-  // scroll 600
+  // scroll 1000
 
   if (valueScroll >= 600) {
-    blackScreen.style.opacity = 100 - valueScroll / 30 + "%";
+    blackScreen.style.opacity = 100 - valueScroll / 25 + "%";
   }
 }
 
@@ -37,12 +37,12 @@ window.addEventListener("scroll", BlackScreen);
 <template>
   <!--BACKGROUND OF PAGE-->
   <div
-    class="histoire-background fixed h-screen w-full -z-[11] inset-0 bg-beige bg-contain bg-repeat"
+    class="histoire-background fixed h-screen w-full -z-[20] inset-0 bg-beige bg-contain bg-repeat bg-origin-padding"
   ></div>
 
   <!--ECRAN NOIR POUR EFFETS-->
   <div
-    class="histoire-blackscreen fixed h-screen w-full bg-black z-[11] inset-0 opacity-0"
+    class="histoire-blackscreen fixed h-screen w-full bg-black z-[4] inset-0 opacity-0"
   ></div>
   <!--ECRAN NOIR POUR EFFETS-->
 
@@ -75,6 +75,21 @@ window.addEventListener("scroll", BlackScreen);
       </div>
     </section>
     <!--SECTION D'INTRO-->
+    <!--SECTION 1997-->
+    <div>
+      <an1997view></an1997view>
+    </div>
+    <!--SECTION 1997-->
+    <!--SECTION 1997-->
+    <div>
+      <an1997view></an1997view>
+    </div>
+    <!--SECTION 1997-->
+    <!--SECTION 1997-->
+    <div>
+      <an1997view></an1997view>
+    </div>
+    <!--SECTION 1997-->
     <!--SECTION 1997-->
     <div>
       <an1997view></an1997view>

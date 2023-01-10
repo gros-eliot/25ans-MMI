@@ -6,6 +6,7 @@ import FooterView from "@/components/Footer.vue";
 import MiniBatimentMMI from "./components/MiniBatimentMMI.vue";
 import Arrow from "./components/icons/arrow.vue";
 
+// lignes qui bougent en background
 function FunctionLine() {
   let movingLine = document.querySelector(".line");
   let valueScroll = window.pageYOffset;
@@ -22,21 +23,61 @@ function FunctionLine3() {
   movingLine.style.width = valueScroll / 20 + "%";
 }
 
-function goToTopAppears() {
+// lignes qui bougent en background
+//
+//
+//
+
+// function page histoire
+function startAppears() {
+  // modification du bouton retour en haut de page (page histoire)
   let goToTopButton = document.querySelector(".gototop-element");
   let valueScroll = window.pageYOffset;
   if (valueScroll >= 500) {
-    goToTopButton.style.opacity = valueScroll / 10 + "%";
+    goToTopButton.style.opacity = valueScroll / 9 + "%";
     goToTopButton.style.display = "block";
   } else {
     goToTopButton.style.opacity = 0;
   }
+
+  // modification de la timeline (page histoire)
+  let TimeLine = document.querySelector(".timeline-element");
+  if (valueScroll >= 500 && valueScroll < 1000) {
+    TimeLine.style.display = "block";
+  }
+  if (valueScroll > 0 && valueScroll < 500) {
+    TimeLine.style.display = "none";
+  }
+
+  if (valueScroll >= 500) {
+    TimeLine.style.opacity = "10%";
+  }
+  if (valueScroll >= 800) {
+    TimeLine.style.opacity = "20%";
+  }
+  if (valueScroll >= 1000) {
+    TimeLine.style.opacity = "30%";
+  }
+  if (valueScroll >= 1400) {
+    TimeLine.style.opacity = "40%";
+  }
+  if (valueScroll >= 1800) {
+    TimeLine.style.opacity = "50%";
+  }
 }
 
+// lignes qui bougent en background
 window.addEventListener("scroll", FunctionLine);
 window.addEventListener("scroll", FunctionLine2);
 window.addEventListener("scroll", FunctionLine3);
-window.addEventListener("scroll", goToTopAppears);
+
+// function page histoire
+window.addEventListener("scroll", startAppears);
+
+function AlertScroll() {
+  let valueScroll = window.pageYOffset;
+  alert(valueScroll);
+}
 </script>
 
 <template>
@@ -191,12 +232,30 @@ window.addEventListener("scroll", goToTopAppears);
     <FooterView />
   </footer>
 
-  <a href="#top" class="gototop-element opacity-0 hidden">
+  <a
+    href="#top"
+    class="gototop-element opacity-0 hidden"
+    v-if="$route.name === 'histoire-b'"
+  >
     <button
       class="fixed z-50 w-fit h-fit inset-y-[85%] inset-x-[85%] text-black bg-beige border border-black rounded-full md:p-4 p-2"
-      v-if="$route.name === 'histoire-b'"
     >
       <Arrow class="fill-black w-4 h-4 md:w-8 md:h-8" />
     </button>
   </a>
+
+  <!--Frise line (pour page histoire)-->
+  <div
+    class="timeline-element opacity-50 hidden fixed w-3 h-screen inset-x-1 md:inset-x-5 inset-y-0 bg-beige border-black border-x z-[11]"
+    v-if="$route.name === 'histoire-b'"
+  ></div>
+
+  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
+  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
+  <button
+    class="bg-red-500 text-black fixed w-fit h-fit p-1 inset-0 z-50 text-[3px]"
+    @click="AlertScroll"
+  >
+    Scroll
+  </button>
 </template>
