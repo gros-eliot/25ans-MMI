@@ -194,6 +194,14 @@ function AlertScroll() {
     >
       La salle secrète
     </h1>
+    <h1
+      class="uppercase text-center py-2 mmi-h1"
+      :class="{
+        hidden: $route.name != 'event',
+      }"
+    >
+      Évènement
+    </h1>
   </div>
 
   <!--Batiment MMI : ordi-->
