@@ -1,4 +1,5 @@
 <script setup>
+import an1991view from "@/components/histoire/an1991.vue";
 import an1997view from "@/components/histoire/an1997.vue";
 
 function BlackScreen() {
@@ -8,6 +9,10 @@ function BlackScreen() {
   // Background modifiers
   let backgroundHistoire = document.querySelector(".histoire-background");
 
+  //
+  // BLACKSCREEN
+  //
+
   // SCROLL 100
   if (valueScroll >= 100) {
     blackScreen.style.opacity = valueScroll / 5 + "%";
@@ -15,19 +20,34 @@ function BlackScreen() {
     blackScreen.style.opacity = 0;
   }
 
+  // scroll 600
+
+  if (valueScroll >= 600) {
+    blackScreen.style.opacity = 100 - valueScroll / 10 + "%";
+  }
+
+  //
+  // BACKGROUND IMAGE
+  //
+
+  if (valueScroll >= 0) {
+    backgroundHistoire.style.backgroundImage = "url('')";
+  }
+
   // SCROLL 450
 
   if (valueScroll >= 450) {
     backgroundHistoire.style.backgroundImage =
-      "linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%),url('/images/histoire/space.jpg')";
-  } else {
-    backgroundHistoire.style.backgroundImage = "url('/')";
+      "linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.4) 100%),url('/images/histoire/prehistoric.jpg')";
+    backgroundHistoire.style.backgroundPosition = "bottom";
   }
 
-  // scroll 1000
+  // SCROLL 2400
 
-  if (valueScroll >= 600) {
-    blackScreen.style.opacity = 100 - valueScroll / 25 + "%";
+  if (valueScroll >= 2000) {
+    backgroundHistoire.style.backgroundImage =
+      "linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%),url('/images/histoire/space.jpg')";
+    backgroundHistoire.style.filter = "blur(0px)";
   }
 }
 
@@ -37,7 +57,7 @@ window.addEventListener("scroll", BlackScreen);
 <template>
   <!--BACKGROUND OF PAGE-->
   <div
-    class="histoire-background fixed h-screen w-full -z-[20] inset-0 bg-beige bg-contain bg-repeat bg-origin-padding"
+    class="histoire-background fixed h-screen w-full -z-[20] inset-0 bg-beige bg-cover bg-origin-padding"
   ></div>
 
   <!--ECRAN NOIR POUR EFFETS-->
@@ -46,7 +66,7 @@ window.addEventListener("scroll", BlackScreen);
   ></div>
   <!--ECRAN NOIR POUR EFFETS-->
 
-  <article class="flex justify-center items-center flex-col gap-[100rem]">
+  <article class="flex justify-center items-center flex-col gap-[50rem]">
     <!--SECTION D'INTRO-->
     <section
       class="histoire-defilement w-full h-screen flex justify-center items-center"
@@ -75,21 +95,12 @@ window.addEventListener("scroll", BlackScreen);
       </div>
     </section>
     <!--SECTION D'INTRO-->
-    <!--SECTION 1997-->
-    <div>
-      <an1997view></an1997view>
+    <!--SECTION 1991-->
+    <div class="w-full bg-white flex justify-center items-center py-10">
+      <an1991view></an1991view>
     </div>
-    <!--SECTION 1997-->
-    <!--SECTION 1997-->
-    <div>
-      <an1997view></an1997view>
-    </div>
-    <!--SECTION 1997-->
-    <!--SECTION 1997-->
-    <div>
-      <an1997view></an1997view>
-    </div>
-    <!--SECTION 1997-->
+    <!--SECTION 1991-->
+
     <!--SECTION 1997-->
     <div>
       <an1997view></an1997view>

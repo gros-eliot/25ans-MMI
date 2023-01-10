@@ -1,5 +1,5 @@
 <template>
-  <section class="w-11/12 m-auto h-screen flex flex-col gap-20 p-2 text-white">
+  <section class="w-11/12 m-auto flex flex-col gap-20 p-2 text-white">
     <div class="flex flex-col gap-5">
       <h1 class="mmi-h1">1997</h1>
       <p class="text-vert mmi-h2">
@@ -16,3 +16,6 @@
     </div>
   </section>
 </template>
+
+Création département mesures physiques : 1er département dans campus Belfort
+Montbéliard
