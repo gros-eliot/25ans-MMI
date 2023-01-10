@@ -25,19 +25,22 @@ function BlackScreen() {
   // scroll 600 - FONDU OUT
 
   if (valueScroll >= 600) {
-    blackScreen.style.opacity = 100 - valueScroll / 10 + "%";
+    blackScreen.style.opacity = 100 - valueScroll / 25 + "%";
+  }
+  if (valueScroll >= 700) {
+    blackScreen.style.opacity = 100 - valueScroll / 15 + "%";
   }
 
   // scroll 1800 - FONDU IN
 
-  if (valueScroll >= 1600) {
-    blackScreen.style.opacity = 10 + valueScroll / 25 + "%";
+  if (valueScroll >= 1800) {
+    blackScreen.style.opacity = valueScroll / 25 + "%";
   }
 
   // scroll 1800 - FONDU OUT
 
-  if (valueScroll >= 2300) {
-    blackScreen.style.opacity = 100 - valueScroll / 25 + "%";
+  if (valueScroll >= 2400) {
+    blackScreen.style.opacity = 0;
   }
 
   //
@@ -46,22 +49,22 @@ function BlackScreen() {
 
   if (valueScroll >= 0) {
     backgroundHistoire.style.backgroundImage = "url('')";
+    backgroundHistoire.style.backgroundColor = "rgb(255 254 246)";
   }
 
   // SCROLL 450
 
   if (valueScroll >= 450) {
     backgroundHistoire.style.backgroundImage =
-      "linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.4) 100%),url('/images/histoire/prehistoric.jpg')";
+      "url('/images/histoire/prehistoric.jpg')";
     backgroundHistoire.style.backgroundPosition = "bottom";
   }
 
   // SCROLL 2400
 
-  if (valueScroll >= 2000) {
-    backgroundHistoire.style.backgroundImage =
-      "linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%),url('/images/histoire/space.jpg')";
-    backgroundHistoire.style.filter = "blur(0px)";
+  if (valueScroll >= 2100) {
+    backgroundHistoire.style.backgroundImage = "url('')";
+    backgroundHistoire.style.backgroundColor = "black";
   }
 }
 
@@ -109,15 +112,20 @@ window.addEventListener("scroll", BlackScreen);
       </div>
     </section>
     <!--SECTION D'INTRO-->
+
     <!--SECTION 1991-->
-    <div class="w-full bg-white flex justify-center items-center py-10">
+    <!--SECTION 1991-->
+    <!--SECTION 1991-->
+    <div class="w-full bg-beige flex justify-center items-center py-10">
       <an1991view></an1991view>
     </div>
     <!--SECTION 1991-->
 
     <!--SECTION 1997-->
-    <div>
-      <an1997view></an1997view>
+    <!--SECTION 1997-->
+    <!--SECTION 1997-->
+    <div class="my-80">
+      <an1997view class="py-20"></an1997view>
     </div>
     <!--SECTION 1997-->
   </article>
