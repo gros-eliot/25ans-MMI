@@ -11,27 +11,31 @@ let removeScroll = ref(false);
     <section class="w-11/12 m-auto my-10 md:hidden">
       <div class="h-screen">
         <div class="grid grid-cols-2 grid-rows-4 h-full">
-          <OeuvreComponent />
+          <OeuvreComponent 
+          :sourceImage="'oeuvre8.png'"
+                :auteur="'Moi'"
+                :nom="'Testeur'"
+                :description="'Cette oeuvre a été réalisée par Y.'"/>
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre1.png'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre2.png'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre3.png'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre4.png'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
@@ -46,19 +50,19 @@ let removeScroll = ref(false);
               />
               -->
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre5.png'"
             :auteur="'Moi'"
             :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre6.png'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre7.png'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
@@ -73,16 +77,20 @@ let removeScroll = ref(false);
         <div class="grid grid-cols-[60%_40%] h-2/3">
           <div class="grid grid-rows-[55%_45%]">
             <div class="grid grid-cols-2">
-              <OeuvreComponent />
+              <OeuvreComponent 
+              :sourceImage="'oeuvre8.png'"
+                :auteur="'Moi'"
+                :nom="'Testeur'"
+                :description="'Cette oeuvre a été réalisée par Y.'"/>
               <OeuvreComponent
-                :sourceImage="'oeuvre-test.jpg'"
+                :sourceImage="'oeuvre1.png'"
                 :auteur="'Moi'"
                 :nom="'Testeur'"
                 :description="'Cette oeuvre a été réalisée par Y.'"
               />
             </div>
             <OeuvreComponent
-              :sourceImage="'oeuvre-test.jpg'"
+              :sourceImage="'oeuvre2.png'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
@@ -90,13 +98,13 @@ let removeScroll = ref(false);
           </div>
           <div class="grid grid-rows-2">
             <OeuvreComponent
-              :sourceImage="'oeuvre-test.jpg'"
+              :sourceImage="'oeuvre3.png'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
             />
             <OeuvreComponent
-              :sourceImage="'oeuvre-test.jpg'"
+              :sourceImage="'oeuvre4.png'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
@@ -114,19 +122,19 @@ let removeScroll = ref(false);
         </div>
         <div class="grid grid-cols-3 h-1/3">
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre5.png'"
             :auteur="'Moi'"
             :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre6.png'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre-test.jpg'"
+            :sourceImage="'oeuvre7.png'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
