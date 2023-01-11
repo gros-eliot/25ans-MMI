@@ -27,6 +27,18 @@
     </section>
   </button>
 
+  <!--Croix pr fermer description de l'oeuvre-->
+  <div
+    class="text-white fixed z-[99] inset-x-[80%] md:inset-x-[90%] inset-y-[4%] rounded-full bg-black p-4 w-fit h-fit"
+    :class="{
+      hidden: descriptionTotale === false,
+    }"
+    @click="descriptionTotale = !descriptionTotale"
+  >
+    <Croix class="w-12 h-12" />
+  </div>
+
+  <!--Description de l'oeuvre-->
   <section
     v-if="descriptionTotale === true"
     class="fixed font-inter inset-0 w-full h-full z-50 justify-center items-center bg-[linear-gradient(180deg,rgba(0,_0,_0,_0.6)_0%,rgba(0,_0,_0,_0.6)_100%)]"
@@ -39,11 +51,7 @@
     <div
       class="bg-black w-[95%] h-[95%] text-white px-10 pb-5 overflow-y-scroll customizedScrollbar"
     >
-      <Croix
-        @click="descriptionTotale = !descriptionTotale"
-        class="ml-auto w-12 h-12 m-4"
-      />
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 mt-20">
         <button
           class="w-fit m-auto bg-white text-black font-bold px-4 py-2 rounded-lg"
         >

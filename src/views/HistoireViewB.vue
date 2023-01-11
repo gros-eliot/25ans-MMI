@@ -1,7 +1,8 @@
 <script setup>
-import an1991view from "@/components/histoire/an1991.vue";
-import an1997view from "@/components/histoire/an1997.vue";
+import An1991 from "@/components/histoire/an1991.vue";
+import An1997 from "@/components/histoire/an1997.vue";
 import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
+import An1998 from "../components/histoire/an1998.vue";
 
 function BlackScreen() {
   let valueScroll = window.pageYOffset;
@@ -10,69 +11,160 @@ function BlackScreen() {
   // Background modifiers
   let backgroundHistoire = document.querySelector(".histoire-background");
 
-  //
-  // BLACKSCREEN
-  //
-  // SCROLL 0
+  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN
+  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN
+  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN
+  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN  // BLACKSCREEN
+
+  // pas de blackscreen au début
   if (valueScroll >= 0) {
     blackScreen.style.display = "none";
     blackScreen.style.opacity = 0;
   }
 
-  // SCROLL 100 - FONDU IN
+  // FONDU IN (histoire-1991)
+
   if (valueScroll >= 100) {
     blackScreen.style.display = "block";
-    blackScreen.style.opacity = valueScroll / 5 + "%";
+    blackScreen.style.opacity = "20%";
+  }
+  if (valueScroll >= 200) {
+    blackScreen.style.opacity = "40%";
+  }
+  if (valueScroll >= 300) {
+    blackScreen.style.opacity = "60%";
+  }
+  if (valueScroll >= 400) {
+    blackScreen.style.opacity = "80%";
+  }
+  if (valueScroll >= 500) {
+    blackScreen.style.opacity = "100%";
   }
 
-  // scroll 600 - FONDU OUT
+  //00 - FONDU OUT (1991)
 
-  if (valueScroll >= 600) {
-    blackScreen.style.opacity = 100 - valueScroll / 25 + "%";
+  if (valueScroll >= 900) {
+    blackScreen.style.opacity = "80%";
   }
-  if (valueScroll >= 700) {
-    blackScreen.style.opacity = 100 - valueScroll / 15 + "%";
+  if (valueScroll >= 1000) {
+    blackScreen.style.opacity = "60%";
   }
-  if (valueScroll >= 800) {
+  if (valueScroll >= 1100) {
+    blackScreen.style.display = "40%";
+  }
+  if (valueScroll >= 1100) {
+    blackScreen.style.display = "20%";
+  }
+  if (valueScroll >= 1100) {
+    blackScreen.style.display = "0%";
     blackScreen.style.display = "none";
   }
 
-  // scroll 1800 - FONDU IN
+  // - FONDU IN (1991-1997)
 
   if (valueScroll >= 1800) {
     blackScreen.style.display = "block";
-    blackScreen.style.opacity = valueScroll / 25 + "%";
+    blackScreen.style.opacity = "20%";
+  }
+  if (valueScroll >= 1900) {
+    blackScreen.style.opacity = "40%";
+  }
+  if (valueScroll >= 2000) {
+    blackScreen.style.opacity = "60%";
+  }
+  if (valueScroll >= 2100) {
+    blackScreen.style.opacity = "80%";
+  }
+  if (valueScroll >= 2200) {
+    blackScreen.style.opacity = "100%";
   }
 
-  // scroll 1800 - FONDU OUT
+  // - FONDU OUT (1997)
 
   if (valueScroll >= 2400) {
+    blackScreen.style.opacity = "80%";
+  }
+  if (valueScroll >= 2500) {
+    blackScreen.style.opacity = "60%";
+  }
+  if (valueScroll >= 2600) {
+    blackScreen.style.opacity = 0;
+  }
+  if (valueScroll >= 2700) {
+    blackScreen.style.opacity = 0;
+  }
+  if (valueScroll >= 2800) {
     blackScreen.style.opacity = 0;
     blackScreen.style.display = "none";
   }
 
-  //
-  // BACKGROUND IMAGE
-  //
+  //000 - FONDU IN
 
+  if (valueScroll >= 5000) {
+    blackScreen.style.display = "block";
+    blackScreen.style.opacity = "20%";
+  }
+  if (valueScroll >= 5100) {
+    blackScreen.style.opacity = "40%";
+  }
+  if (valueScroll >= 5200) {
+    blackScreen.style.opacity = "60%";
+  }
+  if (valueScroll >= 5300) {
+    blackScreen.style.opacity = "80%";
+  }
+  if (valueScroll >= 5400) {
+    blackScreen.style.opacity = "100%";
+  }
+
+  //700 - FONDU OUT
+
+  if (valueScroll >= 5700) {
+    blackScreen.style.opacity = "100%";
+  }
+  if (valueScroll >= 5800) {
+    blackScreen.style.opacity = "80%";
+  }
+  if (valueScroll >= 5900) {
+    blackScreen.style.opacity = "60%";
+  }
+  if (valueScroll >= 6000) {
+    blackScreen.style.opacity = "40%";
+  }
+  if (valueScroll >= 6100) {
+    blackScreen.style.opacity = "20%";
+  }
+
+  if (valueScroll >= 6200) {
+    blackScreen.style.opacity = 0;
+    blackScreen.style.display = "none";
+  }
+
+  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE
+  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE
+  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE
+  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE
+  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE
+  //
   if (valueScroll >= 0) {
     backgroundHistoire.style.backgroundImage = "url('')";
     backgroundHistoire.style.backgroundColor = "rgb(255 254 246)";
   }
-
-  // SCROLL 450
-
-  if (valueScroll >= 450) {
+  //
+  if (valueScroll >= 500) {
     backgroundHistoire.style.backgroundImage =
       "url('/images/histoire/prehistoric 2.jpg')";
     backgroundHistoire.style.backgroundPosition = "center";
   }
-
-  // SCROLL 2400
-
+  //
   if (valueScroll >= 2100) {
     backgroundHistoire.style.backgroundImage = "url('')";
     backgroundHistoire.style.backgroundColor = "black";
+  }
+  //
+  if (valueScroll >= 5800) {
+    backgroundHistoire.style.backgroundImage = "url('')";
+    backgroundHistoire.style.backgroundColor = "beige";
   }
 }
 
@@ -130,17 +222,24 @@ window.addEventListener("scroll", BlackScreen);
     <!--SECTION 1991-->
     <!--SECTION 1991-->
     <div class="w-full bg-beige flex justify-center items-center py-10">
-      <an1991view></an1991view>
+      <An1991></An1991>
     </div>
     <!--SECTION 1991-->
 
-    <!--SECTION 1997 N°1-->
-    <!--SECTION 1997 N°1-->
-    <!--SECTION 1997 N°1-->
-    <div class="mt-80">
-      <an1997view class="pt-20"></an1997view>
+    <!--SECTION 1997-->
+    <!--SECTION 1997-->
+    <!--SECTION 1997-->
+    <div class="mt-[40rem]">
+      <An1997 class="pt-20"></An1997>
     </div>
-    <!--SECTION 1997 N°1-->
+    <!--SECTION 1997-->
+
+    <!--SECTION 97-98-->
+    <!--SECTION 97-98-->
+    <!--SECTION 97-98-->
+    <div class="mt-80">
+      <An1998 class="pt-20" />
+    </div>
   </article>
 </template>
 <style></style>

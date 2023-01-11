@@ -14,7 +14,6 @@ import SecretView from "../views/SecretView.vue"
 import HistoireView from "../views/HistoireView.vue"
 import HistoireViewB from "../views/HistoireViewB.vue"
 
-import CreaViewRefonte from "../views/CreaViewRefonte.vue"
 import DevViewRefonte from "../views/DevViewRefonte.vue"
 
 const router = createRouter({
@@ -27,7 +26,6 @@ const router = createRouter({
     
     { path: '/com',  name: 'com', component: ComView },
     { path: '/crea',  name: 'crea', component: CreaView },
-    { path: '/crearefonte',  name: 'crearefonte', component: CreaViewRefonte },
     { path: '/dev',  name: 'dev', component: DevView },
     { path: '/devrefonte',  name: 'devrefonte', component: DevViewRefonte },
     { path: '/event',  name: 'event', component: EventView },
