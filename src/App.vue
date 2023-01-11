@@ -231,6 +231,14 @@ function AlertScroll() {
     >
       Évènement 25 ans MMI
     </h1>
+    <h1
+      class="uppercase text-center py-2 mmi-h1"
+      :class="{
+        hidden: $route.name != 'mentionslegales',
+      }"
+    >
+      Mentions légales
+    </h1>
   </div>
 
   <!--Batiment MMI : ordi-->

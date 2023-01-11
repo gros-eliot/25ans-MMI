@@ -21,6 +21,10 @@
         @apply font-inter font-black text-5xl lg:text-7xl tracking-tighter
     }
 
+    .mmi-h3 {
+        @apply font-inter font-semibold text-xl lg:text-5xl tracking-tighter
+    }
+
     .mmi-texte {
         @apply text-lg md:text-xl lg:text-2xl
     }
