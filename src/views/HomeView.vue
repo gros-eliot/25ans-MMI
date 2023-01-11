@@ -1,6 +1,15 @@
 <script setup>
 import Logo from "@/components/icons/logo.vue";
 
+import { ref } from "vue";
+import OeuvreComponent from "@/components/OeuvreComponent.vue";
+let clickedImageMalsot = ref(false);
+let clickedImageSenente = ref(false);
+let clickedImageChartogne = ref(false);
+let clickedImageChatonnay = ref(false);
+let clickedImageBodet = ref(false);
+let removeScroll = ref(false);
+
 function Function252525() {
   let box25 = document.querySelector(".animationHome");
   let valueScroll = window.pageYOffset;
@@ -131,11 +140,14 @@ window.addEventListener("scroll", Function252525);
       <!--fin cadre-->
       <!--cadre-->
       <div class="prof-homepage">
-        <img
-          src="/images/P-Chatonnay.jpg"
-          alt="David MALSOT"
-          class="mmi-photo-2 object-cover"
-        />
+        <div
+      class="bg-chatonnay1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+      :class="{
+        'bg-chatonnay2': clickedImageChatonnay === true,
+      }"
+      @mouseenter="clickedImageChatonnay = !clickedImageChatonnay"
+      @mouseleave="clickedImageChatonnay = !clickedImageChatonnay"
+    ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Pascal CHATONNAY</p>
           <p>Informatique - Référent Défense et Sécurité Nationale</p>
@@ -144,11 +156,14 @@ window.addEventListener("scroll", Function252525);
       <!--fin cadre-->
       <!--cadre-->
       <div class="prof-homepage">
-        <img
-          src="/images/E-Chartogne.jpg"
-          alt="Élodie CHARTOGNE"
-          class="mmi-photo-2 object-cover"
-        />
+        <div
+      class="bg-chartogne1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+      :class="{
+        'bg-chartogne2': clickedImageChartogne === true,
+      }"
+      @mouseenter="clickedImageChartogne = !clickedImageChartogne"
+      @mouseleave="clickedImageChartogne = !clickedImageChartogne"
+    ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Élodie CHARTOGNE</p>
           <p>Secrétariat</p>
@@ -157,11 +172,14 @@ window.addEventListener("scroll", Function252525);
       <!--fin cadre-->
       <!--cadre-->
       <div class="prof-homepage">
-        <img
-          src="/images/D-Malsot.jpg"
-          alt="David MALSOT"
-          class="mmi-photo-2 object-cover"
-        />
+        <div
+      class="bg-malsot1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+      :class="{
+        'bg-malsot2': clickedImageMalsot === true,
+      }"
+      @mouseenter="clickedImageMalsot = !clickedImageMalsot"
+      @mouseleave="clickedImageMalsot = !clickedImageMalsot"
+    ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">David MALSOT</p>
           <p>Communication</p>
@@ -170,11 +188,14 @@ window.addEventListener("scroll", Function252525);
       <!--fin cadre-->
       <!--cadre-->
       <div class="prof-homepage">
-        <img
-          src="/images/X-Senente.jpg"
-          alt="Xavier SENENTE"
-          class="mmi-photo-2 object-cover"
-        />
+        <div
+      class="bg-senente1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+      :class="{
+        'bg-senente2': clickedImageSenente === true,
+      }"
+      @mouseenter="clickedImageSenente = !clickedImageSenente"
+      @mouseleave="clickedImageSenente = !clickedImageSenente"
+    ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Xavier SENENTE</p>
           <p>Graphisme & Design</p>
@@ -373,11 +394,14 @@ window.addEventListener("scroll", Function252525);
       <!--fin cadre-->
       <!--cadre-->
       <div class="prof-homepage">
-        <img
-          src="/images/PASDEPHOTO.png"
-          alt="Julie BODET"
-          class="mmi-photo-2 object-cover border-4 border-black"
-        />
+        <div
+      class="bg-bodet1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+      :class="{
+        'bg-bodet2': clickedImageBodet === true,
+      }"
+      @mouseenter="clickedImageBodet = !clickedImageBodet"
+      @mouseleave="clickedImageBodet = !clickedImageBodet"
+    ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Julie BODET</p>
           <p>Communication</p>

@@ -27,6 +27,13 @@ module.exports = {
         'malsot2' : "url('/images/funny-version/Malsot.jpeg')",
         'senente1' : "url('/images/X-SENENTE.jpg')",
         'senente2' : "url('/images/funny-version/Senente1.jpeg')",
+        'chatonnay2' : "url('/images/funny-version/Chatonnay.jpeg')",
+        'chatonnay1' : "url('/images/P-Chatonnay.jpg')",
+        'chartogne1' : "url('/images/E-Chartogne.jpg')",
+        'chartogne2' : "url('/images/funny-version/Chartogne.jpeg')",
+        'bodet1' : "url('/images/PASDEPHOTO.png')",
+        'bodet2' : "url('/images/funny-version/Bodet.jpeg')"
+
         
       }
     },
