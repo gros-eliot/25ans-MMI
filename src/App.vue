@@ -200,7 +200,7 @@ function AlertScroll() {
         hidden: $route.name != 'event',
       }"
     >
-      Évènement
+      Évènement 25 ans MMI
     </h1>
   </div>
 
