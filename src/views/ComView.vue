@@ -151,6 +151,7 @@ let removeScroll = ref(false);
     >
       <div class="max-w-5xl">
         <h2 class="mmi-h2 text-center lg:text-left">La com' au MMI</h2>
+        <div class="flex flex-col gap-5">
         <p>
           Le pôle communication de MMI fait partie des trois grandes thématiques
           qu’aborde MMI dans son cursus. La communication est très importante
@@ -159,6 +160,28 @@ let removeScroll = ref(false);
           régie toutes les parties qui précèdent le lancement d’un projet comme
           des analyses concurrentielles ou la gestion du budget.
         </p>
+        <p>En BUT MMI, les élèves apprennent différentes formes de communication.
+          Ils apprennent par exemple les lois qui s'impliquent à Internet, à réaliser 
+          un dossier de communication entier pour présenter un projet, à estimer un 
+          budget et faire les demandes de subventions, à monter une identité sur les 
+          réseaux sociaux, à créer un calendrier de publications, à entretenir les 
+          comptes et l'image de marque ou encore à rédiger et imaginer des posts pour 
+          les réseaux sociaux avec le contenu en fonction des cibles.
+        </p>
+        <p>Les étudiants étudient également la communication dans la langue anglaise avec leur
+          professeur Lydia Dubois, afin d'acquérir un vocabulaire riche et complet dans leur 
+          branche professionnel. Ils sont ainsi capables de réaliser des publications, des contenus
+          et des dossiers complets bilingues.
+        </p>
+        <p>Dans le cadre de leurs projets, les étudiants vont réaliser de la communication 
+          plus concrète avec des dossiers, gestion d'un budget, réelle création de comptes
+          et de gestion des réseaux sociaux. Ils peuvent également toucher au domaine de
+          l'événementiel, avec la création de l'événement et de la communcation liée.
+          Les élèves qui se spécialisent ensuite dans la communication auront accès à des métiers
+          comme référenceur web, communicaty manager, chef de projet, chargé de communication,
+          rédacteur web,...
+        </p>
+      </div>
       </div>
       <!--2525252525-->
       <div class="ml-auto w-full md:w-fit text-5xl md:text-8xl my-10">
