@@ -15,6 +15,7 @@ import HistoireView from "../views/HistoireView.vue"
 import HistoireViewB from "../views/HistoireViewB.vue"
 
 import CreaViewRefonte from "../views/CreaViewRefonte.vue"
+import DevViewRefonte from "../views/DevViewRefonte.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,7 @@ const router = createRouter({
     { path: '/crea',  name: 'crea', component: CreaView },
     { path: '/crearefonte',  name: 'crearefonte', component: CreaViewRefonte },
     { path: '/dev',  name: 'dev', component: DevView },
+    { path: '/devrefonte',  name: 'devrefonte', component: DevViewRefonte },
     { path: '/event',  name: 'event', component: EventView },
     
     { path: '/mentionslegales',  name: 'mentionslegales', component: MentionsLegalesView },
