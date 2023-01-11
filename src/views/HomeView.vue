@@ -120,7 +120,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/A-Lamboux_Durand.jpg"
           alt="Alain Lamboux-Durand"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Alain LAMBOUX-DURAND</p>
@@ -134,7 +134,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/P-Chatonnay.jpg"
           alt="David MALSOT"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Pascal CHATONNAY</p>
@@ -147,7 +147,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/E-Chartogne.jpg"
           alt="Élodie CHARTOGNE"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Élodie CHARTOGNE</p>
@@ -160,7 +160,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/D-Malsot.jpg"
           alt="David MALSOT"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">David MALSOT</p>
@@ -173,7 +173,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/X-Senente.jpg"
           alt="Xavier SENENTE"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Xavier SENENTE</p>
@@ -187,7 +187,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/JM-Fino.jpg"
           alt="Jean-Marie FINO"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Jean-Marie FINO</p>
@@ -201,7 +201,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/L-Dubois.jpg"
           alt="Lydia DUBOIS"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Lydia DUBOIS</p>
@@ -215,7 +215,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/S-Augier.jpg"
           alt="Sébastien AUGIER"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Sébastien AUGIER</p>
@@ -228,7 +228,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/S-Laurent.jpg"
           alt="Stéphane LAURENT"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Stéphane LAURENT</p>
@@ -241,7 +241,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/Q-Gianella.jpg"
           alt="Quentin GIANELLA"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Quentin GIANELLA</p>
@@ -254,7 +254,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/JC-Domenget.jpg"
           alt="Jean-Claude DOMENGET"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Jean-Claude DOMENGET</p>
@@ -267,7 +267,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/H-Mabed.jpg"
           alt="Hakim MABED"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Hakim MABED</p>
@@ -280,7 +280,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/W-Yvart.jpg"
           alt="Willy YVART"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Willy YVART</p>
@@ -293,7 +293,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/T-Hulin.jpg"
           alt="Thibaud HULIN"
-          class="image-prof-2 object-cover"
+          class="mmi-photo-2 object-cover"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Thibaud HULIN</p>
@@ -307,7 +307,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Christelle BLOCH"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Christelle BLOCH</p>
@@ -321,7 +321,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Christelle BLOCH"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Pierre PRACHT</p>
@@ -335,7 +335,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Abdallah MAKHOUL"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Abdallah MAKHOUL</p>
@@ -349,7 +349,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Bruno VIEZZI"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Bruno VIEZZI</p>
@@ -363,7 +363,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Myriam NICOLLE"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Myriam NICOLLE</p>
@@ -376,7 +376,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Julie BODET"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Julie BODET</p>
@@ -389,7 +389,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Camille BATAILLE-BARBIER"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Camille BATAILLE-BARBIER</p>
@@ -403,7 +403,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Robin HECKENAUER"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Robin HECKENAUER</p>
@@ -417,7 +417,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Didier FLORENTZ"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Didier FLORENTZ</p>
@@ -430,7 +430,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Isabelle LAFORGUE"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Isabelle LAFORGUE</p>
@@ -444,7 +444,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Annie STEMPHELET"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Annie STEMPHELET</p>
@@ -458,7 +458,7 @@ window.addEventListener("scroll", Function252525);
         <img
           src="/images/PASDEPHOTO.png"
           alt="Thierry HUFSCHMIDT"
-          class="image-prof-2 object-cover border-4 border-black"
+          class="mmi-photo-2 object-cover border-4 border-black"
         />
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Thierry HUFSCHMIDT</p>

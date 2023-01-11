@@ -100,7 +100,7 @@ let clickedImage = ref(false);
     MONSIEUR
     MALSOT-->
     <div
-      class="bg-malsot1 image-prof bg-center bg-contain bg-no-repeat transition-all"
+      class="bg-malsot1 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
       :class="{
         'bg-malsot2': clickedImage === true,
       }"
@@ -151,7 +151,7 @@ let clickedImage = ref(false);
           <img
             src="../../public/images/JC-Domenget.jpg"
             alt="photo Monsieur Domenget"
-            class="image-prof"
+            class="mmi-photo"
           />
           <p class="font-neuemontreal">Jean-Claude Domenget</p>
         </div>
@@ -159,7 +159,7 @@ let clickedImage = ref(false);
           <img
             src="../../public/images/S-Laurent.jpg"
             alt="Photo Monsieur Laurent"
-            class="image-prof"
+            class="mmi-photo"
           />
           <p class="font-neuemontreal">Stephane Laurent</p>
         </div>
@@ -167,7 +167,7 @@ let clickedImage = ref(false);
           <img
             src="../../public/images/L-Dubois.jpg"
             alt="Photo Madame Dubois"
-            class="image-prof"
+            class="mmi-photo"
           />
           <p class="font-neuemontreal">Lydia Dubois</p>
         </div>

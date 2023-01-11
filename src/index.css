@@ -25,14 +25,21 @@
         @apply text-lg md:text-xl lg:text-2xl
     }
 
-    .image-prof {
+    .mmi-photo {
         @apply min-w-[270px] min-h-[350px]
     }
-    .image-prof-2 {
+    .mmi-photo-2 {
         @apply w-[270px] h-[350px]
+    }
+    .mmi-photo-3 {
+        @apply w-[135px] h-[175px]
     }
 
     .prof-homepage {
         @apply flex flex-col items-center justify-center text-center gap-2 w-fit
+    }
+
+    .histoire-margins-for-section {
+        @apply w-11/12 m-auto;
     }
 }

@@ -14,11 +14,13 @@ function BlackScreen() {
   //
   // SCROLL 0
   if (valueScroll >= 0) {
+    blackScreen.style.display = "none";
     blackScreen.style.opacity = 0;
   }
 
   // SCROLL 100 - FONDU IN
   if (valueScroll >= 100) {
+    blackScreen.style.display = "block";
     blackScreen.style.opacity = valueScroll / 5 + "%";
   }
 
@@ -30,10 +32,14 @@ function BlackScreen() {
   if (valueScroll >= 700) {
     blackScreen.style.opacity = 100 - valueScroll / 15 + "%";
   }
+  if (valueScroll >= 800) {
+    blackScreen.style.display = "none";
+  }
 
   // scroll 1800 - FONDU IN
 
   if (valueScroll >= 1800) {
+    blackScreen.style.display = "block";
     blackScreen.style.opacity = valueScroll / 25 + "%";
   }
 
@@ -41,6 +47,7 @@ function BlackScreen() {
 
   if (valueScroll >= 2400) {
     blackScreen.style.opacity = 0;
+    blackScreen.style.display = "none";
   }
 
   //
@@ -56,8 +63,8 @@ function BlackScreen() {
 
   if (valueScroll >= 450) {
     backgroundHistoire.style.backgroundImage =
-      "url('/images/histoire/prehistoric.jpg')";
-    backgroundHistoire.style.backgroundPosition = "bottom";
+      "url('/images/histoire/prehistoric 2.jpg')";
+    backgroundHistoire.style.backgroundPosition = "center";
   }
 
   // SCROLL 2400
@@ -99,13 +106,17 @@ window.addEventListener("scroll", BlackScreen);
         <section
           class="font-normal mmi-texte text-center flex flex-col justify-center items-center gap-2"
         >
+          <MouseIcon class="w-12 h-12 stroke-black"></MouseIcon>
+          <!--
+
+            ANCIEN ICON : double cercle
           <div>
             <div
               class="w-12 h-12 border-2 border-black rounded-full flex justify-center items-center"
             >
               <div class="w-8 h-8 bg-black rounded-full"></div>
             </div>
-          </div>
+          </div>-->
           <p class="text-black">scroll&nbsp;⮟ to&nbsp;begin...</p>
         </section>
         <!--bounce-->
@@ -121,12 +132,18 @@ window.addEventListener("scroll", BlackScreen);
     </div>
     <!--SECTION 1991-->
 
-    <!--SECTION 1997-->
-    <!--SECTION 1997-->
-    <!--SECTION 1997-->
-    <div class="my-80">
+    <!--SECTION 1997 N°1-->
+    <!--SECTION 1997 N°1-->
+    <!--SECTION 1997 N°1-->
+    <div class="mt-80">
       <an1997view class="py-20"></an1997view>
     </div>
-    <!--SECTION 1997-->
+    <!--SECTION 1997 N°1-->
+
+    <!--SECTION 1997 N°2-->
+    <!--SECTION 1997 N°2-->
+    <!--SECTION 1997 N°2-->
+    <div></div>
   </article>
 </template>
+<style></style>

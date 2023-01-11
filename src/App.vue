@@ -23,16 +23,25 @@ function FunctionLine3() {
   movingLine.style.width = valueScroll / 20 + "%";
 }
 
-// lignes qui bougent en background
 //
 //
 //
-
+//
+let historyDateDoc;
 // function page histoire
-function startAppears() {
+function histoire() {
+  // date changeante selon scroll
+  let historyDate;
+  let valueScroll = window.pageYOffset;
+
+  if (valueScroll >= 600) {
+    historyDate = 0;
+    historyDate = historyDate + 1991;
+    historyDateDoc.push(historyDate);
+  }
+
   // modification du bouton retour en haut de page (page histoire)
   let goToTopButton = document.querySelector(".gototop-element");
-  let valueScroll = window.pageYOffset;
   if (valueScroll >= 500) {
     goToTopButton.style.opacity = valueScroll / 9 + "%";
     goToTopButton.style.display = "block";
@@ -40,44 +49,64 @@ function startAppears() {
     goToTopButton.style.opacity = 0;
   }
 
-  // modification de la timeline (page histoire)
+  // modification de la timeline + date en haut à droite (page histoire)
   let TimeLine = document.querySelector(".timeline-element");
+  let dateHistoire = document.querySelector(".histoire-date-haut-droite");
   if (valueScroll >= 500 && valueScroll < 1000) {
     TimeLine.style.display = "block";
+    dateHistoire.style.display = "block";
   }
   if (valueScroll > 0 && valueScroll < 500) {
     TimeLine.style.display = "none";
+    dateHistoire.style.display = "none";
   }
 
   if (valueScroll >= 500) {
     TimeLine.style.opacity = "10%";
+    dateHistoire.style.opacity = "10%";
   }
   if (valueScroll >= 800) {
     TimeLine.style.opacity = "20%";
+    dateHistoire.style.opacity = "40%";
   }
   if (valueScroll >= 1000) {
     TimeLine.style.opacity = "30%";
+    dateHistoire.style.opacity = "70%";
   }
   if (valueScroll >= 1400) {
     TimeLine.style.opacity = "40%";
+    dateHistoire.style.opacity = "100%";
   }
   if (valueScroll >= 1800) {
     TimeLine.style.opacity = "50%";
   }
 }
 
+//
+//
+//
+//
+//
 // lignes qui bougent en background
 window.addEventListener("scroll", FunctionLine);
 window.addEventListener("scroll", FunctionLine2);
 window.addEventListener("scroll", FunctionLine3);
 
 // function page histoire
-window.addEventListener("scroll", startAppears);
+window.addEventListener("scroll", histoire);
 
 function AlertScroll() {
   let valueScroll = window.pageYOffset;
   alert(valueScroll);
 }
+
+//
+//
+//
+//
+//
+
+// fonction date changeante
 </script>
 
 <template>
@@ -240,6 +269,7 @@ function AlertScroll() {
     <FooterView />
   </footer>
 
+  <!--HISTOIRE - bouton pr remonter en haut de la page histoire-->
   <a
     href="#top"
     class="gototop-element opacity-0 hidden"
@@ -251,6 +281,16 @@ function AlertScroll() {
       <Arrow class="fill-black w-4 h-4 md:w-8 md:h-8" />
     </button>
   </a>
+  <!--HISTOIRE - bouton pr remonter en haut de la page histoire-->
+
+  <!--HISTOIRE - texte indiquant l'année-->
+  <p
+    class="fixed inset-y-[5%] inset-x-[90%] text-white z-[99] text-sm histoire-date-haut-droite"
+    v-if="$route.name === 'histoire-b'"
+  >
+    {{ historyDateDoc }}
+  </p>
+  <!--HISTOIRE - texte indiquant l'année-->
 
   <!--Frise line (pour page histoire)-->
   <div

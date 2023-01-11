@@ -73,7 +73,7 @@
             <img
               src="/images/P-Chatonnay.jpg"
               alt="photo Monsieur Chatonnay"
-              class="image-prof"
+              class="mmi-photo"
             />
             <p class="font-neuemontreal text-2xl">Pascal Chatonnay</p>
           </div>
@@ -81,7 +81,7 @@
             <img
               src="/images/PASDEPHOTO.png"
               alt="photo inconnue"
-              class="image-prof"
+              class="mmi-photo"
             />
             <p class="font-neuemontreal text-2xl">Pierre Pracht</p>
           </div>
@@ -89,7 +89,7 @@
             <img
               src="/images/H-Mabed.jpg"
               alt="Photo Monsieur Mabed"
-              class="image-prof"
+              class="mmi-photo"
             />
             <p class="font-neuemontreal text-2xl">Hakim Mabed</p>
           </div>
@@ -97,7 +97,7 @@
             <img
               src="/images/PASDEPHOTO.png"
               alt="photo inconnue"
-              class="image-prof"
+              class="mmi-photo"
             />
             <p class="font-neuemontreal text-2xl">Abdallah Makoul</p>
           </div>

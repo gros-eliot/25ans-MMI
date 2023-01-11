@@ -74,7 +74,7 @@
             <img
               src="../../public/images/A-Lamboud_Durand.jpg"
               alt="photo Monsieur Lamboud Durant"
-              class="image-prof"
+              class="mmi-photo"
             />
             <p class="font-neuemontreal text-2xl">Alain LAMBOUX-DURAND</p>
           </div>
@@ -82,7 +82,7 @@
             <img
               src="../../public/images/S-Augier.jpg"
               alt="Photo Monsieur Augier"
-              class="image-prof"
+              class="mmi-photo"
             />
             <p class="font-neuemontreal text-2xl">Sebastien AUGIER</p>
           </div>
