@@ -11,31 +11,32 @@ let removeScroll = ref(false);
     <section class="w-11/12 m-auto my-10 md:hidden">
       <div class="h-screen">
         <div class="grid grid-cols-2 grid-rows-4 h-full">
-          <OeuvreComponent 
-          :sourceImage="'oeuvre9.jpg'"
-                :auteur="'Moi'"
-                :nom="'Testeur'"
-                :description="'Cette oeuvre a été réalisée par Y.'"/>
           <OeuvreComponent
-            :sourceImage="'oeuvre10.png'"
+            :sourceImage="'oeuvre9.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre11.png'"
+            :sourceImage="'oeuvre10.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre12.png'"
+            :sourceImage="'oeuvre11.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre13.png'"
+            :sourceImage="'oeuvre12.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre13.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
@@ -50,19 +51,19 @@ let removeScroll = ref(false);
               />
               -->
           <OeuvreComponent
-            :sourceImage="'oeuvre1.png'"
+            :sourceImage="'oeuvre1.jpg'"
             :auteur="'Moi'"
             :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre2.png'"
+            :sourceImage="'oeuvre2.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre3.png'"
+            :sourceImage="'oeuvre3.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
@@ -77,20 +78,21 @@ let removeScroll = ref(false);
         <div class="grid grid-cols-[60%_40%] h-2/3">
           <div class="grid grid-rows-[55%_45%]">
             <div class="grid grid-cols-2">
-              <OeuvreComponent 
-              :sourceImage="'oeuvre9.jpg'"
+              <OeuvreComponent
+                :sourceImage="'oeuvre9.jpg'"
                 :auteur="'Moi'"
                 :nom="'Testeur'"
-                :description="'Cette oeuvre a été réalisée par Y.'"/>
+                :description="'Cette oeuvre a été réalisée par Y.'"
+              />
               <OeuvreComponent
-                :sourceImage="'oeuvre1.png'"
+                :sourceImage="'oeuvre1.jpg'"
                 :auteur="'Moi'"
                 :nom="'Testeur'"
                 :description="'Cette oeuvre a été réalisée par Y.'"
               />
             </div>
             <OeuvreComponent
-              :sourceImage="'oeuvre10.png'"
+              :sourceImage="'oeuvre10.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
@@ -98,13 +100,13 @@ let removeScroll = ref(false);
           </div>
           <div class="grid grid-rows-2">
             <OeuvreComponent
-              :sourceImage="'oeuvre11.png'"
+              :sourceImage="'oeuvre11.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
             />
             <OeuvreComponent
-              :sourceImage="'oeuvre12.png'"
+              :sourceImage="'oeuvre12.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
@@ -122,19 +124,19 @@ let removeScroll = ref(false);
         </div>
         <div class="grid grid-cols-3 h-1/3">
           <OeuvreComponent
-            :sourceImage="'oeuvre13.png'"
+            :sourceImage="'oeuvre13.jpg'"
             :auteur="'Moi'"
             :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre1.png'"
+            :sourceImage="'oeuvre1.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre2.png'"
+            :sourceImage="'oeuvre2.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
@@ -152,33 +154,40 @@ let removeScroll = ref(false);
       <div class="max-w-5xl">
         <h2 class="mmi-h2 text-center lg:text-left">La création au MMI...</h2>
         <div class="flex flex-col gap-5">
-        <p>
-          Le pôle Création est celui qui contient les matières artistiques.
+          <p>
+            Le pôle Création est celui qui contient les matières artistiques.
             Design, Graphisme, Motion Design, Audiovisuel, Narration, toutes ces
             matières font partie de ce pôle. Le design est tout aussi important
             que la communication et le développement. Par définition c’est la
             façade du web et souvent c’est ce que l’on retient en premier d’un
             site internet. Mis à part ça, le design est une partie importante de
-            notre vie : en effet, les visuels sont importants pour communiquer avec les
-            sociétés modernes.
-        </p>
-        <p>Comme nous l'avons dit plus haut, les étudiants étudient en choississant
-            le pôle création comment bien filmer, à monter une vidéo de A à Z, à créer une 
-            identité graphique pour une entreprise : du logo en passant par les couleurs
-            significatives de la marque, il va également imaginer les maquettes de sites web.
-        </p>
-        <p>Le pôle création va permettre à nos étudiants de mettre en avant plusieurs
-            compétences et qualités comme l'imagination, la créativité, le sens de la mise en
-            forme, l'écoute et le respect vis-à-vis de la demande du commanditaire.
-        </p>
-        <p>De nombreux logiciels sont utilisés dans ce module. Par exemple, Figma va être très utile
-            pour la création des maquettes. Pour réaliser des chartes graphiques, les étudiants utiliserons
-            davantage Indesign. Pour créer des logos nos étudiants vont se servir du logiciel de la suite Adobe 
-            Illustrator, et pour la retouche de photos nous utilisons Photoshop.
-            Nos étudiants vont également faire du motion design lors de leur parcours en création.
-            Ainsi, ils vont apprendre à se servir du logiciel AfterEffect.
-        </p>
-      </div>
+            notre vie : en effet, les visuels sont importants pour communiquer
+            avec les sociétés modernes.
+          </p>
+          <p>
+            Comme nous l'avons dit plus haut, les étudiants étudient en
+            choississant le pôle création comment bien filmer, à monter une
+            vidéo de A à Z, à créer une identité graphique pour une entreprise :
+            du logo en passant par les couleurs significatives de la marque, il
+            va également imaginer les maquettes de sites web.
+          </p>
+          <p>
+            Le pôle création va permettre à nos étudiants de mettre en avant
+            plusieurs compétences et qualités comme l'imagination, la
+            créativité, le sens de la mise en forme, l'écoute et le respect
+            vis-à-vis de la demande du commanditaire.
+          </p>
+          <p>
+            De nombreux logiciels sont utilisés dans ce module. Par exemple,
+            Figma va être très utile pour la création des maquettes. Pour
+            réaliser des chartes graphiques, les étudiants utiliserons davantage
+            Indesign. Pour créer des logos nos étudiants vont se servir du
+            logiciel de la suite Adobe Illustrator, et pour la retouche de
+            photos nous utilisons Photoshop. Nos étudiants vont également faire
+            du motion design lors de leur parcours en création. Ainsi, ils vont
+            apprendre à se servir du logiciel AfterEffect.
+          </p>
+        </div>
       </div>
       <!--2525252525-->
       <div class="ml-auto w-full md:w-fit text-5xl md:text-8xl my-10">
@@ -217,11 +226,11 @@ let removeScroll = ref(false);
       <h3 class="mmi-h2 text-5xl">Xavier Senente</h3>
       <p>
         Monsieur Xavier Senente est le professeur principal du pôle créatif de
-          MMI. Il est chargé de l’apprentissage des logiciels de design et de
-          graphisme, mais aussi des logiciels de prototypages pour la
-          composition des maquettes de site internet. Il enseigne aussi l’art du
-          branding (créer un logo, une identité graphique... ) tout en apportant
-          une culture artistique aux élèves.
+        MMI. Il est chargé de l’apprentissage des logiciels de design et de
+        graphisme, mais aussi des logiciels de prototypages pour la composition
+        des maquettes de site internet. Il enseigne aussi l’art du branding
+        (créer un logo, une identité graphique... ) tout en apportant une
+        culture artistique aux élèves.
       </p>
     </div>
   </div>
@@ -249,7 +258,9 @@ let removeScroll = ref(false);
       <!--2525252525-->
 
       <div class="flex flex-col gap-10 max-w-5xl w-full">
-        <h2 class="uppercase mmi-h2 text-center">Les autres profs de création</h2>
+        <h2 class="uppercase mmi-h2 text-center">
+          Les autres profs de création
+        </h2>
         <div class="grid grid-cols-galerie-profs-2 gap-2 w-full">
           <div class="flex flex-col gap-3 items-center">
             <img

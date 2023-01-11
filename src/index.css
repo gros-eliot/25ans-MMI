@@ -30,13 +30,13 @@
     }
 
     .mmi-photo {
-        @apply min-w-[270px] min-h-[350px]
+        @apply min-w-[270px] min-h-[350px] object-cover
     }
     .mmi-photo-2 {
-        @apply w-[270px] h-[350px]
+        @apply w-[270px] h-[350px] object-cover
     }
     .mmi-photo-3 {
-        @apply w-[135px] h-[175px]
+        @apply w-[135px] h-[175px] object-cover
     }
 
     .prof-homepage {

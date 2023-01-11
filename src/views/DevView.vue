@@ -79,7 +79,7 @@
           </div>
           <div class="flex flex-col gap-7 items-center">
             <img
-              src="/images/PASDEPHOTO.png"
+              src="/images/PASDEPHOTO.jpeg"
               alt="photo inconnue"
               class="mmi-photo"
             />
@@ -95,7 +95,7 @@
           </div>
           <div class="flex flex-col gap-7 items-center">
             <img
-              src="/images/PASDEPHOTO.png"
+              src="/images/PASDEPHOTO.jpeg"
               alt="photo inconnue"
               class="mmi-photo"
             />

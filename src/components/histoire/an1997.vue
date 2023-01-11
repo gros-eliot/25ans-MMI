@@ -37,7 +37,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
       <img
         src="/images/histoire/mmi-green-screen.png"
         alt="Ordinateur MMI"
-        class="w-64 h-fit animated-computer m-4"
+        class="hidden md:block md:w-64 h-fit animated-computer m-4"
       />
     </div>
   </section>
@@ -78,7 +78,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
 
   <!--PARTIE 2-->
   <section
-    class="mt-20 grid justify-items-center items-center justify-center w-full lg:grid-cols-[20%,80%] grid-cols-1 grid-rows-[70%,30%] lg:grid-rows-1 bg-[linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),url('/images/histoire/old-cinema.gif')] bg-cover bg-center"
+    class="mt-20 grid justify-items-center items-center justify-center w-full lg:grid-cols-[20%,80%] grid-cols-1 grid-rows-[10%,90%] lg:grid-rows-1 bg-[linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.5)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.5)50%,rgba(0,0,0,1)100%),url('/images/histoire/old-cinema.gif')] bg-cover bg-center"
   >
     <div>
       <!--SRC experience-->

@@ -12,7 +12,6 @@ import MentionsLegalesView from "../views/MentionsLegalesView.vue"
 import SecretView from "../views/SecretView.vue"
 
 import HistoireView from "../views/HistoireView.vue"
-import HistoireViewB from "../views/HistoireViewB.vue"
 
 import DevViewRefonte from "../views/DevViewRefonte.vue"
 
@@ -34,7 +33,6 @@ const router = createRouter({
     
     { path: '/secret',  name: 'secret', component: SecretView },
     { path: '/histoire',  name: 'histoire', component: HistoireView },
-    { path: '/histoire-b',  name: 'histoire-b', component: HistoireViewB },
   ]
 })
 

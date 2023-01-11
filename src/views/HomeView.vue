@@ -141,13 +141,13 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <div
-      class="bg-chatonnay1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
-      :class="{
-        'bg-chatonnay2': clickedImageChatonnay === true,
-      }"
-      @mouseenter="clickedImageChatonnay = !clickedImageChatonnay"
-      @mouseleave="clickedImageChatonnay = !clickedImageChatonnay"
-    ></div>
+          class="bg-chatonnay1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+          :class="{
+            'bg-chatonnay2': clickedImageChatonnay === true,
+          }"
+          @mouseenter="clickedImageChatonnay = !clickedImageChatonnay"
+          @mouseleave="clickedImageChatonnay = !clickedImageChatonnay"
+        ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Pascal CHATONNAY</p>
           <p>Informatique - Référent Défense et Sécurité Nationale</p>
@@ -157,13 +157,13 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <div
-      class="bg-chartogne1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
-      :class="{
-        'bg-chartogne2': clickedImageChartogne === true,
-      }"
-      @mouseenter="clickedImageChartogne = !clickedImageChartogne"
-      @mouseleave="clickedImageChartogne = !clickedImageChartogne"
-    ></div>
+          class="bg-chartogne1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+          :class="{
+            'bg-chartogne2': clickedImageChartogne === true,
+          }"
+          @mouseenter="clickedImageChartogne = !clickedImageChartogne"
+          @mouseleave="clickedImageChartogne = !clickedImageChartogne"
+        ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Élodie CHARTOGNE</p>
           <p>Secrétariat</p>
@@ -173,13 +173,13 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <div
-      class="bg-malsot1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
-      :class="{
-        'bg-malsot2': clickedImageMalsot === true,
-      }"
-      @mouseenter="clickedImageMalsot = !clickedImageMalsot"
-      @mouseleave="clickedImageMalsot = !clickedImageMalsot"
-    ></div>
+          class="bg-malsot1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+          :class="{
+            'bg-malsot2': clickedImageMalsot === true,
+          }"
+          @mouseenter="clickedImageMalsot = !clickedImageMalsot"
+          @mouseleave="clickedImageMalsot = !clickedImageMalsot"
+        ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">David MALSOT</p>
           <p>Communication</p>
@@ -189,13 +189,13 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <div
-      class="bg-senente1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
-      :class="{
-        'bg-senente2': clickedImageSenente === true,
-      }"
-      @mouseenter="clickedImageSenente = !clickedImageSenente"
-      @mouseleave="clickedImageSenente = !clickedImageSenente"
-    ></div>
+          class="bg-senente1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+          :class="{
+            'bg-senente2': clickedImageSenente === true,
+          }"
+          @mouseenter="clickedImageSenente = !clickedImageSenente"
+          @mouseleave="clickedImageSenente = !clickedImageSenente"
+        ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Xavier SENENTE</p>
           <p>Graphisme & Design</p>
@@ -326,7 +326,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Christelle BLOCH"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -340,7 +340,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Christelle BLOCH"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -354,7 +354,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Abdallah MAKHOUL"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -368,7 +368,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Bruno VIEZZI"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -382,7 +382,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Myriam NICOLLE"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -395,13 +395,13 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <div
-      class="bg-bodet1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
-      :class="{
-        'bg-bodet2': clickedImageBodet === true,
-      }"
-      @mouseenter="clickedImageBodet = !clickedImageBodet"
-      @mouseleave="clickedImageBodet = !clickedImageBodet"
-    ></div>
+          class="bg-bodet1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+          :class="{
+            'bg-bodet2': clickedImageBodet === true,
+          }"
+          @mouseenter="clickedImageBodet = !clickedImageBodet"
+          @mouseleave="clickedImageBodet = !clickedImageBodet"
+        ></div>
         <div class="flex flex-col gap-0 items-center">
           <p class="font-black">Julie BODET</p>
           <p>Communication</p>
@@ -411,7 +411,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Camille BATAILLE-BARBIER"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -425,7 +425,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Robin HECKENAUER"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -439,7 +439,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Didier FLORENTZ"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -452,7 +452,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Isabelle LAFORGUE"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -466,7 +466,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Annie STEMPHELET"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -480,7 +480,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.png"
+          src="/images/PASDEPHOTO.jpeg"
           alt="Thierry HUFSCHMIDT"
           class="mmi-photo-2 object-cover border-4 border-black"
         />

@@ -11,31 +11,32 @@ let removeScroll = ref(false);
     <section class="w-11/12 m-auto my-10 md:hidden">
       <div class="h-screen">
         <div class="grid grid-cols-2 grid-rows-4 h-full">
-          <OeuvreComponent 
-          :sourceImage="'oeuvre8.png'"
-                :auteur="'Moi'"
-                :nom="'Testeur'"
-                :description="'Cette oeuvre a été réalisée par Y.'"/>
           <OeuvreComponent
-            :sourceImage="'oeuvre1.png'"
+            :sourceImage="'oeuvre8.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre2.png'"
+            :sourceImage="'oeuvre1.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre3.png'"
+            :sourceImage="'oeuvre2.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre4.png'"
+            :sourceImage="'oeuvre3.jpg'"
+            :auteur="'Moi'"
+            :nom="'Testeur'"
+            :description="'Cette oeuvre a été réalisée par Y.'"
+          />
+          <OeuvreComponent
+            :sourceImage="'oeuvre4.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
@@ -50,19 +51,19 @@ let removeScroll = ref(false);
               />
               -->
           <OeuvreComponent
-            :sourceImage="'oeuvre5.png'"
+            :sourceImage="'oeuvre5.jpg'"
             :auteur="'Moi'"
             :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre6.png'"
+            :sourceImage="'oeuvre6.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre7.png'"
+            :sourceImage="'oeuvre7.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
@@ -77,20 +78,21 @@ let removeScroll = ref(false);
         <div class="grid grid-cols-[60%_40%] h-2/3">
           <div class="grid grid-rows-[55%_45%]">
             <div class="grid grid-cols-2">
-              <OeuvreComponent 
-              :sourceImage="'oeuvre8.png'"
+              <OeuvreComponent
+                :sourceImage="'oeuvre8.jpg'"
                 :auteur="'Moi'"
                 :nom="'Testeur'"
-                :description="'Cette oeuvre a été réalisée par Y.'"/>
+                :description="'Cette oeuvre a été réalisée par Y.'"
+              />
               <OeuvreComponent
-                :sourceImage="'oeuvre1.png'"
+                :sourceImage="'oeuvre1.jpg'"
                 :auteur="'Moi'"
                 :nom="'Testeur'"
                 :description="'Cette oeuvre a été réalisée par Y.'"
               />
             </div>
             <OeuvreComponent
-              :sourceImage="'oeuvre2.png'"
+              :sourceImage="'oeuvre2.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
@@ -98,13 +100,13 @@ let removeScroll = ref(false);
           </div>
           <div class="grid grid-rows-2">
             <OeuvreComponent
-              :sourceImage="'oeuvre3.png'"
+              :sourceImage="'oeuvre3.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
             />
             <OeuvreComponent
-              :sourceImage="'oeuvre4.png'"
+              :sourceImage="'oeuvre4.jpg'"
               :auteur="'Moi'"
               :nom="'Testeur'"
               :description="'Cette oeuvre a été réalisée par Y.'"
@@ -122,19 +124,19 @@ let removeScroll = ref(false);
         </div>
         <div class="grid grid-cols-3 h-1/3">
           <OeuvreComponent
-            :sourceImage="'oeuvre5.png'"
+            :sourceImage="'oeuvre5.jpg'"
             :auteur="'Moi'"
             :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre6.png'"
+            :sourceImage="'oeuvre6.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
           <OeuvreComponent
-            :sourceImage="'oeuvre7.png'"
+            :sourceImage="'oeuvre7.jpg'"
             :auteur="'Moi'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
@@ -152,36 +154,43 @@ let removeScroll = ref(false);
       <div class="max-w-5xl">
         <h2 class="mmi-h2 text-center lg:text-left">La com' au MMI</h2>
         <div class="flex flex-col gap-5">
-        <p>
-          Le pôle communication de MMI fait partie des trois grandes thématiques
-          qu’aborde MMI dans son cursus. La communication est très importante
-          dans le milieu du web car elle permet aux différents projets de vivre
-          et de se faire une place dans les esprits. De plus, la communication
-          régie toutes les parties qui précèdent le lancement d’un projet comme
-          des analyses concurrentielles ou la gestion du budget.
-        </p>
-        <p>En BUT MMI, les élèves apprennent différentes formes de communication.
-          Ils apprennent par exemple les lois qui s'impliquent à Internet, à réaliser 
-          un dossier de communication entier pour présenter un projet, à estimer un 
-          budget et faire les demandes de subventions, à monter une identité sur les 
-          réseaux sociaux, à créer un calendrier de publications, à entretenir les 
-          comptes et l'image de marque ou encore à rédiger et imaginer des posts pour 
-          les réseaux sociaux avec le contenu en fonction des cibles.
-        </p>
-        <p>Les étudiants étudient également la communication dans la langue anglaise avec leur
-          professeur Lydia Dubois, afin d'acquérir un vocabulaire riche et complet dans leur 
-          branche professionnel. Ils sont ainsi capables de réaliser des publications, des contenus
-          et des dossiers complets bilingues.
-        </p>
-        <p>Dans le cadre de leurs projets, les étudiants vont réaliser de la communication 
-          plus concrète avec des dossiers, gestion d'un budget, réelle création de comptes
-          et de gestion des réseaux sociaux. Ils peuvent également toucher au domaine de
-          l'événementiel, avec la création de l'événement et de la communcation liée.
-          Les élèves qui se spécialisent ensuite dans la communication auront accès à des métiers
-          comme référenceur web, communicaty manager, chef de projet, chargé de communication,
-          rédacteur web,...
-        </p>
-      </div>
+          <p>
+            Le pôle communication de MMI fait partie des trois grandes
+            thématiques qu’aborde MMI dans son cursus. La communication est très
+            importante dans le milieu du web car elle permet aux différents
+            projets de vivre et de se faire une place dans les esprits. De plus,
+            la communication régie toutes les parties qui précèdent le lancement
+            d’un projet comme des analyses concurrentielles ou la gestion du
+            budget.
+          </p>
+          <p>
+            En BUT MMI, les élèves apprennent différentes formes de
+            communication. Ils apprennent par exemple les lois qui s'impliquent
+            à Internet, à réaliser un dossier de communication entier pour
+            présenter un projet, à estimer un budget et faire les demandes de
+            subventions, à monter une identité sur les réseaux sociaux, à créer
+            un calendrier de publications, à entretenir les comptes et l'image
+            de marque ou encore à rédiger et imaginer des posts pour les réseaux
+            sociaux avec le contenu en fonction des cibles.
+          </p>
+          <p>
+            Les étudiants étudient également la communication dans la langue
+            anglaise avec leur professeur Lydia Dubois, afin d'acquérir un
+            vocabulaire riche et complet dans leur branche professionnel. Ils
+            sont ainsi capables de réaliser des publications, des contenus et
+            des dossiers complets bilingues.
+          </p>
+          <p>
+            Dans le cadre de leurs projets, les étudiants vont réaliser de la
+            communication plus concrète avec des dossiers, gestion d'un budget,
+            réelle création de comptes et de gestion des réseaux sociaux. Ils
+            peuvent également toucher au domaine de l'événementiel, avec la
+            création de l'événement et de la communcation liée. Les élèves qui
+            se spécialisent ensuite dans la communication auront accès à des
+            métiers comme référenceur web, communicaty manager, chef de projet,
+            chargé de communication, rédacteur web,...
+          </p>
+        </div>
       </div>
       <!--2525252525-->
       <div class="ml-auto w-full md:w-fit text-5xl md:text-8xl my-10">
