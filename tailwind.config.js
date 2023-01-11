@@ -25,6 +25,8 @@ module.exports = {
       backgroundImage: {
         'malsot1' : "url('/images/D-Malsot.jpg')",
         'malsot2' : "url('/images/funny-version/Malsot.jpeg')",
+        'senente1' : "url('/images/X-SENENTE.jpg')",
+        'senente2' : "url('/images/funny-version/Senente1.jpeg')",
         
       }
     },

@@ -72,8 +72,8 @@
         <div class="grid grid-cols-galerie-profs gap-9 w-full">
           <div class="flex flex-col gap-7 items-center">
             <img
-              src="../../public/images/A-Lamboud_Durand.jpg"
-              alt="photo Monsieur Lamboud Durant"
+              src="../../public/images/A-Lamboux_Durand.jpg"
+              alt="photo Monsieur Lamboux-Durant"
               class="mmi-photo"
             />
             <p class="font-neuemontreal text-2xl">Alain LAMBOUX-DURAND</p>
