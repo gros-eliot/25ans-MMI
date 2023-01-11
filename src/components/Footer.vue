@@ -6,13 +6,22 @@
         <router-link to="/mentionslegales"> MENTIONS LEGALES </router-link>
         <a to="/"> JPO 2022 </a>
       </div>
-      <a href="https://www.instagram.com/mmi25ans/">
-        <img
-          src="../../../public/instagram.svg"
-          class="pt-10 md:pt-0"
-          alt="logo instagram"
-        />
-      </a>
+      <div class="flex gap-5 items-center">
+        <a href="https://discord.gg/nvNsDkZERR">
+          <img
+            src="../../public/discord.png"
+            alt="logo discord"
+            class="pt-10 md:pt-0"
+          />
+        </a>
+        <a href="https://www.instagram.com/mmi25ans/">
+          <img
+            src="../../../public/instagram.svg"
+            class="pt-10 md:pt-0"
+            alt="logo instagram"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </template>
