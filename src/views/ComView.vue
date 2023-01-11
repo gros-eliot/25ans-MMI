@@ -207,7 +207,7 @@ let removeScroll = ref(false);
   >
     <!--IMAGE MONSIEUR MALSOT-->
     <div
-      class="bg-malsot1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+      class="bg-malsot1 m-auto lg:m-0 image-prof bg-center bg-contain bg-no-repeat transition-all"
       :class="{
         'bg-malsot2': clickedImage === true,
       }"
@@ -258,7 +258,7 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/L-Dubois.jpg"
               alt="Photo Madame Dubois"
-              class="mmi-photo-2"
+              class="image-prof-2"
             />
             <p class="font-neuemontreal">Lydia Dubois</p>
           </div>
@@ -267,7 +267,7 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/JC-Domenget.jpg"
               alt="photo Monsieur Domenget"
-              class="mmi-photo-2"
+              class="image-prof-2"
             />
             <p class="font-neuemontreal">Jean-Claude Domenget</p>
           </div>
@@ -275,7 +275,7 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/S-Laurent.jpg"
               alt="Photo Monsieur Laurent"
-              class="mmi-photo-2"
+              class="image-prof-2"
             />
             <p class="font-neuemontreal">Stephane Laurent</p>
           </div>

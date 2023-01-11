@@ -1,6 +1,7 @@
 <script setup>
 import an1991view from "@/components/histoire/an1991.vue";
 import an1997view from "@/components/histoire/an1997.vue";
+import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
 
 function BlackScreen() {
   let valueScroll = window.pageYOffset;
@@ -104,12 +105,12 @@ window.addEventListener("scroll", BlackScreen);
         </div>
         <!--bounce-->
         <section
-          class="font-normal mmi-texte text-center flex flex-col justify-center items-center gap-2"
+          class="font-normal mmi-texte text-center flex flex-col justify-center items-center gap-2 animate-bounce"
         >
-          <MouseIcon class="w-12 h-12 stroke-black"></MouseIcon>
-          <!--
+          <mouseIcon class="w-12 h-12 stroke-black"></mouseIcon>
 
-            ANCIEN ICON : double cercle
+          <!--
+            ANCIEN ICON (DOUBLE CERCLE)
           <div>
             <div
               class="w-12 h-12 border-2 border-black rounded-full flex justify-center items-center"
@@ -117,7 +118,8 @@ window.addEventListener("scroll", BlackScreen);
               <div class="w-8 h-8 bg-black rounded-full"></div>
             </div>
           </div>-->
-          <p class="text-black">scroll&nbsp;⮟ to&nbsp;begin...</p>
+
+          <p class="text-black">scroll to&nbsp;begin...</p>
         </section>
         <!--bounce-->
       </div>
@@ -136,14 +138,9 @@ window.addEventListener("scroll", BlackScreen);
     <!--SECTION 1997 N°1-->
     <!--SECTION 1997 N°1-->
     <div class="mt-80">
-      <an1997view class="py-20"></an1997view>
+      <an1997view class="pt-20"></an1997view>
     </div>
     <!--SECTION 1997 N°1-->
-
-    <!--SECTION 1997 N°2-->
-    <!--SECTION 1997 N°2-->
-    <!--SECTION 1997 N°2-->
-    <div></div>
   </article>
 </template>
 <style></style>

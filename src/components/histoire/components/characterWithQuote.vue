@@ -31,13 +31,13 @@ export default {
 
 <template>
   <section
-    class="flex flex-col lg:flex-row justify-start lg:justify-center items-center w-full"
+    class="flex flex-col lg:flex-row justify-start lg:justify-center items-center w-full text-white"
   >
     <div class="flex justify-center items-center">
       <img
         :src="'/images/' + srcImage"
         :alt="altImage"
-        class="object-cover mmi-photo-3 md:mmi-photo-2 mx-4"
+        class="object-cover object-center mmi-photo-3 md:mmi-photo-2 mx-4"
       />
     </div>
 
@@ -52,7 +52,7 @@ export default {
       <p class="text-[10px]">{{ personDescription }}</p>
       <div class="grid grid-rows-[2%,96%,2%] items-center w-full my-5">
         <Topcorner
-          class="w-8 h-fit z-[5] stroke-white stroke-[10px]"
+          class="w-8 h-fit z-[5] stroke-beige stroke-[10px]"
         ></Topcorner>
 
         <!--QUOTE-->
@@ -66,7 +66,7 @@ export default {
         <!--QUOTE-->
 
         <Bottomcorner
-          class="w-8 h-fit ml-auto z-[5] stroke-white stroke-[10px]"
+          class="w-8 h-fit ml-auto z-[5] stroke-beige stroke-[10px]"
         ></Bottomcorner>
       </div>
     </div>

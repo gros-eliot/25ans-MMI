@@ -28,7 +28,7 @@ export default {
 <template>
   <section class="my-10">
     <div class="grid grid-rows-[2%,96%,2%] items-center w-fit">
-      <Topcorner class="w-8 h-fit z-[5] stroke-white stroke-[10px]"></Topcorner>
+      <Topcorner class="w-8 h-fit z-[5] stroke-beige stroke-[10px]"></Topcorner>
       <div class="flex justify-center items-center">
         <img
           :src="'/images/' + srcImage"
@@ -37,7 +37,7 @@ export default {
         />
       </div>
       <Bottomcorner
-        class="w-8 h-fit ml-auto z-[5] stroke-white stroke-[10px]"
+        class="w-8 h-fit ml-auto z-[5] stroke-beige stroke-[10px]"
       ></Bottomcorner>
     </div>
     <div class="flex flex-col gap-0 mt-10 md:mt-0">
