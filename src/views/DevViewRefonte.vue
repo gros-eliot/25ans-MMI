@@ -210,7 +210,11 @@ let removeScroll = ref(false);
       class=" m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
       @mouseenter="clickedImage = !clickedImage"
       @mouseleave="clickedImage = !clickedImage"
-    ></div>
+    ><img
+        src="/images/JM-Fino.jpg"
+        alt="Photo de Jean Marie Fino"
+        class="max-w-lg m-auto mmi-photo-2"
+      /></div>
     <!--IMAGE MONSIEUR FINO-->
 
     <div class="max-w-xl flex flex-col gap-4">
@@ -248,32 +252,41 @@ let removeScroll = ref(false);
       <!--2525252525-->
 
       <div class="flex flex-col gap-10 max-w-5xl w-full">
-        <h2 class="uppercase mmi-h2 text-center">Les autres profs de com'</h2>
+        <h2 class="uppercase mmi-h2 text-center">Les autres profs de dev'</h2>
         <div class="grid grid-cols-galerie-profs-2 gap-10 w-full">
+          
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/L-Dubois.jpg"
-              alt="Photo Madame Dubois"
+              src="/images/P-Chatonnay.jpg"
+              alt="photo Monsieur Chatonnay"
               class="mmi-photo-2"
             />
-            <p class="font-neuemontreal">Lydia Dubois</p>
+            <p class="font-neuemontreal">Pascal Chatonnay</p>
           </div>
 
           <div class="flex flex-col gap-3 items-center">
-            <img
-              src="../../public/images/JC-Domenget.jpg"
-              alt="photo Monsieur Domenget"
+             <img
+              src="/images/PASDEPHOTO.png"
+              alt="photo inconnue"
               class="mmi-photo-2"
             />
-            <p class="font-neuemontreal">Jean-Claude Domenget</p>
+            <p class="font-neuemontreal">Pierre Pracht</p>
           </div>
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/S-Laurent.jpg"
-              alt="Photo Monsieur Laurent"
+              src="/images/H-Mabed.jpg"
+              alt="Photo Monsieur Mabed"
               class="mmi-photo-2"
             />
-            <p class="font-neuemontreal">Stephane Laurent</p>
+            <p class="font-neuemontreal">Hakim Mabed</p>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="/images/PASDEPHOTO.png"
+              alt="photo inconnue"
+              class="mmi-photo-2"
+            />
+            <p class="font-neuemontreal">Abdallah Makoul</p>
           </div>
         </div>
       </div>
