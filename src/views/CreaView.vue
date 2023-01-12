@@ -280,6 +280,40 @@ let removeScroll = ref(false);
             />
             <p class="font-neuemontreal">Sebastien AUGIER</p>
           </div>
+
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="../../public/images/Q-Gianella.jpg"
+              alt="Photo Monsieur Gianella"
+              class="mmi-photo-2"
+            />
+            <p class="font-neuemontreal">Quentin Gianella</p>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="../../public/images/T-Hulin.jpg"
+              alt="Photo Monsieur Hulin"
+              class="mmi-photo-2 object-cover object-center"
+            />
+            <p class="font-neuemontreal">Thibaud Hulin</p>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="../../public/images/PASDEPHOTO.jpg"
+              alt="Photo inconnue"
+              class="mmi-photo-2"
+            />
+            <p class="font-neuemontreal">Myriam Nicolle</p>
+          </div>
+
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="../../public/images/PASDEPHOTO.jpg"
+              alt="Photo inconnue"
+              class="mmi-photo-2"
+            />
+            <p class="font-neuemontreal">Didier Florentz</p>
+          </div>
         </div>
       </div>
     </section>

@@ -268,7 +268,7 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/L-Dubois.jpg"
               alt="Photo Madame Dubois"
-              class="image-prof-2"
+              class="mmi-photo-2"
             />
             <p class="font-neuemontreal">Lydia Dubois</p>
           </div>
@@ -277,7 +277,7 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/JC-Domenget.jpg"
               alt="photo Monsieur Domenget"
-              class="image-prof-2"
+              class="mmi-photo-2"
             />
             <p class="font-neuemontreal">Jean-Claude Domenget</p>
           </div>
@@ -285,15 +285,15 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/S-Laurent.jpg"
               alt="Photo Monsieur Laurent"
-              class="image-prof-2"
+              class="mmi-photo-2"
             />
             <p class="font-neuemontreal">Stephane Laurent</p>
           </div>
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/PASDEPHOTO.jpeg"
-              alt="Photo Monsieur Viezzi"
-              class="image-prof-2"
+              src="../../public/images/PASDEPHOTO.jpg"
+              alt="Photo inconnue"
+              class="mmi-photo-2"
             />
             <p class="font-neuemontreal">Bruno Viezzi</p>
           </div>
@@ -312,9 +312,9 @@ let removeScroll = ref(false);
     
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/PASDEPHOTO.jpeg"
-              alt="Photo Madame Bataille-Barbier"
-              class="image-prof-2"
+              src="../../public/images/PASDEPHOTO.jpg"
+              alt="Photo inconnue"
+              class="mmi-photo-2"
             />
             <p class="font-neuemontreal">Camille Bataille-Barbier</p>
           </div>

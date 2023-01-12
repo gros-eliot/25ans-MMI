@@ -299,6 +299,38 @@ let removeScroll = ref(false);
             />
             <p class="font-neuemontreal">Abdallah Makoul</p>
           </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="/images/W-Yvart.jpg"
+              alt="photo Monsieur Yvart"
+              class="mmi-photo-2"
+            />
+            <p class="font-neuemontreal">Willy Yvart</p>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="/images/PASDEPHOTO.jpg"
+              alt="photo inconnue"
+              class="mmi-photo-2"
+            />
+            <p class="font-neuemontreal">Christelle Bloch</p>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="/images/PASDEPHOTO.jpg"
+              alt="photo inconnue"
+              class="mmi-photo-2"
+            />
+            <p class="font-neuemontreal">Robin Heckenauer</p>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="/images/PASDEPHOTO.jpg"
+              alt="photo inconnue"
+              class="mmi-photo-2"
+            />
+            <p class="font-neuemontreal">Isabelle Laforgue</p>
+          </div>
         </div>
       </div>
     </section>
