@@ -41,7 +41,7 @@ export default {
       />
     </div>
 
-    <div class="flex flex-col gap-0 mt-10 p-3 md:mt-0 w-full">
+    <div class="flex flex-col gap-0 mt-10 md:px-10 p-3 md:mt-0 w-full">
       <!--Quote débloquée-->
       <p class="uppercase text-sm italic text-gray-400">
         // New quote unlocked

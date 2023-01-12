@@ -87,8 +87,8 @@ window.addEventListener("scroll", Function252525);
           <h2 class="mmi-h2">25 ANS&nbsp;!</h2>
           <p>
             25 ans ça se fête ! Pour son quart de siècle MMI Montbéliard
-            organise un concours d’oeuvre numérique ! Le but ? Laissez une
-            trace, car oui l’oeuvre gagnante sera transformer en NFT pour rester
+            organise un concours d'oeuvre numérique ! Le but ? Laissez une
+            trace, car oui l'oeuvre gagnante sera transformer en NFT pour rester
             à jamais dans la Blockchain ! Alors ? Partant ?
           </p>
           <p class="font-semibold">
@@ -100,9 +100,9 @@ window.addEventListener("scroll", Function252525);
           <h2 class="mmi-h2">Qu'est-ce que MMI&nbsp;?</h2>
           <p>
             Le BUT MMI ou Bachelor Universitaire technique Métiers du Multimédia
-            et de l’Internet est un curcus universitaire. MMI c’est plus que des
-            années d’apprentissage, c’est une expérience personnelle comme
-            sociale. Un état d’esprit qui réuni tout les élèves et qui fait
+            et de l'Internet est un curcus universitaire. MMI c'est plus que des
+            années d'apprentissage, c'est une expérience personnelle comme
+            sociale. Un état d'esprit qui réuni tout les élèves et qui fait
             vivre le département. Du design en passant par la communication et
             le développement web, MMI apprends à tous les prérequis pour
             travailler dans le WEB.

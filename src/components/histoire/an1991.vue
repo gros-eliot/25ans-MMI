@@ -12,9 +12,9 @@
         </p>
       </div>
       <img
-        src="/images/histoire/mesures-physiques.jpg"
+        src="/images/histoire/mesures-physiques.png"
         alt="Logo mesure physique"
-        class="w-40 m-auto"
+        class="w-32 m-auto"
       />
     </div>
   </section>

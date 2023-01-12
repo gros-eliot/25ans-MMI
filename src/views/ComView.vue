@@ -156,11 +156,11 @@ let removeScroll = ref(false);
         <div class="flex flex-col gap-5">
           <p>
             Le pôle communication de MMI fait partie des trois grandes
-            thématiques qu’aborde MMI dans son cursus. La communication est très
+            thématiques qu'aborde MMI dans son cursus. La communication est très
             importante dans le milieu du web car elle permet aux différents
             projets de vivre et de se faire une place dans les esprits. De plus,
             la communication régie toutes les parties qui précèdent le lancement
-            d’un projet comme des analyses concurrentielles ou la gestion du
+            d'un projet comme des analyses concurrentielles ou la gestion du
             budget.
           </p>
           <p>
@@ -228,11 +228,11 @@ let removeScroll = ref(false);
     <div class="max-w-xl flex flex-col gap-4">
       <h3 class="mmi-h2 text-5xl">David Malsot</h3>
       <p>
-        Monsieur David Malsot est l’un des professeurs principaux de MMI mais
-        est aussi en grande partie chargé de l’initiation à la communication
+        Monsieur David Malsot est l'un des professeurs principaux de MMI mais
+        est aussi en grande partie chargé de l'initiation à la communication
         pour les élèves de première année. Il est un professeur important pour
         le département depuis ses multiples implications que ce soit dans
-        l’enseignement ou encore dans les évènements en rapport avec le
+        l'enseignement ou encore dans les évènements en rapport avec le
         département.
       </p>
     </div>

@@ -158,8 +158,8 @@ let removeScroll = ref(false);
             Le pôle Création est celui qui contient les matières artistiques.
             Design, Graphisme, Motion Design, Audiovisuel, Narration, toutes ces
             matières font partie de ce pôle. Le design est tout aussi important
-            que la communication et le développement. Par définition c’est la
-            façade du web et souvent c’est ce que l’on retient en premier d’un
+            que la communication et le développement. Par définition c'est la
+            façade du web et souvent c'est ce que l'on retient en premier d'un
             site internet. Mis à part ça, le design est une partie importante de
             notre vie : en effet, les visuels sont importants pour communiquer
             avec les sociétés modernes.
@@ -179,13 +179,14 @@ let removeScroll = ref(false);
           </p>
           <p>
             De nombreux logiciels sont utilisés dans ce module. Par exemple,
-            Figma va être très utile pour la création des maquettes. Pour
-            réaliser des chartes graphiques, les étudiants utiliserons davantage
-            Indesign. Pour créer des logos nos étudiants vont se servir du
-            logiciel de la suite Adobe Illustrator, et pour la retouche de
-            photos nous utilisons Photoshop. Nos étudiants vont également faire
-            du motion design lors de leur parcours en création. Ainsi, ils vont
-            apprendre à se servir du logiciel AfterEffect.
+            Figma ou Adobe XD seront utiles pour la création des maquettes de
+            site. Pour réaliser des chartes graphiques, les étudiants
+            utiliserons davantage Adobe InDesign. Pour créer des logos nos
+            étudiants vont se servir du logiciel de la suite Adobe Illustrator,
+            et pour la retouche de photos nous utilisons Adobe Photoshop. Nos
+            étudiants vont également faire du motion design lors de leur
+            parcours en création. Ainsi, ils vont apprendre à se servir du
+            logiciel Adobe AfterEffects.
           </p>
         </div>
       </div>
@@ -226,9 +227,9 @@ let removeScroll = ref(false);
       <h3 class="mmi-h2 text-5xl">Xavier Senente</h3>
       <p>
         Monsieur Xavier Senente est le professeur principal du pôle créatif de
-        MMI. Il est chargé de l’apprentissage des logiciels de design et de
+        MMI. Il est chargé de l'apprentissage des logiciels de design et de
         graphisme, mais aussi des logiciels de prototypages pour la composition
-        des maquettes de site internet. Il enseigne aussi l’art du branding
+        des maquettes de site internet. Il enseigne aussi l'art du branding
         (créer un logo, une identité graphique... ) tout en apportant une
         culture artistique aux élèves.
       </p>

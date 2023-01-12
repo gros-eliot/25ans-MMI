@@ -157,12 +157,12 @@ let removeScroll = ref(false);
           <p>
             Le pôle développement est aussi important dans le cursus MMI. Au
             cours des trois années de BUT les élèves apprennent à développer le
-            web. Ceci grâce à l’apprentissage de différents langages de
-            programmation et d’intégration comme l’HTML, le CSS, le Javascript,
-            et d’autres. L’apprentissage de librairie comme Tailwind CSS fait
+            web. Ceci grâce à l'apprentissage de différents langages de
+            programmation et d'intégration comme l'HTML, le CSS, le Javascript,
+            et d'autres. L'apprentissage de librairie comme Tailwind CSS fait
             aussi partie du cursus de MMI. Le développement est la base de tout
-            ce qui est présent sur le web, il est donc important de s’y pencher
-            pour mieux comprendre ce milieu et être capable d’y évoluer.
+            ce qui est présent sur le web, il est donc important de s'y pencher
+            pour mieux comprendre ce milieu et être capable d'y évoluer.
           </p>
           <p>
             Les étudiants du web vont apprendre à coder les sites web dans
@@ -171,7 +171,7 @@ let removeScroll = ref(false);
             le back, c'est à dire tout ce qui se fait derrière le site web pour
             faire fonctionner les fonctionnalités du site notamment. Ils vont
             être préparés à des métiers comme intégrateur web, développeur web,
-            administrateur de bases de données, Data Visualist,...
+            administrateur de bases de données, Data Visualist...
           </p>
           <p>
             Pour le front, les étudiants vont apprendre à respecter la maquette,
@@ -179,16 +179,17 @@ let removeScroll = ref(false);
             principalement utiliser des langages comme HTML, CSS, et des
             librairies de style comme TailWind CSS. C'est là le métier de
             l'intégrateur web. Les étudiants vont apprendre à utiliser d'autres
-            librairies comme ChartJs, qui vont leur permettre de créer des
+            librairies comme ChartJs : elle leur permettra de créer des
             graphiques d'analyse pour les entreprises. C'est le métier de Data
-            Visualist
+            Visualist.
           </p>
           <p>
             Dans le back, les étudiants vont par exemple gérer des bases de
             données pour créer des fonctionnalités sur les sites web comme la
-            connexion, ou encore le contact. Les fonctionnalités d'un site sont
-            infinis c'est pourquoi le métier de développeur web demande une
-            bonne capacité d'adaptation et de veille.
+            création de comptes, les éléments de gestion de site e-commerce,
+            etc. Les fonctionnalités d'un site sont infinis c'est pourquoi le
+            métier de développeur web demande une bonne capacité d'adaptation et
+            de veille.
           </p>
         </div>
       </div>
@@ -231,10 +232,10 @@ let removeScroll = ref(false);
     <div class="max-w-xl flex flex-col gap-4">
       <h3 class="mmi-h2 text-5xl">Jean-Marie Fino</h3>
       <p>
-        Monsieur Jean-Marie Fino est un membre important de MMI car il est l’un
-        des fondateurs du département, à l’époque MMI s’appelait SRC. Il est un
+        Monsieur Jean-Marie Fino est un membre important de MMI car il est l'un
+        des fondateurs du département, à l'époque MMI s'appelait SRC. Il est un
         bon représentant du pôle développement car il est lui-même développeur
-        full stack. Il est chargé de l’apprentissage des langages d’intégration
+        full stack. Il est chargé de l'apprentissage des langages d'intégration
         et de développement web.
       </p>
     </div>

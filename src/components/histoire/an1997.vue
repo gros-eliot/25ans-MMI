@@ -89,12 +89,13 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
       />
     </div>
 
-    <div class="w-11/12 m-auto flex flex-col gap-0 p-4 text-beige">
+    <div class="w-11/12 m-auto flex flex-col gap-0 p-4 py-20 text-beige">
       <h2 class="text-vert mmi-h2">Avant MMI, c'était SRC !</h2>
       <div class="mt-10 flex flex-col gap-4">
         <p>
           Effectivement. Au tout départ, le département que l'on connaît
-          aujourd'hui sous le nom de "MMI" était auparavant nommé "SRC".
+          aujourd'hui sous le nom de "MMI" était auparavant nommé
+          <strong> "SRC" (Service Réseaux et Communication). </strong>
         </p>
         <p>
           La première promo était de 30 élèves. Leur provenance était très
