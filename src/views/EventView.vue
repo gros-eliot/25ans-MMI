@@ -11,16 +11,16 @@
                 />
             <div class="2xl:mr-10">
               <div>
-                <p class=" mmi-texte">Pour fêter ses 25 ans, MMI organise un événement de rencontre le 11 et 12 mars.</p>
+                <p class=" mmi-texte">Pour fêter ses 25 ans, MMI organise un événement de rencontre le <strong>11 et 12 mars</strong>.</p>
                 <p class=" mr-16 mmi-texte">Tous les MMI, anciens, actuels et professeurs, sont invités le samedi 11 mars 
-                  2023 ! rendez-vous à <strong>21h dans la salle 006</strong> du département pour une soirée originale en 
+                  2023 ! Rendez-vous à <strong>21h dans la salle 006 du département</strong> pour une soirée originale en 
                   coopération avec le défi 24h ! Un moment de partage unique entre anciens étudiants, étudiants actuels
                     et professeurs autour d'une collation et de musique ! 
                 </p>
               </div>
               <div>          
-                <p class="mr-16 mmi-texte">Mais la fête de s'arrête pas là ! Le dimanche 12 mars, venez participer à la remise
-                des prix du défi 24h et du concours des 25 ans ! Un appéro dinatoire permettra de cloturer en beauté ce 
+                <p class="mb-10 mr-16 mmi-texte">Mais la fête de s'arrête pas là ! <strong>Le dimanche 12 mars</strong>, venez participer à <strong>la remise
+                des prix du défi 24h et du concours des 25 ans</strong> ! Un appéro dinatoire permettra de cloturer en beauté ce 
                 week-end unique de partage et de souvenirs en mémoire de ces 25 magnifiques années passées ensemble à 
                 construire le département MMI que nous connaissons aujourd'hui !  
               </p>
@@ -29,8 +29,10 @@
           </div>
         </div>
     <!--2525252525-->
-    <div class="flex items-center justify-center">
-      <h3 class="mx-auto 2xl:hidden font-inter font-black text-6xl lg:text-8xl tracking-tighter">MERCI !!</h3>
+    <div class="md:flex mt-5 mx-auto text-center items-center justify-center">
+      <div class="m-auto">
+        <h3 class="md:ml-5 text-center mx-auto 2xl:hidden font-inter font-black text-6xl lg:text-8xl tracking-tighter">MERCI !!</h3>
+      </div>
       <div class="ml-auto w-full md:w-fit text-5xl md:text-8xl my-10">
         <div class="flex-col gap-16 flex max-w-xl w-full boxDefilementText">
           <p class="font-thin object1">
@@ -52,6 +54,29 @@
         </div>
         </div>
       </div>
+      </div>
+
+      <div class="flex  flex-col gap-10 ">
+      <div class="mt-10 flex justify-center">
+          <h3 class="text-center mmi-h2">LE PLANNING DU WEEK-END</h3>
+      </div>
+      <div class="ml-5 my-5 flex flex-col gap-5">
+        <div>
+          <p class="mmi-h3 font-black">Samedi 11 mars 2023</p>
+          <p class="mmi-texte font-bold">10h : Début du défi 24h</p>
+          <p class="mmi-texte font-bold">10h30 : Cérémonie officielle</p>
+          <p class="mmi-texte font-bold">12h : Repas</p>
+          <p class="mmi-texte font-bold">19h : Repas </p>
+          <p class="mmi-texte font-bold">21h : Soirée des 25 ans </p>
+        </div>
+        <div class="">
+          <p class="mmi-h3 font-black">Dimanche 12 mars 2023</p>
+          <p class="mmi-texte font-bold ">8h30-9h : Petit Déjeuné </p>
+          <p class="mmi-texte font-bold">10h : Fin du Défi 24h</p>
+          <p class="mmi-texte font-bold">11h : Remise des prix du Défi 24h et du Concours 25 ans</p>
+          <p class="mmi-texte font-bold">11h30 : Apéro dinatoire </p>
+        </div>
+        </div>
       </div>
 </template>
 
