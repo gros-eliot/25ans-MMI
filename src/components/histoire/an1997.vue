@@ -37,7 +37,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
       <img
         src="/images/histoire/mmi-green-screen.png"
         alt="Ordinateur MMI"
-        class="hidden md:block md:w-64 h-fit animated-computer m-4"
+        class="w-32 md:w-64 h-fit animated-computer m-10 md:m-4"
       />
     </div>
   </section>

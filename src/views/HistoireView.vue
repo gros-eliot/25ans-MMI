@@ -1,10 +1,10 @@
 <script setup>
 import An1991 from "@/components/histoire/an1991.vue";
 import An1997 from "@/components/histoire/an1997.vue";
-import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
 import An1998 from "../components/histoire/an1998.vue";
+import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
 
-function BlackScreen() {
+function AnimationsHistoire() {
   let valueScroll = window.pageYOffset;
   // Black screen
   let blackScreen = document.querySelector(".histoire-blackscreen");
@@ -88,10 +88,10 @@ function BlackScreen() {
     blackScreen.style.opacity = "60%";
   }
   if (valueScroll >= 2600) {
-    blackScreen.style.opacity = 0;
+    blackScreen.style.opacity = "40%";
   }
   if (valueScroll >= 2700) {
-    blackScreen.style.opacity = 0;
+    blackScreen.style.opacity = "20%";
   }
   if (valueScroll >= 2800) {
     blackScreen.style.opacity = 0;
@@ -165,7 +165,7 @@ function BlackScreen() {
   }
 }
 
-window.addEventListener("scroll", BlackScreen);
+window.addEventListener("scroll", AnimationsHistoire);
 </script>
 
 <template>
@@ -176,7 +176,7 @@ window.addEventListener("scroll", BlackScreen);
 
   <!--ECRAN NOIR POUR EFFETS-->
   <div
-    class="histoire-blackscreen fixed h-screen w-full bg-black z-[4] inset-0 opacity-0"
+    class="histoire-blackscreen hidden md:block fixed h-screen w-full bg-black z-[4] inset-0 opacity-0"
   ></div>
   <!--ECRAN NOIR POUR EFFETS-->
 
@@ -186,7 +186,7 @@ window.addEventListener("scroll", BlackScreen);
       class="histoire-defilement w-full h-screen flex justify-center items-center"
     >
       <div
-        class="flex flex-col text-white md:flex-row gap-5 md:gap-20 text-center md:text-start justify-center items-center p-2"
+        class="flex flex-col text-white md:flex-row gap-5 md:gap-20 text-center md:text-start justify-end md:justify-center items-center md:items-end p-2"
       >
         <div class="flex flex-col uppercase invert">
           <h1 class="mmi-h1">L'histoire</h1>
