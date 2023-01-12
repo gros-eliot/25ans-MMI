@@ -91,7 +91,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
   </section>
 
   <!--PARTIE 3-->
-  <article class="w-full bg-bleu py-32">
+  <article class="w-full bg-bleu py-20">
     <section class="histoire-margins-for-section flex flex-col gap-10">
       <h2 class="text-black mmi-h2">Les premiers enseignants</h2>
       <!--Personnages débloqués-->
@@ -142,12 +142,17 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
   </article>
 
   <article class="w-full bg-black py-72">
-    <section class="histoire-margins-for-section flex flex-col gap-10">
+    <section class="histoire-margins-for-section flex flex-col gap-2">
       <h2 class="text-bleu font-inter text-5xl lg:text-7xl tracking-tighter">
-        "<strong>Nos meilleures années ?</strong> Les deux premières années. Car
-        c’était totalement <strong>inorganisé</strong>. Il y avait une très
-        bonne
-        <strong>synergie</strong>
+        "<strong class="text-decoration text-black"
+          >Nos meilleures années ?</strong
+        >
+      </h2>
+      <h2 class="text-bleu font-inter text-5xl lg:text-7xl tracking-tighter">
+        Les deux premières années. Car c’était totalement
+        <strong class="text-decoration-2 text-black">inorganisé</strong>. Il y
+        avait une très bonne
+        <strong class="text-decoration-3 text-black">synergie</strong>
         de groupe. Tout le monde faisait ce qu’il avait à faire. "
       </h2>
     </section>
@@ -164,6 +169,70 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.text-decoration {
+  filter: drop-shadow(5px -5px 0px #ffd600) drop-shadow(-5px 5px 0px #bba7e7);
+  animation: glitched-text 2s infinite linear;
+}
+
+.text-decoration-2 {
+  filter: drop-shadow(5px -5px 0px #bba7e7) drop-shadow(-5px 5px 0px #ffd600);
+}
+
+.text-decoration-3 {
+  filter: drop-shadow(5px -5px 0px #bba7e7) drop-shadow(-5px 5px 0px #ffd600);
+}
+
+@keyframes glitched-text {
+  0% {
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  52% {
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 900;
+    color: black;
+  }
+
+  53% {
+    text-transform: none;
+    text-decoration: dotted;
+    color: white;
+  }
+  54% {
+    text-decoration: none;
+    font-style: italic;
+  }
+  56% {
+    font-style: none;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  58% {
+    text-transform: none;
+    text-decoration: line-through;
+    text-transform: lowercase;
+    color: white;
+  }
+  60% {
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 900;
+    color: black;
+  }
+  100% {
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 900;
   }
 }
 </style>

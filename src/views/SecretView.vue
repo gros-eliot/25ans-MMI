@@ -1,6 +1,11 @@
 <template>
+  <p class="m-auto w-11/12">
+    Vous avez trouvé la page secrète ! Découvrez ici toutes les oeuvres faite
+    pour les 25 ans de MMI, ainsi que celles directement proposées par notre
+    équipe.
+  </p>
   <section
-    class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid w-11/12 h-screen m-auto my-10"
+    class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid w-11/12 h-[2000px] m-auto my-10"
   >
     <OeuvreComponent
       :sourceImage="'oeuvre1.jpg'"

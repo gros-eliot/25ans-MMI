@@ -130,13 +130,13 @@ export default {
     color: #183b78;
   }
   25% {
-    color: hsl(280, 62%, 16%);
+    color: hsl(279, 64%, 41%);
   }
   50% {
     color: #322341;
   }
   75% {
-    color: #000000;
+    color: #604aa2;
   }
   100% {
     color: #183b78;
