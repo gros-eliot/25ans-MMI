@@ -25,25 +25,39 @@ export default {
       type: String,
       required: true,
     },
+    textColor: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
 
 <template>
   <section
-    class="flex flex-col lg:flex-row justify-start lg:justify-center items-center w-full text-white"
+    class="flex flex-col lg:flex-row justify-start lg:justify-center items-center w-full"
+    :class="{
+      'text-beige': textColor === 'white',
+      'text-black': textColor === 'black',
+    }"
   >
     <div class="flex justify-center items-center">
       <img
         :src="'/images/' + srcImage"
         :alt="altImage"
-        class="object-cover object-center mmi-photo-3 md:mmi-photo-2 mx-4"
+        class="object-cover object-center mmi-photo-3 md:mmi-photo-2 mx-4 animated-img"
       />
     </div>
 
     <div class="flex flex-col gap-0 mt-10 md:px-10 p-3 md:mt-0 w-full">
       <!--Quote débloquée-->
-      <p class="uppercase text-sm italic text-gray-400">
+      <p
+        class="uppercase text-sm italic"
+        :class="{
+          'text-gray-400': textColor === 'white',
+          'text-gray-900': textColor === 'black',
+        }"
+      >
         // New quote unlocked
       </p>
       <!--Quote débloquée-->
@@ -52,13 +66,21 @@ export default {
       <p class="text-[10px]">{{ personDescription }}</p>
       <div class="grid grid-rows-[2%,96%,2%] items-center w-full my-5">
         <Topcorner
-          class="w-8 h-fit z-[5] stroke-beige stroke-[10px]"
+          class="w-8 h-fit z-[5] stroke-[10px]"
+          :class="{
+            'stroke-beige': textColor === 'white',
+            'stroke-black': textColor === 'black',
+          }"
         ></Topcorner>
 
         <!--QUOTE-->
         <div class="flex justify-center items-center p-2 lg:p-4">
           <p
-            class="text-center italic text-5xl normal-case font-normal animated-quote w-full"
+            class="text-center italic text-2xl md:text-4xl lg:text-5xl normal-case font-normal w-full"
+            :class="{
+              'animated-quote': textColor === 'white',
+              'animated-quote-dark': textColor === 'black',
+            }"
           >
             {{ personQuote }}
           </p>
@@ -66,7 +88,11 @@ export default {
         <!--QUOTE-->
 
         <Bottomcorner
-          class="w-8 h-fit ml-auto z-[5] stroke-beige stroke-[10px]"
+          class="w-8 h-fit ml-auto z-[5] stroke-[10px]"
+          :class="{
+            'stroke-beige': textColor === 'white',
+            'stroke-black': textColor === 'black',
+          }"
         ></Bottomcorner>
       </div>
     </div>
@@ -76,6 +102,10 @@ export default {
 <style>
 .animated-quote {
   animation: color-quote 2s ease-in-out infinite;
+}
+
+.animated-quote-dark {
+  animation: color-quote-dark 2s ease-in-out infinite;
 }
 
 @keyframes color-quote {
@@ -93,6 +123,39 @@ export default {
   }
   100% {
     color: #bba7e7;
+  }
+}
+@keyframes color-quote-dark {
+  0% {
+    color: #183b78;
+  }
+  25% {
+    color: hsl(280, 62%, 16%);
+  }
+  50% {
+    color: #322341;
+  }
+  75% {
+    color: #000000;
+  }
+  100% {
+    color: #183b78;
+  }
+}
+
+.animated-img {
+  animation: translate-img 4s ease-in-out infinite;
+}
+
+@keyframes translate-img {
+  0% {
+    transform: translate(0%, 3%);
+  }
+  50% {
+    transform: translate(0%, -3%);
+  }
+  100% {
+    transform: translate(0%, 3%);
   }
 }
 </style>

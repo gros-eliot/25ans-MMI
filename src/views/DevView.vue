@@ -277,7 +277,7 @@ let removeScroll = ref(false);
 
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="/images/PASDEPHOTO.jpeg"
+              src="/images/PASDEPHOTO.jpg"
               alt="photo inconnue"
               class="mmi-photo-2"
             />
@@ -293,7 +293,7 @@ let removeScroll = ref(false);
           </div>
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="/images/PASDEPHOTO.jpeg"
+              src="/images/PASDEPHOTO.jpg"
               alt="photo inconnue"
               class="mmi-photo-2"
             />

@@ -326,7 +326,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Christelle BLOCH"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -340,7 +340,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Christelle BLOCH"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -354,7 +354,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Abdallah MAKHOUL"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -368,7 +368,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Bruno VIEZZI"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -382,7 +382,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Myriam NICOLLE"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -411,7 +411,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Camille BATAILLE-BARBIER"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -425,7 +425,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Robin HECKENAUER"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -439,7 +439,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Didier FLORENTZ"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -452,7 +452,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Isabelle LAFORGUE"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -466,7 +466,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Annie STEMPHELET"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -480,7 +480,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpeg"
+          src="/images/PASDEPHOTO.jpg"
           alt="Thierry HUFSCHMIDT"
           class="mmi-photo-2 object-cover border-4 border-black"
         />

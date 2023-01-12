@@ -31,7 +31,7 @@ module.exports = {
         'chatonnay2' : "url('/images/funny-version/Chatonnay.jpeg')",
         'chartogne1' : "url('/images/E-Chartogne.jpg')",
         'chartogne2' : "url('/images/funny-version/Chartogne.jpeg')",
-        'bodet1' : "url('/images/PASDEPHOTO.jpeg')",
+        'bodet1' : "url('/images/PASDEPHOTO.jpg')",
         'bodet2' : "url('/images/funny-version/Bodet.jpeg')"
 
         

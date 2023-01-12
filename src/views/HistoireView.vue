@@ -6,6 +6,7 @@ import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
 
 function AnimationsHistoire() {
   let valueScroll = window.pageYOffset;
+  let screenWidth = window.screen.width;
   // Black screen
   let blackScreen = document.querySelector(".histoire-blackscreen");
   // Background modifiers
@@ -25,7 +26,9 @@ function AnimationsHistoire() {
   // FONDU IN (histoire-1991)
 
   if (valueScroll >= 100) {
-    blackScreen.style.display = "block";
+    if (screenWidth > 600) {
+      blackScreen.style.display = "block";
+    }
     blackScreen.style.opacity = "20%";
   }
   if (valueScroll >= 200) {
@@ -63,7 +66,9 @@ function AnimationsHistoire() {
   // - FONDU IN (1991-1997)
 
   if (valueScroll >= 1800) {
-    blackScreen.style.display = "block";
+    if (screenWidth > 600) {
+      blackScreen.style.display = "block";
+    }
     blackScreen.style.opacity = "20%";
   }
   if (valueScroll >= 1900) {
@@ -101,7 +106,9 @@ function AnimationsHistoire() {
   // FONDU IN (1997-1998)
 
   if (valueScroll >= 6000) {
-    blackScreen.style.display = "block";
+    if (screenWidth > 600) {
+      blackScreen.style.display = "block";
+    }
     blackScreen.style.opacity = "20%";
   }
   if (valueScroll >= 6100) {
@@ -111,27 +118,18 @@ function AnimationsHistoire() {
     blackScreen.style.opacity = "60%";
   }
   if (valueScroll >= 6300) {
-    blackScreen.style.opacity = "80%";
-  }
-  if (valueScroll >= 6400) {
     blackScreen.style.opacity = "100%";
   }
 
   //FONDU OUT (1998)
 
-  if (valueScroll >= 6600) {
+  if (valueScroll >= 6500) {
     blackScreen.style.opacity = "80%";
   }
+  if (valueScroll >= 6600) {
+    blackScreen.style.opacity = "30%";
+  }
   if (valueScroll >= 6700) {
-    blackScreen.style.opacity = "60%";
-  }
-  if (valueScroll >= 6800) {
-    blackScreen.style.opacity = "40%";
-  }
-  if (valueScroll >= 6900) {
-    blackScreen.style.opacity = "20%";
-  }
-  if (valueScroll >= 7000) {
     blackScreen.style.opacity = 0;
     blackScreen.style.display = "none";
   }
@@ -160,7 +158,8 @@ function AnimationsHistoire() {
   }
   //
   if (valueScroll >= 6500) {
-    backgroundHistoire.style.backgroundImage = "url('')";
+    backgroundHistoire.style.backgroundImage =
+      "linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),url('/images/histoire/bunker-src.jpg')";
     backgroundHistoire.style.backgroundColor = "beige";
   }
 }
@@ -236,7 +235,7 @@ window.addEventListener("scroll", AnimationsHistoire);
     <!--SECTION 97-98-->
     <!--SECTION 97-98-->
     <!--SECTION 97-98-->
-    <div class="mt-80">
+    <div class="mt-[20rem]">
       <An1998 />
     </div>
   </article>

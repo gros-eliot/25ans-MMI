@@ -84,6 +84,10 @@ function AlertScroll() {
   let valueScroll = window.pageYOffset;
   alert(valueScroll);
 }
+function AlertWidth() {
+  let valueWidth = window.screen.width;
+  alert(valueWidth);
+}
 </script>
 
 <template>
@@ -277,6 +281,14 @@ function AlertScroll() {
     @click="AlertScroll"
   >
     Scroll
+  </button>
+  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
+  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
+  <button
+    class="bg-green-500 text-black fixed w-fit h-fit p-1 inset-0 inset-y-10 z-50 text-[3px]"
+    @click="AlertWidth"
+  >
+    Width
   </button>
 
   <!--ELEMENTS POUR LA PAGE HISTOIRE-->

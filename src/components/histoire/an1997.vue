@@ -5,7 +5,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
 
 <template>
   <section
-    class="grid justify-items-center items-center justify-center w-full lg:grid-cols-[70%,30%] grid-cols-1 grid-rows-[70%,30%] lg:grid-rows-1 bg-[linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.1)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.1)50%,rgba(0,0,0,1)100%),url('/images/histoire/space.jpg')] bg-cover bg-center"
+    class="grid justify-items-center items-center justify-center w-full lg:grid-cols-[65%,35%] grid-cols-1 grid-rows-[70%,30%] lg:grid-rows-1 bg-[linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.1)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.1)50%,rgba(0,0,0,1)100%),url('/images/histoire/space.jpg')] bg-cover bg-center"
   >
     <div class="w-11/12 m-auto flex flex-col gap-20 p-4 text-beige">
       <div class="flex flex-col gap-0">
@@ -57,12 +57,14 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
         :altImage="'Daniel Mercier'"
         :personName="'Daniel Mercier'"
         :personDescription="'Fondateur du MMI'"
+        :textColor="'white'"
       ></Character>
       <Character
         :srcImage="'JF-Klopfenstein.jpg'"
         :altImage="'Jean-François Klopfenstein'"
         :personName="'Jean-François Klopfenstein'"
         :personDescription="'Fondateur du MMI'"
+        :textColor="'white'"
       ></Character>
     </div>
 
@@ -78,7 +80,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
 
   <!--PARTIE 2-->
   <section
-    class="mt-20 grid justify-items-center items-center justify-center w-full lg:grid-cols-[20%,80%] grid-cols-1 grid-rows-[10%,90%] lg:grid-rows-1 bg-[linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.5)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.5)50%,rgba(0,0,0,1)100%),url('/images/histoire/old-cinema.gif')] bg-cover bg-center"
+    class="histoire-margins-for-section mt-20 grid justify-items-center items-center justify-center w-full lg:grid-cols-[20%,80%] grid-cols-1 grid-rows-[10%,90%] lg:grid-rows-1 bg-[linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),url('/images/histoire/old-cinema.gif')] bg-cover bg-center border-2 border-black"
   >
     <div>
       <!--SRC experience-->
@@ -89,7 +91,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
       />
     </div>
 
-    <div class="w-11/12 m-auto flex flex-col gap-0 p-4 py-20 text-beige">
+    <div class="w-11/12 m-auto flex flex-col gap-0 py-5 lg:py-20 text-beige">
       <h2 class="text-vert mmi-h2">Avant MMI, c'était SRC !</h2>
       <div class="mt-10 flex flex-col gap-4">
         <p>
@@ -115,13 +117,14 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
       </div>
     </div>
   </section>
-  <section class="histoire-margins-for-section my-40">
+  <section class="histoire-margins-for-section my-40 bg-black">
     <characterWithQuote
       :srcImage="'Daniel-Mercier.jpg'"
       :altImage="'Daniel Mercier'"
       :personName="'Daniel Mercier'"
       :personDescription="'Fondateur du MMI'"
       :personQuote="'Nous avions des processeurs 160 mégahertz MMX. Avec ça, on ne pouvait pas animer quelque chose sur l`écran et passer du son en même temps !'"
+      :textColor="'white'"
     />
   </section>
 </template>

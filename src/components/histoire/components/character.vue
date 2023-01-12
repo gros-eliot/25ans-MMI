@@ -21,14 +21,34 @@ export default {
       type: String,
       required: true,
     },
+    personDescription: {
+      type: String,
+      required: true,
+    },
+    textColor: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
 
 <template>
-  <section class="my-10">
-    <div class="grid grid-rows-[2%,96%,2%] items-center w-fit">
-      <Topcorner class="w-8 h-fit z-[5] stroke-beige stroke-[10px]"></Topcorner>
+  <section
+    class="my-10"
+    :class="{
+      'text-beige': textColor === 'white',
+      'text-black': textColor === 'black',
+    }"
+  >
+    <div class="grid grid-rows-[2%,96%,2%] items-center w-fit m-auto">
+      <Topcorner
+        class="w-8 h-fit z-[5] stroke-[10px]"
+        :class="{
+          'stroke-beige': textColor === 'white',
+          'stroke-black': textColor === 'black',
+        }"
+      ></Topcorner>
       <div class="flex justify-center items-center">
         <img
           :src="'/images/' + srcImage"
@@ -37,7 +57,11 @@ export default {
         />
       </div>
       <Bottomcorner
-        class="w-8 h-fit ml-auto z-[5] stroke-beige stroke-[10px]"
+        class="w-8 h-fit ml-auto z-[5] stroke-[10px]"
+        :class="{
+          'stroke-beige': textColor === 'white',
+          'stroke-black': textColor === 'black',
+        }"
       ></Bottomcorner>
     </div>
     <div class="flex flex-col gap-0 mt-10 md:mt-0">
@@ -52,10 +76,6 @@ export default {
   animation: translate-img 4s ease-in-out infinite;
 }
 
-.animated-quote {
-  animation: color-quote 10s ease-in-out infinite;
-}
-
 @keyframes translate-img {
   0% {
     transform: translate(0%, 3%);
@@ -65,24 +85,6 @@ export default {
   }
   100% {
     transform: translate(0%, 3%);
-  }
-}
-
-@keyframes animated-quote {
-  0% {
-    color: #bba7e7;
-  }
-  25% {
-    color: hsl(241, 72%, 76%);
-  }
-  50% {
-    color: #fffef6;
-  }
-  75% {
-    color: #4d3f6a;
-  }
-  100% {
-    color: #bba7e7;
   }
 }
 </style>
