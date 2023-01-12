@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CadeauView from "../views/CadeauView.vue"
 import ComView from "../views/ComView.vue"
-import ConnexionView from "../views/ConnexionView.vue"
 import ContactView from "../views/ContactView.vue"
 import CreaView from "../views/CreaView.vue"
 import DevView from "../views/DevView.vue"
@@ -18,7 +17,6 @@ const router = createRouter({
   routes: [
     { path: '/',  name: 'cadeau', component: CadeauView },
     { path: '/home',  name: 'home', component: HomeView },
-    { path: '/connexion',  name: 'connexion', component: ConnexionView },
     { path: '/contact',  name: 'contact', component: ContactView },
     
     { path: '/com',  name: 'com', component: ComView },

@@ -216,6 +216,14 @@ function AlertWidth() {
     >
       Mentions légales
     </h1>
+    <h1
+      class="uppercase text-center py-2 mmi-h1"
+      :class="{
+        hidden: $route.name != 'contact',
+      }"
+    >
+      Contact
+    </h1>
   </div>
 
   <!--Batiment MMI : ordi & mobile (navigation)-->
