@@ -63,7 +63,7 @@
       <div class="ml-5 my-5 flex flex-col gap-5">
         <div>
           <p class="mmi-h3 font-black">Samedi 11 mars 2023</p>
-          <p class="mmi-texte font-bold">10h : Début du défi 24h</p>
+          <p class="mmi-texte font-bold">9h30 : Début du défi 24h</p>
           <p class="mmi-texte font-bold">10h30 : Cérémonie officielle</p>
           <p class="mmi-texte font-bold">12h : Repas</p>
           <p class="mmi-texte font-bold">19h : Repas </p>
@@ -71,10 +71,10 @@
         </div>
         <div class="">
           <p class="mmi-h3 font-black">Dimanche 12 mars 2023</p>
-          <p class="mmi-texte font-bold ">8h30-9h : Petit Déjeuné </p>
+          <p class="mmi-texte font-bold ">8h : Petit Déjeuné </p>
           <p class="mmi-texte font-bold">10h : Fin du Défi 24h</p>
           <p class="mmi-texte font-bold">11h : Remise des prix du Défi 24h et du Concours 25 ans</p>
-          <p class="mmi-texte font-bold">11h30 : Apéro dinatoire </p>
+          <p class="mmi-texte font-bold">11h30 : Apéro </p>
         </div>
         </div>
       </div>
