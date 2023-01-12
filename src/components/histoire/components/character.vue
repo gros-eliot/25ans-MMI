@@ -64,14 +64,14 @@ export default {
         }"
       ></Bottomcorner>
     </div>
-    <div class="flex flex-col gap-0 mt-10 md:mt-0">
+    <div class="flex flex-col gap-0 mt-10 md:mt-0 w-10/12 m-auto">
       <p class="text-base font-bold">{{ personName }}</p>
       <p class="text-[10px]">{{ personDescription }}</p>
     </div>
   </section>
 </template>
 
-<style>
+<style scoped>
 .animated-img {
   animation: translate-img 4s ease-in-out infinite;
 }

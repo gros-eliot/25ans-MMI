@@ -43,13 +43,16 @@ function histoire() {
 
   // modification de la timeline (page histoire)
   let TimeLine = document.querySelector(".timeline-element");
-  if (valueScroll >= 500 && valueScroll < 1000) {
-    TimeLine.style.display = "block";
-    TimeLine.style.opacity = 0;
-  }
+
   if (valueScroll > 0 && valueScroll < 500) {
     TimeLine.style.display = "none";
   }
+
+  if (valueScroll >= 500) {
+    TimeLine.style.display = "block";
+    TimeLine.style.opacity = 0;
+  }
+
   if (valueScroll >= 500) {
     TimeLine.style.opacity = "10%";
   }

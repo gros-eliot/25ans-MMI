@@ -99,7 +99,7 @@ export default {
   </section>
 </template>
 
-<style>
+<style scoped>
 .animated-quote {
   animation: color-quote 2s ease-in-out infinite;
 }

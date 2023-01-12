@@ -47,6 +47,6 @@
     }
 
     .histoire-margins-for-section {
-        @apply w-11/12 m-auto;
+        @apply w-10/12 lg:w-11/12 m-auto;
     }
 }

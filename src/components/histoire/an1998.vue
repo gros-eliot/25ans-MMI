@@ -9,6 +9,13 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
   >
     <div class="w-11/12 m-auto flex flex-col gap-20 p-4">
       <div class="flex flex-col gap-0">
+        <!--CERCLE FRISE-->
+        <div>
+          <div
+            class="mt-6 w-5 h-5 md:w-9 md:h-9 absolute bg-beige border border-black border-opacity-70 rounded-full inset-x-0 md:inset-x-2 z-[99]"
+          ></div>
+        </div>
+        <!--CERCLE FRISE-->
         <h1 class="mmi-h1">De 1997 à 1998</h1>
         <h2 class="text-bleu mmi-h2">Le bunker</h2>
         <div class="mt-10 flex flex-col gap-4">
@@ -46,7 +53,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
       :srcImage="'P-Chatonnay.jpg'"
       :altImage="'Pascal Chatonnay'"
       :personName="'Pascal Chatonnay'"
-      :personDescription="'Enseignant du MMI et Référent Défense et Sécurité Nationale'"
+      :personDescription="'Enseignant du MMI et Référent Défense et Sécurité Nationale | ancien chef du département'"
       :textColor="'white'"
     />
   </div>
@@ -59,10 +66,10 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
 
       <div class="mt-10 flex flex-col gap-4">
         <p>
-          Il n’y avait qu’une unique salle de TP, avec 24 machines utilisée par
+          Il n’y avait qu’une unique salle de TP, avec 24 machines utilisées par
           quatre groupes d’étudiants (2 groupes de deuxième année et 2 groupes
-          de première année). Il n’y avait pas de programme près établi. Tous
-          les 15 jours, ils décidaient de la suite du programme.
+          de première année). Il n’y avait pas de programme pré-établi. Tous les
+          15 jours, ils décidaient de la suite du programme.
         </p>
         <p>
           Il n'y avait pas encore de programme pédagogique existant. Ce n'était
@@ -94,6 +101,14 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
   <article class="w-full bg-bleu py-20">
     <section class="histoire-margins-for-section flex flex-col gap-10">
       <h2 class="text-black mmi-h2">Les premiers enseignants</h2>
+
+      <p class="max-w-5xl">
+        M. Bruno Viezzi et M. Jean-Marie Fino ont été enseignants dès la
+        première année au département SRC. Après 25 ans, ils continuent
+        d’enseigner au MMI. De vrais vétérans ! M. Chatonnay lui est arrivé
+        quelques années après eux.
+      </p>
+
       <!--Personnages débloqués-->
       <!--Personnages débloqués-->
       <div>
@@ -109,7 +124,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
             :textColor="'black'"
           />
           <character
-            :srcImage="'PASDEPHOTO.jpg'"
+            :srcImage="'B-Viezzi.jpg'"
             :altImage="'Bruno Viezzi'"
             :personName="'Bruno Viezzi'"
             :personDescription="'Vétéran | Enseignant pour le pôle communication'"
@@ -117,13 +132,6 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
           />
         </div>
       </div>
-
-      <p class="max-w-5xl">
-        M. Bruno Viezzi et M. Jean-Marie Fino ont été enseignants dès la
-        première année au département SRC. Après 25 ans, ils continuent
-        d’enseigner au MMI. De vrais vétérans ! M. Chatonnay lui est arrivé
-        quelques années après eux.
-      </p>
 
       <characterWithQuote
         :srcImage="'JM-Fino.jpg'"
@@ -143,12 +151,16 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
 
   <article class="w-full bg-black py-72">
     <section class="histoire-margins-for-section flex flex-col gap-2">
-      <h2 class="text-bleu font-inter text-5xl lg:text-7xl tracking-tighter">
+      <h2
+        class="text-bleu font-inter text-4xl md:text-5xl lg:text-7xl tracking-tighter"
+      >
         "<strong class="text-decoration text-black"
           >Nos meilleures années ?</strong
         >
       </h2>
-      <h2 class="text-bleu font-inter text-5xl lg:text-7xl tracking-tighter">
+      <h2
+        class="text-bleu font-inter text-4xl md:text-5xl lg:text-7xl tracking-tighter"
+      >
         Les deux premières années. Car c’était totalement
         <strong class="text-decoration-2 text-black">inorganisé</strong>. Il y
         avait une très bonne
@@ -158,20 +170,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
     </section>
   </article>
 </template>
-<style>
-.animated-computer {
-  animation: rotation-computer 20s linear infinite;
-}
-
-@keyframes rotation-computer {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
+<style scoped>
 .text-decoration {
   filter: drop-shadow(5px -5px 0px #ffd600) drop-shadow(-5px 5px 0px #bba7e7);
   animation: glitched-text 2s infinite linear;

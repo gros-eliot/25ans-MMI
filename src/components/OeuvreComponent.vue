@@ -68,7 +68,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 .customizedScrollbar::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 25px;

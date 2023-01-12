@@ -309,7 +309,7 @@ let removeScroll = ref(false);
             ></div>
             <p class="font-neuemontreal">Julie Bodet</p>
           </div>
-    
+
           <div class="flex flex-col gap-3 items-center">
             <img
               src="../../public/images/PASDEPHOTO.jpg"
@@ -324,7 +324,7 @@ let removeScroll = ref(false);
   </article>
 </template>
 
-<style>
+<style scoped>
 .boxDefilementText {
   overflow: hidden;
 }

@@ -4,6 +4,13 @@
       class="flex flex-col md:flex-row lg:flex-col gap-10 md:gap-5 lg:gap-10"
     >
       <div class="flex flex-col gap-5">
+        <!--CERCLE FRISE-->
+        <div>
+          <div
+            class="mt-6 w-5 h-5 md:w-9 md:h-9 absolute bg-beige border border-black border-opacity-70 rounded-full inset-x-0 md:inset-x-2 z-[99]"
+          ></div>
+        </div>
+        <!--CERCLE FRISE-->
         <h1 class="mmi-h1">1991</h1>
         <p class="mmi-h2 italic">Avant même les fondations du MMI...</p>
         <p>

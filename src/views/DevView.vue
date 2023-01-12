@@ -337,7 +337,7 @@ let removeScroll = ref(false);
   </article>
 </template>
 
-<style>
+<style scoped>
 .boxDefilementText {
   overflow: hidden;
 }
