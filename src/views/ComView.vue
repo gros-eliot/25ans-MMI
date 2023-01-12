@@ -216,7 +216,7 @@ let removeScroll = ref(false);
   >
     <!--IMAGE MONSIEUR MALSOT-->
     <div
-      class="bg-malsot1 m-auto lg:m-0 image-prof bg-center bg-contain bg-no-repeat transition-all"
+      class="bg-malsot1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
       :class="{
         'bg-malsot2': clickedImage === true,
       }"
