@@ -38,6 +38,9 @@
     .mmi-photo-3 {
         @apply w-[135px] h-[175px] object-cover
     }
+        .mmi-photo-4 {
+            @apply w-[470px] h-[300px] object-cover
+        }
 
     .prof-homepage {
         @apply flex flex-col items-center justify-center text-center gap-2 w-fit
