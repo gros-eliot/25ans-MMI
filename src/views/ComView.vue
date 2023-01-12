@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import OeuvreComponent from "@/components/OeuvreComponent.vue";
-let clickedImage = ref(false);
+let clickedImageMalsot = ref(false);
+let clickedImageBodet = ref(false);
 let removeScroll = ref(false);
 </script>
 
@@ -218,10 +219,10 @@ let removeScroll = ref(false);
     <div
       class="bg-malsot1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
       :class="{
-        'bg-malsot2': clickedImage === true,
+        'bg-malsot2': clickedImageMalsot === true,
       }"
-      @mouseenter="clickedImage = !clickedImage"
-      @mouseleave="clickedImage = !clickedImage"
+      @mouseenter="clickedImageMalsot = !clickedImageMalsot"
+      @mouseleave="clickedImageMalsot = !clickedImageMalsot"
     ></div>
     <!--IMAGE MONSIEUR MALSOT-->
 
@@ -287,6 +288,35 @@ let removeScroll = ref(false);
               class="image-prof-2"
             />
             <p class="font-neuemontreal">Stephane Laurent</p>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="../../public/images/PASDEPHOTO.jpeg"
+              alt="Photo Monsieur Viezzi"
+              class="image-prof-2"
+            />
+            <p class="font-neuemontreal">Bruno Viezzi</p>
+          </div>
+
+          <div class="flex flex-col gap-3 items-center">
+            <div
+              class="bg-bodet1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+              :class="{
+                'bg-bodet2': clickedImageBodet === true,
+              }"
+              @mouseenter="clickedImageBodet = !clickedImageBodet"
+              @mouseleave="clickedImageBodet = !clickedImageBodet"
+            ></div>
+            <p class="font-neuemontreal">Julie Bodet</p>
+          </div>
+    
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              src="../../public/images/PASDEPHOTO.jpeg"
+              alt="Photo Madame Bataille-Barbier"
+              class="image-prof-2"
+            />
+            <p class="font-neuemontreal">Camille Bataille-Barbier</p>
           </div>
         </div>
       </div>
