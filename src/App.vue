@@ -227,6 +227,22 @@ function AlertWidth() {
     >
       Contact
     </h1>
+    <h1
+      class="uppercase text-center py-2 mmi-h1"
+      :class="{
+        hidden: $route.name != 'connexion',
+      }"
+    >
+      Connexion
+    </h1>
+    <h1
+      class="uppercase text-center py-2 mmi-h1 px-5"
+      :class="{
+        hidden: $route.name != 'notfound',
+      }"
+    >
+      Erreur 404 - Page non trouvée
+    </h1>
   </div>
 
   <!--Batiment MMI : ordi & mobile (navigation)-->
@@ -238,7 +254,8 @@ function AlertWidth() {
         ($route.name === 'com') |
         ($route.name === 'dev') |
         ($route.name === 'crea') |
-        ($route.name === 'secret')
+        ($route.name === 'secret') |
+        ($route.name === 'notfound')
     "
   />
   <MiniBatimentMMI
@@ -249,7 +266,8 @@ function AlertWidth() {
         ($route.name === 'com') |
         ($route.name === 'dev') |
         ($route.name === 'crea') |
-        ($route.name === 'secret')
+        ($route.name === 'secret') |
+        ($route.name === 'notfound')
     "
   />
 

@@ -44,17 +44,17 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
     <!--Personnages débloqués-->
     <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 w-full">
       <character
+        :srcImage="'A-Lamboux_Durand.jpg'"
+        :altImage="'Alain Lamboux-Durand'"
+        :personName="'Alain Lamboux-Durand'"
+        :personDescription="'Chef du département | audio-visuel'"
+        :textColor="'black'"
+      />
+      <character
         :srcImage="'X-Senente.jpg'"
         :altImage="'Xavier Senente'"
         :personName="'Xavier Senente'"
         :personDescription="'Enseignant du MMI (design) et ancien chef de département'"
-        :textColor="'black'"
-      />
-      <character
-        :srcImage="'E-Chartogne.jpg'"
-        :altImage="'Elodie Chartogne'"
-        :personName="'Elodie Chartogne'"
-        :personDescription="'Secrétaire du MMI de Montbéliard'"
         :textColor="'black'"
       />
     </div>
