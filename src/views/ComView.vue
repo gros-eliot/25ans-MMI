@@ -14,7 +14,8 @@ let removeScroll = ref(false);
         <div class="grid grid-cols-2 grid-rows-4 h-full">
           <OeuvreComponent
             :sourceImage="'oeuvre8.jpg'"
-            :auteur="'Moi'"
+            :auteur="'MoiIci'"
+            :idImage="'123ABC'"
             :nom="'Testeur'"
             :description="'Cette oeuvre a été réalisée par Y.'"
           />
@@ -81,7 +82,8 @@ let removeScroll = ref(false);
             <div class="grid grid-cols-2">
               <OeuvreComponent
                 :sourceImage="'oeuvre8.jpg'"
-                :auteur="'Moi'"
+                :auteur="'MoiIci'"
+                :idImage="'123ABC'"
                 :nom="'Testeur'"
                 :description="'Cette oeuvre a été réalisée par Y.'"
               />

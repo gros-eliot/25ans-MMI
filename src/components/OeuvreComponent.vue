@@ -52,11 +52,25 @@
       class="bg-black w-[95%] h-[95%] text-white px-10 pb-5 overflow-y-scroll customizedScrollbar"
     >
       <div class="flex flex-col gap-5 mt-20">
-        <button
-          class="w-fit m-auto bg-white text-black font-bold px-4 py-2 rounded-lg"
+        <form v-if="user != null" @submit.prevent="voteForArt()">
+          <button
+            type="submit"
+            class="w-fit m-auto bg-white text-black font-bold px-4 py-2 rounded-lg hover:bg-rouge"
+          >
+            Voter pour cette œuvre ♥
+          </button>
+        </form>
+        <RouterLink
+          to="connexion"
+          :class="{ hidden: user != null }"
+          class="m-auto w-fit"
         >
-          Voter pour cette œuvre ♥
-        </button>
+          <button
+            class="w-fit m-auto bg-white text-black font-bold px-4 py-2 rounded-lg"
+          >
+            Se connecter pour voter
+          </button>
+        </RouterLink>
         <img :src="`public/images/oeuvres/${sourceImage}`" class="w-full" />
         <h3 class="mmi-h2">
           {{ nom }}
@@ -78,11 +92,92 @@
 <script>
 import Croix from "../components/icons/croix.vue";
 
+// Fonctions Firestore
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  doc,
+  updateDoc,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
+// Fonction authentification
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+
 export default {
+  data() {
+    return {
+      user: {
+        // User connecté
+        email: null,
+        password: null,
+      },
+      uiduser: null,
+      userInfo: null, // import données firebase (firestore)
+    };
+  },
+  mounted() {
+    //
+    // Vérifier si un user connecté existe déjà
+    // Au lancement de l'application
+    this.getUserConnect();
+  },
+
+  methods: {
+    // Obtenir les informations du user connecté
+    async getUserConnect() {
+      await getAuth().onAuthStateChanged(
+        function (user) {
+          if (user) {
+            // Récupération du user connecté
+            this.user = user;
+            // Recherche de ses infos complémentaires
+            this.getUserInfo(this.user);
+          }
+        }.bind(this)
+      );
+    },
+
+    async getUserInfo(user) {
+      // Rechercher les informations complémentaires de l'utilisateur
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "user");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uiduser", "==", user.uid));
+      await onSnapshot(q, (snapshot) => {
+        this.userInfo = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        // userInfo étant un tableau, onn récupère
+        // ses informations dans la 1° cellule du tableau : 0
+        this.uiduser = this.userInfo[0].uiduser;
+      });
+    },
+
+    async voteForArt() {
+      const firestore = getFirestore();
+      const docRef = doc(firestore, "user", this.userInfo[0].id);
+      // Modification du participant à partir de son id
+      await updateDoc(docRef, {
+        oeuvre_favorite: null,
+        oeuvre_favorite: this.idImage,
+      });
+    },
+  },
+
   components: {
     Croix,
   },
   props: {
+    idImage: {
+      type: String,
+      default: "",
+    },
     sourceImage: {
       type: String,
       default: "oeuvre-test.jpg",

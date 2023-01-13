@@ -38,7 +38,6 @@ export default {
       },
       uiduser: null,
       userInfo: null, // import données firebase (firestore)
-      categoryLevel: [],
     };
   },
   mounted() {
