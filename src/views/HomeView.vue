@@ -1,5 +1,5 @@
 <script setup>
-import Logo from "@/components/icons/logo.vue";
+import Logo from "@/components/icons/logoMMI.vue";
 
 import { ref } from "vue";
 import OeuvreComponent from "@/components/OeuvreComponent.vue";

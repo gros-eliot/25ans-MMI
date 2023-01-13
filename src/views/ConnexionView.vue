@@ -1,9 +1,7 @@
 <script setup>
-import ConnexionLogin from "../components/ConnexionLogin.vue";
-import ConnexionSignup from "../components/ConnexionSignup.vue";
+import ConnexionComponent from "../components/ConnexionComponent.vue";
 </script>
 
 <template>
-  <ConnexionLogin />
-  <ConnexionSignup />
+  <ConnexionComponent />
 </template>

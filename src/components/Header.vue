@@ -107,7 +107,7 @@
 
 <script setup>
 import Menu from "@/components/icons/menu.vue";
-import logo from "@/components/icons/logo.vue";
+import logo from "@/components/icons/logoMMI.vue";
 import Croix from "@/components/icons/croix.vue";
 
 import { ref } from "@vue/reactivity";

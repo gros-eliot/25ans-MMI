@@ -8,19 +8,25 @@ import Arrow from "./components/icons/arrow.vue";
 
 // lignes qui bougent en background
 function FunctionLine() {
-  let movingLine = document.querySelector(".line");
-  let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 20 + "%";
+  if ($route.name != "connexion") {
+    let movingLine = document.querySelector(".line");
+    let valueScroll = window.pageYOffset;
+    movingLine.style.width = valueScroll / 20 + "%";
+  }
 }
 function FunctionLine2() {
-  let movingLine = document.querySelector(".line2");
-  let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 20 + "%";
+  if ($route.name != "connexion") {
+    let movingLine = document.querySelector(".line2");
+    let valueScroll = window.pageYOffset;
+    movingLine.style.width = valueScroll / 20 + "%";
+  }
 }
 function FunctionLine3() {
-  let movingLine = document.querySelector(".line3");
-  let valueScroll = window.pageYOffset;
-  movingLine.style.width = valueScroll / 20 + "%";
+  if ($route.name != "connexion") {
+    let movingLine = document.querySelector(".line3");
+    let valueScroll = window.pageYOffset;
+    movingLine.style.width = valueScroll / 20 + "%";
+  }
 }
 
 //
@@ -95,7 +101,7 @@ function AlertWidth() {
 
 <template>
   <!--LINES DU FOND-->
-  <section v-if="$route.name != 'cadeau'">
+  <section v-if="$route.name != ('cadeau', 'connexion')">
     <div
       class="h-[2px] -z-50 line fixed rotate-45 origin-[0] inset-y-10 w-0"
       :class="{
@@ -234,6 +240,14 @@ function AlertWidth() {
       }"
     >
       Connexion
+    </h1>
+    <h1
+      class="uppercase text-center py-2 mmi-h1"
+      :class="{
+        hidden: $route.name != 'inscription',
+      }"
+    >
+      Suite de l'inscription
     </h1>
     <h1
       class="uppercase text-center py-2 mmi-h1 px-5"
