@@ -22,7 +22,7 @@
         <input
           type="text"
           class="bg-white border border-b-4 border-b-black border-white"
-          placeholder="mail"
+          placeholder="Mail"
           name="mail"
           v-model="user.email"
           required
@@ -61,12 +61,14 @@
         </div>
       </div>
 
-      <button
-        class="m-auto text-center w-fit underline text-base"
-        @click.prevent="onDcnx()"
-      >
-        Déconnexion
-      </button>
+      <a href="." class="m-auto w-fit">
+        <button
+          @click.prevent="onDcnx()"
+          class="m-auto text-center w-fit underline text-base"
+        >
+          Déconnexion
+        </button>
+      </a>
     </div>
   </form>
 

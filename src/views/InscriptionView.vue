@@ -252,6 +252,8 @@ export default {
         benevoledefi: this.benevoledefi,
         visitedefi: this.visitedefi,
 
+        isAdmin: false,
+
         role: this.role,
       });
       console.log("document créé avec le id suivant : ", docRef.id);

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-noir">
+  <div class="bg-noir pb-36 md:pb-32">
     <div class="md:flex items-center justify-between p-10">
       <div class="flex gap-5 flex-col justify-start footer">
         <router-link to="/contact"> CONTACT </router-link>

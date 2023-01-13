@@ -5,6 +5,19 @@ import HeaderView from "@/components/Header.vue";
 import FooterView from "@/components/Footer.vue";
 import MiniBatimentMMI from "./components/MiniBatimentMMI.vue";
 import Arrow from "./components/icons/arrow.vue";
+import ProfilIcon from "./components/icons/profil.vue";
+
+// Fonctions Firestore
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
+// Fonction authentification
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
 
 export default {
   components: {
@@ -13,8 +26,65 @@ export default {
     FooterView,
     MiniBatimentMMI,
     Arrow,
+    ProfilIcon,
+  },
+
+  data() {
+    return {
+      user: {
+        // User connecté
+        email: null,
+        password: null,
+      },
+      uiduser: null,
+      userInfo: null, // import données firebase (firestore)
+      categoryLevel: [],
+    };
+  },
+  mounted() {
+    //
+    // Vérifier si un user connecté existe déjà
+    // Au lancement de l'application
+    this.getUserConnect();
+  },
+
+  methods: {
+    // Obtenir les informations du user connecté
+    async getUserConnect() {
+      await getAuth().onAuthStateChanged(
+        function (user) {
+          if (user) {
+            // Récupération du user connecté
+            this.user = user;
+            // Recherche de ses infos complémentaires
+            this.getUserInfo(this.user);
+          }
+        }.bind(this)
+      );
+    },
+
+    async getUserInfo(user) {
+      // Rechercher les informations complémentaires de l'utilisateur
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "user");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uiduser", "==", user.uid));
+      await onSnapshot(q, (snapshot) => {
+        this.userInfo = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log("userInfo", this.userInfo);
+        // userInfo étant un tableau, onn récupère
+        // ses informations dans la 1° cellule du tableau : 0
+        this.uiduser = this.userInfo[0].uiduser;
+      });
+    },
   },
 };
+
 // lignes qui bougent en background
 function FunctionLine() {
   let movingLine = document.querySelector(".line");
@@ -44,15 +114,12 @@ function histoire() {
   // modification du bouton retour en haut de page (page histoire)
   let goToTopButton = document.querySelector(".gototop-element");
   let TimeLine = document.querySelector(".timeline-element");
-  if (goToTopButton != null) {
+  if (TimeLine != null) {
     if (valueScroll >= 500) {
-      goToTopButton.style.opacity = "100%";
-      goToTopButton.style.display = "block";
+      TimeLine.style.opacity = "100%";
       TimeLine.style.display = "block";
-      TimeLine.style.opacity = 0;
     } else {
-      goToTopButton.style.opacity = 0;
-      TimeLine.style.display = "none";
+      TimeLine.style.opacity = 0;
     }
     if (valueScroll >= 600) {
       TimeLine.style.opacity = "10%";
@@ -70,13 +137,33 @@ function histoire() {
       TimeLine.style.opacity = "70%";
     }
   } else {
-    return 0;
+  }
+
+  if (valueScroll < 500) {
+    goToTopButton.style.display = "none";
+    goToTopButton.style.opacity = 0;
+  }
+  if (valueScroll >= 500) {
+    goToTopButton.style.display = "block";
+    goToTopButton.style.opacity = 0;
+  }
+  if (valueScroll >= 600) {
+    goToTopButton.style.opacity = "10%";
+  }
+  if (valueScroll >= 700) {
+    goToTopButton.style.opacity = "20%";
+  }
+  if (valueScroll >= 800) {
+    goToTopButton.style.opacity = "30%";
+  }
+  if (valueScroll >= 900) {
+    goToTopButton.style.opacity = "50%";
+  }
+  if (valueScroll >= 1000) {
+    goToTopButton.style.opacity = "100%";
   }
 }
 
-//
-//
-//
 //
 //
 // lignes qui bougent en background
@@ -90,10 +177,6 @@ window.addEventListener("scroll", histoire);
 function AlertScroll() {
   let valueScroll = window.pageYOffset;
   alert(valueScroll);
-}
-function AlertWidth() {
-  let valueWidth = window.screen.width;
-  alert(valueWidth);
 }
 </script>
 
@@ -293,24 +376,30 @@ function AlertWidth() {
     <FooterView />
   </footer>
 
-  <!--ELEMENTS POUR LA PAGE HISTOIRE-->
-  <!--ELEMENTS POUR LA PAGE HISTOIRE-->
-  <!--ELEMENTS POUR LA PAGE HISTOIRE-->
-
-  <!--HISTOIRE - bouton pr remonter en haut de la page histoire-->
-  <a
-    href="#top"
-    class="gototop-element opacity-0 hidden"
-    v-if="$route.name === 'histoire'"
+  <div
+    class="w-full bottom-0 flex flex-row-reverse justify-start p-10 items-end gap-3 fixed z-40"
   >
-    <button
-      class="fixed z-50 w-fit h-fit inset-y-[85%] inset-x-[85%] text-black bg-beige border border-black rounded-full md:p-4 p-2"
-    >
-      <Arrow class="fill-black w-4 h-4 md:w-8 md:h-8" />
-    </button>
-  </a>
-  <!--HISTOIRE - bouton pr remonter en haut de la page histoire-->
+    <RouterLink
+      :to="{ name: 'profil', params: { id: userInfo[0].uiduser } }"
+      class="bg-beige border border-black w-fit rounded-full p-4"
+      v-if="user.email != null"
+      ><ProfilIcon class="w-4 h-4 md:w-8 md:h-8 fill-black" />
+      <span class="sr-only">Page du profil</span>
+    </RouterLink>
+    <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
+    <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
+    <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
 
+    <!--HISTOIRE - bouton pr remonter en haut de la page histoire-->
+    <a href="#top" class="gototop-element opacity-0 hidden">
+      <button class="text-black bg-beige border border-black rounded-full p-4">
+        <Arrow class="fill-black w-4 h-4 md:w-8 md:h-8" />
+        <span class="sr-only"
+          >Flèche pour remonter vers le haut de la page</span
+        >
+      </button>
+    </a>
+  </div>
   <!--Frise line (pour page histoire)-->
   <div
     class="timeline-element opacity-50 hidden fixed w-3 h-screen inset-x-1 md:inset-x-5 inset-y-0 bg-beige border-black border-x z-[11]"
@@ -318,23 +407,10 @@ function AlertWidth() {
   ></div>
 
   <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
-  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
   <button
     class="bg-red-500 text-black fixed w-fit h-fit p-1 inset-0 z-50 text-[3px]"
     @click="AlertScroll"
   >
     Scroll
   </button>
-  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
-  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
-  <button
-    class="bg-green-500 text-black fixed w-fit h-fit p-1 inset-0 inset-y-10 z-50 text-[3px]"
-    @click="AlertWidth"
-  >
-    Width
-  </button>
-
-  <!--ELEMENTS POUR LA PAGE HISTOIRE-->
-  <!--ELEMENTS POUR LA PAGE HISTOIRE-->
-  <!--ELEMENTS POUR LA PAGE HISTOIRE-->
 </template>
