@@ -1,5 +1,8 @@
 <template>
-  <form class="flex flex-col gap-5 m-auto w-11/12 md:w-2/3 my-20">
+  <form
+    class="flex flex-col gap-5 m-auto w-11/12 md:w-2/3 my-20"
+    @submit.prevent="finalizeInscription()"
+  >
     <section class="flex flex-col gap-10 w-full mb-5">
       <div class="flex flex-col">
         <label class="font-black">Prénom*</label>
@@ -39,34 +42,36 @@
     <h2 class="mmi-h2 text-rouge">Je souhaite...</h2>
     <!--Partie 2-->
 
-    <div class="flex flex-row justify-start gap-5 items-center w-full">
+    <div
+      class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+    >
       <input
         type="checkbox"
-        class="w-20"
+        class="w-5 h-5"
         name="soireeAnniversaire"
         v-model="soireeanniversaire"
-        required
       />
       <label class="uppercase">PARTICIPER À LA SOIRÉE DES 25 ANS MMI</label>
     </div>
 
-    <div class="flex flex-row justify-start gap-5 items-center w-full">
-      <input
-        type="checkbox"
-        class="w-20"
-        v-model="participationdefi"
-        required
-      />
+    <div
+      class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+    >
+      <input type="checkbox" class="w-5 h-5" v-model="participationdefi" />
       <label class="uppercase">PARTICIPER AU DÉFI 24H</label>
     </div>
 
-    <div class="flex flex-row justify-start gap-5 items-center w-full">
-      <input type="checkbox" class="w-20" v-model="benevoledefi" required />
+    <div
+      class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+    >
+      <input type="checkbox" class="w-5 h-5" v-model="benevoledefi" />
       <label class="uppercase">ÊTRE BÉNÉVOLE LORS DU DÉFI 24H</label>
     </div>
 
-    <div class="flex flex-row justify-start gap-5 items-center w-full">
-      <input type="checkbox" class="w-20" v-model="visitedefi" required />
+    <div
+      class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+    >
+      <input type="checkbox" class="w-5 h-5" v-model="visitedefi" />
       <label class="uppercase">
         Revoir et discuter avec les anciens étudiants et les professeurs LORS DU
         DÉFI 24H</label
@@ -77,18 +82,34 @@
     <h2 class="mmi-h2 text-bleu">Je suis...</h2>
     <!--PARTIE 3-->
 
-    <div class="flex flex-row justify-start gap-5 items-center w-full">
-      <input type="radio" class="w-20" v-model="etudiant" required />
+    <div
+      class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+    >
+      <input type="radio" class="w-5 h-5" v-model="role" value="etudiant" />
       <label>Actuellement étudiant.e (MMI1, MMI2 ou LPWD)</label>
     </div>
 
-    <div class="flex flex-row justify-start gap-5 items-center w-full">
-      <input type="radio" class="w-20" v-model="ancienetudiant" required />
+    <div
+      class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+    >
+      <input
+        type="radio"
+        class="w-5 h-5"
+        v-model="role"
+        value="ancien-etudiant"
+      />
       <label>Un.e ancien.ne étudiant.e</label>
     </div>
 
-    <div class="flex flex-row justify-start gap-5 items-center w-full">
-      <input type="radio" class="w-20" v-model="autretypepersonne" required />
+    <div
+      class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+    >
+      <input
+        type="radio"
+        class="w-5 h-5"
+        v-model="role"
+        value="autre-que-etudiant"
+      />
       <label>Autre</label>
     </div>
 
@@ -122,46 +143,42 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.
 import { emitter } from "../main.js";
 
 export default {
-  name: "QuestCreateView",
+  name: "InscriptionView",
   data() {
     return {
-      nom: "", // Pour la création d'un nouvelle quête (nom de la quête)
-      cat: "", // Pour la création d'un nouvelle quête (cat de la catégorie de la quête)
-      difficulty: "", // DIFFICULTE DE LA QUÊTE
-      desc: "", // Pour la description de la quête
-      date: "", // date de la quête
+      uiduser: "",
+      prenom: "", // PRENOM USER
+      nom: "", // NOM USER
+      pseudo: "", // PSEUDO USER
 
-      listeQueteSynchro: [], // Liste des quêtes synchronisée - collection quêtes de Firebase
-      listeCategorie: [], // Liste des CATEGORIES DE QUÊTES synchronisée - collection cat de Firebase
-      listeDifficulte: [], // Liste des DIFFICULTES synchronisée - collection cat de Firebase
+      soireeanniv: false, // PARTICIPATION OU NON SOIREE ANNIV 25 ANS
+      participationdefi: false, // PARTICIPATION OU PAS DEFI
+      benevoledefi: false, // BENEVOLE OU PAS DEFI
+      visitedefi: false, // SIMPLE VISITE DU DEFI
+
+      role: "", // ROLE DE L'USER
+
+      isAdmin: false, // Si l'utilisateur est ou non administrateur
 
       //
       //
       //
+      userInfo: null, // Informations complémentaires user connecté
       user: {
         // User connecté
         email: null,
         password: null,
       },
-      userInfo: null, // Informations complémentaires user connecté (sorte de listeCatégorie, listePays)
-      name: "", // Titre de l'application ou nom du user
-      avatar: null, // Avatar / image du user connecté
-      isAdmin: false, // Si l'utilisateur est ou non administrateur
     };
   },
   mounted() {
-    // Montage de la vue
-    this.getQueteSynchro();
-    this.getCategorie();
-    this.getDifficulte();
-
     //
     //
     //
     //
     //
     // Vérifier si un user connecté existe déjà
-    // Au lancement de l'application
+    // Au lancement de la page
     this.getUserConnect();
 
     // Ecoute de l'évènement de connexion
@@ -181,8 +198,6 @@ export default {
       // Réinitialisation infos complémentaires user
 
       this.userInfo = null;
-      this.name = "";
-      this.avatar = null;
       this.isAdmin = false;
     });
     //
@@ -198,6 +213,8 @@ export default {
           if (user) {
             // Récupération du user connecté
             this.user = user;
+            this.uiduser = user.uid;
+            console.log(user.uid);
             // Recherche de ses infos complémentaires
             this.getUserInfo(this.user);
           }
@@ -210,86 +227,35 @@ export default {
       // Obtenir Firestore
       const firestore = getFirestore();
       // Base de données (collection)  document participant
-      const dbUsers = collection(firestore, "users");
+      const dbUsers = collection(firestore, "user");
       // Recherche du user par son uid
-      const q = query(dbUsers, where("uid", "==", user.uid));
+      const q = query(dbUsers, where("uiduser", "==", user.uid));
       await onSnapshot(q, (snapshot) => {
         this.userInfo = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
         }));
-        // console.log("userInfo", this.userInfo);
-        // userInfo étant un tableau, onn récupère
-        // ses informations dans la 1° cellule du tableau : 0
-        this.name = this.userInfo[0].login;
-        this.isAdmin = this.userInfo[0].admin;
-        // Recherche de l'image du user sur le Storage
-
-        const storage = getStorage();
-        // Référence du fichier avec son nom
-        const spaceRef = ref(storage, "users/" + this.userInfo[0].avatar);
-        getDownloadURL(spaceRef)
-          .then((url) => {
-            this.avatar = url;
-          })
-          .catch((error) => {
-            console.log("erreur downloadUrl", error);
-          });
       });
     },
 
-    async getQueteSynchro() {
+    async finalizeInscription() {
       const firestore = getFirestore();
-      const dbQuete = collection(firestore, "quete");
-      const query = await onSnapshot(dbQuete, (snapshot) => {
-        this.listeQueteSynchro = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-      });
-    },
-
-    async getCategorie() {
-      const firestore = getFirestore();
-      const dbCat = collection(firestore, "categorie");
-      const query = await onSnapshot(dbCat, (snapshot) => {
-        this.listeCategorie = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-      });
-    },
-
-    async getDifficulte() {
-      const firestore = getFirestore();
-      const dbDiff = collection(firestore, "difficulte");
-      const query = await onSnapshot(dbDiff, (snapshot) => {
-        this.listeDifficulte = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-      });
-    },
-
-    async createQuete() {
-      const firestore = getFirestore();
-      const dbQuete = collection(firestore, "quete");
-      const docRef = await addDoc(dbQuete, {
-        uid: this.userInfo[0].uid,
+      const dbUsers = collection(firestore, "user");
+      const docRef = await addDoc(dbUsers, {
+        uiduser: this.uiduser,
         nom: this.nom,
-        date: this.date,
-        cat: this.cat,
-        difficulty: this.difficulty,
-        desc: this.desc,
-      });
-      // console.log("document créé avec le id suivant : ", docRef.id);
-      this.$router.push("/home");
-    },
+        prenom: this.prenom,
+        pseudo: this.pseudo,
 
-    async deleteQuete(quete) {
-      const firestore = getFirestore();
-      const docRef = doc(firestore, "quete", quete.id);
-      await deleteDoc(docRef);
+        soireeanniv: this.soireeanniv,
+        participationdefi: this.participationdefi,
+        benevoledefi: this.benevoledefi,
+        visitedefi: this.visitedefi,
+
+        role: this.role,
+      });
+      console.log("document créé avec le id suivant : ", docRef.id);
+      this.$router.push("/home");
     },
   },
 };
