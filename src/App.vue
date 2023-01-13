@@ -370,14 +370,17 @@ function AlertScroll() {
   </footer>
 
   <div
-    class="w-fit bottom-0 right-0 flex flex-row-reverse justify-start p-10 items-end gap-3 fixed z-40"
+    class="w-fit bottom-0 right-0 flex flex-row-reverse justify-center p-10 items-center gap-3 fixed z-40"
   >
     <RouterLink
       :to="{ name: 'profil', params: { id: userInfo[0].uiduser } }"
-      class="bg-beige border border-black w-fit rounded-full p-4"
+      class="bg-beige border border-black w-fit rounded-xl p-4 flex justify-center items-center gap-2"
+      :class="{ hidden: $route.name === 'profil' }"
       v-if="user.email != null"
-      ><ProfilIcon class="w-4 h-4 md:w-8 md:h-8 fill-black" />
-      <span class="sr-only">Page du profil</span>
+    >
+      <p class="text-sm">Profil</p>
+      <ProfilIcon class="w-4 h-4 md:w-6 md:h-6 fill-black" />
+      <span class="sr-only">Icône pour la page du profil</span>
     </RouterLink>
     <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
     <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
@@ -385,8 +388,8 @@ function AlertScroll() {
 
     <!--HISTOIRE - bouton pr remonter en haut de la page histoire-->
     <a href="#top" class="gototop-element opacity-0 hidden">
-      <button class="text-black bg-beige border border-black rounded-full p-4">
-        <Arrow class="fill-black w-4 h-4 md:w-8 md:h-8" />
+      <button class="text-black bg-beige border border-black rounded-xl p-4">
+        <Arrow class="fill-black w-4 h-4 md:w-6 md:h-6" />
         <span class="sr-only"
           >Flèche pour remonter vers le haut de la page</span
         >

@@ -92,7 +92,7 @@
     <div class="flex flex-col gap-10 w-full mb-5">
       <!--PARTIE 1 DU FORMULAIRE-->
       <div class="flex flex-col">
-        <label class="font-black">Adresse mail</label>
+        <label class="font-black">Adresse mail*</label>
         <input
           type="text"
           class="bg-white border border-b-4 border-b-black border-white"
@@ -104,7 +104,7 @@
       </div>
 
       <div class="flex flex-col">
-        <label class="font-black">Mot de passe</label>
+        <label class="font-black">Mot de passe*</label>
         <input
           type="password"
           class="bg-white border border-b-4 border-b-black border-white"
