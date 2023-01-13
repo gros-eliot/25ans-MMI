@@ -8,25 +8,19 @@ import Arrow from "./components/icons/arrow.vue";
 
 // lignes qui bougent en background
 function FunctionLine() {
-  if ($route.name != "connexion") {
-    let movingLine = document.querySelector(".line");
-    let valueScroll = window.pageYOffset;
-    movingLine.style.width = valueScroll / 20 + "%";
-  }
+  let movingLine = document.querySelector(".line");
+  let valueScroll = window.pageYOffset;
+  movingLine.style.width = valueScroll / 20 + "%";
 }
 function FunctionLine2() {
-  if ($route.name != "connexion") {
-    let movingLine = document.querySelector(".line2");
-    let valueScroll = window.pageYOffset;
-    movingLine.style.width = valueScroll / 20 + "%";
-  }
+  let movingLine = document.querySelector(".line2");
+  let valueScroll = window.pageYOffset;
+  movingLine.style.width = valueScroll / 20 + "%";
 }
 function FunctionLine3() {
-  if ($route.name != "connexion") {
-    let movingLine = document.querySelector(".line3");
-    let valueScroll = window.pageYOffset;
-    movingLine.style.width = valueScroll / 20 + "%";
-  }
+  let movingLine = document.querySelector(".line3");
+  let valueScroll = window.pageYOffset;
+  movingLine.style.width = valueScroll / 20 + "%";
 }
 
 //
@@ -40,39 +34,34 @@ function histoire() {
 
   // modification du bouton retour en haut de page (page histoire)
   let goToTopButton = document.querySelector(".gototop-element");
-  if (valueScroll >= 500) {
-    goToTopButton.style.opacity = "100%";
-    goToTopButton.style.display = "block";
-  } else {
-    goToTopButton.style.opacity = 0;
-  }
-
-  // modification de la timeline (page histoire)
   let TimeLine = document.querySelector(".timeline-element");
-
-  if (valueScroll > 0 && valueScroll < 500) {
-    TimeLine.style.display = "none";
-  }
-
-  if (valueScroll >= 500) {
-    TimeLine.style.display = "block";
-    TimeLine.style.opacity = 0;
-  }
-
-  if (valueScroll >= 500) {
-    TimeLine.style.opacity = "10%";
-  }
-  if (valueScroll >= 600) {
-    TimeLine.style.opacity = "20%";
-  }
-  if (valueScroll >= 700) {
-    TimeLine.style.opacity = "30%";
-  }
-  if (valueScroll >= 800) {
-    TimeLine.style.opacity = "50%";
-  }
-  if (valueScroll >= 1000) {
-    TimeLine.style.opacity = "70%";
+  if (goToTopButton != null) {
+    if (valueScroll >= 500) {
+      goToTopButton.style.opacity = "100%";
+      goToTopButton.style.display = "block";
+      TimeLine.style.display = "block";
+      TimeLine.style.opacity = 0;
+    } else {
+      goToTopButton.style.opacity = 0;
+      TimeLine.style.display = "none";
+    }
+    if (valueScroll >= 600) {
+      TimeLine.style.opacity = "10%";
+    }
+    if (valueScroll >= 700) {
+      TimeLine.style.opacity = "20%";
+    }
+    if (valueScroll >= 800) {
+      TimeLine.style.opacity = "30%";
+    }
+    if (valueScroll >= 900) {
+      TimeLine.style.opacity = "50%";
+    }
+    if (valueScroll >= 1000) {
+      TimeLine.style.opacity = "70%";
+    }
+  } else {
+    return 0;
   }
 }
 
@@ -269,6 +258,7 @@ function AlertWidth() {
         ($route.name === 'dev') |
         ($route.name === 'crea') |
         ($route.name === 'secret') |
+        ($route.name === 'contact') |
         ($route.name === 'notfound')
     "
   />
@@ -281,6 +271,7 @@ function AlertWidth() {
         ($route.name === 'dev') |
         ($route.name === 'crea') |
         ($route.name === 'secret') |
+        ($route.name === 'contact') |
         ($route.name === 'notfound')
     "
   />

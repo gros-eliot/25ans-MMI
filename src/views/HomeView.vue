@@ -12,9 +12,11 @@ let removeScroll = ref(false);
 
 function Function252525() {
   let box25 = document.querySelector(".animationHome");
-  let valueScroll = window.pageYOffset;
-  box25.style.letterSpacing = valueScroll / 20 + "px";
-  box25.style.opacity = 100 - valueScroll / 6 + "%";
+  if (box25 != null) {
+    let valueScroll = window.pageYOffset;
+    box25.style.letterSpacing = valueScroll / 20 + "px";
+    box25.style.opacity = 100 - valueScroll / 6 + "%";
+  }
 }
 window.addEventListener("scroll", Function252525);
 </script>

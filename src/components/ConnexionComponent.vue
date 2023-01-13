@@ -209,8 +209,19 @@ export default {
       )
         .then(() => {
           this.message = "User créé : " + this.user.email;
-          this.$router.push("inscription");
 
+          signInWithEmailAndPassword(
+            getAuth(),
+            this.user.email,
+            this.user.password
+          ).then((response) => {
+            this.user = response.user;
+            this.message = "Vous êtes connecté sous : " + this.user.email;
+
+            this.$router.push("inscription");
+          });
+
+          /*
           const firestore = getFirestore();
           // Base de données (collection)  document users
           const dbUsers = collection(firestore, "user");
@@ -219,6 +230,7 @@ export default {
             prenom: this.prenom,
             email: this.email,
           });
+          */
         })
         .catch((error) => {
           // Erreur de connexion

@@ -5,6 +5,9 @@ import router from './router'
 import './assets/main.css'
 import '@/index.css'
 
+// Import de mitt
+import mitt from 'mitt';
+
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
 
@@ -28,7 +31,12 @@ const firebaseConfig = {
 const appFirebase = initializeApp(firebaseConfig);
 const app = createApp(App);
 
-let signInButton = document.getElementById("signup");
+// Création d'un emetteur mitt exportable
+export const emitter = mitt();
+
+// créer l'émetteur comme propriété globale
+// de l'application
+app.config.globalProperties.emitter = emitter;
 
 app.use(router);
 
