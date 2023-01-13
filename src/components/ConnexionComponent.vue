@@ -61,7 +61,7 @@
         </div>
       </div>
 
-      <a href="." class="m-auto w-fit">
+      <a href="#top" class="m-auto text-center w-fit">
         <button
           @click.prevent="onDcnx()"
           class="m-auto text-center w-fit underline text-base"
@@ -89,7 +89,8 @@
     </section>
     <!--Images 24h 25 ans mmi-->
 
-    <div class="flex flex-col gap-12">
+    <div class="flex flex-col gap-10 w-full mb-5">
+      <!--PARTIE 1 DU FORMULAIRE-->
       <div class="flex flex-col">
         <label class="font-black">Adresse mail</label>
         <input
@@ -114,13 +115,127 @@
         />
       </div>
 
-      <div class="w-full flex flex-col gap-5 md:flex-row md:justify-evenly">
-        <button
-          class="mx-auto bg-black border border-black border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-white font-black rounded-md"
-          type="submit"
+      <div class="flex flex-col">
+        <label class="font-black">Prénom*</label>
+        <input
+          type="text"
+          class="bg-white border-b-4 border-b-black"
+          placeholder="Prénom"
+          name="prenom"
+          v-model="prenom"
+          required
+        />
+      </div>
+      <div class="flex flex-col">
+        <label class="font-black">Nom*</label>
+        <input
+          type="text"
+          class="bg-white border-b-4 border-b-black"
+          placeholder="Nom"
+          name="nom"
+          v-model="nom"
+          required
+        />
+      </div>
+      <div class="flex flex-col">
+        <label class="font-black">Pseudo</label>
+        <input
+          type="text"
+          class="bg-white border-b-4 border-b-black"
+          placeholder="Pseudonyme"
+          name="pseudo"
+          v-model="pseudo"
+        />
+      </div>
+      <!--PARTIE 1 DU FORMULAIRE-->
+
+      <!--Partie 2-->
+      <h2 class="text-4xl md:text-5xl font-black text-rouge">Je souhaite...</h2>
+      <!--Partie 2-->
+      <section class="flex flex-col gap-2">
+        <div
+          class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
         >
-          S'inscrire
-        </button>
+          <input
+            type="checkbox"
+            class="w-5 h-5"
+            name="soireeanniv"
+            v-model="soireeanniv"
+          />
+          <label class="uppercase">PARTICIPER À LA SOIRÉE DES 25 ANS MMI</label>
+        </div>
+
+        <div
+          class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+        >
+          <input type="checkbox" class="w-5 h-5" v-model="participationdefi" />
+          <label class="uppercase">PARTICIPER AU DÉFI 24H</label>
+        </div>
+
+        <div
+          class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+        >
+          <input type="checkbox" class="w-5 h-5" v-model="benevoledefi" />
+          <label class="uppercase">ÊTRE BÉNÉVOLE LORS DU DÉFI 24H</label>
+        </div>
+
+        <div
+          class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+        >
+          <input type="checkbox" class="w-5 h-5" v-model="visitedefi" />
+          <label class="uppercase">
+            Revoir et discuter avec les anciens étudiants et les professeurs
+            LORS DU DÉFI 24H</label
+          >
+        </div>
+      </section>
+
+      <!--PARTIE 3-->
+      <h2 class="text-4xl md:text-5xl font-black text-bleu">Je suis...</h2>
+      <!--PARTIE 3-->
+      <section class="flex flex-col gap-2">
+        <div
+          class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+        >
+          <input type="radio" class="w-5 h-5" v-model="role" value="etudiant" />
+          <label>Actuellement étudiant.e (MMI1, MMI2 ou LPWD)</label>
+        </div>
+
+        <div
+          class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+        >
+          <input
+            type="radio"
+            class="w-5 h-5"
+            v-model="role"
+            value="ancien-etudiant"
+          />
+          <label>Un.e ancien.ne étudiant.e</label>
+        </div>
+
+        <div
+          class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+        >
+          <input
+            type="radio"
+            class="w-5 h-5"
+            v-model="role"
+            value="autre-que-etudiant"
+          />
+          <label>Autre</label>
+        </div>
+      </section>
+
+      <!--Finalisation-->
+      <div class="w-full flex flex-col gap-5 md:flex-row md:justify-evenly">
+        <a href="#top" class="m-auto text-center w-fit">
+          <button
+            class="mx-auto bg-black border border-black border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-white font-black rounded-md"
+            type="submit"
+          >
+            S'inscrire
+          </button>
+        </a>
         <button
           class="mx-auto bg-white border-black border p-7 text-2xl md:text-xl lg:text-2xl font-inter text-black font-black rounded-md"
           @click="formSwitch = !formSwitch"
@@ -170,9 +285,21 @@ export default {
       user: {
         email: null,
         password: null,
-        nom: null,
-        prenom: null,
       },
+      uid: "",
+      prenom: null, // PRENOM USER
+      nom: null, // NOM USER
+      pseudo: null, // PSEUDO USER
+
+      soireeanniv: false, // PARTICIPATION OU NON SOIREE ANNIV 25 ANS
+      participationdefi: false, // PARTICIPATION OU PAS DEFI
+      benevoledefi: false, // BENEVOLE OU PAS DEFI
+      visitedefi: false, // SIMPLE VISITE DU DEFI
+
+      role: "autre", // ROLE DE L'USER
+
+      isAdmin: false, // Si l'utilisateur est ou non administrateur
+
       message: null,
     };
   },
@@ -205,12 +332,29 @@ export default {
       createUserWithEmailAndPassword(
         getAuth(),
         this.user.email,
-        this.user.password,
-        this.user.nom,
-        this.user.prenom
+        this.user.password
       )
-        .then(() => {
+        .then((response) => {
           this.message = "User créé : " + this.user.email;
+          this.uid = response.user.uid;
+
+          const firestore = getFirestore();
+          const dbUsers = collection(firestore, "user");
+          const docRef = addDoc(dbUsers, {
+            nom: this.nom,
+            prenom: this.prenom,
+            pseudo: this.pseudo,
+
+            soireeanniv: this.soireeanniv,
+            participationdefi: this.participationdefi,
+            benevoledefi: this.benevoledefi,
+            visitedefi: this.visitedefi,
+
+            isAdmin: false,
+
+            role: this.role,
+            uiduser: this.uid,
+          });
 
           signInWithEmailAndPassword(
             getAuth(),
@@ -218,21 +362,14 @@ export default {
             this.user.password
           ).then((response) => {
             this.user = response.user;
-            this.message = "Vous êtes connecté sous : " + this.user.email;
-
-            this.$router.push("inscription");
+            this.message =
+              "Vous êtes connecté sous : " +
+              this.user.email +
+              "(votre UID : " +
+              this.uid +
+              " )";
           });
-
-          /*
-          const firestore = getFirestore();
-          // Base de données (collection)  document users
-          const dbUsers = collection(firestore, "user");
-          const docRef = addDoc(dbUsers, {
-            nom: this.nom,
-            prenom: this.prenom,
-            email: this.email,
-          });
-          */
+          this.$router.push("/home");
         })
         .catch((error) => {
           // Erreur de connexion

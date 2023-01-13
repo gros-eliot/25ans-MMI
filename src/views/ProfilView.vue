@@ -52,8 +52,8 @@
       <input
         type="checkbox"
         class="w-5 h-5"
-        name="soireeAnniversaire"
-        v-model="soireeanniversaire"
+        name="soireeanniv"
+        v-model="soireeanniv"
       />
       <label class="uppercase">PARTICIPER À LA SOIRÉE DES 25 ANS MMI</label>
     </div>

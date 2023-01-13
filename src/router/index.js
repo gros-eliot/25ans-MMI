@@ -6,7 +6,6 @@ import ContactView from "../views/ContactView.vue"
 import MentionsLegalesView from "../views/MentionsLegalesView.vue"
 
 import ConnexionView from "../views/ConnexionView.vue"
-import InscriptionView from "../views/InscriptionView.vue"
 import ProfilView from "../views/ProfilView.vue"
 
 import ComView from "../views/ComView.vue"
@@ -28,7 +27,6 @@ const router = createRouter({
     { path: '/mentionslegales',  name: 'mentionslegales', component: MentionsLegalesView },
 
     { path: '/connexion',  name: 'connexion', component: ConnexionView },
-    { path: '/inscription',  name: 'inscription', component: InscriptionView },
     { path: '/profil/:id',  name: 'profil', component: ProfilView },
     
     { path: '/com',  name: 'com', component: ComView },

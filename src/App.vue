@@ -322,14 +322,7 @@ function AlertScroll() {
     >
       Connexion
     </h1>
-    <h1
-      class="uppercase text-center py-2 mmi-h1"
-      :class="{
-        hidden: $route.name != 'inscription',
-      }"
-    >
-      Suite de l'inscription
-    </h1>
+
     <h1
       class="uppercase text-center py-2 mmi-h1 px-5"
       :class="{
