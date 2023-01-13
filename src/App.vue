@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from "vue-router";
 import BatimentMMI from "@/components/BatimentMMI.vue";
 import HeaderView from "@/components/Header.vue";
@@ -6,6 +6,15 @@ import FooterView from "@/components/Footer.vue";
 import MiniBatimentMMI from "./components/MiniBatimentMMI.vue";
 import Arrow from "./components/icons/arrow.vue";
 
+export default {
+  components: {
+    BatimentMMI,
+    HeaderView,
+    FooterView,
+    MiniBatimentMMI,
+    Arrow,
+  },
+};
 // lignes qui bougent en background
 function FunctionLine() {
   let movingLine = document.querySelector(".line");
