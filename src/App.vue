@@ -377,7 +377,7 @@ function AlertScroll() {
   </footer>
 
   <div
-    class="w-full bottom-0 flex flex-row-reverse justify-start p-10 items-end gap-3 fixed z-40"
+    class="w-fit bottom-0 right-0 flex flex-row-reverse justify-start p-10 items-end gap-3 fixed z-40"
   >
     <RouterLink
       :to="{ name: 'profil', params: { id: userInfo[0].uiduser } }"
