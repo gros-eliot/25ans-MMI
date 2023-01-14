@@ -3,7 +3,7 @@
     Mon profil ({{ prenom }} {{ nom }})
   </h1>
   <form
-    class="flex flex-col gap-5 m-auto w-11/12 md:w-2/3 my-20"
+    class="flex flex-col gap-5 m-auto w-11/12 md:w-2/3 mt-20"
     @submit.prevent="updateUser()"
     enctype="multipart/form-data"
   >
@@ -124,6 +124,17 @@
       Modifier mon profil
     </button>
   </form>
+
+  <div class="flex justify-center items-center my-20">
+    <a href="#top" class="m-auto text-center w-fit">
+      <button
+        @click.prevent="onDcnx()"
+        class="m-auto text-center w-fit underline text-base"
+      >
+        Déconnexion
+      </button>
+    </a>
+  </div>
 </template>
 
 <script>
@@ -140,8 +151,12 @@ import {
   where,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
-// Fonction authentification
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+import {
+  getAuth, // Fonction générale d'authentification
+  signInWithEmailAndPassword, // Se connecter avec un email + mot de passe
+  createUserWithEmailAndPassword, // créer un user
+  signOut, // Se deconnecter
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
 
 export default {
   data() {
@@ -161,7 +176,7 @@ export default {
       benevoledefi: false, // BENEVOLE OU PAS DEFI
       visitedefi: false, // SIMPLE VISITE DU DEFI
       role: "", // ROLE DE L'USER
-      isAdmin: false, // Si l'utilisateur est ou non administrateur
+      admin: false, // Si l'utilisateur est ou non administrateur
     };
   },
   mounted() {
@@ -230,6 +245,21 @@ export default {
       // redirection sur la liste des participants
       //
       this.$router.push("/home");
+    },
+
+    onDcnx() {
+      //se deco
+      signOut(getAuth())
+        .then((response) => {
+          this.user = getAuth().currentUser;
+          this.user = {
+            email: null,
+            password: null,
+          };
+        })
+        .catch((error) => {
+          console.log("erreur  déconnection : ", error);
+        });
     },
   },
 };

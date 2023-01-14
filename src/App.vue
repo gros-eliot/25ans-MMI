@@ -381,6 +381,16 @@ function AlertScroll() {
       <ProfilIcon class="w-4 h-4 md:w-6 md:h-6 fill-black" />
       <span class="sr-only">Icône pour la page du profil</span>
     </RouterLink>
+    <RouterLink
+      to="/connexion"
+      class="bg-beige border border-black w-fit rounded-xl p-4 flex justify-center items-center gap-2"
+      :class="{ hidden: $route.name === 'connexion' }"
+      v-if="user.email === null"
+    >
+      <p class="text-sm">Connexion</p>
+      <ProfilIcon class="w-4 h-4 md:w-6 md:h-6 fill-black" />
+      <span class="sr-only">Icône pour la page connexion</span>
+    </RouterLink>
     <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
     <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
     <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->

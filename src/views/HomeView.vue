@@ -397,7 +397,7 @@ window.addEventListener("scroll", Function252525);
       <!--cadre-->
       <div class="prof-homepage">
         <div
-          class="bg-bodet1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+          class="bg-bodet1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all border-4 border-black"
           :class="{
             'bg-bodet2': clickedImageBodet === true,
           }"

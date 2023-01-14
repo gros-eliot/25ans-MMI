@@ -55,12 +55,6 @@
         </button>
       </div>
 
-      <div class="flex place-content-center">
-        <div class="alert alert-warning w-fit text-base text-vert" role="alert">
-          {{ message }}
-        </div>
-      </div>
-
       <a href="#top" class="m-auto text-center w-fit">
         <button
           @click.prevent="onDcnx()"
@@ -69,6 +63,12 @@
           Déconnexion
         </button>
       </a>
+
+      <div class="flex place-content-center">
+        <div class="alert alert-warning w-fit text-base text-vert" role="alert">
+          {{ message }}
+        </div>
+      </div>
     </div>
   </form>
 
@@ -298,7 +298,7 @@ export default {
 
       role: "autre", // ROLE DE L'USER
 
-      isAdmin: false, // Si l'utilisateur est ou non administrateur
+      admin: false, // Si l'utilisateur est ou non administrateur
 
       message: null,
     };
@@ -319,7 +319,6 @@ export default {
         .then((response) => {
           this.user = response.user;
           this.message = "Vous êtes connecté sous : " + this.user.email;
-          this.$router.push("/home");
         })
         .catch((error) => {
           //erreur co
@@ -335,7 +334,6 @@ export default {
         this.user.password
       )
         .then((response) => {
-          this.message = "User créé : " + this.user.email;
           this.uid = response.user.uid;
 
           const firestore = getFirestore();
@@ -350,11 +348,12 @@ export default {
             benevoledefi: this.benevoledefi,
             visitedefi: this.visitedefi,
 
-            isAdmin: false,
+            admin: false,
 
             role: this.role,
             uiduser: this.uid,
           });
+          this.message = "User créé : " + this.user.email;
 
           signInWithEmailAndPassword(
             getAuth(),
@@ -362,14 +361,8 @@ export default {
             this.user.password
           ).then((response) => {
             this.user = response.user;
-            this.message =
-              "Vous êtes connecté sous : " +
-              this.user.email +
-              "(votre UID : " +
-              this.uid +
-              " )";
           });
-          this.$router.push("/home");
+          this.message = "Vous êtes connecté sous : " + this.user.email;
         })
         .catch((error) => {
           // Erreur de connexion
@@ -386,7 +379,7 @@ export default {
             email: null,
             password: null,
           };
-          this.message = "Vous êtes déconnecté !";
+          this.message = "Vous êtes déconnecté.";
         })
         .catch((error) => {
           console.log("erreur  déconnection : ", error);
