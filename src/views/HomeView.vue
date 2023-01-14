@@ -19,6 +19,11 @@ function Function252525() {
   }
 }
 window.addEventListener("scroll", Function252525);
+
+function SetScrollZero() {
+  let valueScroll = window.pageYOffset;
+  valueScroll = 0;
+}
 </script>
 
 <template>
@@ -60,12 +65,14 @@ window.addEventListener("scroll", Function252525);
       Découvrez l'histoire du MMI depuis sa fondation grâce à une frise
       interactive.
     </p>
-    <RouterLink to="/histoire">
-      <button
-        class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-beige text-beige"
-      >
-        Découvrir
-      </button>
+    <RouterLink to="histoire">
+      <a href="#top">
+        <button
+          class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-beige text-beige"
+        >
+          Découvrir
+        </button>
+      </a>
     </RouterLink>
 
     <section>

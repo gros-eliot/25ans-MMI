@@ -208,6 +208,7 @@ window.addEventListener("scroll", AnimationsHistoire);
 </script>
 
 <template>
+  <div id="topofpage"></div>
   <!--BACKGROUND OF PAGE-->
   <div
     class="histoire-background fixed h-screen w-full -z-[20] inset-0 bg-beige bg-cover bg-origin-padding"

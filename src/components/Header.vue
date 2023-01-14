@@ -93,10 +93,10 @@
             </li>
 
             <li
-              class="mt-5 text-white text-[30px] md:text-[35px] lg:text-[40px]"
+              class="mt-5 color-text text-[30px] md:text-[35px] lg:text-[40px]"
             >
-              <router-link class="" to="/connexion"> CONNEXION </router-link>
-              <span class="sr-only">Page connexion</span>
+              <router-link class="" to="/vote"> VOTE!! </router-link>
+              <span class="sr-only">Page vote</span>
             </li>
           </div>
         </ul>
@@ -115,3 +115,47 @@ import { ref } from "@vue/reactivity";
 let menuOuvert = ref();
 menuOuvert.value = false;
 </script>
+
+<style scoped>
+.color-text {
+  animation: colored-text-animation 3s linear infinite;
+}
+
+@keyframes colored-text-animation {
+  0% {
+    color: #bba7e7;
+  }
+  19% {
+    color: #bba7e7;
+  }
+  20% {
+    color: #ff3636;
+  }
+  39% {
+    color: #ff3636;
+  }
+  40% {
+    color: #6dd678;
+  }
+
+  59% {
+    color: #6dd678;
+  }
+  60% {
+    color: #ffd600;
+  }
+
+  79% {
+    color: #ffd600;
+  }
+  80% {
+    color: white;
+  }
+  99% {
+    color: white;
+  }
+  100% {
+    color: #bba7e7;
+  }
+}
+</style>

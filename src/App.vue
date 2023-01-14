@@ -385,17 +385,14 @@ function AlertScroll() {
       to="/connexion"
       class="bg-beige border border-black w-fit rounded-xl p-4 flex justify-center items-center gap-2"
       :class="{ hidden: $route.name === 'connexion' }"
-      v-if="user.email === null"
+      v-else
     >
       <p class="text-sm">Connexion</p>
       <ProfilIcon class="w-4 h-4 md:w-6 md:h-6 fill-black" />
       <span class="sr-only">Icône pour la page connexion</span>
     </RouterLink>
-    <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
-    <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
-    <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
 
-    <!--HISTOIRE - bouton pr remonter en haut de la page histoire-->
+    <!--bouton pr remonter en haut de la page -->
     <a href="#top" class="gototop-element opacity-0 hidden">
       <button class="text-black bg-beige border border-black rounded-xl p-4">
         <Arrow class="fill-black w-4 h-4 md:w-6 md:h-6" />
@@ -405,6 +402,11 @@ function AlertScroll() {
       </button>
     </a>
   </div>
+
+  <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
+  <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
+  <!--ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE // ELEMENTS POUR LA PAGE HISTOIRE-->
+
   <!--Frise line (pour page histoire)-->
   <div
     class="timeline-element opacity-50 hidden fixed w-3 h-screen inset-x-1 md:inset-x-5 inset-y-0 bg-beige border-black border-x z-[11]"

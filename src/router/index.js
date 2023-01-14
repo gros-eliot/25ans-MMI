@@ -36,13 +36,11 @@ import DevView from "../views/DevView.vue"
 import SecretView from "../views/SecretView.vue"
 import EventView from "../views/EventView.vue"
 import HistoireView from "../views/HistoireView.vue"
-
+import VoteView from "../views/VoteView.vue"
 
 import PageNotFound from "../views/PageNotFound.vue"
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
+const routes = [
     { path: '/',  name: 'cadeau', component: CadeauView },
     { path: '/home',  name: 'home', component: HomeView },
     { path: '/contact',  name: 'contact', component: ContactView },
@@ -55,11 +53,21 @@ const router = createRouter({
     { path: '/crea',  name: 'crea', component: CreaView },
     { path: '/dev',  name: 'dev', component: DevView },
     { path: '/secret',  name: 'secret', component: SecretView },
+
+    { path: '/vote',  name: 'vote', component: VoteView },
+
     { path: '/event',  name: 'event', component: EventView },
     { path: '/histoire',  name: 'histoire', component: HistoireView },
 
     { path: '/:pathMatch(.*)*',  name: 'notfound', component: PageNotFound },
-  ]
+]
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    return savedPosition || {top:0}
+  }
 })
 
 
