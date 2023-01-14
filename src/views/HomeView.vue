@@ -501,6 +501,90 @@ function SetScrollZero() {
       <!--fin cadre-->
     </div>
   </div>
+
+  <!--Invitation Connexion-->
+
+  <div
+    class="text-center flex flex-col gap-10 bg-white w-full text-black py-5 my-20 overflow-x-hidden"
+  >
+    <section>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines1"
+      ></div>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines2"
+      ></div>
+    </section>
+
+    <h2 class="mmi-h2">Connectez-vous !</h2>
+    <p>
+      Pour voter pour une oeuvre ou vous inscrire aux différents événements
+      du week-end du 11 et 12 mars, connecter avec votre compte Défi 24h ou 25 ans MMI !
+    </p>
+    <RouterLink to="connexion">
+      <a href="#top">
+        <button
+          class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-black text-beige"
+        >
+          Me connecter
+        </button>
+      </a>
+    </RouterLink>
+
+    <section>
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines3"
+      ></div>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines4"
+      ></div>
+    </section>
+  </div>
+
+  <!--Invitation Event-->
+  <div
+    class="text-center flex flex-col gap-10 bg-event w-full text-white py-5 my-20 overflow-x-hidden"
+  >
+    <section>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines1"
+      ></div>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines2"
+      ></div>
+    </section>
+
+    <h2 class="mmi-h2">Participez à l'événement 25 ans MMI !</h2>
+    <p class="mx-20">
+      Pour fêter dignement ces 25 années passées ensemble à construire le 
+      département MMI que nous connaissons aujourd'hui, toutes les générations 
+      MMI sont invitées à participer au week-end organisé !
+    </p>
+    <RouterLink to="event">
+      <a href="#top">
+        <button
+          class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-beige text-beige"
+        >
+          L'événement
+        </button>
+      </a>
+    </RouterLink>
+
+    <section>
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines3"
+      ></div>
+      <!--lignes de vitesse-->
+      <div
+        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines4"
+      ></div>
+    </section>
+  </div>
 </template>
 
 <style scoped>
