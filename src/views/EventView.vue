@@ -101,4 +101,27 @@
       </div>
     </div>
   </div>
+
+  <!--Invitation connexion-->
+   <div
+    class="text-center md:flex items-center bg-black w-full text-beige py-5 my-20 overflow-x-hidden"
+  >
+    <img  class="w-1/5 mx-auto" src="../../public/Profil.svg" alt="pictograme profil"/>
+    <div class="w-4/5 flex flex-col gap-10 mx-auto">
+    <h2 class="mmi-h2">Connectez-vous !</h2>
+    <p>
+      Pour voter pour une oeuvre ou vous inscrire aux différents événements
+      du week-end du 11 et 12 mars, connecter avec votre compte Défi 24h ou 25 ans MMI !
+    </p>
+    <RouterLink to="histoire">
+      <a href="#top">
+        <button
+          class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-beige text-beige"
+        >
+          Découvrir
+        </button>
+      </a>
+    </RouterLink>
+    </div>
+  </div>
 </template>
