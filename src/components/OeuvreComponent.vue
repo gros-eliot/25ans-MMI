@@ -52,23 +52,11 @@
       class="bg-black w-[95%] h-[95%] text-white px-10 pb-5 overflow-y-scroll customizedScrollbar"
     >
       <div class="flex flex-col gap-5 mt-20">
-        <form v-if="user != null" @submit.prevent="voteForArt()">
-          <button
-            type="submit"
-            class="w-fit m-auto bg-white text-black font-bold px-4 py-2 rounded-lg hover:bg-rouge"
-          >
-            Voter pour cette œuvre ♥
-          </button>
-        </form>
-        <RouterLink
-          to="connexion"
-          :class="{ hidden: user != null }"
-          class="m-auto w-fit"
-        >
+        <RouterLink to="vote" class="m-auto w-fit">
           <button
             class="w-fit m-auto bg-white text-black font-bold px-4 py-2 rounded-lg"
           >
-            Se connecter pour voter
+            Voter pour cette oeuvre ♥
           </button>
         </RouterLink>
         <img :src="`public/images/oeuvres/${sourceImage}`" class="w-full" />

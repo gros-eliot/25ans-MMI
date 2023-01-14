@@ -296,7 +296,8 @@ export default {
       benevoledefi: false, // BENEVOLE OU PAS DEFI
       visitedefi: false, // SIMPLE VISITE DU DEFI
 
-      role: "autre", // ROLE DE L'USER
+      role: null, // ROLE DE L'USER
+      oeuvre_favorite: null,
 
       admin: false, // Si l'utilisateur est ou non administrateur
 
@@ -318,11 +319,12 @@ export default {
       signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
         .then((response) => {
           this.user = response.user;
-          this.message = "Vous êtes connecté sous : " + this.user.email;
+          alert("Vous êtes connecté sous : " + this.user.email);
+          this.$router.push("/");
         })
         .catch((error) => {
           //erreur co
-          this.message = "Erreur connexion :" + error;
+          alert("Erreur : " + error);
         });
     },
 
@@ -351,9 +353,9 @@ export default {
             admin: false,
 
             role: this.role,
+            oeuvre_favorite: this.oeuvre_favorite,
             uiduser: this.uid,
           });
-          this.message = "User créé : " + this.user.email;
 
           signInWithEmailAndPassword(
             getAuth(),
@@ -362,11 +364,14 @@ export default {
           ).then((response) => {
             this.user = response.user;
           });
-          this.message = "Vous êtes connecté sous : " + this.user.email;
+          alert(
+            "Votre compte a été créé avec cette adresse : " + this.user.email
+          );
+          this.$router.push("/");
         })
         .catch((error) => {
           // Erreur de connexion
-          this.message = "Erreur pour la création du compte : " + error;
+          alert("Erreur création du compte : " + error);
         });
     },
 
@@ -379,7 +384,8 @@ export default {
             email: null,
             password: null,
           };
-          this.message = "Vous êtes déconnecté.";
+          alert("Vous avez bien été déconnecté.e!");
+          this.$router.push("/");
         })
         .catch((error) => {
           console.log("erreur  déconnection : ", error);

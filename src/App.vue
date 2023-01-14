@@ -321,6 +321,14 @@ function AlertScroll() {
     >
       Connexion
     </h1>
+    <h1
+      class="uppercase text-center py-2 px-5 mmi-h1 text-beige"
+      :class="{
+        hidden: $route.name != 'vote',
+      }"
+    >
+      VOTER POUR UNE œUVRE
+    </h1>
 
     <h1
       class="uppercase text-center py-2 mmi-h1 px-5"
@@ -370,6 +378,7 @@ function AlertScroll() {
 
   <div
     class="w-fit bottom-0 right-0 flex flex-row-reverse justify-center p-10 items-center gap-3 fixed z-40"
+    v-if="$route.name != 'cadeau'"
   >
     <RouterLink
       :to="{ name: 'profil', params: { id: userInfo[0].uiduser } }"

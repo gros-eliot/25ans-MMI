@@ -256,6 +256,8 @@ export default {
             email: null,
             password: null,
           };
+          alert("Vous avez bien été déconnecté.e!");
+          this.$router.push("/");
         })
         .catch((error) => {
           console.log("erreur  déconnection : ", error);
