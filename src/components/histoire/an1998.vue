@@ -15,9 +15,9 @@ import cercleFrise from "./components/cercleFrise.vue";
         <h2 class="text-bleu mmi-h2">Le bunker</h2>
         <div class="mt-10 flex flex-col gap-4">
           <p>
-            Le bâtiment SRC de l'époque s'agissait d'anciens vestiaires du stade
-            de foot. On comptait trois pièces : deux salles de cours, et une
-            salle pour l'administration (salle des profs, secrétariat).
+            Le bâtiment SRC de l'époque s'agit d'anciens vestiaires du stade de
+            foot. On comptait trois pièces : deux salles de cours, et une salle
+            pour l'administration (salle des profs, secrétariat).
           </p>
           <p>
             Il fallait coloniser des salles un peu partout sur le pôle
