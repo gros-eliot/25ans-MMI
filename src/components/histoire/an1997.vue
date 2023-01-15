@@ -1,6 +1,7 @@
 <script setup>
 import Character from "./components/character.vue";
 import CharacterWithQuote from "./components/characterWithQuote.vue";
+import cercleFrise from "./components/cercleFrise.vue";
 </script>
 
 <template>
@@ -9,13 +10,7 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
   >
     <div class="w-11/12 m-auto flex flex-col gap-20 p-4 text-beige">
       <div class="flex flex-col gap-0">
-        <!--CERCLE FRISE-->
-        <div>
-          <div
-            class="mt-6 w-5 h-5 md:w-9 md:h-9 absolute bg-beige border border-black border-opacity-70 rounded-full inset-x-0 md:inset-x-2 z-[99]"
-          ></div>
-        </div>
-        <!--CERCLE FRISE-->
+        <cercleFrise />
         <h1 class="mmi-h1">1997</h1>
         <h2 class="text-vert mmi-h2">
           A long time ago in a galaxy far, far away...
@@ -74,15 +69,6 @@ import CharacterWithQuote from "./components/characterWithQuote.vue";
         :textColor="'white'"
       ></Character>
     </div>
-
-    <!--
-    <characterWithQuote
-      :srcImage="'JF-Klopfenstein.jpg'"
-      :altImage="'Jean-François Klopfenstein'"
-      :personName="'Jean-François Klopfenstein'"
-      :personDescription="'Fondateur du MMI'"
-      :personQuote="'Je suis un des premiers fondateurs du MMI.'"
-    />-->
   </section>
 
   <!--PARTIE 2-->

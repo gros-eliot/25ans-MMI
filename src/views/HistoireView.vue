@@ -5,6 +5,7 @@ import An1998 from "../components/histoire/an1998.vue";
 import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
 import An2000 from "../components/histoire/an2000.vue";
 import An2004 from "../components/histoire/an2004.vue";
+import An2012 from "../components/histoire/an2012.vue";
 
 function AnimationsHistoire() {
   let valueScroll = window.pageYOffset;
@@ -164,6 +165,68 @@ function AnimationsHistoire() {
     blackScreen.style.display = "none";
   }
 
+  // FONDU IN (2004-2012) ORDI
+  if (screenWidth >= 1100) {
+    if (valueScroll >= 18000) {
+      blackScreen.style.display = "block";
+
+      blackScreen.style.opacity = "20%";
+    }
+    if (valueScroll >= 18100) {
+      blackScreen.style.opacity = "40%";
+    }
+    if (valueScroll >= 18200) {
+      blackScreen.style.opacity = "60%";
+    }
+    if (valueScroll >= 18300) {
+      blackScreen.style.opacity = "100%";
+    }
+
+    //FONDU OUT (2012) ORDI
+
+    if (valueScroll >= 18600) {
+      blackScreen.style.opacity = "80%";
+    }
+    if (valueScroll >= 18800) {
+      blackScreen.style.opacity = "30%";
+    }
+    if (valueScroll >= 18900) {
+      blackScreen.style.opacity = 0;
+      blackScreen.style.display = "none";
+    }
+  }
+
+  // FONDU IN (2004-2012) PHONE
+  if (screenWidth > 600 && screenWidth < 1100) {
+    if (valueScroll >= 19500) {
+      blackScreen.style.display = "block";
+
+      blackScreen.style.opacity = "20%";
+    }
+    if (valueScroll >= 19900) {
+      blackScreen.style.opacity = "40%";
+    }
+    if (valueScroll >= 20000) {
+      blackScreen.style.opacity = "60%";
+    }
+    if (valueScroll >= 20100) {
+      blackScreen.style.opacity = "100%";
+    }
+
+    //FONDU OUT (2012) PHONE
+
+    if (valueScroll >= 20400) {
+      blackScreen.style.opacity = "80%";
+    }
+    if (valueScroll >= 20500) {
+      blackScreen.style.opacity = "30%";
+    }
+    if (valueScroll >= 20600) {
+      blackScreen.style.opacity = 0;
+      blackScreen.style.display = "none";
+    }
+  }
+
   // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE
   // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE
   // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE  // BACKGROUND IMAGE
@@ -202,17 +265,74 @@ function AnimationsHistoire() {
     backgroundHistoire.style.backgroundImage = "url('')";
     backgroundHistoire.style.backgroundColor = "rgb(255 254 246)";
   }
+
+  // before 2012
+  if (screenWidth < 1100) {
+    if (valueScroll >= 20100) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#ff3636";
+    }
+  }
+  if (screenWidth >= 1100) {
+    if (valueScroll >= 18400) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#ff3636";
+    }
+  }
+  // after 2012 (2013)
+  if (screenWidth < 380) {
+    if (valueScroll >= 26000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#6dd678";
+    }
+  }
+  if (screenWidth >= 380 && screenWidth < 700) {
+    if (valueScroll >= 23000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#6dd678";
+    }
+  }
+  if (screenWidth >= 700 && screenWidth < 1100) {
+    if (valueScroll >= 22000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#6dd678";
+    }
+  }
+  if (screenWidth >= 1100) {
+    if (valueScroll >= 21000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#6dd678";
+    }
+  }
+  if (screenWidth >= 1500) {
+    if (valueScroll >= 20000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#6dd678";
+    }
+  }
 }
 
 window.addEventListener("scroll", AnimationsHistoire);
+
+function AlertScroll() {
+  let valueScroll = window.pageYOffset;
+  alert(valueScroll);
+}
 </script>
 
 <template>
-  <div id="topofpage"></div>
   <!--BACKGROUND OF PAGE-->
   <div
     class="histoire-background fixed h-screen w-full -z-[20] inset-0 bg-beige bg-cover bg-origin-padding"
   ></div>
+
+  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
+  <button
+    class="bg-red-500 text-black fixed w-fit h-fit p-1 inset-0 z-50 text-[3px]"
+    @click="AlertScroll()"
+  >
+    Scroll
+  </button>
 
   <!--ECRAN NOIR POUR EFFETS-->
   <div
@@ -292,6 +412,18 @@ window.addEventListener("scroll", AnimationsHistoire);
     <!--SECTION 2004-->
     <div>
       <An2004 />
+    </div>
+    <!--SECTION 2012 & 2013-->
+    <!--SECTION 2012 & 2013-->
+    <!--SECTION 2012 & 2013-->
+    <div>
+      <An2012 class="mt-[60rem]" />
+    </div>
+    <!--SECTION 2015-->
+    <!--SECTION 2015-->
+    <!--SECTION 2015-->
+    <div>
+      <An2015 class="mt-[60rem]" />
     </div>
   </article>
 </template>

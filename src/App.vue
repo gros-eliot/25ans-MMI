@@ -172,11 +172,6 @@ window.addEventListener("scroll", FunctionLine3);
 
 // function page histoire
 window.addEventListener("scroll", histoire);
-
-function AlertScroll() {
-  let valueScroll = window.pageYOffset;
-  alert(valueScroll);
-}
 </script>
 
 <template>
@@ -429,12 +424,4 @@ function AlertScroll() {
     class="timeline-element opacity-50 hidden fixed w-3 h-screen inset-x-1 md:inset-x-5 inset-y-0 bg-beige border-black border-x z-[11]"
     v-if="$route.name === 'histoire'"
   ></div>
-
-  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
-  <button
-    class="bg-red-500 text-black fixed w-fit h-fit p-1 inset-0 z-50 text-[3px]"
-    @click="AlertScroll"
-  >
-    Scroll
-  </button>
 </template>

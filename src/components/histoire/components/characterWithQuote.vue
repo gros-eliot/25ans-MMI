@@ -39,6 +39,7 @@ export default {
     :class="{
       'text-beige': textColor === 'white',
       'text-black': textColor === 'black',
+      'text-black': textColor === 'black-simple',
     }"
   >
     <div class="flex justify-center items-center">
@@ -56,6 +57,7 @@ export default {
         :class="{
           'text-gray-400': textColor === 'white',
           'text-gray-900': textColor === 'black',
+          'text-gray-900': textColor === 'black-simple',
         }"
       >
         // New quote unlocked
@@ -70,6 +72,7 @@ export default {
           :class="{
             'stroke-beige': textColor === 'white',
             'stroke-black': textColor === 'black',
+            'stroke-black': textColor === 'black-simple',
           }"
         ></Topcorner>
 
@@ -80,6 +83,7 @@ export default {
             :class="{
               'animated-quote': textColor === 'white',
               'animated-quote-dark': textColor === 'black',
+              'text-black': textColor === 'black-simple',
             }"
           >
             {{ personQuote }}
@@ -92,6 +96,7 @@ export default {
           :class="{
             'stroke-beige': textColor === 'white',
             'stroke-black': textColor === 'black',
+            'stroke-black': textColor === 'black-simple',
           }"
         ></Bottomcorner>
       </div>
