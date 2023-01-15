@@ -1,3 +1,9 @@
-# Template
+# 25 ANS MMI
 
-This template should help get you started developing with Vue 3 in Vite.
+# Eliot Gros (chef de projet | dev)
+
+# Julie Albini (dev & com)
+
+# Loup Lobato (design)
+
+# Sacha Wicky (design)
