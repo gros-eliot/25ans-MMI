@@ -6,6 +6,7 @@ import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
 import An2000 from "../components/histoire/an2000.vue";
 import An2004 from "../components/histoire/an2004.vue";
 import An2012 from "../components/histoire/an2012.vue";
+import An2015 from "../components/histoire/an2015.vue";
 
 function AnimationsHistoire() {
   let valueScroll = window.pageYOffset;
@@ -340,7 +341,7 @@ function AlertScroll() {
   ></div>
   <!--ECRAN NOIR POUR EFFETS-->
 
-  <article class="flex justify-center items-center flex-col gap-[50rem]">
+  <article class="flex justify-center items-center flex-col gap-[50rem] w-full">
     <!--SECTION D'INTRO-->
     <section
       class="histoire-defilement w-full h-screen flex justify-center items-center"
@@ -423,7 +424,7 @@ function AlertScroll() {
     <!--SECTION 2015-->
     <!--SECTION 2015-->
     <div>
-      <An2015 class="mt-[60rem]" />
+      <An2015 class="mt-[60rem] w-full mx-0" />
     </div>
   </article>
 </template>

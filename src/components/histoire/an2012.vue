@@ -72,4 +72,19 @@ import logoMMI from "@/components/icons/logoMMI.vue";
 
     <logoMMI class="w-32 h-32 stroke-black m-10 lg:w-60 lg:h-52" />
   </article>
+  <!--Personnages débloqués-->
+  <p class="uppercase text-sm italic text-gray-900 text-center">
+    // New characters unlocked
+  </p>
+  <!--Personnages débloqués-->
+
+  <section class="histoire-margins-for-section my-10 w-fit">
+    <character
+      :srcImage="'A-Lamboux_Durand.jpg'"
+      :altImage="'Alain Lamboux-Durand'"
+      :personName="'Alain Lamboux-Durand'"
+      :personDescription="'Enseignant (audiovisuel) | chef du département'"
+      :textColor="'black'"
+    />
+  </section>
 </template>

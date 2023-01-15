@@ -15,7 +15,7 @@ import Profil from "../components/icons/profil.vue";
         <img
           src="../../public/images/funny-version/OFFF.jpg"
           alt="Photo OFFF"
-          class="m-auto 2xl:mmi-photo-4 mmi-photo-2 -rotate-90"
+          class="m-auto 2xl:mmi-photo-4 mmi-photo-2 p-2"
         />
         <div class="2xl:mr-10">
           <div>
@@ -75,13 +75,13 @@ import Profil from "../components/icons/profil.vue";
               class="mmi-photo-2"
             />
           </div>
-          <h3 class="mx-auto hidden 2xl:block mmi-h1">MERCI !!</h3>
+          <h3 class="mx-auto hidden 2xl:block mmi-h1 color-text">MERCI !!</h3>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="flex flex-col gap-10">
+  <div class="flex flex-col gap-10 bg-jaune">
     <div class="mt-10 flex justify-center">
       <h3 class="text-center mmi-h2">LE PLANNING DU WEEK-END</h3>
     </div>
@@ -108,7 +108,7 @@ import Profil from "../components/icons/profil.vue";
 
   <!--Invitation connexion-->
   <div
-    class="grid grid-cols-[10%,90%] justify-items-center items-center justify-center bg-vert w-full text-black p-5 py-10"
+    class="flex flex-col gap-5 md:grid md:grid-cols-[10%,90%] justify-items-center items-center justify-center w-full text-black p-5 py-10"
   >
     <Profil class="h-32 w-32 fill-black" />
     <div class="w-4/5 flex flex-col gap-10">
@@ -118,7 +118,7 @@ import Profil from "../components/icons/profil.vue";
         week-end du 11 et 12 mars, connecter avec votre compte Défi 24h ou 25
         ans MMI !
       </p>
-      <RouterLink to="connexion" class="w-fit m-auto">
+      <RouterLink to="connexion" class="w-fit">
         <button
           class="bg-beige text-black border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 hover:bg-black hover:border-beige hover:text-beige"
         >
@@ -128,3 +128,46 @@ import Profil from "../components/icons/profil.vue";
     </div>
   </div>
 </template>
+<style scoped>
+.color-text {
+  animation: colored-text-animation 3s linear infinite;
+}
+
+@keyframes colored-text-animation {
+  0% {
+    color: #bba7e7;
+  }
+  19% {
+    color: #bba7e7;
+  }
+  20% {
+    color: #ff3636;
+  }
+  39% {
+    color: #ff3636;
+  }
+  40% {
+    color: #6dd678;
+  }
+
+  59% {
+    color: #6dd678;
+  }
+  60% {
+    color: #ffd600;
+  }
+
+  79% {
+    color: #ffd600;
+  }
+  80% {
+    color: black;
+  }
+  99% {
+    color: black;
+  }
+  100% {
+    color: #bba7e7;
+  }
+}
+</style>
