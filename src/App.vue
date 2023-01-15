@@ -336,7 +336,7 @@ window.addEventListener("scroll", histoire);
     <h1
       class="uppercase text-center py-2 mmi-h1 px-5"
       :class="{
-        hidden: $route.name != 'notfound',
+        hidden: $route.name != '404',
       }"
     >
       Erreur 404 - Page non trouvée
@@ -354,7 +354,7 @@ window.addEventListener("scroll", histoire);
         ($route.name === 'crea') |
         ($route.name === 'secret') |
         ($route.name === 'contact') |
-        ($route.name === 'notfound')
+        ($route.name === '404')
     "
   />
   <MiniBatimentMMI
@@ -367,7 +367,7 @@ window.addEventListener("scroll", histoire);
         ($route.name === 'crea') |
         ($route.name === 'secret') |
         ($route.name === 'contact') |
-        ($route.name === 'notfound')
+        ($route.name === '404')
     "
   />
 
