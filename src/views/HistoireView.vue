@@ -9,6 +9,8 @@ import An2012 from "../components/histoire/an2012.vue";
 import An2015 from "../components/histoire/an2015.vue";
 import An2021 from "../components/histoire/an2021.vue";
 import FinFrise from "../components/histoire/FinFrise.vue";
+import MenuMeat from "../components/icons/MenuMeat.vue";
+import { ref } from "vue";
 
 function AnimationsHistoire() {
   let valueScroll = window.pageYOffset;
@@ -410,25 +412,49 @@ function AnimationsHistoire() {
 
 window.addEventListener("scroll", AnimationsHistoire);
 
-function AlertScroll() {
-  let valueScroll = window.pageYOffset;
-  alert(valueScroll);
-}
+const DateNav = ref(true);
 </script>
 
 <template>
+  <!--NAVIGATION PAR MEATBALL-->
+  <div
+    class="w-fit top-0 right-0 flex lg:flex-row-reverse flex-col items-center justify-center p-10 gap-3 fixed z-40"
+  >
+    <button @click="DateNav = !DateNav">
+      <MenuMeat class="w-5 md:w-8 h-5 md:h-8" />
+    </button>
+    <ul
+      class="flex justify-center text-gray-200 drop-shadow-md gap-5"
+      :class="{ hidden: DateNav === true }"
+    >
+      <li>
+        <a href="#an1991">1991</a>
+      </li>
+      <li>
+        <a href="#an1997">1997</a>
+      </li>
+      <li>
+        <a href="#an1998">1998</a>
+      </li>
+      <li>
+        <a href="#an2000">2000</a>
+      </li>
+      <li>
+        <a href="#an2004">2004</a>
+      </li>
+      <li>
+        <a href="#an2012">2012</a>
+      </li>
+      <li>
+        <a href="#an2021">2021</a>
+      </li>
+    </ul>
+  </div>
+
   <!--BACKGROUND OF PAGE-->
   <div
     class="histoire-background fixed h-screen w-full -z-[20] inset-0 bg-beige bg-cover bg-origin-padding"
   ></div>
-
-  <!--DEBOGAGE BUTTON === used to know the scroll(Y) value.-->
-  <button
-    class="bg-red-500 text-black fixed w-fit h-fit p-1 inset-0 z-50 text-[3px]"
-    @click="AlertScroll()"
-  >
-    Scroll
-  </button>
 
   <!--ECRAN NOIR POUR EFFETS-->
   <div
@@ -477,14 +503,14 @@ function AlertScroll() {
     <div
       class="w-full bg-beige bg-opacity-30 flex justify-center items-center py-10"
     >
-      <An1991></An1991>
+      <An1991 id="an1991"></An1991>
     </div>
     <!--SECTION 1991-->
 
     <!--SECTION 1997-->
     <!--SECTION 1997-->
     <!--SECTION 1997-->
-    <div class="mt-[35rem]">
+    <div class="mt-[35rem]" id="an1997">
       <An1997 />
     </div>
     <!--SECTION 1997-->
@@ -492,39 +518,39 @@ function AlertScroll() {
     <!--SECTION 97-98-->
     <!--SECTION 97-98-->
     <!--SECTION 97-98-->
-    <div class="mt-[20rem]">
+    <div class="mt-[20rem]" id="an1998">
       <An1998 />
     </div>
 
     <!--SECTION 2000-->
     <!--SECTION 2000-->
     <!--SECTION 2000-->
-    <div class="mt-[100rem]">
+    <div class="mt-[100rem]" id="an2000">
       <An2000 />
     </div>
 
     <!--SECTION 2004-->
     <!--SECTION 2004-->
     <!--SECTION 2004-->
-    <div>
+    <div id="an2004">
       <An2004 />
     </div>
     <!--SECTION 2012 & 2013-->
     <!--SECTION 2012 & 2013-->
     <!--SECTION 2012 & 2013-->
-    <div>
+    <div id="an2012">
       <An2012 class="mt-[60rem]" />
     </div>
     <!--SECTION 2015-->
     <!--SECTION 2015-->
     <!--SECTION 2015-->
-    <div>
+    <div id="an2015">
       <An2015 class="mt-[60rem] w-full mx-0" />
     </div>
     <!--SECTION 2021-->
     <!--SECTION 2021-->
     <!--SECTION 2021-->
-    <div>
+    <div id="an2021">
       <An2021 class="mt-[30rem] w-full mx-0" />
     </div>
     <!--SECTION FINALE-->
