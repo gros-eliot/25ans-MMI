@@ -245,7 +245,7 @@ function AnimationsHistoire() {
   //
   if (valueScroll >= 500) {
     backgroundHistoire.style.backgroundImage =
-      "linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),url('src/assets/images/histoire/prehistoric 2.jpg')";
+      "linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),url('/images/histoire/prehistoric 2.jpg')";
 
     backgroundHistoire.style.backgroundPosition = "center";
   }
@@ -257,7 +257,7 @@ function AnimationsHistoire() {
   //
   if (valueScroll >= 6500) {
     backgroundHistoire.style.backgroundImage =
-      "linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),url('src/assets/images/histoire/bunker-src.jpg')";
+      "linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),linear-gradient(0deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,1)100%),url('/images/histoire/bunker-src.jpg')";
     backgroundHistoire.style.backgroundColor = "";
   }
 

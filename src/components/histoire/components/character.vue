@@ -51,7 +51,7 @@ export default {
       ></Topcorner>
       <div class="flex justify-center items-center">
         <img
-          :src="'src/assets/images/' + srcImage"
+          :src="'/images/' + srcImage"
           :alt="altImage"
           class="object-cover mmi-photo-3 md:mmi-photo-2 mx-4 animated-img"
         />

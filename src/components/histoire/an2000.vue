@@ -109,7 +109,7 @@ import cercleFrise from "./components/cercleFrise.vue";
     <div>
       <!--Image Nouveau bâtiment-->
       <img
-        src="src/assets/images/histoire/batiment-mmi.jpg"
+        src="/images/histoire/batiment-mmi.jpg"
         alt="Le bunker, présenté par M. Chatonnay"
         class="w-60 md:w-72 h-fit m-10 md:m-2"
       />

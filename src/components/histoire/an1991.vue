@@ -13,7 +13,7 @@
         </p>
       </div>
       <img
-        src="src/assets/images/histoire/mesures-physiques.png"
+        src="/images/histoire/mesures-physiques.png"
         alt="Logo mesure physique"
         class="w-32 m-auto"
       />

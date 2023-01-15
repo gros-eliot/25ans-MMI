@@ -4,7 +4,7 @@ import Profil from "../components/icons/profil.vue";
 
 <template>
   <h2
-    class="bg-cover text-center py-60 bg-[url('src/assets/images/event.jpg')] mmi-h2 text-white"
+    class="bg-cover text-center py-60 bg-[url('/images/event.jpg')] mmi-h2 text-white"
   >
     SAVE THE DATE : 11 ET 12 MARS
   </h2>
@@ -13,7 +13,7 @@ import Profil from "../components/icons/profil.vue";
       <h3 class="mx-auto mmi-h2">L'ÉVÉNEMENT DES 25 ANS</h3>
       <div class="2xl:flex items-center ml-5 2xl:mt-16 2xl:ml-0">
         <img
-          src=" src/assets/images/funny-version/OFFF.jpg"
+          src=" /images/funny-version/OFFF.jpg"
           alt="Photo OFFF"
           class="m-auto 2xl:mmi-photo-4 mmi-photo-2 p-2"
         />
@@ -65,12 +65,12 @@ import Profil from "../components/icons/profil.vue";
           </p>
           <div class="md:flex mx-auto">
             <img
-              src=" src/assets/images/funny-version/Profs.jpg"
+              src=" /images/funny-version/Profs.jpg"
               alt="Photo des professeurs"
               class="mmi-photo-2"
             />
             <img
-              src=" src/assets/images/funny-version/Senente2.jpeg"
+              src=" /images/funny-version/Senente2.jpeg"
               alt="Photo Monsieur Senente"
               class="mmi-photo-2"
             />
