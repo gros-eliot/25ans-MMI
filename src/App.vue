@@ -329,6 +329,14 @@ function AlertScroll() {
     >
       VOTER POUR UNE œUVRE
     </h1>
+    <h1
+      class="uppercase text-center py-2 px-5 mmi-h1 text-rouge"
+      :class="{
+        hidden: $route.name != 'admin',
+      }"
+    >
+      ADMINISTRATION
+    </h1>
 
     <h1
       class="uppercase text-center py-2 mmi-h1 px-5"

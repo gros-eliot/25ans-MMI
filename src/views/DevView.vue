@@ -279,7 +279,7 @@ let removeScroll = ref(false);
             <img
               src="/images/PASDEPHOTO.jpg"
               alt="photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Pierre Pracht</p>
           </div>
@@ -295,7 +295,7 @@ let removeScroll = ref(false);
             <img
               src="/images/PASDEPHOTO.jpg"
               alt="photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Abdallah Makoul</p>
           </div>
@@ -311,7 +311,7 @@ let removeScroll = ref(false);
             <img
               src="/images/PASDEPHOTO.jpg"
               alt="photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Christelle Bloch</p>
           </div>
@@ -319,7 +319,7 @@ let removeScroll = ref(false);
             <img
               src="/images/PASDEPHOTO.jpg"
               alt="photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Robin Heckenauer</p>
           </div>
@@ -327,7 +327,7 @@ let removeScroll = ref(false);
             <img
               src="/images/PASDEPHOTO.jpg"
               alt="photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Isabelle Laforgue</p>
           </div>

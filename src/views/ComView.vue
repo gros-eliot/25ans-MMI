@@ -295,14 +295,14 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/PASDEPHOTO.jpg"
               alt="Photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Bruno Viezzi</p>
           </div>
 
           <div class="flex flex-col gap-3 items-center">
             <div
-              class="bg-bodet1 m-auto lg:m-0 mmi-photo bg-center bg-contain bg-no-repeat transition-all"
+              class="bg-bodet1 m-auto lg:m-0 mmi-photo border-2 border-black bg-center bg-contain bg-no-repeat transition-all"
               :class="{
                 'bg-bodet2': clickedImageBodet === true,
               }"
@@ -316,7 +316,7 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/PASDEPHOTO.jpg"
               alt="Photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Camille Bataille-Barbier</p>
           </div>

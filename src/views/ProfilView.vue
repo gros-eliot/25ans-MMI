@@ -126,14 +126,12 @@
   </form>
 
   <div class="flex justify-center items-center my-20">
-    <a href="#top" class="m-auto text-center w-fit">
-      <button
-        @click.prevent="onDcnx()"
-        class="m-auto text-center w-fit underline text-base"
-      >
-        Déconnexion
-      </button>
-    </a>
+    <button
+      @click.prevent="onDcnx()"
+      class="m-auto text-center w-fit underline text-base"
+    >
+      Déconnexion
+    </button>
   </div>
 </template>
 

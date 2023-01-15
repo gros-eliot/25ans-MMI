@@ -40,6 +40,9 @@ import VoteView from "../views/VoteView.vue"
 
 import PageNotFound from "../views/PageNotFound.vue"
 
+
+import AdminView from "../views/AdminView.vue"
+
 const routes = [
     { path: '/',  name: 'cadeau', component: CadeauView },
     { path: '/home',  name: 'home', component: HomeView },
@@ -58,6 +61,8 @@ const routes = [
 
     { path: '/event',  name: 'event', component: EventView },
     { path: '/histoire',  name: 'histoire', component: HistoireView },
+    
+    { path: '/admin',  name: 'admin', component: AdminView, beforeEnter:guardAdmin },
 
     { path: '/:pathMatch(.*)*',  name: 'notfound', component: PageNotFound },
 ]
@@ -99,6 +104,42 @@ function guardProfil(to, from, next) {
           }else{
             // Utilisateur déjà inscrit : retour accueil
             alert("Vous êtes déjà inscrit!");
+            next({name: "home"});
+            return;
+          }
+      })
+    }
+  });
+}
+
+// On créé un guard : Observateur (fonction) permettant de savoir si un utilisateur
+// a le droit d'utiliser une route
+// paramètres : to : d'où il vient, from où il veut aller, next où il doit aller après contrôle
+function guardAdmin(to, from, next) {
+  // recherche utilisateur connecté
+  getAuth().onAuthStateChanged(function(user) {
+    if(user) {
+      // User connecté
+//      console.log('router OK => user ', user);
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "user");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uiduser", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+          let userInfo = snapshot.docs.map(doc => ( {id:doc.id, ...doc.data()}));
+     
+          /*Création variable accessPage : si null => pas accès au profil. Si remplit => acces au profil */
+          let accesPages=null;
+          accesPages=userInfo[0].admin;
+          if(accesPages === true){
+
+            next(to.params.name);
+            return;
+          }else{
+            // Utilisateur déjà inscrit : retour accueil
+            alert("Erreur accès page : vous devez être administrateur pour avoir accès à cette page.");
             next({name: "home"});
             return;
           }

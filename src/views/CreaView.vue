@@ -301,7 +301,7 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/PASDEPHOTO.jpg"
               alt="Photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Myriam Nicolle</p>
           </div>
@@ -310,7 +310,7 @@ let removeScroll = ref(false);
             <img
               src="../../public/images/PASDEPHOTO.jpg"
               alt="Photo inconnue"
-              class="mmi-photo-2"
+              class="mmi-photo-2 border-2 border-black"
             />
             <p class="font-neuemontreal">Didier Florentz</p>
           </div>

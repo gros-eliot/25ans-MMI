@@ -3,6 +3,7 @@ import Logo from "@/components/icons/logoMMI.vue";
 
 import { ref } from "vue";
 import OeuvreComponent from "@/components/OeuvreComponent.vue";
+import Profil from "../components/icons/profil.vue";
 let clickedImageMalsot = ref(false);
 let clickedImageSenente = ref(false);
 let clickedImageChartogne = ref(false);
@@ -46,9 +47,12 @@ function SetScrollZero() {
     </p>
   </div>
   <!--2525252525-->
+
+  <!--DIV : HISTOIRE-->
   <div
-    class="text-center flex flex-col gap-10 bg-black w-full text-beige py-5 my-20 overflow-x-hidden"
+    class="text-center flex flex-col gap-10 bg-black w-full text-beige p-3 md:p-5 overflow-x-hidden"
   >
+    <!--lignes de vitesse-->
     <section>
       <!--lignes de vitesse-->
       <div
@@ -65,16 +69,15 @@ function SetScrollZero() {
       Découvrez l'histoire du MMI depuis sa fondation grâce à une frise
       interactive.
     </p>
-    <RouterLink to="histoire">
-      <a href="#top">
-        <button
-          class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-beige text-beige"
-        >
-          Découvrir
-        </button>
-      </a>
+    <RouterLink to="histoire" class="w-fit m-auto">
+      <button
+        class="bg-beige text-black border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 hover:bg-black hover:border-beige hover:text-beige"
+      >
+        Découvrir
+      </button>
     </RouterLink>
 
+    <!--lignes de vitesse-->
     <section>
       <!--lignes de vitesse-->
       <div
@@ -86,6 +89,56 @@ function SetScrollZero() {
       ></div>
     </section>
   </div>
+  <!--DIV : HISTOIRE-->
+
+  <!--ARTICLE : CONNEXION & EVENEMENT-->
+
+  <article
+    class="w-full grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 justify-items-center items-end bg-jaune"
+  >
+    <!--DIV : CONNEXION -->
+    <div
+      class="text-center flex flex-col items-center gap-10 w-full text-black p-3 md:p-5 overflow-x-hidden"
+    >
+      <Profil class="w-16 h-16 fill-black" />
+      <h2 class="mmi-h2">Connexion</h2>
+      <p>
+        Pour voter pour une œuvre, ou vous inscrire pour les évènements du
+        week-end du 11 et 12 mars, connectez-vous avec votre compte Défi 24h ou
+        25 ans MMI !
+      </p>
+      <RouterLink to="connexion" class="w-fit m-auto">
+        <button
+          class="bg-beige text-black border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 hover:bg-black hover:border-beige hover:text-beige"
+        >
+          Me connecter
+        </button>
+      </RouterLink>
+    </div>
+    <!--DIV : CONNEXION -->
+
+    <!--DIV : EVENT -->
+    <div
+      class="text-center flex flex-col gap-10 bg-bleu w-full text-black p-3 md:p-5 overflow-x-hidden"
+    >
+      <h2 class="mmi-h2">25 ans MMI&nbsp;: l'évènement</h2>
+      <p>
+        Pour fêter dignement ces 25 années passées ensemble à construire le
+        département MMI que nous connaissons aujourd'hui, toutes les générations
+        sont invitées à participer au week-end organisé !
+      </p>
+      <RouterLink to="event" class="w-fit m-auto">
+        <button
+          class="bg-beige text-black border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 hover:bg-black hover:border-beige hover:text-beige"
+        >
+          L'événement
+        </button>
+      </RouterLink>
+    </div>
+    <!--DIV : EVENT -->
+  </article>
+  <!--ARTICLE : CONNEXION & EVENEMENT-->
+  <!--ARTICLE : CONNEXION & EVENEMENT-->
 
   <div class="flex flex-col gap-10 p-6 md:p-10">
     <section
@@ -501,93 +554,9 @@ function SetScrollZero() {
       <!--fin cadre-->
     </div>
   </div>
-
-  <!--Invitation Connexion-->
-
-  <div
-    class="text-center flex flex-col gap-10 bg-white w-full text-black py-5 my-20 overflow-x-hidden"
-  >
-    <section>
-      <!--lignes de vitesse-->
-      <div
-        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines1"
-      ></div>
-      <!--lignes de vitesse-->
-      <div
-        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines2"
-      ></div>
-    </section>
-
-    <h2 class="mmi-h2">Connectez-vous !</h2>
-    <p>
-      Pour voter pour une oeuvre ou vous inscrire aux différents événements
-      du week-end du 11 et 12 mars, connecter avec votre compte Défi 24h ou 25 ans MMI !
-    </p>
-    <RouterLink to="connexion">
-      <a href="#top">
-        <button
-          class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-black text-beige"
-        >
-          Me connecter
-        </button>
-      </a>
-    </RouterLink>
-
-    <section>
-      <div
-        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines3"
-      ></div>
-      <!--lignes de vitesse-->
-      <div
-        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines4"
-      ></div>
-    </section>
-  </div>
-
-  <!--Invitation Event-->
-  <div
-    class="text-center flex flex-col gap-10 bg-event w-full text-white py-5 my-20 overflow-x-hidden"
-  >
-    <section>
-      <!--lignes de vitesse-->
-      <div
-        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines1"
-      ></div>
-      <!--lignes de vitesse-->
-      <div
-        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines2"
-      ></div>
-    </section>
-
-    <h2 class="mmi-h2">Participez à l'événement 25 ans MMI !</h2>
-    <p class="mx-20">
-      Pour fêter dignement ces 25 années passées ensemble à construire le 
-      département MMI que nous connaissons aujourd'hui, toutes les générations 
-      MMI sont invitées à participer au week-end organisé !
-    </p>
-    <RouterLink to="event">
-      <a href="#top">
-        <button
-          class="hover:bg-beige hover:text-black hover:border-black border-t border-l-4 border-b-4 border-r px-5 py-2 font-bold z-10 bg-black border-beige text-beige"
-        >
-          L'événement
-        </button>
-      </a>
-    </RouterLink>
-
-    <section>
-      <div
-        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines3"
-      ></div>
-      <!--lignes de vitesse-->
-      <div
-        class="w-1/2 overflow-hidden my-4 bg-black h-1 opacity-20 lines4"
-      ></div>
-    </section>
-  </div>
 </template>
 
-<style scoped>
+<style>
 .lines1 {
   overflow: hidden;
   animation: movinglines1 3s linear infinite;
