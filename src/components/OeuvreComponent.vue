@@ -59,10 +59,7 @@
             Voter pour cette oeuvre ♥
           </button>
         </RouterLink>
-        <img
-          :src="` src/assets/images/oeuvres/${sourceImage}`"
-          class="w-full"
-        />
+        <img :src="`src/assets/images/oeuvres/${sourceImage}`" class="w-full" />
         <h3 class="mmi-h2">
           {{ nom }}
         </h3>
