@@ -23,17 +23,17 @@ module.exports = {
         'galerie-profs-2': "repeat(auto-fit,minmax(300px,1fr))",
       },
       backgroundImage: {
-        'malsot1' : "url('src/images/D-Malsot.jpg')",
-        'malsot2' : "url('src/images/funny-version/Malsot.jpeg')",
-        'senente1' : "url('src/images/X-SENENTE.jpg')",
-        'senente2' : "url('src/images/funny-version/Senente1.jpeg')",
-        'chatonnay1' : "url('src/images/P-Chatonnay.jpg')",
-        'chatonnay2' : "url('src/images/funny-version/Chatonnay.jpeg')",
-        'chartogne1' : "url('src/images/E-Chartogne.jpg')",
-        'chartogne2' : "url('src/images/funny-version/Chartogne.jpeg')",
-        'bodet1' : "url('src/images/PASDEPHOTO.jpg')",
-        'bodet2' : "url('src/images/funny-version/Bodet.jpeg')",
-        'event' : "url('src/images/event.jpg')"
+        'malsot1' : "url('src/assets/images/D-Malsot.jpg')",
+        'malsot2' : "url('src/assets/images/funny-version/Malsot.jpeg')",
+        'senente1' : "url('src/assets/images/X-SENENTE.jpg')",
+        'senente2' : "url('src/assets/images/funny-version/Senente1.jpeg')",
+        'chatonnay1' : "url('src/assets/images/P-Chatonnay.jpg')",
+        'chatonnay2' : "url('src/assets/images/funny-version/Chatonnay.jpeg')",
+        'chartogne1' : "url('src/assets/images/E-Chartogne.jpg')",
+        'chartogne2' : "url('src/assets/images/funny-version/Chartogne.jpeg')",
+        'bodet1' : "url('src/assets/images/PASDEPHOTO.jpg')",
+        'bodet2' : "url('src/assets/images/funny-version/Bodet.jpeg')",
+        'event' : "url('src/assets/images/event.jpg')"
 
         
       }

@@ -50,7 +50,7 @@
     <div
       class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
       :style="{
-        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('src/images/oeuvres/oeuvre1.jpg')`,
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('src/assets/images/oeuvres/oeuvre1.jpg')`,
       }"
     >
       <div
@@ -76,7 +76,7 @@
     <div
       class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
       :style="{
-        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('src/images/oeuvres/oeuvre2.jpg')`,
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('src/assets/images/oeuvres/oeuvre2.jpg')`,
       }"
     >
       <div
@@ -102,7 +102,7 @@
     <div
       class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
       :style="{
-        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('src/images/oeuvres/oeuvre3.jpg')`,
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('src/assets/images/oeuvres/oeuvre3.jpg')`,
       }"
     >
       <div

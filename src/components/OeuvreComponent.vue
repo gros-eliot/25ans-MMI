@@ -2,7 +2,7 @@
   <button>
     <section
       :style="{
-        backgroundImage: `url(' src/images/oeuvres/${sourceImage}')`,
+        backgroundImage: `url(' src/assets/images/oeuvres/${sourceImage}')`,
       }"
       class="w-full h-full bg-cover bg-center"
       @mouseenter="descriptionVisible = !descriptionVisible"
@@ -59,7 +59,10 @@
             Voter pour cette oeuvre ♥
           </button>
         </RouterLink>
-        <img :src="` src/images/oeuvres/${sourceImage}`" class="w-full" />
+        <img
+          :src="` src/assets/images/oeuvres/${sourceImage}`"
+          class="w-full"
+        />
         <h3 class="mmi-h2">
           {{ nom }}
         </h3>

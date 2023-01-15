@@ -6,7 +6,7 @@ import cercleFrise from "./components/cercleFrise.vue";
 
 <template>
   <article
-    class="w-full pt-20 bg-[linear-gradient(90deg,rgba(0,0,0,0.6)0%,rgba(0,0,0,0.9)100%),url('src/images/histoire/projet.jpg')] bg-cover bg-center"
+    class="w-full pt-20 bg-[linear-gradient(90deg,rgba(0,0,0,0.6)0%,rgba(0,0,0,0.9)100%),url('src/assets/images/histoire/projet.jpg')] bg-cover bg-center"
   >
     <section
       class="text-white flex justify-items-center items-center justify-center w-full"
