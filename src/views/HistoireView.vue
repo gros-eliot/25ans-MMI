@@ -424,7 +424,7 @@ const DateNav = ref(true);
       <MenuMeat class="w-5 md:w-8 h-5 md:h-8 drop-shadow-md" />
     </button>
     <ul
-      class="flex justify-center text-gray-200 drop-shadow-md gap-5"
+      class="flex justify-center flex-col md:flex-row text-gray-200 drop-shadow-md gap-5"
       :class="{ hidden: DateNav === true }"
     >
       <li>
