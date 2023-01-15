@@ -335,7 +335,7 @@ function AlertScroll() {
         hidden: $route.name != 'admin',
       }"
     >
-      ADMINISTRATION
+      PAGE ADMIN'
     </h1>
 
     <h1

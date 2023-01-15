@@ -210,7 +210,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("userInfo", this.userInfo);
+
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
         this.uiduser = this.userInfo[0].uiduser;
