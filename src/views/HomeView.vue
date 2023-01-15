@@ -187,7 +187,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/A-Lamboux_Durand.jpg"
+          src="src/images/A-Lamboux_Durand.jpg"
           alt="Alain Lamboux-Durand"
           class="mmi-photo-2 object-cover"
         />
@@ -266,7 +266,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/JM-Fino.jpg"
+          src="src/images/JM-Fino.jpg"
           alt="Jean-Marie FINO"
           class="mmi-photo-2 object-cover"
         />
@@ -280,7 +280,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/L-Dubois.jpg"
+          src="src/images/L-Dubois.jpg"
           alt="Lydia DUBOIS"
           class="mmi-photo-2 object-cover"
         />
@@ -294,7 +294,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/S-Augier.jpg"
+          src="src/images/S-Augier.jpg"
           alt="Sébastien AUGIER"
           class="mmi-photo-2 object-cover"
         />
@@ -307,7 +307,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/S-Laurent.jpg"
+          src="src/images/S-Laurent.jpg"
           alt="Stéphane LAURENT"
           class="mmi-photo-2 object-cover"
         />
@@ -320,7 +320,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/Q-Gianella.jpg"
+          src="src/images/Q-Gianella.jpg"
           alt="Quentin GIANELLA"
           class="mmi-photo-2 object-cover"
         />
@@ -333,7 +333,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/JC-Domenget.jpg"
+          src="src/images/JC-Domenget.jpg"
           alt="Jean-Claude DOMENGET"
           class="mmi-photo-2 object-cover"
         />
@@ -346,7 +346,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/H-Mabed.jpg"
+          src="src/images/H-Mabed.jpg"
           alt="Hakim MABED"
           class="mmi-photo-2 object-cover"
         />
@@ -359,7 +359,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/W-Yvart.jpg"
+          src="src/images/W-Yvart.jpg"
           alt="Willy YVART"
           class="mmi-photo-2 object-cover"
         />
@@ -372,7 +372,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/T-Hulin.jpg"
+          src="src/images/T-Hulin.jpg"
           alt="Thibaud HULIN"
           class="mmi-photo-2 object-cover"
         />
@@ -386,7 +386,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Christelle BLOCH"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -400,7 +400,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Christelle BLOCH"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -414,7 +414,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Abdallah MAKHOUL"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -428,7 +428,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Bruno VIEZZI"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -442,7 +442,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Myriam NICOLLE"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -471,7 +471,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Camille BATAILLE-BARBIER"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -485,7 +485,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Robin HECKENAUER"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -499,7 +499,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Didier FLORENTZ"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -512,7 +512,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Isabelle LAFORGUE"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -526,7 +526,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Annie STEMPHELET"
           class="mmi-photo-2 object-cover border-4 border-black"
         />
@@ -540,7 +540,7 @@ function SetScrollZero() {
       <!--cadre-->
       <div class="prof-homepage">
         <img
-          src="/images/PASDEPHOTO.jpg"
+          src="src/images/PASDEPHOTO.jpg"
           alt="Thierry HUFSCHMIDT"
           class="mmi-photo-2 object-cover border-4 border-black"
         />

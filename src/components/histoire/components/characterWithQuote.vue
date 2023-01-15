@@ -44,7 +44,7 @@ export default {
   >
     <div class="flex justify-center items-center">
       <img
-        :src="'/images/' + srcImage"
+        :src="'src/images/' + srcImage"
         :alt="altImage"
         class="object-cover object-center mmi-photo-3 md:mmi-photo-2 mx-4 animated-img"
       />

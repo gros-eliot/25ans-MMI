@@ -265,7 +265,7 @@ let removeScroll = ref(false);
         <div class="grid grid-cols-galerie-profs-2 gap-2 w-full">
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/A-Lamboux_Durand.jpg"
+              src=" src/images/A-Lamboux_Durand.jpg"
               alt="photo Monsieur Lamboux-Durant"
               class="mmi-photo-2"
             />
@@ -274,7 +274,7 @@ let removeScroll = ref(false);
 
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/S-Augier.jpg"
+              src=" src/images/S-Augier.jpg"
               alt="Photo Monsieur Augier"
               class="mmi-photo-2"
             />
@@ -283,7 +283,7 @@ let removeScroll = ref(false);
 
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/Q-Gianella.jpg"
+              src=" src/images/Q-Gianella.jpg"
               alt="Photo Monsieur Gianella"
               class="mmi-photo-2"
             />
@@ -291,7 +291,7 @@ let removeScroll = ref(false);
           </div>
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/T-Hulin.jpg"
+              src=" src/images/T-Hulin.jpg"
               alt="Photo Monsieur Hulin"
               class="mmi-photo-2 object-cover object-center"
             />
@@ -299,7 +299,7 @@ let removeScroll = ref(false);
           </div>
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/PASDEPHOTO.jpg"
+              src=" src/images/PASDEPHOTO.jpg"
               alt="Photo inconnue"
               class="mmi-photo-2 border-2 border-black"
             />
@@ -308,7 +308,7 @@ let removeScroll = ref(false);
 
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/PASDEPHOTO.jpg"
+              src=" src/images/PASDEPHOTO.jpg"
               alt="Photo inconnue"
               class="mmi-photo-2 border-2 border-black"
             />

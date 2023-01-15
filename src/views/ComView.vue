@@ -268,7 +268,7 @@ let removeScroll = ref(false);
         <div class="grid grid-cols-galerie-profs-2 gap-10 w-full">
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/L-Dubois.jpg"
+              src=" src/images/L-Dubois.jpg"
               alt="Photo Madame Dubois"
               class="mmi-photo-2"
             />
@@ -277,7 +277,7 @@ let removeScroll = ref(false);
 
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/JC-Domenget.jpg"
+              src=" src/images/JC-Domenget.jpg"
               alt="photo Monsieur Domenget"
               class="mmi-photo-2"
             />
@@ -285,7 +285,7 @@ let removeScroll = ref(false);
           </div>
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/S-Laurent.jpg"
+              src=" src/images/S-Laurent.jpg"
               alt="Photo Monsieur Laurent"
               class="mmi-photo-2"
             />
@@ -293,7 +293,7 @@ let removeScroll = ref(false);
           </div>
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/PASDEPHOTO.jpg"
+              src=" src/images/PASDEPHOTO.jpg"
               alt="Photo inconnue"
               class="mmi-photo-2 border-2 border-black"
             />
@@ -314,7 +314,7 @@ let removeScroll = ref(false);
 
           <div class="flex flex-col gap-3 items-center">
             <img
-              src="../../public/images/PASDEPHOTO.jpg"
+              src=" src/images/PASDEPHOTO.jpg"
               alt="Photo inconnue"
               class="mmi-photo-2 border-2 border-black"
             />

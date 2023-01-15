@@ -34,7 +34,7 @@ import cercleFrise from "./components/cercleFrise.vue";
     <div>
       <!--Image M. Chatonnay-->
       <img
-        src="/images/histoire/bunker-chatonnay.jpg"
+        src="src/images/histoire/bunker-chatonnay.jpg"
         alt="Le bunker, présenté par M. Chatonnay"
         class="w-40 md:w-72 xl:w-96 h-fit m-10 md:m-4"
       />

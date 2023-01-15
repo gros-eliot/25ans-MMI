@@ -9,14 +9,14 @@
       <div class="flex gap-5 items-center">
         <a href="https://discord.gg/nvNsDkZERR">
           <img
-            src="/images/discord.png"
+            src="src/images/discord.png"
             alt="logo discord"
             class="pt-10 md:pt-0"
           />
         </a>
         <a href="https://www.instagram.com/mmi25ans/">
           <img
-            src="/images/instagram.svg"
+            src="src/images/instagram.svg"
             class="pt-10 md:pt-0"
             alt="logo instagram"
           />

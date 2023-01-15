@@ -38,7 +38,7 @@ import EventView from "../views/EventView.vue"
 import HistoireView from "../views/HistoireView.vue"
 import VoteView from "../views/VoteView.vue"
 
-import PageNotFound from "../views/PageNotFound.vue"
+import PageNotFound from "../views/404.vue"
 
 
 import AdminView from "../views/AdminView.vue"
@@ -64,7 +64,7 @@ const routes = [
     
     { path: '/admin',  name: 'admin', component: AdminView, beforeEnter:guardAdmin },
 
-    { path: '/:pathMatch(.*)*',  name: 'notfound', component: PageNotFound },
+    { path: '/:pathMatch(.*)*',  name: '404', component: PageNotFound },
 ]
 
 const router = createRouter({

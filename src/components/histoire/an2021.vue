@@ -7,7 +7,7 @@ import logoMMI from "@/components/icons/logoMMI.vue";
 
 <template>
   <article
-    class="w-full flex flex-col py-10 items-center justify-end bg-[linear-gradient(90deg,rgba(187,167,231,0.9)0%,rgba(187,167,231,0.9)100%),url('/images/histoire/offf-frame.jpg')] bg-cover bg-bottom bg-no-repeat"
+    class="w-full flex flex-col py-10 items-center justify-end bg-[linear-gradient(90deg,rgba(187,167,231,0.9)0%,rgba(187,167,231,0.9)100%),url('src/images/histoire/offf-frame.jpg')] bg-cover bg-bottom bg-no-repeat"
   >
     <section class="text-black flex items-center justify-center w-full">
       <div class="w-11/12 m-auto flex flex-col p-4">
