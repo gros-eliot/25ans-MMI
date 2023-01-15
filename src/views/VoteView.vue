@@ -156,9 +156,6 @@ import {
 
 import {
   getAuth, // Fonction générale d'authentification
-  signInWithEmailAndPassword, // Se connecter avec un email + mot de passe
-  createUserWithEmailAndPassword, // créer un user
-  signOut, // Se deconnecter
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
 
 export default {

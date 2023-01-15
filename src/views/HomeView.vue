@@ -93,12 +93,10 @@ function SetScrollZero() {
 
   <!--ARTICLE : CONNEXION & EVENEMENT-->
 
-  <article
-    class="w-full grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 justify-items-center items-end bg-jaune"
-  >
+  <article class="w-full flex flex-col items-end bg-jaune">
     <!--DIV : CONNEXION -->
     <div
-      class="text-center flex flex-col items-center gap-10 w-full text-black p-3 md:p-5 overflow-x-hidden"
+      class="text-center flex flex-col items-center gap-3 w-full text-black p-3 md:p-5 overflow-x-hidden"
     >
       <Profil class="w-16 h-16 fill-black" />
       <h2 class="mmi-h2">Connexion</h2>
@@ -119,7 +117,7 @@ function SetScrollZero() {
 
     <!--DIV : EVENT -->
     <div
-      class="text-center flex flex-col gap-10 bg-bleu w-full text-black p-3 md:p-5 overflow-x-hidden"
+      class="text-center flex flex-col gap-6 bg-bleu w-full text-black p-3 md:p-5 overflow-x-hidden"
     >
       <h2 class="mmi-h2">25 ans MMI&nbsp;: l'évènement</h2>
       <p>
