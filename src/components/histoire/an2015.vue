@@ -13,16 +13,26 @@ import logoMMI from "@/components/icons/logoMMI.vue";
       <div class="w-11/12 m-auto flex flex-col p-4">
         <cercleFrise />
         <h1 class="mmi-h1">2015</h1>
-        <div class="flex flex-col gap-0">
+        <div class="flex flex-col gap-5">
           <h2 class="text-black mmi-h2 mt-10">
             Premier partenariat avec le OFFF
           </h2>
 
-          <p class="mt-10">
-            <strong>
-              C'est au début des années 2000 que l'on découvre les premières
-              débouchés pour les métiers du multimédia et de l'internet </strong
-            >. SRC va donc bâtir son enseignement autour de ces avancées.
+          <p>
+            Le OFFF, festival international du design et du digital. Le MMI y
+            est désormais convié chaque année, à Barcelone.
+          </p>
+
+          <p>
+            Le MMI de Montbéliard a réussi avec le OFFF à développer une
+            présence internationale ! Mais aussi grâce aux stages à l'étranger,
+            et les différentes écoles du digitale (CÉGEP) à Matane ou à Vanier,
+            au Canada.
+          </p>
+
+          <p>
+            Les premiers échanges au Canada auraient d'ailleurs commencé durant
+            l'année universitaire de 2007-2008.
           </p>
         </div>
       </div>

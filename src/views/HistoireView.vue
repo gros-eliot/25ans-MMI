@@ -1,12 +1,14 @@
 <script setup>
+import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
 import An1991 from "@/components/histoire/an1991.vue";
 import An1997 from "@/components/histoire/an1997.vue";
 import An1998 from "../components/histoire/an1998.vue";
-import mouseIcon from "@/components/histoire/components/mouseIcon.vue";
 import An2000 from "../components/histoire/an2000.vue";
 import An2004 from "../components/histoire/an2004.vue";
 import An2012 from "../components/histoire/an2012.vue";
 import An2015 from "../components/histoire/an2015.vue";
+import An2021 from "../components/histoire/an2021.vue";
+import FinFrise from "../components/histoire/FinFrise.vue";
 
 function AnimationsHistoire() {
   let valueScroll = window.pageYOffset;
@@ -311,6 +313,99 @@ function AnimationsHistoire() {
       backgroundHistoire.style.backgroundColor = "#6dd678";
     }
   }
+  //  2015
+  if (screenWidth < 380) {
+    if (valueScroll >= 28000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#ffd600";
+    }
+  }
+  if (screenWidth >= 380 && screenWidth < 700) {
+    if (valueScroll >= 25000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#ffd600";
+    }
+  }
+  if (screenWidth >= 700 && screenWidth < 1100) {
+    if (valueScroll >= 24000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#ffd600";
+    }
+  }
+  if (screenWidth >= 1100) {
+    if (valueScroll >= 23000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#ffd600";
+    }
+  }
+  if (screenWidth >= 1500) {
+    if (valueScroll >= 22000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#ffd600";
+    }
+  }
+  //  2021
+  if (screenWidth < 380) {
+    if (valueScroll >= 30000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#bba7e7";
+    }
+  }
+  if (screenWidth >= 380 && screenWidth < 700) {
+    if (valueScroll >= 27000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#bba7e7";
+    }
+  }
+  if (screenWidth >= 700 && screenWidth < 1100) {
+    if (valueScroll >= 26000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#bba7e7";
+    }
+  }
+  if (screenWidth >= 1100) {
+    if (valueScroll >= 25000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#bba7e7";
+    }
+  }
+  if (screenWidth >= 1500) {
+    if (valueScroll >= 24000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "#bba7e7";
+    }
+  }
+  // final
+  if (screenWidth < 380) {
+    if (valueScroll >= 32000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "black";
+    }
+  }
+  if (screenWidth >= 380 && screenWidth < 700) {
+    if (valueScroll >= 29000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "black";
+    }
+  }
+  if (screenWidth >= 700 && screenWidth < 1100) {
+    if (valueScroll >= 28000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "black";
+    }
+  }
+  if (screenWidth >= 1100) {
+    if (valueScroll >= 27000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "black";
+    }
+  }
+  if (screenWidth >= 1500) {
+    if (valueScroll >= 26000) {
+      backgroundHistoire.style.backgroundImage = "url('')";
+      backgroundHistoire.style.backgroundColor = "black";
+    }
+  }
 }
 
 window.addEventListener("scroll", AnimationsHistoire);
@@ -425,6 +520,18 @@ function AlertScroll() {
     <!--SECTION 2015-->
     <div>
       <An2015 class="mt-[60rem] w-full mx-0" />
+    </div>
+    <!--SECTION 2021-->
+    <!--SECTION 2021-->
+    <!--SECTION 2021-->
+    <div>
+      <An2021 class="mt-[30rem] w-full mx-0" />
+    </div>
+    <!--SECTION FINALE-->
+    <!--SECTION FINALE-->
+    <!--SECTION FINALE-->
+    <div>
+      <FinFrise class="mt-[30rem] w-full mx-0" />
     </div>
   </article>
 </template>
