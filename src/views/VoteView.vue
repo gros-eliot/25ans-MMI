@@ -50,7 +50,7 @@
     <div
       class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
       :style="{
-        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/tests/oeuvre1.jpg')`,
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/finales/exodia-lilian-chesneau.jpg')`,
       }"
     >
       <div
@@ -59,16 +59,16 @@
         <input
           type="radio"
           class="w-6 h-6"
-          value="oeuvre1"
+          value="Exodia"
           v-model="oeuvre_favorite"
         />
         <label
           class="text-2xl md:text-4xl font-bold font-inter tracking-tighter text-white drop-shadow-lg"
         >
-          Oeuvre 1
+          Exodia
         </label>
       </div>
-      <p class="text-white drop-shadow-xl">Midjourney</p>
+      <p class="text-white drop-shadow-xl">Lilian Chesneau</p>
     </div>
     <!--OEUVRE 1-->
 
@@ -76,7 +76,7 @@
     <div
       class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
       :style="{
-        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/tests/oeuvre2.jpg')`,
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/finales/open_ur_mind-justine-emond.jpg')`,
       }"
     >
       <div
@@ -85,16 +85,16 @@
         <input
           type="radio"
           class="w-6 h-6"
-          value="oeuvre2"
+          value="Open Ur Mind"
           v-model="oeuvre_favorite"
         />
         <label
           class="text-2xl md:text-4xl font-bold font-inter tracking-tighter text-white drop-shadow-lg"
         >
-          Oeuvre 2
+          Open Ur Mind
         </label>
       </div>
-      <p class="text-white drop-shadow-xl">Midjourney</p>
+      <p class="text-white drop-shadow-xl">Justine Emond</p>
     </div>
     <!--OEUVRE 2-->
 
@@ -102,7 +102,7 @@
     <div
       class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
       :style="{
-        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/tests/oeuvre3.jpg')`,
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/finales/reussir-sami-ghorzi.jpg')`,
       }"
     >
       <div
@@ -111,18 +111,68 @@
         <input
           type="radio"
           class="w-6 h-6"
-          value="oeuvre3"
+          value="Reussir"
           v-model="oeuvre_favorite"
         />
         <label
           class="text-2xl md:text-4xl font-bold font-inter tracking-tighter text-white drop-shadow-lg"
         >
-          Oeuvre 3 avec un nom plus long que les autres pour la démonstration.
+          Réussir
         </label>
       </div>
-      <p class="text-white drop-shadow-xl">Anonyme</p>
+      <p class="text-white drop-shadow-xl">Sami Ghorzi</p>
     </div>
     <!--OEUVRE 3-->
+    <!--OEUVRE 4-->
+    <div
+      class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
+      :style="{
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/finales/heart_shape-mathilde-vauquieres.png')`,
+      }"
+    >
+      <div
+        class="grid justify-items-center items-center grid-cols-[2%,98%] gap-5"
+      >
+        <input
+          type="radio"
+          class="w-6 h-6"
+          value="Heart Shape"
+          v-model="oeuvre_favorite"
+        />
+        <label
+          class="text-2xl md:text-4xl font-bold font-inter tracking-tighter text-white drop-shadow-lg"
+        >
+          Heart Shape
+        </label>
+      </div>
+      <p class="text-white drop-shadow-xl">Mathilde Vauquieres</p>
+    </div>
+    <!--OEUVRE 4-->
+    <!--OEUVRE 5-->
+    <div
+      class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
+      :style="{
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/finales/summer-sacha-wicky.jpg')`,
+      }"
+    >
+      <div
+        class="grid justify-items-center items-center grid-cols-[2%,98%] gap-5"
+      >
+        <input
+          type="radio"
+          class="w-6 h-6"
+          value="Summer"
+          v-model="oeuvre_favorite"
+        />
+        <label
+          class="text-2xl md:text-4xl font-bold font-inter tracking-tighter text-white drop-shadow-lg"
+        >
+          Summer
+        </label>
+      </div>
+      <p class="text-white drop-shadow-xl">Sacha Wicky</p>
+    </div>
+    <!--OEUVRE 5-->
 
     <div class="m-auto w-fit">
       <button

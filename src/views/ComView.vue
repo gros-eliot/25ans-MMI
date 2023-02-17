@@ -8,144 +8,24 @@ let removeScroll = ref(false);
 
 <template>
   <article class="m-5 md:m-10">
-    <!--OEUVRES MOBILE-->
-    <section class="w-11/12 m-auto my-10 md:hidden">
-      <div class="h-screen">
-        <div class="grid grid-cols-2 grid-rows-4 h-full">
-          <OeuvreComponent
-            :sourceImage="'oeuvre8.jpg'"
-            :auteur="'MoiIci'"
-            :idImage="'123ABC'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <OeuvreComponent
-            :sourceImage="'oeuvre1.jpg'"
-            :auteur="'Moi'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <OeuvreComponent
-            :sourceImage="'oeuvre2.jpg'"
-            :auteur="'Moi'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <OeuvreComponent
-            :sourceImage="'oeuvre3.jpg'"
-            :auteur="'Moi'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <OeuvreComponent
-            :sourceImage="'oeuvre4.jpg'"
-            :auteur="'Moi'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <!--
-                SI UNE NEUVIEME OEUVRE EST A AFFICHER !!
-              <OeuvreComponent
-                :sourceImage="'oeuvre-test.jpg'"
-                :auteur="'Moi'"
-                :nom="'Testeur'"
-                :description="'Cette oeuvre a été réalisée par Y.'"
-              />
-              -->
-          <OeuvreComponent
-            :sourceImage="'oeuvre5.jpg'"
-            :auteur="'Moi'"
-            :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <OeuvreComponent
-            :sourceImage="'oeuvre6.jpg'"
-            :auteur="'Moi'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <OeuvreComponent
-            :sourceImage="'oeuvre7.jpg'"
-            :auteur="'Moi'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!--OEUVRES TAB,ORDI,+-->
-    <section class="w-11/12 m-auto my-10 hidden md:block">
-      <div class="flex flex-col gap-0 h-screen">
-        <div class="grid grid-cols-[60%_40%] h-2/3">
-          <div class="grid grid-rows-[55%_45%]">
-            <div class="grid grid-cols-2">
-              <OeuvreComponent
-                :sourceImage="'oeuvre8.jpg'"
-                :auteur="'MoiIci'"
-                :idImage="'123ABC'"
-                :nom="'Testeur'"
-                :description="'Cette oeuvre a été réalisée par Y.'"
-              />
-              <OeuvreComponent
-                :sourceImage="'oeuvre1.jpg'"
-                :auteur="'Moi'"
-                :nom="'Testeur'"
-                :description="'Cette oeuvre a été réalisée par Y.'"
-              />
-            </div>
-            <OeuvreComponent
-              :sourceImage="'oeuvre2.jpg'"
-              :auteur="'Moi'"
-              :nom="'Testeur'"
-              :description="'Cette oeuvre a été réalisée par Y.'"
-            />
-          </div>
-          <div class="grid grid-rows-2">
-            <OeuvreComponent
-              :sourceImage="'oeuvre3.jpg'"
-              :auteur="'Moi'"
-              :nom="'Testeur'"
-              :description="'Cette oeuvre a été réalisée par Y.'"
-            />
-            <OeuvreComponent
-              :sourceImage="'oeuvre4.jpg'"
-              :auteur="'Moi'"
-              :nom="'Testeur'"
-              :description="'Cette oeuvre a été réalisée par Y.'"
-            />
-            <!--
-              SI UNE NEUVIEME OEUVRE EST A AFFICHER !!
-            <OeuvreComponent
-              :sourceImage="'oeuvre-test.jpg'"
-              :auteur="'Moi'"
-              :nom="'Testeur'"
-              :description="'Cette oeuvre a été réalisée par Y.'"
-            />
-            -->
-          </div>
-        </div>
-        <div class="grid grid-cols-3 h-1/3">
-          <OeuvreComponent
-            :sourceImage="'oeuvre5.jpg'"
-            :auteur="'Moi'"
-            :nom="'Mon oeuvre a un nom hyper long super hahahahaha'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <OeuvreComponent
-            :sourceImage="'oeuvre6.jpg'"
-            :auteur="'Moi'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-          <OeuvreComponent
-            :sourceImage="'oeuvre7.jpg'"
-            :auteur="'Moi'"
-            :nom="'Testeur'"
-            :description="'Cette oeuvre a été réalisée par Y.'"
-          />
-        </div>
-      </div>
+    <!--OEUVRES-->
+    <section class="w-full grid grid-cols-galerie-oeuvres my-10 h-screen">
+      <OeuvreComponent
+        :sourceImage="`exodia-lilian-chesneau.jpg`"
+        :auteur="`Lilian Chesneau`"
+        :idImage="`elc1`"
+        :nom="`Exodia`"
+        :description="`Cette oeuvre a été réalisée par Lilian Chesneau.`"
+        class="w-full"
+      />
+      <OeuvreComponent
+        :sourceImage="`heart_shape-mathilde-vauquieres.png`"
+        :auteur="`Mathilde Vauquieres`"
+        :idImage="`hsmv1`"
+        :nom="`Heart Shape`"
+        :description="`Cette oeuvre a été réalisée par Mathilde Vauquieres. C'est un dessin à l'origine qui a été scanné.`"
+        class="w-full"
+      />
     </section>
     <!--Partie textuelle-->
     <!--Partie textuelle-->

@@ -3,20 +3,9 @@ import Profil from "../components/icons/profil.vue";
 </script>
 
 <template>
-  <h2
-    class="bg-cover text-center py-60 bg-[url('/images/event.jpg')] mmi-h2 text-white"
-  >
-    SAVE THE DATE : 11 ET 12 MARS
-  </h2>
   <div class="2xl:flex mt-8">
     <div class="flex flex-col gap-3">
-      <h3 class="mx-auto mmi-h2">L'ÉVÉNEMENT DES 25 ANS</h3>
       <div class="2xl:flex items-center ml-5 2xl:mt-16 2xl:ml-0">
-        <img
-          src=" /images/funny-version/OFFF.jpg"
-          alt="Photo OFFF"
-          class="m-auto 2xl:mmi-photo-4 mmi-photo-2 p-2"
-        />
         <div class="2xl:mr-10">
           <div>
             <p class="mmi-texte">
