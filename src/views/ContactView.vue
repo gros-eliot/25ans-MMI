@@ -1,27 +1,45 @@
 <template>
-  <div class="border-4 my-20 border-black bg-beige py-10 px-20 w-2/3 m-auto">
-    <div class="flex flex-col gap-12">
-      <div class="flex flex-col">
-        <label class="mmi-texte">Nom</label>
-        <input class="bg-beige border border-b-4 border-b-black border-beige" />
-      </div>
-      <div class="flex flex-col">
-        <label class="mmi-texte">Prénom</label>
-        <input class="bg-beige border border-b-4 border-b-black border-beige" />
-      </div>
-      <div class="flex flex-col">
-        <label class="mmi-texte">Adresse Mail</label>
-        <input class="bg-beige border border-b-4 border-b-black border-beige" />
-      </div>
-      <div class="flex flex-col">
-        <label class="mmi-texte">Votre Message</label>
-        <input class="bg-beige border border-b-4 border-b-black border-beige" />
-      </div>
-      <div
-        class="mx-auto bg-black border border-black border-1 p-7 text-2xl md:text-3xl lg:text-4xl font-inter text-white font-black rounded-md"
-      >
-        Envoyer
-      </div>
+  <section
+    class="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 w-full h-screen gap-0"
+  >
+    <div
+      class="bg-jaune flex justify-center items-center flex-col p-10 gap-5 text-center"
+    >
+      <a href="https://www.instagram.com/mmi25ans/" class="w-fit h-fit">
+        <div
+          class="flex justify-center items-center flex-col p-10 gap-5 text-center"
+        >
+          <h3 class="mmi-h3 text-center">Rejoignez nous sur Instagram</h3>
+          <p>
+            Sous forme de story et de post, nous vous partagerons des
+            informations à propos du concours, de l'évènement. N'hésitez pas à
+            nous contacter en message privé !
+          </p>
+          <Instagram class="w-20 h-20 stroke-black m-auto" />
+        </div>
+      </a>
     </div>
-  </div>
+    <div
+      class="bg-bleu flex justify-center items-center flex-col p-10 gap-5 text-center"
+    >
+      <a href="https://discord.com/invite/nvNsDkZERR" class="w-fit h-fit">
+        <div
+          class="flex justify-center items-center flex-col p-10 gap-5 text-center"
+        >
+          <h3 class="mmi-h3 text-center">Rejoignez nous sur Discord</h3>
+          <p>
+            Discutez à travers les différents salons de notre serveur Discord,
+            et soyez notifié.es des nouveautés concernant les 25 ans de MMI.
+            Certains enseignants et MMI s'y retrouvent déjà !
+          </p>
+          <Discord class="w-20 h-20 stroke-black m-auto" />
+        </div>
+      </a>
+    </div>
+  </section>
 </template>
+
+<script setup>
+import Instagram from "@/components/icons/instagram.vue";
+import Discord from "../components/icons/Discord.vue";
+</script>
