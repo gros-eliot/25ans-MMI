@@ -4,7 +4,6 @@
       <div class="flex gap-5 flex-col justify-start footer">
         <router-link to="/contact"> CONTACT </router-link>
         <router-link to="/mentionslegales"> MENTIONS LEGALES </router-link>
-        <a to="/"> JPO 2022 </a>
       </div>
       <div class="flex gap-5 items-center">
         <a href="https://discord.gg/nvNsDkZERR">
