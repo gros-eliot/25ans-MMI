@@ -3,6 +3,48 @@ import Profil from "../components/icons/profil.vue";
 </script>
 
 <template>
+  <section
+    class="grid grid-rows-[70%,30%] grid-cols-1 md:grid-rows-1 md:grid-cols-[70%,30%] w-full h-96 gap-0"
+  >
+    <div
+      class="bg-jaune flex justify-center items-center flex-col p-10 gap-5 text-center"
+    >
+      <a
+        href="https://my.weezevent.com/journee-des-anciens-mmi-de-montbeliard-25-ans"
+        class="w-fit h-fit"
+      >
+        <div
+          class="flex justify-center items-center flex-col p-10 gap-5 text-center"
+        >
+          <h3 class="mmi-h3 text-center">
+            Inscrivez-vous avant le jeudi&nbsp;23&nbsp;février&nbsp;!
+          </h3>
+          <p>
+            Vous pourrez vous inscrire au défi 24h, à la soirée des 25 ans,
+            ainsi qu’au repas du samedi 11 mars à 12h.
+          </p>
+          <p class="font-inter font-black">Cliquez-ici !</p>
+        </div>
+      </a>
+    </div>
+    <div
+      class="bg-vert flex justify-center items-center flex-col p-10 gap-5 text-center"
+    >
+      <a
+        href="https://my.weezevent.com/repas-samedi-soir-1"
+        class="w-fit h-fit"
+      >
+        <div
+          class="flex justify-center items-center flex-col p-10 gap-5 text-center"
+        >
+          <h3 class="mmi-h3 text-center">Commande Master Chicken</h3>
+          <p>Pour avoir un repas lors du soir du samedi 11 mars,</p>
+          <p class="font-inter font-black">Cliquez-ici !</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <div class="2xl:flex mt-8">
     <div class="flex flex-col gap-3">
       <div class="2xl:flex items-center ml-5 2xl:mt-16 2xl:ml-0">
@@ -70,7 +112,7 @@ import Profil from "../components/icons/profil.vue";
     </div>
   </div>
 
-  <div class="flex flex-col gap-10 bg-jaune">
+  <div class="flex flex-col gap-10 bg-bleu">
     <div class="mt-10 flex justify-center">
       <h3 class="text-center mmi-h2">LE PLANNING DU WEEK-END</h3>
     </div>
