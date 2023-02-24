@@ -52,13 +52,25 @@
       class="bg-black w-[95%] h-[95%] text-white px-10 pb-5 overflow-y-scroll customizedScrollbar"
     >
       <div class="flex flex-col gap-5 mt-20">
-        <RouterLink to="vote" class="m-auto w-fit">
+        <RouterLink to="vote" class="m-auto">
           <button
-            class="w-fit m-auto bg-white text-black font-bold px-4 py-2 rounded-lg"
+            class="max-w-xl m-auto bg-white text-black font-bold px-4 py-2"
           >
             Voter pour cette oeuvre ♥
           </button>
         </RouterLink>
+        <a
+          href="https://www.youtube.com/watch?v=09xP8vIVcvM&list=LL&index=2&ab_channel=LorisSaturni"
+          target="_blank"
+          class="m-auto"
+          v-if="nom === 'Niquedouille2'"
+        >
+          <button
+            class="max-w-xl m-auto bg-rouge text-white font-bold px-4 py-2"
+          >
+            Voir la vidéo
+          </button>
+        </a>
         <img :src="`/images/oeuvres/finales/${sourceImage}`" class="w-full" />
         <h3 class="mmi-h2">
           {{ nom }}

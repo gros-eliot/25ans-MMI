@@ -20,7 +20,7 @@ function GiftFunction() {
     openedGift.value = true;
     setTimeout(RouterPush, 1500);
   } else {
-    console.log("");
+    return;
   }
 }
 window.addEventListener("click", GiftFunction);

@@ -22,6 +22,10 @@
         Summer (Sacha Wicky):
         <span class="font-inter font-bold text-rouge">{{ nb5 }}</span> vote(s)
       </p>
+      <p>
+        Niquedouille2 (Arthur Meyer et Loris Saturni):
+        <span class="font-inter font-bold text-rouge">{{ nb6 }}</span> vote(s)
+      </p>
     </div>
   </div>
 </template>
@@ -60,6 +64,7 @@ export default {
       nb3: 0,
       nb4: 0,
       nb5: 0,
+      nb6: 0,
     };
   },
   mounted() {
@@ -100,6 +105,9 @@ export default {
         }
         if (this.oeuvreFavoriteExport === "Summer") {
           this.nb5++;
+        }
+        if (this.oeuvreFavoriteExport === "Niquedouille2") {
+          this.nb6++;
         }
       });
     },

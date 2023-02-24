@@ -43,8 +43,11 @@
     </section>
 
     <!--Partie 2-->
+    <!--
     <h2 class="mmi-h2 text-rouge">Je souhaite...</h2>
+  -->
     <!--Partie 2-->
+    <!--
 
     <div
       class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
@@ -81,6 +84,8 @@
         DÉFI 24H</label
       >
     </div>
+
+    -->
 
     <!--PARTIE 3-->
     <h2 class="mmi-h2 text-bleu">Je suis...</h2>
@@ -210,7 +215,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("userInfo", this.userInfo);
+        // console.log("userInfo", this.userInfo);
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
         this.uiduser = this.userInfo[0].uiduser;

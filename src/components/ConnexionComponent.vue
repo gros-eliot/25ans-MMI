@@ -150,8 +150,12 @@
       <!--PARTIE 1 DU FORMULAIRE-->
 
       <!--Partie 2-->
-      <h2 class="text-4xl md:text-5xl font-black text-rouge">Je souhaite...</h2>
+      <!--
+
+        <h2 class="text-4xl md:text-5xl font-black text-rouge">Je souhaite...</h2>
+      -->
       <!--Partie 2-->
+      <!--
       <section class="flex flex-col gap-2">
         <div
           class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
@@ -189,6 +193,7 @@
           >
         </div>
       </section>
+      -->
 
       <!--PARTIE 3-->
       <h2 class="text-4xl md:text-5xl font-black text-bleu">Je suis...</h2>

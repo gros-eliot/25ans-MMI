@@ -173,6 +173,31 @@
       <p class="text-white drop-shadow-xl">Sacha Wicky</p>
     </div>
     <!--OEUVRE 5-->
+    <!--OEUVRE 6-->
+    <div
+      class="flex flex-col justify-center items-start gap-5 w-full h-fit py-10 bg-cover bg-center p-5"
+      :style="{
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.4) 100%),url('/images/oeuvres/finales/niquedouille2-arthur-meyer-loris-saturni.jpg')`,
+      }"
+    >
+      <div
+        class="grid justify-items-center items-center grid-cols-[2%,98%] gap-5"
+      >
+        <input
+          type="radio"
+          class="w-6 h-6"
+          value="Niquedouille2"
+          v-model="oeuvre_favorite"
+        />
+        <label
+          class="text-2xl md:text-4xl font-bold font-inter tracking-tighter text-white drop-shadow-lg"
+        >
+          Niquedouille2
+        </label>
+      </div>
+      <p class="text-white drop-shadow-xl">Arthur Meyer et Loris Saturni</p>
+    </div>
+    <!--OEUVRE 6-->
 
     <div class="m-auto w-fit">
       <button

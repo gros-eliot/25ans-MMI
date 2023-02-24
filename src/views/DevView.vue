@@ -17,6 +17,14 @@ let removeScroll = ref(false);
         :description="`Cette oeuvre a été réalisée par Sami Ghorzi.`"
         class="w-full"
       />
+      <OeuvreComponent
+        :sourceImage="`niquedouille2-arthur-meyer-loris-saturni.jpg`"
+        :auteur="`Arthur Meyer & Loris Saturni`"
+        :idImage="`namls1`"
+        :nom="`Niquedouille2`"
+        :description="`Cette vidéo a été réalisée par Arthur Meyer et Loris Saturni.`"
+        class="w-full"
+      />
     </section>
     <!--Partie textuelle-->
     <!--Partie textuelle-->

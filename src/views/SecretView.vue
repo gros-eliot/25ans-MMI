@@ -13,7 +13,6 @@
       :idImage="`elc1`"
       :nom="`Exodia`"
       :description="`Cette oeuvre a été réalisée par Lilian Chesneau.`"
-      class=""
     />
     <OeuvreComponent
       :sourceImage="`heart_shape-mathilde-vauquieres.png`"
@@ -21,7 +20,6 @@
       :idImage="`hsmv1`"
       :nom="`Heart Shape`"
       :description="`Cette oeuvre a été réalisée par Mathilde Vauquieres. C'est un dessin à l'origine qui a été scanné.`"
-      class=""
     />
     <OeuvreComponent
       :sourceImage="`summer-sacha-wicky.jpg`"
@@ -29,7 +27,6 @@
       :idImage="`ssw1`"
       :nom="`Summer`"
       :description="`Cette oeuvre a été réalisée par Sacha Wicky.`"
-      class=""
     />
     <OeuvreComponent
       :sourceImage="`open_ur_mind-justine-emond.jpg`"
@@ -37,7 +34,6 @@
       :idImage="`oumje1`"
       :nom="`Open ur mind`"
       :description="`Cette oeuvre a été réalisée par Justine Emond.`"
-      class=""
     />
     <OeuvreComponent
       :sourceImage="`reussir-sami-ghorzi.jpg`"
@@ -45,7 +41,14 @@
       :idImage="`rsg1`"
       :nom="`Réussir`"
       :description="`Cette oeuvre a été réalisée par Sami Ghorzi.`"
-      class=""
+    />
+    <OeuvreComponent
+      :sourceImage="`niquedouille2-arthur-meyer-loris-saturni.jpg`"
+      :auteur="`Arthur Meyer & Loris Saturni`"
+      :idImage="`namls1`"
+      :nom="`Niquedouille2`"
+      :description="`Cette vidéo a été réalisée par Arthur Meyer et Loris Saturni.`"
+      class="w-full"
     />
   </section>
 </template>
